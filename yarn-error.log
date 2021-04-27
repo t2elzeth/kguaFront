@@ -1,0 +1,96 @@
+Arguments: 
+  /Users/orynbasar/.nvm/versions/node/v12.16.1/bin/node /usr/local/Cellar/yarn/1.22.1/libexec/bin/yarn.js
+
+PATH: 
+  /Users/orynbasar/.nvm/versions/node/v12.16.1/bin:/usr/local/opt/libpq/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
+
+Yarn version: 
+  1.22.1
+
+Node version: 
+  12.16.1
+
+Platform: 
+  darwin x64
+
+Trace: 
+  Error: https://registry.npmjs.org/@payment-processing%2flint-config: Not found
+      at Request.params.callback [as _callback] (/usr/local/Cellar/yarn/1.22.1/libexec/lib/cli.js:66982:18)
+      at Request.self.callback (/usr/local/Cellar/yarn/1.22.1/libexec/lib/cli.js:140743:22)
+      at Request.emit (events.js:311:20)
+      at Request.<anonymous> (/usr/local/Cellar/yarn/1.22.1/libexec/lib/cli.js:141715:10)
+      at Request.emit (events.js:311:20)
+      at IncomingMessage.<anonymous> (/usr/local/Cellar/yarn/1.22.1/libexec/lib/cli.js:141637:12)
+      at Object.onceWrapper (events.js:417:28)
+      at IncomingMessage.emit (events.js:323:22)
+      at endReadableNT (_stream_readable.js:1204:12)
+      at processTicksAndRejections (internal/process/task_queues.js:84:21)
+
+npm manifest: 
+  {
+    "name": "@payment-processing/landing",
+    "version": "0.0.1",
+    "sideEffects": false,
+    "scripts": {
+      "test": "test-config --type=ui",
+      "test:watch": "test-config --type=ui --watch",
+      "test:update": "test-config --type=ui --update-snapshot",
+      "dev": "next dev",
+      "build": "next build . --debug && sh assets.sh ",
+      "build:static": "yarn build && yarn export",
+      "export": "next export -o dist",
+      "start": "NODE_ENV=production next start",
+      "lint": "lint-config --type=react",
+      "lint:fix": "lint-config --type=fixReact",
+      "clean": "rm -rf ./.next",
+      "clean-all": "yarn clean && rm -rf node_modules/",
+      "stylelint": "lint-config --type=css",
+      "stylelint:fix": "lint-config --type=fixCSS"
+    },
+    "lint-staged": {
+      "**/*.+(ts|tsx)": [
+        "yarn lint",
+        "jest --bail --findRelatedTests"
+      ]
+    },
+    "dependencies": {
+      "@types/react-input-mask": "^3.0.0",
+      "axios": "^0.21.1",
+      "classnames": "^2.2.6",
+      "dotenv": "^8.2.0",
+      "express": "^4.17.1",
+      "lodash": "^4.17.20",
+      "next": "10.0.6",
+      "next-fonts": "^1.5.1",
+      "nodemailer": "^6.5.0",
+      "react": "16.14.0",
+      "react-countup": "^4.3.3",
+      "react-dom": "16.14.0",
+      "react-input-mask": "^2.0.4",
+      "sass": "^1.26.11",
+      "tailwindcss": "^2.0.3"
+    },
+    "devDependencies": {
+      "@fullhuman/postcss-purgecss": "^4.0.0",
+      "@payment-processing/lint-config": "^0.0.1",
+      "@payment-processing/test-config": "^0.0.1",
+      "@payment-processing/ts-scripts": "^0.0.2",
+      "@types/node": "^12.12.21",
+      "@types/react": "16.9.53",
+      "@types/react-dom": "16.9.8",
+      "autoprefixer": "^10.2.4",
+      "cssnano": "^4.1.10",
+      "lint-staged": "^10.3.0",
+      "next-compose-plugins": "^2.2.1",
+      "next-transpile-modules": "^6.0.0",
+      "postcss-flexbugs-fixes": "^5.0.2",
+      "postcss-preset-env": "^6.7.0"
+    },
+    "license": "MIT"
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile

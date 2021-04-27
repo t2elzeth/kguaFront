@@ -1,0 +1,57 @@
+.table {
+  width: 100%;
+  overflow: hidden;
+  border-radius: 10px;
+  border-collapse: collapse;
+
+  td, th {
+    padding: 25px 50px;
+  }
+
+  tr:nth-child(even){
+    background-color: #EDF1FD;
+  }
+
+  tr {
+    font-weight: 400;
+    background-color: #F5F7FF;
+  }
+
+  th {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    color: $text;
+    text-align: left;
+    background-color: #E4EBFC;
+  }
+
+  &__copy {
+    width: 16px;
+    height: 16px;
+  }
+}
+
+.plainTable {
+  border-collapse: collapse;
+  width: 100%;
+
+  th, td {
+    padding: 16px 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    font-weight: 400;
+  }
+
+  th {
+    color: #B1BBD3;
+    font-size: 16px;
+  }
+
+  td {
+    font-size: 18px;
+  }
+
+  tr {
+    cursor: pointer;
+  }
+}

@@ -1,0 +1,49 @@
+.sidebar {
+  padding-left: 20px;
+  
+  .item {
+    position: relative;
+    align-items: center;
+    padding: 15px 40px 15px 25px;
+    color: $textGray;
+    text-decoration: none;
+    cursor: pointer;
+
+    &.active {
+      color: #3C404F;
+      border: 1px solid #00FFFF;
+      border-radius: 10px;
+      box-shadow: -5px -5px 20px #FFFFFF, 5px 5px 20px #E4EBFC, -5px -5px 10px #FFFFFF, 5px 5px 10px #E4EBFC;
+    }
+
+    &.disabled {
+      pointer-events: none !important;
+      cursor: default !important;
+    }
+
+    &:hover {
+      color: #00FFFF;
+    }
+
+    .item-text {
+      font-weight: 400;
+      font-size: 20px;
+      text-align: left;
+    }
+
+    .presentIcon {
+      width: 16px;
+      height: 16px;
+      margin-right: 16px;
+    }
+  }
+
+  .logo {
+    position: absolute;
+    right: 20px;
+    margin-left: 16px;
+  }
+}
+.active-item {
+  border:none!important;
+}

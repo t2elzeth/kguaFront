@@ -1,0 +1,55 @@
+{
+  "name": "@payment-processing/landing",
+  "version": "0.0.1",
+  "sideEffects": false,
+  "scripts": {
+    "test": "test-config --type=ui",
+    "test:watch": "test-config --type=ui --watch",
+    "test:update": "test-config --type=ui --update-snapshot",
+    "dev": "next dev",
+    "build": "next build . --debug",
+    "build:static": "yarn build && yarn export",
+    "export": "next export -o dist",
+    "start": "NODE_ENV=production next start",
+    "lint": "lint-config --type=react",
+    "lint:fix": "lint-config --type=fixReact",
+    "clean": "rm -rf ./.next",
+    "clean-all": "yarn clean && rm -rf node_modules/",
+    "stylelint": "lint-config --type=css",
+    "stylelint:fix": "lint-config --type=fixCSS"
+  },
+  "lint-staged": {
+    "**/*.+(ts|tsx)": [
+      "yarn lint",
+      "jest --bail --findRelatedTests"
+    ]
+  },
+  "dependencies": {
+    "axios": "^0.21.1",
+    "classnames": "^2.2.6",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "next": "10.0.6",
+    "next-fonts": "^1.5.1",
+    "nodemailer": "^6.5.0",
+    "react": "16.14.0",
+    "react-countup": "^4.3.3",
+    "react-dom": "16.14.0",
+    "react-input-mask": "^2.0.4",
+    "sass": "^1.26.11"
+  },
+  "devDependencies": {
+    "@types/node": "^12.12.21",
+    "@types/react": "16.9.53",
+    "@types/react-dom": "16.9.8",
+    "@types/react-input-mask": "^3.0.0",
+    "@zeit/next-sass": "^1.0.1",
+    "autoprefixer": "^10.2.4",
+    "cssnano": "^4.1.10",
+    "lint-staged": "^10.3.0",
+    "next-compose-plugins": "^2.2.1",
+    "next-transpile-modules": "^6.0.0",
+    "typescript": "^4.2.4"
+  },
+  "license": "MIT"
+}

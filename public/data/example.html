@@ -1,0 +1,72 @@
+<html>
+  <head>
+    <title>IOKA | example</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+    <div id="ioka-widget"></div>
+    <button onclick="payFunction()">INIT IOKA PAYMENT</button>
+    <script src="https://ioka.kz/data/ioka-widget.js"></script>
+    <script>
+      const onError = (err) => {
+        console.log("on error", err)
+      }
+
+      const onSuccess = (res) => {
+        console.log("on success", res)
+      }
+
+      const options = {
+        onError: (err) => {
+          onError(err)
+        },
+        onSuccess: (res) => {
+          onSuccess(res)
+          this.close()
+        },
+        widgetProps: {
+          cardForm: {
+            hideErrorMessages: true,
+            hideEmail: true,
+            hideCardContainer: true,
+            hideResultMessage: true,
+            buttonText: "Пополнить - ",
+            title: "Пополнить счёт iDoctor.kz"
+          },
+          styles: {
+            inputContainer: {
+              border: "1px solid #CBCBCC",
+              borderRadius: "4px",
+              height: "32px"
+            },
+            inputs: {
+              padding: "8px",
+              height: "100%"
+            },
+            submitButton: {
+              height: "32px",
+              borderRadius: "4px"
+            },
+            buttonTextStyle: {
+              fontSize: "14px"
+            },
+            middleContainer: {
+              margin: "0"
+            }
+          }
+        }
+      }
+
+      const IokaWidgetItem = new IokaWidget({
+        src: "https://dev.ioka.kz/forms/40b45a01-9308-43ae-84a3-011f4e3f685b/",
+        elementId: "ioka-widget",
+        options,
+        publicKey: "public key"
+      })
+
+      const payFunction = () => {
+        IokaWidgetItem.initPayment()
+      }
+    </script>
+  </body>
+</html>

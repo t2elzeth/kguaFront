@@ -1,0 +1,66 @@
+{
+  "compilerOptions": {
+    "importHelpers": true,
+    "noEmit": false,
+    "noEmitHelpers": true,
+    "suppressImplicitAnyIndexErrors": true,
+    "declaration": true,
+    "declarationDir": "build",
+    "noEmitOnError": false,
+    "pretty": true,
+    "removeComments": true,
+    "noUnusedParameters": true,
+    "allowJs": true,
+    "allowSyntheticDefaultImports": true,
+    "isolatedModules": true,
+    "moduleResolution": "node",
+    "strict": true,
+    "noImplicitAny": true,
+    "strictNullChecks": true,
+    "strictFunctionTypes": true,
+    "strictBindCallApply": true,
+    "strictPropertyInitialization": true,
+    "noImplicitThis": true,
+    "alwaysStrict": true,
+    "noImplicitReturns": true,
+    "noUnusedLocals": true,
+    "noFallthroughCasesInSwitch": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "resolveJsonModule": true,
+    "outDir": "./build",
+    "jsx": "preserve",
+    "skipLibCheck": true,
+    "lib": [
+      "dom",
+      "dom.iterable"
+    ],
+    "checkJs": false,
+    "target": "es2019",
+    "baseUrl": ".",
+    "paths": {
+      "@src/*": ["src/*"],
+      "@Components": [
+        "src/components/index"
+      ],
+      "@Utils/*": [
+        "src/utils/*"
+      ],
+      "@Interfaces/*": [
+        "src/interfaces/*"
+      ]
+    },
+    "module": "esnext"
+  },
+  "include": [
+    "src/**/*"
+  ],
+  "exclude": [
+    "**/ui-kit",
+    "**/node_modules",
+    "ui-kit",
+    ".next",
+    "../ui-kit/**/*.ts",
+    "../ui-kit/**/*.tsx"
+  ]
+}

@@ -1,0 +1,101 @@
+$scaledUpSize: 1.03;
+$scaledDownSize: 1+(1 - $scaledUpSize);
+
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 0;
+  color: #FFFFFF;
+  font-weight: 500;
+  font-size: 14px;
+  font-family: inherit;
+  line-height: size(16px);
+  text-transform: uppercase;
+  text-decoration: none;
+  background: linear-gradient(95.59deg, rgba(0, 244, 244, 0.8) -28.56%, rgba(0, 165, 254, 0.8) 100.34%);
+  border: 0;
+  border-radius: 10px;
+  outline: 0;
+  box-shadow: inset -2px -2px 1px rgba(1, 165, 255, 0.7), inset 0.5px 0.5px 2px #01A5FF, inset 2px 0 5px #FFFFFF, inset -2px -2px 2px #01A5FF, inset 0.5px 0.5px 1px #01A5FF, inset 0 2px 5px #FFFFFF;
+  cursor: pointer;
+  transition: transform .3s ease, filter .3s, background-color .3s;
+
+  &.light {
+    position: relative;
+    box-sizing: border-box;
+    width: auto;
+    margin: 0;
+    padding: 22px 44px;
+    color: #616880;
+    font-weight: 500;
+    text-transform: none;
+    background: #F6F8FE;
+    border: 0;
+    border: 1px solid #B1BBD3;
+    border-radius: 10px;
+    box-shadow: -5px -5px 20px #FFFFFF, 5px 5px 20px #E4EBFC, -5px -5px 10px #FFFFFF, 5px 5px 10px #E4EBFC;
+
+    &:hover,
+    &.active{
+      &::before {
+        transform: translate(-50%, -50%);
+        opacity: 1;
+      }
+    }
+  }
+
+  //SIZES
+
+  &.small {
+    height: 40px;
+  }
+
+  &.medium {
+    height: 60px;
+  }
+
+  &.large {
+    height: 90px;
+  }
+
+  &.fill {
+    width: 100%;
+    min-height: 60px;
+  }
+
+  &.none {
+    width: auto;
+  }
+
+  &.disabled,&:disabled {
+    background: linear-gradient(95.59deg, rgba(231, 235, 245, 0.8) -28.56%, rgba(208, 217, 237, 0.8) 100.34%);
+    border: none;
+    box-shadow: inset -2px -2px 1px #C6CEE2, inset 0.5px 0.5px 2px #C6CEE2, inset 2px 0 5px #FFFFFF, inset -2px -2px 2px #C6CEE2, inset 0.5px 0.5px 1px #C6CEE2, inset 0 2px 5px #FFFFFF;
+    cursor: not-allowed;
+    backdrop-filter: blur(2px);
+
+    object {
+      filter: invert(100%);
+    }
+
+    &:before {
+      content: none;
+    }
+  }
+
+  &.grayBorder {
+    border-color: #B1BBD3;
+  }
+
+  &.noBorder {
+    border: none; 
+  }
+
+  &.rounded-half {
+    width: 36px;
+    height: 36px;
+    border-radius: 12px;
+  }
+}
