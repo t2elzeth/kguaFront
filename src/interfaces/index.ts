@@ -2,4 +2,4 @@
 // and then use them in any component by importing them. For
 // example, to import the interface below do:
 
-export type MyWindow = Window & {};
+export type MyWindow = Window & {}

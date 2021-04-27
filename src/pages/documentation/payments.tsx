@@ -1,10 +1,6 @@
-import React from "react";
+import { DocumentationPage } from '../../templates'
 
-import { DocumentationPage } from "../../templates";
-
-export type DocumentationProps = {};
-
-const Documentation: React.FC<DocumentationProps> = () => {
+const Documentation: React.FC = () => {
   return (
     <DocumentationPage pageName="Payment" pageTitle="Платежи">
       <div className="payments">
@@ -20,7 +16,7 @@ const Documentation: React.FC<DocumentationProps> = () => {
         </p>
       </div>
     </DocumentationPage>
-  );
-};
+  )
+}
 
-export default Documentation;
+export default Documentation

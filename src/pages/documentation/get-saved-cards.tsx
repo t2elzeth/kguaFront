@@ -1,40 +1,28 @@
-import { Table } from "@Components";
-import React from "react";
+import { CodeBox } from '../../components'
+import { DocumentationPage } from '../../templates'
+import { Table } from '@Components'
 
-import { CodeBox } from "../../components";
-import { DocumentationPage } from "../../templates";
-
-export type GetSavedCardsProps = {};
+export type GetSavedCardsProps = {}
 
 const requestRows1 = [
-  [
-    "client_id",
-    "integer",
-    "да",
-    "Номер (идентификатор) клиента в системе магазина.",
-  ],
-];
+  ['client_id', 'integer', 'да', 'Номер (идентификатор) клиента в системе магазина.'],
+]
 
-const sampleHeadRows = ["Поле", "Тип", "Обязательность", "Описание"];
+const sampleHeadRows = ['Поле', 'Тип', 'Обязательность', 'Описание']
 
 const responseRows1 = [
-  ["merchant_id", "integer", "да", "Номер (идентификатор) магазина."],
-  [
-    "client_id",
-    "integer",
-    "да",
-    "Номер (идентификатор) клиента в системе магазина.",
-  ],
-  ["holder", "string", "да", "ФИО держателя карты"],
-  ["token", "string", "да", "Идентификатор связки (токен платежной карты)"],
-  ["expiry_date", "string", "да", "Срок действия карты"],
-  ["pan_masked", "string", "да", "Маскированный PAN карты"],
-  ["is3ds", "bool", "нет", "Является ли карта защищенным 3DSecure"],
-  ["brand", "string", "да", "Бренд карты"],
-  ["emitter", "string", "нет", "Банк, выпустивший карту"],
-];
+  ['merchant_id', 'integer', 'да', 'Номер (идентификатор) магазина.'],
+  ['client_id', 'integer', 'да', 'Номер (идентификатор) клиента в системе магазина.'],
+  ['holder', 'string', 'да', 'ФИО держателя карты'],
+  ['token', 'string', 'да', 'Идентификатор связки (токен платежной карты)'],
+  ['expiry_date', 'string', 'да', 'Срок действия карты'],
+  ['pan_masked', 'string', 'да', 'Маскированный PAN карты'],
+  ['is3ds', 'bool', 'нет', 'Является ли карта защищенным 3DSecure'],
+  ['brand', 'string', 'да', 'Бренд карты'],
+  ['emitter', 'string', 'нет', 'Банк, выпустивший карту'],
+]
 
-const headRows = ["Поле", "Тип", "Обязательность", "Описание"];
+const headRows = ['Поле', 'Тип', 'Обязательность', 'Описание']
 
 const GetSavedCards: React.FC<GetSavedCardsProps> = () => {
   return (
@@ -63,11 +51,11 @@ const GetSavedCards: React.FC<GetSavedCardsProps> = () => {
         </p>
         <p>Параметры запроса:</p>
         <div className="table-container">
-          <Table headRows={sampleHeadRows} rows={requestRows1} className="documentation-table"/>
+          <Table headRows={sampleHeadRows} rows={requestRows1} className="documentation-table" />
         </div>
         <p>Параметры ответа:</p>
         <div className="table-container">
-          <Table headRows={headRows} rows={responseRows1} className="documentation-table"/>
+          <Table headRows={headRows} rows={responseRows1} className="documentation-table" />
         </div>
         <p>Пример запроса:</p>
         <CodeBox>
@@ -75,7 +63,7 @@ const GetSavedCards: React.FC<GetSavedCardsProps> = () => {
           <br />
           Host: https://stage.ioka.kz
           <br />
-          Authorization: Bearer {"<Токен из личного кабинета>"}
+          Authorization: Bearer {'<Токен из личного кабинета>'}
         </CodeBox>
         <p>Пример ответа:</p>
         <CodeBox>
@@ -102,9 +90,8 @@ const GetSavedCards: React.FC<GetSavedCardsProps> = () => {
           &nbsp;&nbsp;&nbsp;&nbsp;"emitter": null,
           <br />
           &nbsp;&nbsp;&#125;
-          <br />
-]
-</CodeBox>
+          <br />]
+        </CodeBox>
         <br />
         <h1>Запрос на получение сохраненной карты по токену карты</h1>
         <p>Успешный запрос вернет одну сохраненную карту.</p>
@@ -126,7 +113,7 @@ const GetSavedCards: React.FC<GetSavedCardsProps> = () => {
         </p>
         <p>Параметры запроса:</p>
         <div className="table-container">
-          <Table headRows={sampleHeadRows} rows={requestRows1} className="documentation-table"/>
+          <Table headRows={sampleHeadRows} rows={requestRows1} className="documentation-table" />
         </div>
         <p>Параметры ответа:</p>
         <div className="table-container">
@@ -138,7 +125,7 @@ const GetSavedCards: React.FC<GetSavedCardsProps> = () => {
           <br />
           Host: https://stage.ioka.kz
           <br />
-          Authorization: Bearer {"<Токен из личного кабинета>"}
+          Authorization: Bearer {'<Токен из личного кабинета>'}
         </CodeBox>
         <p>Пример ответа:</p>
         <CodeBox>
@@ -166,7 +153,7 @@ const GetSavedCards: React.FC<GetSavedCardsProps> = () => {
         </CodeBox>
       </div>
     </DocumentationPage>
-  );
-};
+  )
+}
 
-export default GetSavedCards;
+export default GetSavedCards

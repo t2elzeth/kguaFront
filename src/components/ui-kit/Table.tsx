@@ -1,35 +1,25 @@
-import React from "react";
-import classnames from "classnames";
+import React from 'react'
+import classnames from 'classnames'
 
 export type RowProps = {
-  onClick?: ([any]: any) => void;
-  data: string[];
+  onClick?: ([any]: any) => void
+  data: string[]
   link?: string
-};
+}
 
 export type TableProps = {
-  className?: string;
-  headRows: string[];
-  clickableRows?: RowProps[];
-  rows?: string[][];
-  plainTable?: boolean;
-  isDateExists?: boolean;
+  className?: string
+  headRows: string[]
+  clickableRows?: RowProps[]
+  rows?: string[][]
+  plainTable?: boolean
+  isDateExists?: boolean
   showCopy?: boolean
-};
+}
 
-export const Table: React.FC<TableProps> = ({
-  className,
-  headRows,
-  clickableRows,
-  rows
-}) => {
+export const Table: React.FC<TableProps> = ({ className, headRows, clickableRows, rows }) => {
   return (
-    <table
-      className={classnames(
-        "table",
-        className
-      )}
-    >
+    <table className={classnames('table', className)}>
       <thead>
         <tr>
           {headRows.map((headRow, index) => (
@@ -54,11 +44,13 @@ export const Table: React.FC<TableProps> = ({
             rows.map((tableRow, index) => (
               <tr key={index}>
                 {tableRow.map((tableData, index) => (
-                  <td key={index} id={tableData}>{tableData}</td>
+                  <td key={index} id={tableData}>
+                    {tableData}
+                  </td>
                 ))}
               </tr>
             ))}
       </tbody>
     </table>
-  );
-};
+  )
+}

@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react'
 
 const SupportFooter: React.FC<any> = () => (
   <div className="support-footer">
@@ -9,11 +9,11 @@ const SupportFooter: React.FC<any> = () => (
       </a>
       <a href="/data/ioka-rules.pdf" target="_blank" className="bold-text">
         <img src="/images/paper.svg" alt="paper icon" />
-          Условия пользования
+        Условия пользования
       </a>
     </div>
-      <a>©ioka 2021</a>
+    <a>©ioka 2021</a>
   </div>
-);
+)
 
 export default SupportFooter

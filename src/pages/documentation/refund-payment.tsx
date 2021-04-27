@@ -1,45 +1,36 @@
-import { Table } from "@Components";
-import React from "react";
+import { Table } from '@Components'
+import React from 'react'
 
-import { CodeBox } from "../../components";
-import { DocumentationPage } from "../../templates";
+import { CodeBox } from '../../components'
+import { DocumentationPage } from '../../templates'
 
-export type RefundPaymentProps = {};
+export type RefundPaymentProps = { any }
 
 const sampleRows = [
-  ["reference", "integer", "да", "Уникальный идентификатор платежа"],
-  ["amount", "integer", "да", "Сумма возврата"],
-  ["reason", "string", "нет", "Примечание к возрата"],
-];
+  ['reference', 'integer', 'да', 'Уникальный идентификатор платежа'],
+  ['amount', 'integer', 'да', 'Сумма возврата'],
+  ['reason', 'string', 'нет', 'Примечание к возрата'],
+]
 
-const sampleHeadRows = ["Поле", "Тип", "Обязательность", "Описание"];
+const sampleHeadRows = ['Поле', 'Тип', 'Обязательность', 'Описание']
 
 const rows = [
-  ["error_code", "integer", "да", "Код ошибки"],
-  [
-    "error_message",
-    "string",
-    "да",
-    "Описание ошибки на языке, переданном в заголовке запроса",
-  ],
-];
+  ['error_code', 'integer', 'да', 'Код ошибки'],
+  ['error_message', 'string', 'да', 'Описание ошибки на языке, переданном в заголовке запроса'],
+]
 
-const headRows = ["Поле", "Тип", "Обязательность", "Описание"];
+const headRows = ['Поле', 'Тип', 'Обязательность', 'Описание']
 
 const RefundPayment: React.FC<RefundPaymentProps> = () => {
   return (
-    <DocumentationPage
-      pageName="Возврат платежа"
-      pageTitle="Запрос на возврат платежа"
-    >
+    <DocumentationPage pageName="Возврат платежа" pageTitle="Запрос на возврат платежа">
       <div className="interface-rest">
         <h1>Запрос на возврат платежа</h1>
         <p>
-          По этому запросу средства по указанному заказу будут возвращены
-          плательщику. Запрос закончится ошибкой в случае, если средства по
-          этому заказу не были списаны. Система позволяет возвращать средства
-          более одного раза, но в общей сложности не более первоначальной суммы
-          списания.
+          По этому запросу средства по указанному заказу будут возвращены плательщику. Запрос
+          закончится ошибкой в случае, если средства по этому заказу не были списаны. Система
+          позволяет возвращать средства более одного раза, но в общей сложности не более
+          первоначальной суммы списания.
         </p>
         <p>
           Метод:
@@ -59,11 +50,11 @@ const RefundPayment: React.FC<RefundPaymentProps> = () => {
         </p>
         <p>Параметры запроса:</p>
         <div className="table-container">
-          <Table headRows={sampleHeadRows} rows={sampleRows} className="documentation-table"/>
+          <Table headRows={sampleHeadRows} rows={sampleRows} className="documentation-table" />
         </div>
         <p>Параметры ответа:</p>
         <div className="table-container">
-          <Table headRows={headRows} rows={rows} className="documentation-table"/>
+          <Table headRows={headRows} rows={rows} className="documentation-table" />
         </div>
         <p>Пример запроса:</p>
         <CodeBox>
@@ -75,7 +66,7 @@ const RefundPayment: React.FC<RefundPaymentProps> = () => {
           <br />
           Accept-Language: ru
           <br />
-          Authorization: Bearer {"<Токен из личного кабинета>"}
+          Authorization: Bearer {'<Токен из личного кабинета>'}
           <br />
           <br />
           &#123;
@@ -100,7 +91,7 @@ const RefundPayment: React.FC<RefundPaymentProps> = () => {
         </CodeBox>
       </div>
     </DocumentationPage>
-  );
-};
+  )
+}
 
-export default RefundPayment;
+export default RefundPayment

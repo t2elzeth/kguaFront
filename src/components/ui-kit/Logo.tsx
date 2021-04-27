@@ -1,11 +1,11 @@
-import classnames from "classnames";
+import classnames from 'classnames'
 
 export enum LogoSize {
-  S = "small",
-  M = "medium",
-  L = "large",
+  S = 'small',
+  M = 'medium',
+  L = 'large',
 
-  NONE = "none",
+  NONE = 'none',
 }
 
 export const LogoSizeProp = {
@@ -21,37 +21,29 @@ export const LogoSizeProp = {
     width: 60,
     height: 60,
   },
-};
+}
 
 export type LogoProps = {
-  size?: LogoSize;
-  className?: string;
-  customClassName?: string;
-  text?: string;
-  onLogoClick?: ([any]: any) => void;
-};
+  size?: LogoSize
+  className?: string
+  customClassName?: string
+  text?: string
+  onLogoClick?: ([any]: any) => void
+}
 
-const Logo: React.FC<LogoProps> = ({
-  size = LogoSize.S,
-  onLogoClick,
-  className
-}) => {
-  const { width, height } = LogoSizeProp[size] || {};
+const Logo: React.FC<LogoProps> = ({ size = LogoSize.S, onLogoClick, className }) => {
+  const { width, height } = LogoSizeProp[size] || {}
 
   return (
     <img
       width={width}
       height={height}
-      className={classnames(
-        "logo",
-        size && `${size}`,
-        className
-      )}
+      className={classnames('logo', size && `${size}`, className)}
       onClick={onLogoClick}
       src="/images/logo.svg"
       alt="ioka logo"
     />
-  );
-};
+  )
+}
 
-export { Logo };
+export { Logo }

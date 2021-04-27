@@ -1,26 +1,26 @@
-import classnames from "classnames";
-import React, { useState } from "react";
+import React, { useState } from 'react'
+import classnames from 'classnames'
 
 export type SlideMenuProps = {
-  sidebarItems: any[];
-  activeRoute?: string;
-};
+  sidebarItems: any[]
+  activeRoute?: string
+}
 
 const SlideMenu: React.FC<SlideMenuProps> = ({ sidebarItems, activeRoute }) => {
-  const [isOpen, setIsOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(false)
 
   const closeNav = () => {
-    setIsOpen(false);
-  };
+    setIsOpen(false)
+  }
 
   const openNav = () => {
-    setIsOpen(true);
-  };
+    setIsOpen(true)
+  }
 
   return (
     <>
-      <div className={classnames("slide-menu", isOpen ? "open" : "close")}>
-        <div className="top-divider" onClick={closeNav} />
+      <div className={classnames('slide-menu', isOpen ? 'open' : 'close')}>
+        <div role="presentation" className="top-divider" onClick={closeNav} />
         <div className="content">
           {sidebarItems.map(({ navTitle, route }) => (
             <a href={route} key={navTitle}>
@@ -29,17 +29,17 @@ const SlideMenu: React.FC<SlideMenuProps> = ({ sidebarItems, activeRoute }) => {
           ))}
         </div>
       </div>
-      <div className="slidebar-link" onClick={openNav}>
+      <div role="presentation" className="slidebar-link" onClick={openNav}>
         <div>{activeRoute}</div>
         <img src="/images/ArrowRight.svg" alt="arrow-right-icon" />
       </div>
       <div
-        className={classnames("background-overlay", isOpen ? "open" : "close")}
+        role="presentation"
+        className={classnames('background-overlay', isOpen ? 'open' : 'close')}
         onClick={closeNav}
       />
     </>
-  );
-};
+  )
+}
 
-// eslint-disable-next-line import/no-default-export
-export default SlideMenu;
+export default SlideMenu

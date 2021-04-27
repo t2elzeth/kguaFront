@@ -48,7 +48,7 @@ build_prod_landing:
   stage: build
   variables:
     PATH_TO_REPO: landing
-    PATH_TO_DOCKERFILE: ./docker/build.Dockerfile
+    PATH_TO_DOCKERFILE: ./Dockerfile
     PACKAGE_NAME: landing
     SERVER_URL: https://ioka.kz
     NEXT_SERVER_URL: https://ioka.kz
@@ -89,7 +89,7 @@ build_dev_landing:
   stage: build
   variables:
     PATH_TO_REPO: landing
-    PATH_TO_DOCKERFILE: ./docker/build.Dockerfile
+    PATH_TO_DOCKERFILE: ./Dockerfile
     PACKAGE_NAME: landing
     SERVER_URL: https://dev.ioka.kz
     NEXT_SERVER_URL: https://dev.ioka.kz

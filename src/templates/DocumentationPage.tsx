@@ -1,6 +1,6 @@
-import React from "react";
-import Head from "next/head";
-import { useRouter } from "next/router";
+import React from 'react'
+import Head from 'next/head'
+import { useRouter } from 'next/router'
 
 import {
   StickySidebar,
@@ -8,110 +8,106 @@ import {
   BurgerMenu,
   SlideMenu,
   SupportFooter,
-} from "../components";
+} from '../components'
 
 const routes = [
   {
-    navTitle: "Главная",
+    navTitle: 'Главная',
     active: false,
-    route: "/documentation",
+    route: '/documentation',
   },
   {
-    navTitle: "Коды ошибок",
+    navTitle: 'Коды ошибок',
     active: false,
-    route: "/documentation/error-codes",
+    route: '/documentation/error-codes',
   },
   {
-    navTitle: "Регистрация платежей",
+    navTitle: 'Регистрация платежей',
     active: false,
-    route: "/documentation/payment-register",
+    route: '/documentation/payment-register',
   },
   {
-    navTitle: "Изменения суммы платежа",
+    navTitle: 'Изменения суммы платежа',
     active: false,
-    route: "/documentation/payment-change",
+    route: '/documentation/payment-change',
   },
   {
-    navTitle: "Списание платежа",
+    navTitle: 'Списание платежа',
     active: false,
-    route: "/documentation/debit-payment",
+    route: '/documentation/debit-payment',
   },
   {
-    navTitle: "Отмена платежа",
+    navTitle: 'Отмена платежа',
     active: false,
-    route: "/documentation/cancel-payment",
+    route: '/documentation/cancel-payment',
   },
   {
-    navTitle: "Возврат платежа",
+    navTitle: 'Возврат платежа',
     active: false,
-    route: "/documentation/refund-payment",
+    route: '/documentation/refund-payment',
   },
   {
-    navTitle: "Подтверждение платежа по сохраненной карте",
+    navTitle: 'Подтверждение платежа по сохраненной карте',
     active: false,
-    route: "/documentation/confirm-payment",
+    route: '/documentation/confirm-payment',
   },
   {
-    navTitle: "Статус платежа",
+    navTitle: 'Статус платежа',
     active: false,
-    route: "/documentation/payment-status",
+    route: '/documentation/payment-status',
   },
   {
-    navTitle: "Callback-уведомления",
+    navTitle: 'Callback-уведомления',
     active: false,
-    route: "/documentation/callback-push",
+    route: '/documentation/callback-push',
   },
   {
-    navTitle: "Сохранение карты без оплаты",
+    navTitle: 'Сохранение карты без оплаты',
     active: false,
-    route: "/documentation/save-card-without-payment",
+    route: '/documentation/save-card-without-payment',
   },
   {
-    navTitle: "Сохранение карт в системе",
+    navTitle: 'Сохранение карт в системе',
     active: false,
-    route: "/documentation/save-cards",
+    route: '/documentation/save-cards',
   },
   {
-    navTitle: "Получение сохраненных карт",
+    navTitle: 'Получение сохраненных карт',
     active: false,
-    route: "/documentation/get-saved-cards",
+    route: '/documentation/get-saved-cards',
   },
   {
-    navTitle: "Добавление виджета",
+    navTitle: 'Добавление виджета',
     active: false,
-    route: "/documentation/add-widget",
+    route: '/documentation/add-widget',
   },
   {
-    navTitle: "Чек-лист для интеграции",
+    navTitle: 'Чек-лист для интеграции',
     active: false,
-    route: "/documentation/checklist-integration",
+    route: '/documentation/checklist-integration',
   },
   {
-    navTitle: "Готовые решения",
+    navTitle: 'Готовые решения',
     active: false,
-    route: "/documentation/quick-start",
+    route: '/documentation/quick-start',
   },
-];
+]
 
 export type DocumentationPageProps = {
-  pageName: string;
-  pageTitle?: string;
-};
+  pageName: string
+  pageTitle?: string
+}
 
-const DocumentationPage: React.FC<DocumentationPageProps> = ({
-  pageName,
-  children,
-  pageTitle,
-}) => {
+const DocumentationPage: React.FC<DocumentationPageProps> = ({ pageName, children, pageTitle }) => {
   const router = useRouter().pathname
 
   const docsRoutes = routes.map((item) => {
     if (router === item.route) {
-      item.active = true;
+      item.active = true
     }
 
-    return { ...item };
-  });
+    return { ...item }
+  })
 
   return (
     <>
@@ -119,7 +115,7 @@ const DocumentationPage: React.FC<DocumentationPageProps> = ({
         <title>{pageTitle}</title>
       </Head>
       <div className="documentation-page">
-        <StickySidebar sidebarItems={docsRoutes}/>
+        <StickySidebar sidebarItems={docsRoutes} />
         <BurgerMenu type="tablet" />
         <div className="main">
           <DocumentationHeader />
@@ -128,13 +124,12 @@ const DocumentationPage: React.FC<DocumentationPageProps> = ({
             {children}
           </div>
           <div className="footer-link">
-            <SupportFooter/>
+            <SupportFooter />
           </div>
         </div>
       </div>
     </>
-  );
-};
+  )
+}
 
-// eslint-disable-next-line import/no-default-export
-export default DocumentationPage;
+export default DocumentationPage

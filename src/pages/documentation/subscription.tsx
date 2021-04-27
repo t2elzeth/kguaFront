@@ -1,106 +1,108 @@
-import { Table } from "@Components";
-import React from "react";
+import { Table } from '@Components'
+import React from 'react'
 
-import { CodeBox } from "../../components";
-import { DocumentationPage } from "../../templates";
+import { CodeBox } from '../../components'
+import { DocumentationPage } from '../../templates'
 
-export type SubscriptionProps = {};
+export type SubscriptionProps = { any }
 
 const registerSubscriptionRows = [
-  ["amount", "integer", "да", "Сумма платежа"],
+  ['amount', 'integer', 'да', 'Сумма платежа'],
   [
-    "currency",
-    "integer",
-    "нет",
-    "Код валюты в стандарте ISO 4217. Если не указан, то используется значение по умолчанию (398 - KZT)",
+    'currency',
+    'integer',
+    'нет',
+    'Код валюты в стандарте ISO 4217. Если не указан, то используется значение по умолчанию (398 - KZT)',
+  ],
+  ['description', 'string', 'нет', 'Назначение платежа в свободной форме'],
+  [
+    'tr_type',
+    'integer',
+    'нет',
+    'Тип транзакции (0 или 1). При tr_type = 1 блокировка суммы, после успешной авторизации необходимо вызвать списание платежа. При tr_type = 0 после успешной авторизации, платеж автоматически будет списан со счета клиента. По умолчанию выставлен tr_type = 0',
+  ],
+  ['email', 'string', 'да', 'Почтовый адрес (куда будет выслан электронный счет оплаты)'],
+  [
+    'token',
+    'string',
+    'да',
+    'Идентификатор связки (токен платежной карты), созданной ранее. Если этот параметр передаётся в данном запросе, то это означает что: 1) Данный заказ может быть оплачен только с помощью связки; 2) Плательщик будет перенаправлен на платежную страницу, где требуется только ввод CVV',
   ],
   [
-    "description",
-    "string",
-    "нет",
-    "Назначение платежа в свободной форме",
+    'client_id',
+    'integer',
+    'да',
+    'Номер (идентификатор) клиента в системе магазина. Используется для реализации функциональности связок. Указание этого параметра при платежах по связке необходимо - в противном случае платёж будет не успешен',
+  ],
+  ['start_date', 'datetime', 'да', 'Дата и время первого платежа по плану во временной зоне UTC'],
+  ['interval', 'string', 'да', 'Возможные значения: 1) DAY; 2) WEEK; 3) MONTH'],
+  [
+    'period',
+    'integer',
+    'да',
+    'Период. В комбинации с интервалом, 1 DAY значит раз в день, а 3 MONTH — раз в три месяца. Должен быть больше 0',
   ],
   [
-    "tr_type",
-    "integer",
-    "нет",
-    "Тип транзакции (0 или 1). При tr_type = 1 блокировка суммы, после успешной авторизации необходимо вызвать списание платежа. При tr_type = 0 после успешной авторизации, платеж автоматически будет списан со счета клиента. По умолчанию выставлен tr_type = 0",
+    'max_period',
+    'integer',
+    'нет',
+    'Максимальное количество платежей в подписке. Если указан, должен быть больше 0',
   ],
   [
-    "email",
-    "string",
-    "да",
-    "Почтовый адрес (куда будет выслан электронный счет оплаты)",
+    'callback_url',
+    'string',
+    'нет',
+    'Ссылка, служащая для приема статуса платежа после оплаты. После того, как ваш клиент завершит платеж, на указанный URL отправляется POST запрос со статусом платежа',
   ],
-  [
-    "token",
-    "string",
-    "да",
-    "Идентификатор связки (токен платежной карты), созданной ранее. Если этот параметр передаётся в данном запросе, то это означает что: 1) Данный заказ может быть оплачен только с помощью связки; 2) Плательщик будет перенаправлен на платежную страницу, где требуется только ввод CVV",
-  ],
-  [
-    "client_id",
-    "integer",
-    "да",
-    "Номер (идентификатор) клиента в системе магазина. Используется для реализации функциональности связок. Указание этого параметра при платежах по связке необходимо - в противном случае платёж будет не успешен",
-  ],
-  [
-    "start_date",
-    "datetime",
-    "да",
-    "Дата и время первого платежа по плану во временной зоне UTC",
-  ],
-  [
-    "interval",
-    "string",
-    "да",
-    "Возможные значения: 1) DAY; 2) WEEK; 3) MONTH",
-  ],
-  [
-    "period",
-    "integer",
-    "да",
-    "Период. В комбинации с интервалом, 1 DAY значит раз в день, а 3 MONTH — раз в три месяца. Должен быть больше 0",
-  ],
-  [
-    "max_period",
-    "integer",
-    "нет",
-    "Максимальное количество платежей в подписке. Если указан, должен быть больше 0",
-  ],
-  [
-    "callback_url",
-    "string",
-    "нет",
-    "Ссылка, служащая для приема статуса платежа после оплаты. После того, как ваш клиент завершит платеж, на указанный URL отправляется POST запрос со статусом платежа",
-  ],
-];
+]
 
 const registerSubscriptionResRows = [
-  ["id", "integer", "да", "Идентификатор рекуррентного платежа"],
-  ["status", "string", "да", "Возможные значения: 1) ACTIVE; 2) STOP"],
-  ["amount", "integer", "да", "Сумма платежа"],
-  ["currency", "integer", "да", "Код валюты в стандарте ISO 4217. Если не указан, то используется значение по умолчанию (398 - KZT)"],
-  ["description", "string", "да", "Назначение платежа в свободной форме"],
-  ["tr_type", "integer", "да", "Тип транзакции (0 или 1). При tr_type = 1 блокировка суммы, после успешной авторизации необходимо вызвать списание платежа. При tr_type = 0 после успешной авторизации, платеж автоматически будет списан со счета клиента. По умолчанию выставлен tr_type = 0"],
-  ["email", "string", "да", "Почтовый адрес (куда будет выслан электронный счет оплаты)"],
-  ["token", "string", "да", "Идентификатор связки (токен платежной карты), созданной ранее"],
-  ["client_id", "integer", "да", "Номер (идентификатор) клиента в системе магазина. Используется для реализации функциональности связок. Указание этого параметра при платежах по связке необходимо - в противном случае платеж будет не успешен"],
-  ["start_date", "datetime", "да", "Дата и время первого платежа по плану во временной зоне UTC"],
-  ["interval", "string", "да", "Возможные значения: 1) DAY; 2) WEEK; 3) MONTH"],
-  ["period", "integer", "да", "Период. В комбинации с интервалом, 1 DAY значит раз в день, а 3 MONTH — раз в три месяца. Должен быть больше 0"],
-  ["max_period", "integer", "нет", "Максимальное количество платежей в подписке. Если указан, должен быть больше 0"],
-  ["callback_url", "string", "нет", "Ссылка, служащая для приема статуса платежа после оплаты"],
-];
+  ['id', 'integer', 'да', 'Идентификатор рекуррентного платежа'],
+  ['status', 'string', 'да', 'Возможные значения: 1) ACTIVE; 2) STOP'],
+  ['amount', 'integer', 'да', 'Сумма платежа'],
+  [
+    'currency',
+    'integer',
+    'да',
+    'Код валюты в стандарте ISO 4217. Если не указан, то используется значение по умолчанию (398 - KZT)',
+  ],
+  ['description', 'string', 'да', 'Назначение платежа в свободной форме'],
+  [
+    'tr_type',
+    'integer',
+    'да',
+    'Тип транзакции (0 или 1). При tr_type = 1 блокировка суммы, после успешной авторизации необходимо вызвать списание платежа. При tr_type = 0 после успешной авторизации, платеж автоматически будет списан со счета клиента. По умолчанию выставлен tr_type = 0',
+  ],
+  ['email', 'string', 'да', 'Почтовый адрес (куда будет выслан электронный счет оплаты)'],
+  ['token', 'string', 'да', 'Идентификатор связки (токен платежной карты), созданной ранее'],
+  [
+    'client_id',
+    'integer',
+    'да',
+    'Номер (идентификатор) клиента в системе магазина. Используется для реализации функциональности связок. Указание этого параметра при платежах по связке необходимо - в противном случае платеж будет не успешен',
+  ],
+  ['start_date', 'datetime', 'да', 'Дата и время первого платежа по плану во временной зоне UTC'],
+  ['interval', 'string', 'да', 'Возможные значения: 1) DAY; 2) WEEK; 3) MONTH'],
+  [
+    'period',
+    'integer',
+    'да',
+    'Период. В комбинации с интервалом, 1 DAY значит раз в день, а 3 MONTH — раз в три месяца. Должен быть больше 0',
+  ],
+  [
+    'max_period',
+    'integer',
+    'нет',
+    'Максимальное количество платежей в подписке. Если указан, должен быть больше 0',
+  ],
+  ['callback_url', 'string', 'нет', 'Ссылка, служащая для приема статуса платежа после оплаты'],
+]
 
-const headRows = ["Поле", "Тип", "Обязательность", "Описание"];
+const headRows = ['Поле', 'Тип', 'Обязательность', 'Описание']
 
 const Subscription: React.FC<SubscriptionProps> = () => {
   return (
-    <DocumentationPage
-      pageName="Рекуррентные платежи"
-      pageTitle="Рекуррентные платежи"
-    >
+    <DocumentationPage pageName="Рекуррентные платежи" pageTitle="Рекуррентные платежи">
       <div className="interface-rest">
         <h1>Запрос на регистрацию рекуррентного платежа</h1>
         <p>
@@ -127,15 +129,23 @@ const Subscription: React.FC<SubscriptionProps> = () => {
           ru (в зависимости от выбора языка интерфейса)
           <br />
           <b>Authorization:</b>
-          Bearer {"<SECRET_KEY из личного кабинета>"}
+          Bearer {'<SECRET_KEY из личного кабинета>'}
         </CodeBox>
         <p>Параметры запроса:</p>
         <div className="table-container">
-          <Table headRows={headRows} rows={registerSubscriptionRows} className="documentation-table" />
+          <Table
+            headRows={headRows}
+            rows={registerSubscriptionRows}
+            className="documentation-table"
+          />
         </div>
         <p>Параметры ответа:</p>
         <div className="table-container">
-          <Table headRows={headRows} rows={registerSubscriptionResRows} className="documentation-table" />
+          <Table
+            headRows={headRows}
+            rows={registerSubscriptionResRows}
+            className="documentation-table"
+          />
         </div>
         <p>Пример запроса:</p>
         <CodeBox>
@@ -147,7 +157,7 @@ const Subscription: React.FC<SubscriptionProps> = () => {
           <br />
           Accept-Language: ru
           <br />
-          Authorization: Bearer {"<SECRET_KEY из личного кабинета>"}
+          Authorization: Bearer {'<SECRET_KEY из личного кабинета>'}
           <br />
           <br />
           &#123;
@@ -200,7 +210,8 @@ const Subscription: React.FC<SubscriptionProps> = () => {
           <br />
           &#125;
         </CodeBox>
-        <br/><br/>
+        <br />
+        <br />
         <h1>Запрос на получение активного рекуррентного платежа</h1>
         <p>
           Метод:
@@ -226,11 +237,15 @@ const Subscription: React.FC<SubscriptionProps> = () => {
           ru (в зависимости от выбора языка интерфейса)
           <br />
           <b>Authorization:</b>
-          Bearer {"<SECRET_KEY из личного кабинета>"}
+          Bearer {'<SECRET_KEY из личного кабинета>'}
         </CodeBox>
         <p>Параметры ответа:</p>
         <div className="table-container">
-          <Table headRows={headRows} rows={registerSubscriptionResRows} className="documentation-table" />
+          <Table
+            headRows={headRows}
+            rows={registerSubscriptionResRows}
+            className="documentation-table"
+          />
         </div>
         <p>Пример запроса:</p>
         <CodeBox>
@@ -242,7 +257,7 @@ const Subscription: React.FC<SubscriptionProps> = () => {
           <br />
           Accept-Language: ru
           <br />
-          Authorization: Bearer {"<SECRET_KEY из личного кабинета>"}
+          Authorization: Bearer {'<SECRET_KEY из личного кабинета>'}
         </CodeBox>
         <p>Пример ответа:</p>
         <CodeBox>
@@ -272,7 +287,8 @@ const Subscription: React.FC<SubscriptionProps> = () => {
           <br />
           &#125;
         </CodeBox>
-        <br/><br/>
+        <br />
+        <br />
         <h1>Запрос на отмену активного рекуррентного платежа</h1>
         <p>
           Метод:
@@ -298,11 +314,15 @@ const Subscription: React.FC<SubscriptionProps> = () => {
           ru (в зависимости от выбора языка интерфейса)
           <br />
           <b>Authorization:</b>
-          Bearer {"<SECRET_KEY из личного кабинета>"}
+          Bearer {'<SECRET_KEY из личного кабинета>'}
         </CodeBox>
         <p>Параметры ответа:</p>
         <div className="table-container">
-          <Table headRows={headRows} rows={registerSubscriptionResRows} className="documentation-table" />
+          <Table
+            headRows={headRows}
+            rows={registerSubscriptionResRows}
+            className="documentation-table"
+          />
         </div>
         <p>Пример запроса:</p>
         <CodeBox>
@@ -314,7 +334,7 @@ const Subscription: React.FC<SubscriptionProps> = () => {
           <br />
           Accept-Language: ru
           <br />
-          Authorization: Bearer {"<SECRET_KEY из личного кабинета>"}
+          Authorization: Bearer {'<SECRET_KEY из личного кабинета>'}
         </CodeBox>
         <p>Пример ответа:</p>
         <CodeBox>
@@ -344,10 +364,11 @@ const Subscription: React.FC<SubscriptionProps> = () => {
           <br />
           &#125;
         </CodeBox>
-        <br/><br/>
+        <br />
+        <br />
       </div>
     </DocumentationPage>
-  );
-};
+  )
+}
 
-export default Subscription;
+export default Subscription

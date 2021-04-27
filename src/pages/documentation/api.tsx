@@ -3,8 +3,6 @@ import React from "react";
 
 import { DocumentationPage } from "../../templates";
 
-export type DocumentationProps = {};
-
 const sampleRows = [
   ["amount", "integer", "да", "Сумма платежа"],
   [
@@ -24,7 +22,7 @@ const sampleRows = [
 
 const sampleHeadRows = ["Поле", "Тип", "Обязательно", "Описание"];
 
-const Documentation: React.FC<DocumentationProps> = () => {
+const Documentation: React.FC = () => {
   return (
     <DocumentationPage pageName="Api page">
       <div className="api-page">
@@ -36,5 +34,4 @@ const Documentation: React.FC<DocumentationProps> = () => {
   );
 };
 
-// eslint-disable-next-line import/no-default-export
 export default Documentation;

@@ -1,8 +1,7 @@
-import React from "react";
 import { useRouter } from 'next/router'
 import { Sidebar, Logo, LogoSize } from "@Components";
 
-const StickySidebar: React.FC<any> = ({ sidebarItems, logoText }) => {
+const StickySidebar: React.FC<any> = ({ sidebarItems, logoText }: any) => {
   const router = useRouter()
 
   return(
