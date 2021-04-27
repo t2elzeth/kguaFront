@@ -29,11 +29,8 @@ export type SidebarProps = {
 export const Sidebar: React.FC<SidebarProps> = ({
   className,
   items = [],
-  activeRoute,
-  activeButtonClassName,
   onSidebarClick,
   link = true,
-  activeItem,
 }) => (
   <div
     className={classnames("sidebar", className)}
@@ -43,19 +40,12 @@ export const Sidebar: React.FC<SidebarProps> = ({
       (
         {
           navTitle,
-          active,
           onClick,
           route = "#",
           presentIcon,
           disabled = false,
-        },
-        index
+        }
       ) => {
-        const activeStyle =
-          active ||
-          activeRoute === route ||
-          (activeItem !== undefined && activeItem === index);
-
         if (link) {
           return (
             <Link href={route}>
