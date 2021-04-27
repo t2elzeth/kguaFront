@@ -1,10 +1,7 @@
-import React from "react";
-
 export type TextBoxProps = {};
 
-const TextBox: React.FC<TextBoxProps> = ({ children }) => {
+const TextBox: React.FC<TextBoxProps> = ({ children }: any) => {
   return <div className="text-box">{children}</div>;
 };
 
-/* eslint-disable */
 export default TextBox

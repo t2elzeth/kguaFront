@@ -1,8 +1,6 @@
-/* eslint-disable filenames/match-regex */
 import Document, { Html, Head, Main, NextScript } from "next/document";
 import React from "react";
 
-/* eslint-disable functional/no-class */
 class MyDocument extends Document {
   static async getInitialProps(ctx: any) {
     const initialProps = await Document.getInitialProps(ctx);
@@ -119,5 +117,4 @@ class MyDocument extends Document {
   }
 }
 
-/* eslint-disable */
 export default MyDocument

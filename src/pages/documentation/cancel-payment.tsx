@@ -1,41 +1,31 @@
-import { Table } from "@Components";
-import React from "react";
+import { Table } from '@Components'
+import React from 'react'
 
-import { CodeBox } from "../../components";
-import { DocumentationPage } from "../../templates";
+import { CodeBox } from '../../components'
+import { DocumentationPage } from '../../templates'
 
-export type CancelPaymentProps = {};
+export type CancelPaymentProps = { any }
 
-const sampleRows = [
-  ["reference", "integer", "да", "Уникальный идентификатор платежа"],
-];
+const sampleRows = [['reference', 'integer', 'да', 'Уникальный идентификатор платежа']]
 
-const sampleHeadRows = ["Поле", "Тип", "Обязательность", "Описание"];
+const sampleHeadRows = ['Поле', 'Тип', 'Обязательность', 'Описание']
 
 const rows = [
-  ["error_code", "integer", "да", "Код ошибки"],
-  [
-    "error_message",
-    "string",
-    "да",
-    "Описание ошибки на языке, переданном в заголовке запроса",
-  ],
-];
+  ['error_code', 'integer', 'да', 'Код ошибки'],
+  ['error_message', 'string', 'да', 'Описание ошибки на языке, переданном в заголовке запроса'],
+]
 
-const headRows = ["Поле", "Тип", "Обязательность", "Описание"];
+const headRows = ['Поле', 'Тип', 'Обязательность', 'Описание']
 
 const CancelPayment: React.FC<CancelPaymentProps> = () => {
   return (
-    <DocumentationPage
-      pageName="Отмена платежа"
-      pageTitle="Запрос на отмену платежа"
-    >
+    <DocumentationPage pageName="Отмена платежа" pageTitle="Запрос на отмену платежа">
       <div className="interface-rest">
         <h1>Запрос на отмену платежа</h1>
         <p>
-          Функция отмены доступна в течение ограниченного времени. Операция
-          отмены оплаты может быть совершена только один раз. Если она
-          закончится ошибкой, то повторная операция отмены платежа не пройдет.
+          Функция отмены доступна в течение ограниченного времени. Операция отмены оплаты может быть
+          совершена только один раз. Если она закончится ошибкой, то повторная операция отмены
+          платежа не пройдет.
         </p>
         <p>
           Метод:
@@ -55,7 +45,7 @@ const CancelPayment: React.FC<CancelPaymentProps> = () => {
         </p>
         <p>Параметры запроса:</p>
         <div className="table-container">
-          <Table headRows={sampleHeadRows} rows={sampleRows} className="documentation-table"/>
+          <Table headRows={sampleHeadRows} rows={sampleRows} className="documentation-table" />
         </div>
         <p>Параметры ответа:</p>
         <div className="table-container">
@@ -71,7 +61,7 @@ const CancelPayment: React.FC<CancelPaymentProps> = () => {
           <br />
           Accept-Language: ru
           <br />
-          Authorization: Bearer {"<Токен из личного кабинета>"}
+          Authorization: Bearer {'<Токен из личного кабинета>'}
           <br />
           <br />
           &#123;
@@ -92,7 +82,7 @@ const CancelPayment: React.FC<CancelPaymentProps> = () => {
         </CodeBox>
       </div>
     </DocumentationPage>
-  );
-};
+  )
+}
 
-export default CancelPayment;
+export default CancelPayment

@@ -1,22 +1,17 @@
-import { Table } from "@Components";
-import * as React from "react";
+import { CodeBox } from '../../components'
+import { DocumentationPage } from '../../templates'
 
-import { CodeBox } from "../../components";
-import { DocumentationPage } from "../../templates";
+import { Table } from '@Components'
 
-const sampleRows = [
-  ["amount", "integer", "да", "Сумма платежа"]
-];
+const sampleRows = [['amount', 'integer', 'да', 'Сумма платежа']]
 
-const sampleHeadRows = ["Поле", "Тип", "Обязательность", "Описание"];
+const sampleHeadRows = ['Поле', 'Тип', 'Обязательность', 'Описание']
 
-const rows = [
-  ["status", "204 No Content"]
-];
+const rows = [['status', '204 No Content']]
 
-const headRows = ["Поле", "Описание"];
+const headRows = ['Поле', 'Описание']
 
-const PaymentChange= () => {
+const PaymentChange = () => {
   return (
     <DocumentationPage
       pageName="Изменения суммы платежа"
@@ -48,7 +43,7 @@ const PaymentChange= () => {
           ru (в зависимости от выбора языка интерфейса)
           <br />
           <b>Authorization:</b>
-          Bearer {"<SECRET_KEY из личного кабинета>"}
+          Bearer {'<SECRET_KEY из личного кабинета>'}
         </CodeBox>
         <p>Параметры запроса:</p>
         <div className="table-container">
@@ -68,13 +63,13 @@ const PaymentChange= () => {
           <br />
           Accept-Language: ru
           <br />
-          Authorization: Bearer {"<SECRET_KEY из личного кабинета>"}
+          Authorization: Bearer {'<SECRET_KEY из личного кабинета>'}
           <br />
           <br />
           &#123;
           <br />
           &nbsp;&nbsp;"amount": 3000
-          <br/>
+          <br />
           &#125;
         </CodeBox>
         <p>Пример ответа:</p>
@@ -87,7 +82,7 @@ const PaymentChange= () => {
         </CodeBox>
       </div>
     </DocumentationPage>
-  );
-};
+  )
+}
 
-export default PaymentChange;
+export default PaymentChange

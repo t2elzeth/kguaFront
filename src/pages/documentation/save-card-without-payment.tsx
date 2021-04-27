@@ -1,53 +1,43 @@
-import { Table } from "@Components";
-import React from "react";
+import { Table } from '@Components'
+import React from 'react'
 
-import { CodeBox } from "../../components";
-import { DocumentationPage } from "../../templates";
+import { CodeBox } from '../../components'
+import { DocumentationPage } from '../../templates'
 
-export type SaveCardWOutProps = {};
+export type SaveCardWOutProps = { any }
 
 const saveCardsRows = [
   [
-    "order_id",
-    "integer",
-    "да",
-    "Номер (идентификатор) заказа в системе магазина, уникален для каждого магазина в пределах системы",
+    'order_id',
+    'integer',
+    'да',
+    'Номер (идентификатор) заказа в системе магазина, уникален для каждого магазина в пределах системы',
   ],
+  ['client_id', 'integer', 'да', 'Номер (идентификатор) клиента в системе магазина'],
   [
-    "client_id",
-    "integer",
-    "да",
-    "Номер (идентификатор) клиента в системе магазина",
+    'back_url',
+    'string',
+    'да',
+    'Ссылка, служащая для перенаправления клиента на сайт мерчанта, после сохранения карты',
   ],
+  ['callback_url', 'string', 'нет', 'Ссылка, служащая для приема статуса попытки сохранение карты'],
   [
-    "back_url",
-    "string",
-    "да",
-    "Ссылка, служащая для перенаправления клиента на сайт мерчанта, после сохранения карты",
+    'template',
+    'string',
+    'нет',
+    'Тип шаблона формы оплаты. Выберите один из: 1) FLAT 2) 3D (по умолчанию) 2) CUSTOM',
   ],
-  [
-    "callback_url",
-    "string",
-    "нет",
-    "Ссылка, служащая для приема статуса попытки сохранение карты",
-  ],
-  [
-    "template",
-    "string",
-    "нет",
-    "Тип шаблона формы оплаты. Выберите один из: 1) FLAT 2) 3D (по умолчанию) 2) CUSTOM",
-  ],
-];
+]
 
-const sampleHeadRows = ["Поле", "Тип", "Обязательность", "Описание"];
+const sampleHeadRows = ['Поле', 'Тип', 'Обязательность', 'Описание']
 
 const rows = [
-  ["reference", "integer", "да", "Уникальный идентификатор платежа"],
-  ["access_hash", "string", "да", "Хэш доступа, для формы"],
-  ["url", "string", "да", "Адрес на форму оплаты"],
-];
+  ['reference', 'integer', 'да', 'Уникальный идентификатор платежа'],
+  ['access_hash', 'string', 'да', 'Хэш доступа, для формы'],
+  ['url', 'string', 'да', 'Адрес на форму оплаты'],
+]
 
-const headRows = ["Поле", "Тип", "Обязательность", "Описание"];
+const headRows = ['Поле', 'Тип', 'Обязательность', 'Описание']
 
 const SaveCardWOut: React.FC<SaveCardWOutProps> = () => {
   return (
@@ -57,8 +47,19 @@ const SaveCardWOut: React.FC<SaveCardWOutProps> = () => {
     >
       <div className="interface-rest">
         <h1>Запрос на сохранение карты без оплаты</h1>
-        <p>После того как ваш клиент заполнит карточные данные в форме, происходит верификация держателя карты без списания средств с его счёта. Сохраненной карте будет присвоен уникальный token, используя который можно списывать с этой карты средства, не прибегая к проверке аутентификационных данных (CVC, 3D-Secure) при совершении последующих платежей.</p>
-        <p>Список сохраненных карт клиента можно получить обратившись к методу <CodeBox isInline>/api/cards/</CodeBox> как  описано <a href="/documentation/get-saved-cards" className="link">здесь.</a></p>
+        <p>
+          После того как ваш клиент заполнит карточные данные в форме, происходит верификация
+          держателя карты без списания средств с его счёта. Сохраненной карте будет присвоен
+          уникальный token, используя который можно списывать с этой карты средства, не прибегая к
+          проверке аутентификационных данных (CVC, 3D-Secure) при совершении последующих платежей.
+        </p>
+        <p>
+          Список сохраненных карт клиента можно получить обратившись к методу{' '}
+          <CodeBox isInline>/api/cards/</CodeBox> как описано{' '}
+          <a href="/documentation/get-saved-cards" className="link">
+            здесь.
+          </a>
+        </p>
         <p>
           Метод:
           <CodeBox isInline>POST</CodeBox>
@@ -83,7 +84,7 @@ const SaveCardWOut: React.FC<SaveCardWOutProps> = () => {
           ru (в зависимости от выбора языка интерфейса)
           <br />
           <b>Authorization:</b>
-          Bearer {"<SECRET_KEY из личного кабинета>"}
+          Bearer {'<SECRET_KEY из личного кабинета>'}
         </CodeBox>
         <p>Параметры запроса:</p>
         <div className="table-container">
@@ -103,7 +104,7 @@ const SaveCardWOut: React.FC<SaveCardWOutProps> = () => {
           <br />
           Accept-Language: ru
           <br />
-          Authorization: Bearer {"<SECRET_KEY из личного кабинета>"}
+          Authorization: Bearer {'<SECRET_KEY из личного кабинета>'}
           <br />
           <br />
           &#123;
@@ -126,14 +127,13 @@ const SaveCardWOut: React.FC<SaveCardWOutProps> = () => {
           <br />
           &nbsp;&nbsp;"access_hash": "2e01a5d6-3c61-452d-990a-b10455428030",
           <br />
-          &nbsp;&nbsp;"url":
-          "https://stage.ioka.kz/forms/2e01a5d6-3c61-452d-990a-b10455428030/"
+          &nbsp;&nbsp;"url": "https://stage.ioka.kz/forms/2e01a5d6-3c61-452d-990a-b10455428030/"
           <br />
           &#125;
         </CodeBox>
       </div>
     </DocumentationPage>
-  );
-};
+  )
+}
 
-export default SaveCardWOut;
+export default SaveCardWOut

@@ -1,34 +1,24 @@
-import { Table } from "@Components";
-import React from "react";
+import { Table } from '@Components'
+import React from 'react'
 
-import { CodeBox } from "../../components";
-import { DocumentationPage } from "../../templates";
+import { CodeBox } from '../../components'
+import { DocumentationPage } from '../../templates'
 
-export type ConfirmPaymentProps = {};
+export type ConfirmPaymentProps = { any }
 
 const requestRows = [
-  [
-  "token",
-  "string",
-  "да",
-  "Идентификатор связки (токен платежной карты), созданной ранее",
-  ],
-  ["reference", "integer", "да", "Уникальный идентификатор платежа"],
-];
+  ['token', 'string', 'да', 'Идентификатор связки (токен платежной карты), созданной ранее'],
+  ['reference', 'integer', 'да', 'Уникальный идентификатор платежа'],
+]
 
-const requestHeadRows = ["Поле", "Тип", "Обязательность", "Описание"];
+const requestHeadRows = ['Поле', 'Тип', 'Обязательность', 'Описание']
 
 const responseRows = [
-  ["error_code", "integer", "да", "Код ошибки"],
-  [
-    "error_message",
-    "string",
-    "да",
-    "Описание ошибки на языке, переданной в заголовке запроса",
-  ],
-];
+  ['error_code', 'integer', 'да', 'Код ошибки'],
+  ['error_message', 'string', 'да', 'Описание ошибки на языке, переданной в заголовке запроса'],
+]
 
-const responseHeadRows = ["Поле", "Тип", "Обязательность", "Описание"];
+const responseHeadRows = ['Поле', 'Тип', 'Обязательность', 'Описание']
 
 const ConfirmPayment: React.FC<ConfirmPaymentProps> = () => {
   return (
@@ -59,11 +49,11 @@ const ConfirmPayment: React.FC<ConfirmPaymentProps> = () => {
         </p>
         <p>Параметры запроса:</p>
         <div className="table-container">
-          <Table headRows={requestHeadRows} rows={requestRows} className="documentation-table"/>
+          <Table headRows={requestHeadRows} rows={requestRows} className="documentation-table" />
         </div>
         <p>Параметры ответа:</p>
         <div className="table-container">
-          <Table headRows={responseHeadRows} rows={responseRows} className="documentation-table"/>
+          <Table headRows={responseHeadRows} rows={responseRows} className="documentation-table" />
         </div>
         <p>Пример запроса:</p>
         <CodeBox>
@@ -75,9 +65,7 @@ const ConfirmPayment: React.FC<ConfirmPaymentProps> = () => {
           <br />
           Accept-Language: ru
           <br />
-          Bearer
-          {' '}
-          {"<SECRET_KEY из личного кабинета>"}
+          Bearer {'<SECRET_KEY из личного кабинета>'}
           <br />
           <br />
           &#123;
@@ -100,7 +88,7 @@ const ConfirmPayment: React.FC<ConfirmPaymentProps> = () => {
         </CodeBox>
       </div>
     </DocumentationPage>
-  );
-};
+  )
+}
 
-export default ConfirmPayment;
+export default ConfirmPayment
