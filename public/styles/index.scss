@@ -1,0 +1,16 @@
+@import './vars.scss';
+
+//components
+@import './components//Header.scss';
+
+//pages
+@import './pages/mainPage.scss';
+
+body {
+  margin: 0 auto;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+ul, li, button {
+  font-family: inherit;
+}
