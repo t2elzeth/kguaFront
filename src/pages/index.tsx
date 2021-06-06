@@ -76,7 +76,9 @@ const IndexPage: React.FC<IndexPageProps> = () => {
           </span>
         </h2>
         <div className="wrapper">
-          <Image width="500px" height="878px" src="/images/third-section.png" />
+          <div className="section-3__left-part">
+            <Image width="500px" height="878px" src="/images/third-section.png" />
+          </div>
           <div className="section-3__right-part">
             <div className="section-3__block">
               <div className="section-3__logo">

@@ -8,7 +8,8 @@
     background-position: 100% 100%;
     &__wrapper {
       width:90%;
-      margin: 0 auto
+      margin: 0 auto;
+      box-sizing: border-box;
     }
     &__text {
       display: flex;
@@ -200,6 +201,113 @@
     img {
       height:100%;
       width:auto;
+    }
+  }
+
+  @media screen and(max-width:$laptop){
+    .section-1 {
+      &__text {
+        width:100%;
+        padding: 40px 0;
+        h4 {
+          font-weight: 600;
+          font-size: 18px;
+        }
+        h1 {
+          font-weight: 900;
+          font-size: 28px;
+          line-height: 36px;
+        }
+        .headline-regular {
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 20px;
+        }
+      }
+      button {
+        margin-top:24px
+      }
+      &__box {
+        width:100%;
+        flex-wrap: wrap;
+        border-radius: 0;
+        padding:12px;
+        display: none;
+        justify-content: space-between;
+        div {
+          width:20%;
+          .headline-regular {
+            font-size: 12px;
+            span {
+              font-size: 12px;
+            }
+          }
+        }
+      }
+    }
+    .section-2 {
+      margin-top:80px;
+      .wrapper {
+        flex-direction: column;
+        margin: 0 auto;
+      }
+      &__text {
+        width:100%;
+        margin: 0 auto;
+        .text-regular{
+          margin: 24px 0;
+        }
+      }
+      &__bottom {
+        width:90%;
+        margin: 24px auto;
+        font-size: 16px;
+        line-height: 20px;
+      }
+    }
+    .section-3 {
+      padding-top:24px;
+      h2 {
+        margin-bottom:24px;
+      }
+      h2 > span::after {
+        display: none;
+      }
+      .wrapper {
+        margin : 0 auto;
+      }
+      &__left-part {
+        display: none;
+      }
+      &__right-part {
+        width:100%;
+        margin: 0 auto
+      }
+      &__block-text {
+        padding: 10px 12px;
+        h4 {
+          font-size: 16px;
+          line-height: 20px;
+        }
+        p {
+          font-size: 12px;
+          line-height: 14px;
+        }
+      }
+      &__logo {
+        padding: 0 12px;
+      }
+    }
+    .section-5 {
+      flex-wrap: wrap;
+      width:90%;
+      margin: 24px auto;
+      height: max-content;
+      img {
+        width:30%;
+        height: auto;
+        margin-bottom: 12px;
+      }
     }
   }
 }

@@ -2,6 +2,8 @@
 
 //components
 @import './components//Header.scss';
+@import './components//Footer.scss';
+@import './components/News.scss';
 
 //pages
 @import './pages/mainPage.scss';
@@ -13,4 +15,8 @@ body {
 }
 ul, li, button {
   font-family: inherit;
+}
+p {
+  margin-block-start: 0;
+  margin-block-end: 0;
 }

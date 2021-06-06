@@ -19,7 +19,7 @@
     cursor: pointer;
   }
   &__list-item {
-    padding:24px 16px;
+    padding:24px 0;
     color:$white;
     white-space: nowrap;
     cursor: pointer;
@@ -29,8 +29,15 @@
   }
   &__selected {
     background-color: $white;
+    padding:24px 16px;
     color:$red;
     font-weight: bold;
     box-shadow: 1px 2px 4px #990A20;
+  }
+  @media screen and(max-width:1200px){
+    li {
+      display: none;
+    }
+    padding: 12px 0;
   }
 }
