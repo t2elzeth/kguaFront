@@ -67,10 +67,7 @@ const links = [
   },
   {
     title: 'Персонал',
-    active: false,
-    routes: [
-
-    ]
+    active: false
   },
   {
     title: 'Электронные ресурсы ',
@@ -103,9 +100,6 @@ const links = [
   {
     title: 'Контакты',
     active: false,
-    routes: [
-
-    ]
   },
 ]
 
