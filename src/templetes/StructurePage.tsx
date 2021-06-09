@@ -1,15 +1,15 @@
 import { Header, Footer, News, Sidebar } from '@Components'
 import Head from 'next/head'
 
-export type AboutPageProps = {
+export type StructurePageProps = {
   pageName: string,
   pageTitle: string,
   image: string
 }
 
-const AboutPage: React.FC<AboutPageProps> = ({ pageName, pageTitle, children, image }) => {
+const StructurePage: React.FC<StructurePageProps> = ({ pageName, pageTitle, children, image }) => {
   return (
-    <div className="about-page">
+    <div className="structure-page">
       <Head >
         <title>{pageName}</title>
       </Head>
@@ -28,4 +28,4 @@ const AboutPage: React.FC<AboutPageProps> = ({ pageName, pageTitle, children, im
   )
 }
 
-export default AboutPage
+export default StructurePage

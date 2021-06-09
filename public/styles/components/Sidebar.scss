@@ -1,7 +1,7 @@
 .sidebar {
   border-top:3px solid #ED1A3B;
-  width:max-content;
   margin-right: auto;
+  width:30%;
   &__active-item {
     font-weight: bold!important;
     color: $blue!important;
@@ -14,6 +14,7 @@
     border-bottom: 1px solid #EDEDED;
     padding-bottom: 6px;
     margin-top:4px;
+    cursor:pointer;
   }
   ul {
     list-style: none;

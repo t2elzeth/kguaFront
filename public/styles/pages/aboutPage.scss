@@ -22,17 +22,47 @@
       flex-direction: column;
       width:60%;
       box-sizing: border-box;
+      h4 {
+        font-weight: 600;
+        font-size: 24px;
+        letter-spacing: 0.02em;
+        color: #2E2E2E;
+        margin-bottom: 24px;
+      }
+      h3 {
+        font-weight: normal;
+        font-size: 36px;
+        color: #2E2E2E;
+        margin-bottom: 40px;
+      }
       p {
         font-weight: normal;    
         font-size: 18px;
         line-height: 29px;
         letter-spacing: 0.02em;
-        color: #2E2E2E;
+        color: #464646;
         margin-bottom:24px;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        span {
+          white-space: nowrap;
+          font-weight: bold;
+        }
+        img {
+          width:72px;
+          height:72px;
+        }
       }
       img {
         margin-bottom:24px
       }
     }
+  }
+  &__hymn {
+    background-color:$lightBlue;
+    padding:20px ;
+    box-sizing: border-box;
+    margin-bottom: 40px;
   }
 }

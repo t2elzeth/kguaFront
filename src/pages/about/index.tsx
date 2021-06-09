@@ -1,5 +1,6 @@
-import { IndexPageProps } from '..'
 import { AboutPage } from '../../templetes'
+
+export type IndexPageProps = {}
 
 const IndexPage: React.FC<IndexPageProps> = () => {
   return (
