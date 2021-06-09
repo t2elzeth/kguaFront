@@ -33,6 +33,27 @@
     color:$red;
     font-weight: bold;
     box-shadow: 1px 2px 4px #990A20;
+    position: relative;
+  }
+  &__links {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top: calc(100% + 5px); 
+    z-index: 100;
+    background: $red;
+    padding: 10px;
+    left: 0;
+    width:max-content;
+    a {
+      font-size: 14px;
+      text-decoration: none;
+      cursor: pointer;
+      color:$white;
+      line-height: 150%;
+      margin-top:4px;
+      font-weight: normal;
+    }
   }
   @media screen and(max-width:1200px){
     li {

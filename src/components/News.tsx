@@ -27,8 +27,8 @@ export const News = () => {
         <span>Новости</span>
       </h2>
       <div className="wrapper">
-        {news.map((item) => (
-          <div className="news__item">
+        {news.map((item, index) => (
+          <div className="news__item" key={index}>
             <img className="news__item-img" src={item.img} />
             <p className="news__item-date">{item.date}</p>
             <p className="news__item-title">

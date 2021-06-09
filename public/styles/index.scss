@@ -4,9 +4,11 @@
 @import './components//Header.scss';
 @import './components//Footer.scss';
 @import './components/News.scss';
+@import './components/Sidebar.scss';
 
 //pages
 @import './pages/mainPage.scss';
+@import './pages//aboutPage.scss';
 
 body {
   margin: 0 auto;

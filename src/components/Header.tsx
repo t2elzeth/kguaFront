@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import Link from 'next/link'
 import classnames from 'classnames'
 
 const links = [
@@ -6,7 +7,27 @@ const links = [
     title: 'О КГЮА',
     routes: [
       {
-        title: 'Информация о КГЮА ',
+        title: 'Информация о КГЮА',
+        route: '/about'
+      },
+      {
+        title: 'Структура университета',
+        route: ''
+      },
+      {
+        title: 'Персонал',
+        route: ''
+      },
+      {
+        title: 'Электронные ресурсы',
+        route: ''
+      },
+      {
+        title: 'Ассоциация выпускников',
+        route: ''
+      },
+      {
+        title: 'Жизнь КГЮА',
         route: ''
       },
       {
@@ -14,27 +35,11 @@ const links = [
         route: ''
       },
       {
-        title: 'Информация о КГЮА ',
+        title: 'Виртуальная экскурсия по КГЮА',
         route: ''
       },
       {
-        title: 'Информация о КГЮА ',
-        route: ''
-      },
-      {
-        title: 'Информация о КГЮА ',
-        route: ''
-      },
-      {
-        title: 'Информация о КГЮА ',
-        route: ''
-      },
-      {
-        title: 'Информация о КГЮА ',
-        route: ''
-      },
-      {
-        title: 'Информация о КГЮА ',
+        title: 'Контакты',
         route: ''
       }
     ]
@@ -98,6 +103,13 @@ export const Header = () => {
             onClick={() => onListItemClick(index)}
           >
             {item.title}
+            {selectedItem === index && item.routes.length > 0 &&
+              <div className="header__links">
+                {item?.routes.map((route) => (
+                  <Link href={route.route}>{route.title}</Link>
+                ))}
+              </div>
+            }
           </li>
         ))}
       </ul>
