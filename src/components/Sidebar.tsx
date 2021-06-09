@@ -67,7 +67,8 @@ const links = [
   },
   {
     title: 'Персонал',
-    active: false
+    active: false,
+    route: '/staff',
   },
   {
     title: 'Электронные ресурсы ',
@@ -79,9 +80,7 @@ const links = [
   {
     title: 'Ассоциация выпускников ',
     active: false,
-    routes: [
-
-    ]
+    route: '/alumni-association',
   },
   {
     title: 'Жизнь КГЮА',
@@ -100,6 +99,7 @@ const links = [
   {
     title: 'Контакты',
     active: false,
+    route: '/contacts'
   },
 ]
 
@@ -120,11 +120,17 @@ export const Sidebar = () => {
               selected === index && 'sidebar__active-item',
               'sidebar__item'
             )}>
-            {item.title}
+            {item.route ?
+              <Link href={item.route}>
+                {item.title}
+              </Link>
+              :
+              item.title
+            }
           </p>
           {selected === index && (
             <ul>
-              {item.routes.map((route, index) => (
+              {item?.routes?.map((route, index) => (
                 <Link href={route.route}>
                   <li
                     key={index}

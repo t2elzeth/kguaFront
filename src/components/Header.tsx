@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import Link from 'next/link'
+import { useRouter } from 'next/router'
 import classnames from 'classnames'
 
 const links = [
@@ -84,16 +85,26 @@ const links = [
 ]
 
 export const Header = () => {
-  const [selectedItem, setSelectedItem] = useState(undefined)
+  const router = useRouter()
 
+  const [selectedItem, setSelectedItem] = useState(undefined)
   const onListItemClick = (index) => {
-    setSelectedItem(index)
+    if (selectedItem === index) {
+      setSelectedItem(undefined)
+    }
+    else {
+      setSelectedItem(index)
+    }
   }
 
   return (
     <div className="header">
       <ul>
-        <img src='/images/text-logo.png' alt="logo" className="header__logo" />
+        <img
+          src='/images/text-logo.png'
+          alt="logo" className="header__logo"
+          onClick={() => router.push('/')}
+        />
         {links?.map((item, index) => (
 
           <li key={index}
