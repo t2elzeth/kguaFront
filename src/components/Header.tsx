@@ -48,7 +48,10 @@ const links = [
   {
     title: 'Учебные подразделения',
     routes: [
-
+      {
+        title: 'Структура университета',
+        route: '/structure'
+      },
     ]
   },
   {

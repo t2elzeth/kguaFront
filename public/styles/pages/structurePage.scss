@@ -8,20 +8,129 @@
       font-weight: 500;
       font-size: 36px;
       line-height: 27px;
-      color:$blue;
+      color:$black;
       text-transform: uppercase;
       margin: 40px 0;
     }
-    .body {
-      display: flex;
-      flex-direction: row;
-      margin-top:40px
+  }
+&__institutes {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top:60px;
+  display: grid;
+  grid-template-columns: 30% 30% 30%;
+  a {
+    cursor: pointer;
+    background-image: url('/images/structure-institute-bg.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding:36px;
+    margin-bottom: 60px;
+    height:300px;
+    position: relative;
+    p {
+      font-weight: bold;
+      font-size: 24px;
+      line-height: 27px;
+      color:#0054A6;
+      position: absolute;
+      bottom:32px;
+      left:16px;
+      right:16px;
+      text-transform: uppercase;
     }
-    .content {
-      display: flex;
-      flex-direction: column;
+    img {
       width:60%;
+    }
+    span {
+        width: 0;
+        height: 0;
+        border-top: 50px solid $white; 
+        border-left: 50px solid transparent;
+        position: absolute;
+        right: 0 ;
+        z-index:3;
+        top: 0;
+      }
+    }
+  }
+  &__slider {
+    display: flex;
+    flex-direction: row;
+    img {
+      width:50%;
+    }
+    div {
+      width:50%;
+      background-color: $red;
+      color:$white;
+      padding: 60px 24px;
       box-sizing: border-box;
+      h4 {
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 32px;
+        margin-bottom: 28px;
+      }
+      p {
+        font-size: 18px;
+        line-height: 32px;
+      }
+    }
+  }
+  &__financial {
+    margin-top:60px;
+    h2 {
+      color:$blue
+    }
+    h4 {
+      font-weight: 500;
+      font-size: 36px;
+      line-height: 27px;
+    }
+  }
+  &__departments {
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    justify-content: space-between;
+    margin-top:60px;
+    div {
+      background: #F1F4F9;
+      box-sizing: border-box;
+      padding:60px;
+      margin-bottom: 60px;
+      position: relative;
+      p {
+        font-weight: bold;
+        position: absolute;
+        bottom:32px;
+        left:60px;
+        right:60px;
+        font-size: 18px;
+        line-height: 147.19%;
+        text-align: center;
+        text-transform: uppercase;
+        color: #0054A6;
+      }
+    }
+    div:after{
+      content: "";
+      display: block;
+      padding-bottom: 100%;
+    }
+    div:hover {
+      background-color: $red;
+      cursor: pointer;
+      p {
+        color:$white
+      }
     }
   }
 }

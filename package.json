@@ -33,6 +33,7 @@
     "next-fonts": "^1.5.1",
     "nodemailer": "^6.5.0",
     "react": "16.14.0",
+    "react-collapse": "^5.1.0",
     "react-dom": "16.14.0",
     "react-input-mask": "^2.0.4",
     "sass": "^1.26.11"

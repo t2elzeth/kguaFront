@@ -1,3 +1,4 @@
+import Head from 'next/head'
 import { Header, News, Footer } from '@Components'
 import Image from 'next/image'
 
@@ -6,6 +7,11 @@ export type IndexPageProps = {}
 const IndexPage: React.FC<IndexPageProps> = () => {
   return (
     <div className="main">
+      <Head>
+        <title>
+          Главная
+        </title>
+      </Head>
       <Header />
       <section className="section-1">
         <div className="section-1__wrapper">
