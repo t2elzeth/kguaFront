@@ -17,7 +17,7 @@ const AboutPage: React.FC<AboutPageProps> = ({ pageName, pageTitle, children, im
       <MobileMenu />
       <div className="main">
         <h2>{pageTitle}</h2>
-        <img className="image" src={image} />
+        <img className="mainImage" src={image} />
         <div className="body">
           <Sidebar />
           <div className="content"> {children}</div>

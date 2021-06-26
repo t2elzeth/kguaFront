@@ -1,13 +1,11 @@
 
 import { Fragment, useState } from 'react'
 import { useRouter } from 'next/router'
-import classnames from 'classnames'
 import Link from 'next/link'
 
 const links = [
   {
     title: 'Информация о КГЮА',
-    active: false,
     routes: [
       {
         title: 'Основные сведения',
@@ -45,7 +43,6 @@ const links = [
   },
   {
     title: 'Структура университета',
-    active: true,
     routes: [
       {
         title: 'Ректорат',
@@ -67,64 +64,65 @@ const links = [
   },
   {
     title: 'Персонал',
-    active: false,
     route: '/staff',
   },
   {
     title: 'Электронные ресурсы ',
-    active: false,
     routes: [
 
     ]
   },
   {
     title: 'Ассоциация выпускников ',
-    active: false,
     route: '/alumni-association',
   },
   {
     title: 'Жизнь КГЮА',
-    active: false,
     routes: [
 
     ]
   },
   {
     title: 'Виртуальный тур',
-    active: false,
     routes: [
 
     ]
   },
   {
     title: 'Контакты',
-    active: false,
     route: '/contacts'
   },
 ]
 
 export const MobileMenu = ({ }) => {
 
-  const [selected, setSelected] = useState(false)
+  const [selected, setSelected] = useState(undefined)
   const [isOpen, setIsOpen] = useState(false)
 
-  const onNavClick = (index) => {
-    setSelected(index)
+  const onListItemClick = (index) => {
+    if (selected === index) {
+      setSelected(undefined)
+    }
+    else {
+      setSelected(index)
+    }
   }
-  console.log(selected)
+
   const path = useRouter().pathname
+
   const currentLink = links.find((link) => (
     link?.routes ?
       link.routes?.map((item) => item.route === path)
       : link.route === path
   ))
 
-  const unActiveRoutes = links.filter((link) => (
-    link?.routes ?
-      link.routes?.map((item) => item.route !== path)
-      : link.route !== path
-  ))
+  console.log(links.map((item) => item?.routes?.map((route) => (
+    route.route !== path
+  ))))
 
+  const unActiveRoutes = links.filter((link) => (
+    link.routes?.map((item) => item.route !== path)
+  ))
   return (
     <div className="mobile-menu">
       <div className="mobile-menu__header" onClick={() => setIsOpen(!isOpen)}>
@@ -143,8 +141,7 @@ export const MobileMenu = ({ }) => {
                   href={item.route}
                 >
                   <a
-                    className={classnames(
-                      "text-small")}>
+                    className="text-small">
                     {item.title}
                   </a>
                 </Link>
@@ -154,10 +151,24 @@ export const MobileMenu = ({ }) => {
           {unActiveRoutes.map((route, index) => (
             <Fragment key={index}>
               <a className="text-small-medium"
-                onClick={() => onNavClick(index)}>
+                onClick={() => onListItemClick(index)}>
                 {route.title}
                 {route.routes && <img src='/images/dark-arrow-down.svg' />}
               </a>
+              {selected === index &&
+                <ul >
+                  {route.routes?.map((route) => (
+                    <Link href={route.route}>
+                      <a
+                        className="text-small"
+                        onClick={() => setIsOpen(false)}>
+                        {route.title}
+
+                      </a>
+                    </Link>
+                  ))}
+                </ul>
+              }
             </Fragment>
           ))}
         </div>
