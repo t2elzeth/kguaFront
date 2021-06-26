@@ -159,5 +159,27 @@
         }
       }
     } 
+    &__slider {
+      flex-direction: column;
+      img {
+        width:100%;
+      }
+      div {
+        width:100%;
+        padding:24px;
+      }
+    }
+    &__departments {
+      flex-direction: column;
+      grid-template-columns:100%;
+
+      div {
+        padding:24px;
+        margin-bottom: 24px;
+      }
+      div:after {
+          padding-bottom: 50%;
+      }
+    }
   }
 }
