@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import Link from 'next/link'
+import { BurgerMenu } from '@Components'
 import { useRouter } from 'next/router'
 import classnames from 'classnames'
 
@@ -111,6 +112,8 @@ export const Header = () => {
           alt="logo" className="header__logo"
           onClick={() => router.push('/')}
         />
+        <BurgerMenu links={links} />
+
         {links?.map((item, index) => (
 
           <li key={index}
