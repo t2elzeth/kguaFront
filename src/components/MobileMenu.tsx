@@ -111,7 +111,7 @@ export const MobileMenu = ({ }) => {
   const onNavClick = (index) => {
     setSelected(index)
   }
-
+  console.log(selected)
   const path = useRouter().pathname
   const currentLink = links.find((link) => (
     link?.routes ?
