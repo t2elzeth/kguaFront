@@ -1,9 +1,11 @@
 import React, { useState } from "react";
 import Link from 'next/link'
+import { useRouter } from 'next/router'
 import classnames from "classnames";
 
 export const BurgerMenu: React.FC<any> = ({ links }) => {
   const [isOpen, setIsOpen] = useState(false);
+  const router = useRouter()
 
   const closeNav = () => {
     setIsOpen(false)
@@ -33,7 +35,11 @@ export const BurgerMenu: React.FC<any> = ({ links }) => {
       >
         <div className="wrapper">
           <div className="burger-menu__header">
-            <img src="/images/text-logo.png" className="burger-menu__logo" />
+            <img
+              src="/images/text-logo.png"
+              className="burger-menu__logo"
+              onClick={() => router.push('/')}
+            />
             <div className="burger-menu__icon">
               <img
                 src="/images/close-burger-icon.svg"
