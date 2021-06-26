@@ -98,6 +98,25 @@
       }
     }
   }
+  &__awards {
+    img {
+      width:240px;
+      height:300px
+    }
+    span {
+      font-weight: bold;
+    }
+    p {
+      font-size: 18px;
+      line-height: 32px;
+      letter-spacing: 0.03em;
+      color: #2E2E2E;
+    }
+  }
+  &__awards-block {
+    display: flex;
+    flex-direction: row;
+  }
   @media screen and (max-width:$tablet) {
     .main {
       width:90%;
@@ -125,6 +144,11 @@
           margin-right: 12px;
         }
       }
+    }
+  }
+  &__awards-block {
+    img {
+      display: none;
     }
   }
 }
