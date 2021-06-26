@@ -1,0 +1,14 @@
+version: "3.8"
+
+services:
+  nextjs:
+    build: .
+    container_name: ${PROJECT_NAME}Web
+
+  nginx:
+    image: nginx
+    container_name: ${PROJECT_NAME}Nginx
+    ports:
+      - "8350:80"
+    volumes:
+      - ./nginx.conf:/etc/nginx/conf.d/default.conf
