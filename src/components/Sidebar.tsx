@@ -145,6 +145,8 @@ export const Sidebar = () => {
           )}
         </Fragment>
       ))}
+      <img src="/images/sidebar.png" />
+      <p className="sidebar__virtual">Виртуальный тур по КГЮА</p>
     </div>
   )
 }
