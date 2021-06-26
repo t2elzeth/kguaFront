@@ -1,3 +1,33 @@
+const links = [
+  {
+    title: 'О КГЮА',
+    route: '/',
+  },
+  {
+    title: 'Учебные подразделения',
+    route: '/',
+  },
+  {
+    title: 'Наука',
+    route: '/',
+  },
+  {
+    title: 'Международные сотрудничества',
+    route: '',
+  },
+  {
+    title: 'Поступающим',
+    route: '',
+  },
+  {
+    title: 'Сотрудникам',
+    route: '',
+  },
+  {
+    title: 'Студентам',
+    route: '',
+  }
+]
 const social = [
   '/images/facebook.svg',
   '/images/tiktok.svg',
@@ -5,11 +35,15 @@ const social = [
   '/images/whatsapp.svg',
   '/images/telegram.svg',
 ]
-
 export const Footer = () => {
   return (
     <div className="footer">
       <div className="wrapper">
+        <div className="footer__links">
+          {links.map((link) => (
+            <a>{link.title}</a>
+          ))}
+        </div>
         <div className="footer__address">
           <p>
             180 а Чуй просп., Бишкек 720001 <br />
@@ -18,10 +52,10 @@ export const Footer = () => {
           </p>
           <img className="footer__logo" src='/images/text-logo.png' alt="logo" />
           <div className="footer__social">
-            <p> Мы в социальных сетях</p>
+            <p> Мы в социальных сетях</p>
             <div className="footer__social-icons">
-              {social.map((src, index) => (
-                <img src={src} key={index} />
+              {social.map((src) => (
+                <img src={src} />
               ))}
             </div>
           </div>

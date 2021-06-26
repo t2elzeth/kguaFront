@@ -1,0 +1,72 @@
+@import '../../styles/vars.scss';
+
+.collapse {
+  display: flex;
+  justify-content: space-between;
+  .blocks {
+    width: 100%;
+    .block {
+      padding: 16px;
+      margin-bottom:20px;
+      cursor: pointer;
+      box-sizing: border-box;
+      background: #F1F4F9;
+      box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.15);
+      border-radius: 10px;
+      .titleLine {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        .title {
+          color:#464646;
+          font-weight: bold;
+          font-size: 18px;
+          line-height: 26px;
+          display: flex;
+          flex-direction: column;
+          span {
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 21px;
+            color: #464646;
+          }
+        }
+        img {
+          width:73px;
+          height:73px;
+          border-radius: 50%;
+          margin-right: 40px;
+        }
+      }
+    }
+  }
+}
+.customCollapse {
+  transition: height 500ms;
+  .collapsedContent {
+    padding-top: 16px;
+    font-size: 16px;
+    div {
+      display: flex;
+      flex-direction: row;
+      p {
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 26px;
+        letter-spacing: 0.03em;
+        color: #000000;
+        width:20%;
+        margin-bottom: 4px;
+      }
+      span {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        width:80%;
+        line-height: 21px;
+        letter-spacing: 0.03em;
+        color: #464646;
+      }
+    }
+  }
+}

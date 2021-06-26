@@ -81,7 +81,10 @@ const links = [
   {
     title: 'Студентам',
     routes: [
-
+      {
+        title: 'Студентам',
+        route: 'students'
+      },
     ]
   },
 

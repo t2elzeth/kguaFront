@@ -1,20 +1,23 @@
 @import './vars.scss';
+@import './typography.scss';
 
 //components
 @import './components//Header.scss';
 @import './components//Footer.scss';
 @import './components/News.scss';
 @import './components/Sidebar.scss';
+@import './components/Collapse.scss';
 
 //pages
 @import './pages/mainPage.scss';
 @import './pages//aboutPage.scss';
 @import './pages/structurePage.scss';
+@import './pages/studentsPage.scss';
 
 body {
   margin: 0 auto;
   box-sizing: border-box;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'SFProDisplay', sans-serif;
 }
 ul, li, button {
   font-family: inherit;

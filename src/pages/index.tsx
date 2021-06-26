@@ -21,10 +21,10 @@ const IndexPage: React.FC<IndexPageProps> = () => {
             <p className="headline-regular">
               КГЮА образован в целях совершенствования системы подготовки юридических кадров и повышения качества юридического образования Указом Президента Кыргызской Республики от 12.08.2003г. УП № 264 на базе Центра повышения квалификации
           </p>
-            <button>
+            {/* <button>
               <img src="/images/arrow.svg" alt="arrow" />
               Узнать больше
-          </button>
+          </button> */}
           </div>
           <div className="section-1__box">
             <div>
