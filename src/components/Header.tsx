@@ -70,7 +70,10 @@ const links = [
   {
     title: 'Поступающим',
     routes: [
-
+      {
+        title: 'Поступающим',
+        route: '/incoming'
+      }
     ]
   },
   // {
@@ -84,7 +87,7 @@ const links = [
     routes: [
       {
         title: 'Студентам',
-        route: 'students'
+        route: '/students'
       },
     ]
   },
@@ -114,7 +117,6 @@ export const Header = () => {
       <ul>
         <BurgerMenu links={links} />
         {links?.map((item, index) => (
-
           <li key={index}
             className={classnames(
               'header__list-item',

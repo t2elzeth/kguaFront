@@ -19,7 +19,7 @@
     padding-inline-start: 0;
     align-items: center;
     li {
-      margin-right: 12px;
+      margin-left: 24px;
     }
   }
   &__logo {
@@ -67,6 +67,6 @@
     li {
       display: none;
     }
-    padding: 12px 0;
+    padding: 12px 5%;
   }
 }
