@@ -43,69 +43,69 @@ const links = [
       // },
     ]
   },
-  {
-    title: 'Структура университета',
-    active: true,
-    routes: [
-      {
-        title: 'Ректорат',
-        route: ''
-      },
-      {
-        title: 'Кафедры',
-        route: ''
-      },
-      {
-        title: 'Структурные подразделения',
-        route: ''
-      },
-      {
-        title: 'Учебные подразделения',
-        route: ''
-      },
-    ]
-  },
-  {
-    title: 'Персонал',
-    active: false,
-    route: '/staff',
-  },
-  {
-    title: 'Электронные ресурсы ',
-    active: false,
-    routes: [
+  // {
+  //   title: 'Структура университета',
+  //   active: true,
+  //   routes: [
+  //     {
+  //       title: 'Ректорат',
+  //       route: ''
+  //     },
+  //     {
+  //       title: 'Кафедры',
+  //       route: ''
+  //     },
+  //     {
+  //       title: 'Структурные подразделения',
+  //       route: ''
+  //     },
+  //     {
+  //       title: 'Учебные подразделения',
+  //       route: ''
+  //     },
+  //   ]
+  // },
+  // {
+  //   title: 'Персонал',
+  //   active: false,
+  //   route: '/staff',
+  // },
+  // {
+  //   title: 'Электронные ресурсы ',
+  //   active: false,
+  //   routes: [
 
-    ]
-  },
-  {
-    title: 'Ассоциация выпускников ',
-    active: false,
-    route: '/alumni-association',
-  },
-  {
-    title: 'Жизнь КГЮА',
-    active: false,
-    routes: [
+  //   ]
+  // },
+  // {
+  //   title: 'Ассоциация выпускников ',
+  //   active: false,
+  //   route: '/alumni-association',
+  // },
+  // {
+  //   title: 'Жизнь КГЮА',
+  //   active: false,
+  //   routes: [
 
-    ]
-  },
-  {
-    title: 'Виртуальный тур',
-    active: false,
-    routes: [
+  //   ]
+  // },
+  // {
+  //   title: 'Виртуальный тур',
+  //   active: false,
+  //   routes: [
 
-    ]
-  },
-  {
-    title: 'Контакты',
-    active: false,
-    route: '/contacts'
-  },
+  //   ]
+  // },
+  // {
+  //   title: 'Контакты',
+  //   active: false,
+  //   route: '/contacts'
+  // },
 ]
 
 export const Sidebar = () => {
   const location = useRouter().pathname
-  const [selected, setSelected] = useState(undefined)
+  const [selected, setSelected] = useState(0)
 
   const onItemClick = (index) => {
     setSelected(index)
