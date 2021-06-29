@@ -66,6 +66,7 @@
   @media screen and(max-width:$tablet){
     li {
       display: none;
+      margin-left: 0!important;
     }
     padding: 12px 5%;
   }

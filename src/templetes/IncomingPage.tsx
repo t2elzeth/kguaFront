@@ -9,6 +9,7 @@ export type IncomingPageProps = {
 
 const links = [
   {
+    title: 'Поступающим',
     routes: [
       {
         title: 'Аспирантура и докторантура ',
