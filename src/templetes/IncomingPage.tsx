@@ -7,29 +7,29 @@ export type IncomingPageProps = {
   image: string
 }
 
-const links = [
-  {
-    title: 'Поступающим',
-    routes: [
-      {
-        title: 'Аспирантура и докторантура ',
-        route: '/incoming/graduate-school'
-      },
-      {
-        title: 'Бакалавриат',
-        route: '/incoming/bachelor-degree'
-      },
-      {
-        title: 'Среднее профессиональное образование',
-        route: '/incoming/secondary-education'
-      },
-      {
-        title: 'Правила приёма в КГЮА',
-        route: '/incoming/admission-rules'
-      },
-    ]
-  },
-]
+const links =
+{
+  title: 'Поступающим',
+  routes: [
+    {
+      title: 'Аспирантура и докторантура ',
+      route: '/incoming/graduate-school'
+    },
+    {
+      title: 'Бакалавриат',
+      route: '/incoming/bachelor-degree'
+    },
+    {
+      title: 'Среднее профессиональное образование',
+      route: '/incoming/secondary-education'
+    },
+    {
+      title: 'Правила приёма в КГЮА',
+      route: '/incoming/admission-rules'
+    },
+  ]
+}
+
 const IncomingPage: React.FC<IncomingPageProps> = ({ pageName, pageTitle, children, image }) => {
   return (
     <div className="incoming-page">

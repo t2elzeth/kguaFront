@@ -10,9 +10,6 @@
       .bold {
         font-weight: bold!important;
       }
-      ul {
-        padding-inline-start: 0;
-      }
       h2 {
         font-weight: 500;
         font-size: 36px;
@@ -31,6 +28,9 @@
         flex-direction: column;
         width:70%;
         box-sizing: border-box;
+        ul {
+          padding-inline-start: 0;
+        }
         h4 {
           font-weight: 600;
           font-size: 24px;
