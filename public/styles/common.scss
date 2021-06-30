@@ -1,12 +1,45 @@
-.students-page {
-  margin: 100px 0;
-  .categories {
+.slider {
+  display: flex;
+  flex-direction: row;
+  img {
+    width:50%;
+  }
+  div {
+    width:50%;
+    background-color: $red;
+    color:$white;
+    padding: 60px 24px;
+    box-sizing: border-box;
+    h4 {
+      font-weight: bold;
+      font-size: 24px;
+      line-height: 32px;
+      margin-bottom: 28px;
+    }
+    p {
+      font-size: 18px;
+      line-height: 32px;
+    }
+  }
+  @media screen and (max-width:$tablet) {
+      flex-direction: column;
+      img {
+        width:100%;
+      }
+      div {
+        width:100%;
+        padding:12px;
+      }
+    }
+}
+.categories {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
-    div {
+    a {
       width:30%;
+      text-decoration: none;
       background-color: #F1F4F9;
       box-sizing: border-box;
       display: flex;
@@ -31,16 +64,12 @@
     }
     :hover {
       background-color: $red;
-    }
-    
   }
   @media screen and (max-width:$tablet) {
-    .categories {
       flex-direction: column;
-      div {
-        width:100%;
-        padding:16px;
-      }
+    a {
+      width:100%;
+      padding:16px;
     }
   }
 }

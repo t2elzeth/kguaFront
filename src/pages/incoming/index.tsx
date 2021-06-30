@@ -26,7 +26,7 @@ const categories = [
 const IndexPage = () => {
   return (
     <StructurePage pageName='Поступающим'>
-      <div className="incoming-page__slider">
+      <div className="slider">
         <img src='/images/incoming-1.png' />
         <div>
           <h4>АСПИРАНТУРА</h4>
@@ -42,7 +42,7 @@ const IndexPage = () => {
       <p>
         В настоящее время в составе КГЮА действуют следующие институты:
         </p>
-      <div className="incoming-page__categories">
+      <div className="categories">
         {categories.map((item) => (
           <Link href={item.route}>
             <a>

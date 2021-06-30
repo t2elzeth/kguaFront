@@ -183,10 +183,12 @@
       justify-content: center;
     }
     &__block-text {
+      height:100%;
       background-color: #CF1532;
       box-shadow: 1px 3px 12px #CF1532;
       color:$white;
       padding: 10px 24px;
+      box-sizing: border-box;
     }
   }
   .section-5 {

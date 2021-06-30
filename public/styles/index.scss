@@ -1,5 +1,6 @@
 @import './vars.scss';
 @import './typography.scss';
+@import './common.scss';
 
 //components
 @import './components//Header.scss';
@@ -10,6 +11,7 @@
 @import './components/burger-menu.scss';
 @import './components/mobile-menu.scss';
 @import './components/download.scss';
+
 
 //pages
 @import './pages/mainPage.scss';

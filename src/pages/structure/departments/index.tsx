@@ -62,7 +62,7 @@ const IndexPage = () => {
   return (
     <StructurePage pageName='Высшая школа права'>
       <div className="structure-page__financial">
-        <div className="structure-page__slider">
+        <div className="slider">
           <img src='/images/financial.png' />
           <div>
             <h4>Студенческая совет</h4>

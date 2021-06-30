@@ -12,10 +12,10 @@ const links = [
         title: 'Информация о КГЮА',
         route: '/about'
       },
-      // {
-      //   title: 'Структура университета',
-      //   route: ''
-      // },
+      {
+        title: 'Структура университета',
+        route: '/about/structure'
+      },
       // {
       //   title: 'Персонал',
       //   route: ''

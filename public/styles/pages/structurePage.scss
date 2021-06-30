@@ -68,30 +68,7 @@
       }
     }
   }
-  &__slider {
-    display: flex;
-    flex-direction: row;
-    img {
-      width:50%;
-    }
-    div {
-      width:50%;
-      background-color: $red;
-      color:$white;
-      padding: 60px 24px;
-      box-sizing: border-box;
-      h4 {
-        font-weight: bold;
-        font-size: 24px;
-        line-height: 32px;
-        margin-bottom: 28px;
-      }
-      p {
-        font-size: 18px;
-        line-height: 32px;
-      }
-    }
-  }
+
   &__financial {
     margin-top:60px;
     h2 {
@@ -159,16 +136,6 @@
         }
       }
     } 
-    &__slider {
-      flex-direction: column;
-      img {
-        width:100%;
-      }
-      div {
-        width:100%;
-        padding:24px;
-      }
-    }
     &__departments {
       flex-direction: column;
       grid-template-columns:100%;
