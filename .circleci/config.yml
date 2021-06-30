@@ -13,7 +13,7 @@ jobs:
                   -oStrictHostKeyChecking=no
                   -v
                   $SSH_USER@$SSH_HOST
-                  "sh /home/t2elzeth/sanri/backend/.circleci/deploy.sh"
+                  "sh /home/t2elzeth/kgua/front_kgua/.circleci/deploy.sh"
 
 workflows:
   version: 2
@@ -23,4 +23,4 @@ workflows:
           filters:
             branches:
               only:
-                - master
+                - deploy
