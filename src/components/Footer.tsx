@@ -1,31 +1,31 @@
 const links = [
   {
     title: 'О КГЮА',
-    route: '/',
+    route: '/about',
   },
   {
     title: 'Учебные подразделения',
-    route: '/',
+    route: '/structure',
   },
-  {
-    title: 'Наука',
-    route: '/',
-  },
-  {
-    title: 'Международные сотрудничества',
-    route: '',
-  },
+  // {
+  //   title: 'Наука',
+  //   route: '/',
+  // },
+  // {
+  //   title: 'Международные сотрудничества',
+  //   route: '',
+  // },
   {
     title: 'Поступающим',
-    route: '',
+    route: '/incoming',
   },
-  {
-    title: 'Сотрудникам',
-    route: '',
-  },
+  // {
+  //   title: 'Сотрудникам',
+  //   route: '',
+  // },
   {
     title: 'Студентам',
-    route: '',
+    route: '/students',
   }
 ]
 const social = [
