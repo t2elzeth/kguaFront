@@ -58,7 +58,7 @@
   }
 }
 
-@media screen and (max-width:1200px) {
+@media screen and (max-width:$tablet) {
   .burger-menu{
     display: flex;
     &__icon {

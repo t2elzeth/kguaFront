@@ -9,12 +9,14 @@
 @import './components/Collapse.scss';
 @import './components/burger-menu.scss';
 @import './components/mobile-menu.scss';
+@import './components/download.scss';
 
 //pages
 @import './pages/mainPage.scss';
 @import './pages//aboutPage.scss';
 @import './pages/structurePage.scss';
 @import './pages/studentsPage.scss';
+@import './pages/incomingPage.scss';
 
 body {
   margin: 0 auto;

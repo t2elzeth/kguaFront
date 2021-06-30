@@ -7,11 +7,18 @@
     h2 {
       font-weight: 500;
       font-size: 36px;
-      line-height: 27px;
+      line-height: 40px;
       color:$black;
       text-transform: uppercase;
-      margin: 40px 0;
+      margin-top: 40px;
     }
+  }
+  &__subtitle {
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+    color: #464646;
+    margin-top:12px
   }
 &__institutes {
   display: flex;
@@ -130,6 +137,48 @@
       cursor: pointer;
       p {
         color:$white
+      }
+    }
+  }
+  @media screen and (max-width:$tablet) {
+    .main{
+      width:90%;
+    }
+    &__institutes {
+      flex-direction: column;
+      display: grid;
+      grid-template-columns: 100%;
+      a {
+        padding:12px;
+        height:220px;
+        img {
+          width:35%;
+        }
+        p {
+          font-size: 18px;
+        }
+      }
+    } 
+    &__slider {
+      flex-direction: column;
+      img {
+        width:100%;
+      }
+      div {
+        width:100%;
+        padding:24px;
+      }
+    }
+    &__departments {
+      flex-direction: column;
+      grid-template-columns:100%;
+
+      div {
+        padding:24px;
+        margin-bottom: 24px;
+      }
+      div:after {
+          padding-bottom: 50%;
       }
     }
   }

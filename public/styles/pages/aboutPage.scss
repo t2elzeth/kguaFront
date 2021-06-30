@@ -4,6 +4,9 @@
     margin: 0 auto;
     display: flex;
     flex-direction: column;
+    .mainImage {
+      width:100%;
+    }
     h2 {
       font-weight: 500;
       font-size: 36px;
@@ -123,6 +126,7 @@
       h2 {
         font-size: 24px;
         margin: 40px 0 24px 0;
+        line-height: 28px;
       }
     }
     .body {
