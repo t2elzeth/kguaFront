@@ -3,7 +3,7 @@ import { IncomingPage } from '../../templetes'
 
 const SecondaryEducation: React.FC = () => {
   return (
-    <IncomingPage pageName="Среднее профессиональное образование;" pageTitle='Среднее профессиональное образование;я' image='/images/incoming-2.png'>
+    <IncomingPage pageName="Среднее профессиональное образование" pageTitle='Среднее профессиональное образование' image='/images/incoming-2.png'>
       <h4>Юридический колледж</h4>
       <p>
         специальность «Правоведение» 030503- квалификация – «Юрист»;<br />

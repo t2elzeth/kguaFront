@@ -32,7 +32,7 @@ const links = [
 ]
 const IncomingPage: React.FC<IncomingPageProps> = ({ pageName, pageTitle, children, image }) => {
   return (
-    <div className="about-page">
+    <div className="incoming-page">
       <Head >
         <title>{pageName}</title>
       </Head>

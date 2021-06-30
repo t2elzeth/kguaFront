@@ -58,4 +58,23 @@
     }
     
   }
+  @media screen and (max-width:$tablet) {
+    &__slider {
+      flex-direction: column;
+      img {
+        width:100%;
+      }
+      div {
+        width:100%;
+        padding:12px;
+      }
+    }
+    &__categories {
+      flex-direction: column;
+      div {
+        width:100%;
+        padding:16px;
+      }
+    }
+  }
 }

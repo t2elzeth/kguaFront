@@ -26,35 +26,33 @@ const categories = [
 const IndexPage = () => {
   return (
     <StructurePage pageName='Поступающим'>
-      <div className="incoming-page">
-        <div className="incoming-page__slider">
-          <img src='/images/incoming-1.png' />
-          <div>
-            <h4>АСПИРАНТУРА</h4>
-            <p>
-              В КГЮА также осуществляется подготовка научно-педагогических кадров высшей квалификации в рамках аспирантуры по направлению «Юриспруденция».<br />
+      <div className="incoming-page__slider">
+        <img src='/images/incoming-1.png' />
+        <div>
+          <h4>АСПИРАНТУРА</h4>
+          <p>
+            В КГЮА также осуществляется подготовка научно-педагогических кадров высшей квалификации в рамках аспирантуры по направлению «Юриспруденция».<br />
               Аспирантура является основной формой подготовки научно-педагогических и научных кадров в системе послевузовского профессионального образования предоставляет гражданам возможность повышения уровня образования, научной, педагогической квалификации на базе высшего профессионального образования.
           </p>
-          </div>
         </div>
-        <h2>
-          Поступающим
+      </div>
+      <h2>
+        Поступающим
         </h2>
-        <p>
-          В настоящее время в составе КГЮА действуют следующие институты:
+      <p>
+        В настоящее время в составе КГЮА действуют следующие институты:
         </p>
-        <div className="incoming-page__categories">
-          {categories.map((item) => (
-            <Link href={item.route}>
-              <a>
-                <img src={item.img} />
-                <p>
-                  {item.title}
-                </p>
-              </a>
-            </Link>
-          ))}
-        </div>
+      <div className="incoming-page__categories">
+        {categories.map((item) => (
+          <Link href={item.route}>
+            <a>
+              <img src={item.img} />
+              <p>
+                {item.title}
+              </p>
+            </a>
+          </Link>
+        ))}
       </div>
     </StructurePage >
   )

@@ -1,5 +1,62 @@
 .incoming-page {
-  margin: 100px 0;
+    .main {
+      width:80%;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      .mainImage {
+        width:100%;
+      }
+      .bold {
+        font-weight: bold!important;
+      }
+      ul {
+        padding-inline-start: 0;
+      }
+      h2 {
+        font-weight: 500;
+        font-size: 36px;
+        line-height: 42px;
+        color:$blue;
+        text-transform: uppercase;
+        margin: 40px 0;
+      }
+      .body {
+        display: flex;
+        flex-direction: row;
+        margin-top:40px
+      }
+      .content {
+        display: flex;
+        flex-direction: column;
+        width:60%;
+        box-sizing: border-box;
+        h4 {
+          font-weight: 600;
+          font-size: 24px;
+          letter-spacing: 0.02em;
+          color: #2E2E2E;
+          margin-bottom: 24px;
+        }
+        h3 {
+          font-weight: normal;
+          font-size: 36px;
+          color: #2E2E2E;
+          margin-bottom: 40px;
+        }
+        p {
+          font-weight: normal;    
+          font-size: 18px;
+          line-height: 24px;
+          letter-spacing: 0.02em;
+          color:#2E2E2E;
+          margin-bottom: 24px;
+        }
+        img {
+          margin-bottom:24px
+        }
+      }
+    }
   &__slider {
     display: flex;
     flex-direction: row;
@@ -61,5 +118,41 @@
       background-color: $red;
     }
     
+  }
+  @media screen and (max-width:$tablet) {
+    .main {
+      width:90%;
+      h2 {
+        font-size: 24px;
+        margin: 40px 0 24px 0;
+        line-height: 28px;
+      }
+    }
+    .body {
+      .content {
+        width:100%;
+        p{
+          font-size: 16px;
+          line-height: 24px;
+        }
+      }
+    }
+      &__slider {
+        flex-direction: column;
+        img {
+          width:100%;
+        }
+        div {
+          width:100%;
+          padding:12px;
+        }
+      }
+      &__categories {
+        flex-direction: column;
+        a {
+          width:100%;
+          padding:16px;
+        }
+      }
   }
 }
