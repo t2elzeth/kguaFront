@@ -1,7 +1,7 @@
 .structure-page {
   .main {
     width:80%;
-    margin: 0 auto;
+    margin: 100px auto;
     display: flex;
     flex-direction: column;
     h2 {
@@ -10,7 +10,7 @@
       line-height: 40px;
       color:$black;
       text-transform: uppercase;
-      margin-top: 40px;
+      margin: 24px 0;
     }
   }
   &__subtitle {
