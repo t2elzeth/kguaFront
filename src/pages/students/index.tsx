@@ -8,39 +8,33 @@ const categories = [
   {
     title: "Документы обучающемуся",
     img: "/images/students-2.svg",
-    whiteImg: '',
   },
   {
     title: "Студенческое самоуправление ",
     img: "/images/students-3.svg",
-    whiteImg: '',
   },
   {
     title: "Практика и трудоустройство",
     img: "/images/students-4.svg",
-    whiteImg: '',
   },
   {
     title: "Юридическая клиника",
     img: "/images/students-5.svg",
-    whiteImg: '',
   },
   {
     title: "Иностранным студентам",
     img: "/images/students-6.svg",
-    whiteImg: '',
   },
   {
     title: "Кружки и клубы",
     img: "/images/students-7.svg",
-    whiteImg: '',
   }
 ]
 const IndexPage = () => {
   return (
     <StructurePage pageName='Студентам'>
       <div className="students-page">
-        <div className="students-page__slider">
+        <div className="slider">
           <img src='/images/financial.png' />
           <div>
             <h4>Студенческая совет</h4>
@@ -57,7 +51,7 @@ const IndexPage = () => {
         <p>
           В настоящее время в составе КГЮА действуют следующие институты:
         </p>
-        <div className="students-page__categories">
+        <div className="categories">
           {categories.map((item) => (
             <div>
               <img src={item.img} />

@@ -32,28 +32,28 @@ const IndexPage: React.FC<IndexPageProps> = () => {
                 <span>
                   47
                 </span>
-                Информирование о мероприятиях в КГЮА
+                Информирование <br />о мероприятиях в КГЮА
               </p>
               <hr />
             </div>
             <div>
               <p className="headline-regular">
                 <span>5</span>
-                Информирование о мероприятиях в КГЮА
+                Информирование <br />о мероприятиях в КГЮА
               </p>
               <hr />
             </div>
             <div>
               <p className="headline-regular">
                 <span>6</span>
-                Информирование о мероприятиях в КГЮА
+                Информирование<br /> о мероприятиях в КГЮА
               </p>
               <hr />
             </div>
             <div>
               <p className="headline-regular">
                 <span>2500</span>
-                Информирование о мероприятиях в КГЮА
+                Информирование <br />о мероприятиях в КГЮА
               </p>
             </div>
           </div>

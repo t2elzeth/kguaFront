@@ -12,9 +12,9 @@
   &__links {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
     a {
       color:$white;
+      margin-right: 24px;
       cursor: pointer;
     }
   }
@@ -58,7 +58,11 @@
       width:90%;
     }
     &__links {
-      display: none;
+      flex-direction: column;
+      a {
+        margin-right: 0;
+        margin-bottom: 12px;
+      }
     }
     &__address {
       flex-direction: column;

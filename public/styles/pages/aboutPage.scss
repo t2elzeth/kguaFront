@@ -4,6 +4,9 @@
     margin: 0 auto;
     display: flex;
     flex-direction: column;
+    .mainImage {
+      width:100%;
+    }
     h2 {
       font-weight: 500;
       font-size: 36px;
@@ -20,7 +23,7 @@
     .content {
       display: flex;
       flex-direction: column;
-      width:60%;
+      width:70%;
       box-sizing: border-box;
       h4 {
         font-weight: 600;
@@ -45,6 +48,37 @@
       }
       img {
         margin-bottom:24px
+      }
+    }
+  }
+  &__numbers {
+    display: flex;
+    flex-direction: row;
+    width:100%;
+    box-sizing: border-box;
+    justify-content: space-between;
+    border-top:  2px solid #ED1A3B;
+    border-bottom:  2px solid #ED1A3B;
+    padding:24px 0;
+    margin-bottom: 24px;
+    div {
+      display: flex;
+      flex-direction: row;
+
+      p {
+        color:$black;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        font-size: 14px;
+        line-height: 17px;
+        span {
+          color:$blue;
+          font-weight: 900;
+          font-size: 48px;
+          line-height: 57px;
+        }
       }
     }
   }
@@ -112,6 +146,12 @@
       letter-spacing: 0.03em;
       color: #2E2E2E;
     }
+    .leftImg {
+      margin-left: 24px;
+    }
+    .rightImg {
+      margin-right: 24px;
+    }
   }
   &__awards-block {
     display: flex;
@@ -123,6 +163,7 @@
       h2 {
         font-size: 24px;
         margin: 40px 0 24px 0;
+        line-height: 28px;
       }
     }
     .body {
@@ -134,21 +175,33 @@
         }
       }
     }
-  }
-  &__mission {
-    ul{
-      li {
-        img {
-          width:50px;
-          height:50px;
-          margin-right: 12px;
+    &__numbers {
+      flex-direction: column;
+    }
+    &__awards-block {
+      flex-direction: column-reverse;
+      img {
+        width:100%;
+        margin-left: 0;
+      }
+      .leftImg {
+        margin-left: 0;
+      }
+      .rightImg {
+        margin-right: 0;
+      }
+  
+    }
+    &__mission {
+      ul{
+        li {
+          img {
+            width:50px;
+            height:50px;
+            margin-right: 12px;
+          }
         }
       }
-    }
-  }
-  &__awards-block {
-    img {
-      display: none;
     }
   }
 }

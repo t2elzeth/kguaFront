@@ -1,3 +1,5 @@
+import { useState } from 'react'
+import classnames from 'classnames'
 
 const news = [
   {
@@ -21,6 +23,16 @@ const news = [
 ]
 
 export const News = () => {
+  const [selected, setSelected] = useState(undefined)
+
+  const handleClick = (index) => {
+    if (selected === index) {
+      setSelected(undefined)
+    }
+    else {
+      setSelected(index)
+    }
+  }
   return (
     <div className="news">
       <h2>
@@ -28,13 +40,25 @@ export const News = () => {
       </h2>
       <div className="wrapper">
         {news.map((item, index) => (
-          <div className="news__item" key={index}>
-            <img className="news__item-img" src={item.img} />
-            <p className="news__item-date">{item.date}</p>
-            <p className="news__item-title">
+          <div
+
+            className={classnames(
+              "newsItem",
+              selected === index && "newsOpenItem"
+            )} key={index}>
+            <img className="newsBackgroundImg" src={item.img} />
+            <p className="newsDate">{item.date}</p>
+            <p className="newsTitle">
               {item.title}
             </p>
-            <img className="news__item-button" src="/images/more-icon.svg" />
+            <img
+              onClick={() => handleClick(index)}
+              className="newsButton"
+              src={selected === index ? '/images/close-news-icon.svg' : "/images/more-icon.svg"} />
+            { selected === index &&
+              <p className="newsContent">Кыргызский государственный юридический университет (КГЮА)
+              является государственным высшим профессиональным учебным заведением, выполняющим общегосударственные задачи, центром подготовки кадров в системе высшего образования</p>
+            }
           </div>
         ))}
       </div>

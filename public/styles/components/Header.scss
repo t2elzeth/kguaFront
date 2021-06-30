@@ -1,18 +1,26 @@
 .header {
   width:100%;
   background: $red;
+  display: flex;
+  flex-direction: row;
+  width:100%;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: space-between ;
+  box-sizing: border-box;
+  padding: 0 10%;
   ul {
     display: flex;
     flex-direction: row;
     list-style: none;
     box-sizing: border-box;
-    justify-content: space-between;
     margin-block-start: 0;
     margin-block-end: 0;
     padding-inline-start: 0;
-    width:90%;
-    margin: 0 auto;
     align-items: center;
+    li {
+      margin-left: 24px;
+    }
   }
   &__logo {
     width:152px;
@@ -55,10 +63,11 @@
       font-weight: normal;
     }
   }
-  @media screen and(max-width:1200px){
+  @media screen and(max-width:$tablet){
     li {
       display: none;
+      margin-left: 0!important;
     }
-    padding: 12px 0;
+    padding: 12px 5%;
   }
 }

@@ -2,16 +2,12 @@
   border-top:3px solid #ED1A3B;
   margin-right: auto;
   padding: 12px 0;
-  width:30%;
-  &__active-item {
-    font-weight: bold!important;
-    color: $blue!important;
-  }
+  width:25%;
   &__item {
-    font-weight: normal;
+    font-weight: bold;
+    color: $blue;
     font-size: 16px;
     line-height: 150%;
-    color: #2E2E2E;
     border-bottom: 1px solid #EDEDED;
     padding-bottom: 6px;
     margin-top:4px;

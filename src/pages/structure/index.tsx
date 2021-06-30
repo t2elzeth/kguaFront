@@ -65,7 +65,7 @@ const IndexPage: React.FC<IndexPageProps> = () => {
       <h2>
         Структура университета
       </h2>
-      <p>
+      <p className="structure-page__subtitle">
         В настоящее время в составе КГЮА действуют следующие институты:
       </p>
       <div className="structure-page__institutes">

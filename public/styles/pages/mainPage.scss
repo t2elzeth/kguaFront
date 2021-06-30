@@ -45,7 +45,7 @@
       box-shadow: 0px 5px 17px rgba(0, 0, 0, 0.1);
       border-radius: 5px;
       position: absolute;
-      width:80%;
+      width:max-content;
       align-self: center;
       bottom: -120px;
       left: 0; 
@@ -183,10 +183,12 @@
       justify-content: center;
     }
     &__block-text {
+      height:100%;
       background-color: #CF1532;
       box-shadow: 1px 3px 12px #CF1532;
       color:$white;
       padding: 10px 24px;
+      box-sizing: border-box;
     }
   }
   .section-5 {
