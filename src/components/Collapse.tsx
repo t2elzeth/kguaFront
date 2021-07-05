@@ -39,17 +39,18 @@ export const Collapse: React.FC<CollapseProps> = ({ items }) => {
             key={index}
           >
             <div className='titleLine'>
-              <img src={item.image} />
+              <img src={item.image} className="collapseImage" />
               <p className='title'>{item.name}
                 <span className='subtitle'>{item.position}</span>
               </p>
+              <img src="/images/plus.svg" className="collapseButton" />
             </div>
             <CollapseComponent
               isOpened={selectedItems.includes(index)}
               theme={{ collapse: 'customCollapse' }}
             >
               <div className="collapsedContent">
-                <div> <p>Общий стаж работы </p> <span>{item.experience}</span></div>
+                <div> <p>Общий стаж работы </p><span>{item.experience}</span></div>
                 <div>  <p>Научно-педагогический стаж  </p> <span> {item.experience}</span></div>
                 <div><p> Образование </p> <span dangerouslySetInnerHTML={{ __html: item.content }} ></span></div>
               </div>

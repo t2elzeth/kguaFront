@@ -1,4 +1,4 @@
-import { StructurePage } from '../../templetes'
+import { WithoutSideBar } from '../../templetes'
 
 const categories = [
   {
@@ -32,7 +32,7 @@ const categories = [
 ]
 const IndexPage = () => {
   return (
-    <StructurePage pageName='Студентам'>
+    <WithoutSideBar pageName='Студентам'>
       <div className="students-page">
         <div className="slider">
           <img src='/images/financial.png' />
@@ -62,7 +62,7 @@ const IndexPage = () => {
           ))}
         </div>
       </div>
-    </StructurePage>
+    </WithoutSideBar>
   )
 }
 export default IndexPage

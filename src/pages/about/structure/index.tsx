@@ -1,4 +1,4 @@
-import { StructurePage } from '../../../templetes'
+import { WithoutSideBar } from '../../../templetes'
 import Link from 'next/link'
 export type IndexPageProps = {}
 
@@ -6,24 +6,28 @@ const categories = [
   {
     title: "Ректорат",
     img: "/images/students-1.svg",
+    route: '/about/structure/administration'
   },
   {
     title: "Учебные подразделения ",
     img: "/images/students-2.svg",
+    route: '/about/structure/structural-units'
   },
   {
     title: "Структурные подразделения",
     img: "/images/students-3.svg",
+    route: '/about/structure/training-units'
   },
   {
     title: "Кафедры",
     img: "/images/students-4.svg",
+    route: '/about/structure/departments'
   },
 ]
 
 const IndexPage: React.FC<IndexPageProps> = () => {
   return (
-    <StructurePage pageName="Структура университета">
+    <WithoutSideBar pageName="Структура университета">
       <img src="/images/incoming-2.png" />
       <h2>
         Структура университета
@@ -33,7 +37,7 @@ const IndexPage: React.FC<IndexPageProps> = () => {
       </p>
       <div className="categories">
         {categories.map((item) => (
-          <Link href="/">
+          <Link href={item.route}>
             <a>
               <img src={item.img} />
               <p>
@@ -43,7 +47,7 @@ const IndexPage: React.FC<IndexPageProps> = () => {
           </Link>
         ))}
       </div>
-    </StructurePage >
+    </WithoutSideBar >
   )
 }
 

@@ -1,4 +1,4 @@
-import { StructurePage } from '../../../templetes'
+import { WithoutSideBar } from '../../../templetes'
 import { Collapse } from '@Components'
 
 const departments = [
@@ -30,7 +30,7 @@ const staff = [
         Диплом от 18 мая 1999 года –№1657
         2007 - Кандидат юридических наук.Специальность:
         12.00.02 – конституционное право; муниципальное право`,
-    image: "/images/first-section.png",
+    image: "/images/collapse.png",
   },
   {
     position: "Ректор Кыргызского государственного юридического университета",
@@ -42,7 +42,7 @@ const staff = [
         Диплом от 18 мая 1999 года –№1657
         2007 - Кандидат юридических наук.Специальность:
         12.00.02 – конституционное право; муниципальное право`,
-    image: "/images/first-section.png",
+    image: "/images/collapse.png",
   },
   {
     position: "Ректор Кыргызского государственного юридического университета",
@@ -54,13 +54,13 @@ const staff = [
         Диплом от 18 мая 1999 года –№1657
         2007 - Кандидат юридических наук.Специальность:
         12.00.02 – конституционное право; муниципальное право`,
-    image: "/images/first-section.png",
+    image: "/images/collapse.png",
   },
 ];
 
 const IndexPage = () => {
   return (
-    <StructurePage pageName='Высшая школа права'>
+    <WithoutSideBar pageName='Высшая школа права'>
       <div className="structure-page__financial">
         <div className="slider">
           <img src='/images/financial.png' />
@@ -94,7 +94,7 @@ const IndexPage = () => {
         <Collapse items={staff} />
 
       </div>
-    </StructurePage>
+    </WithoutSideBar>
   )
 }
 export default IndexPage

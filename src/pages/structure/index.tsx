@@ -1,4 +1,4 @@
-import { StructurePage } from '../../templetes'
+import { WithoutSideBar } from '../../templetes'
 
 export type IndexPageProps = {}
 
@@ -61,7 +61,7 @@ const institutions = [
 
 const IndexPage: React.FC<IndexPageProps> = () => {
   return (
-    <StructurePage pageName="Структура университета">
+    <WithoutSideBar pageName="Структура университета">
       <h2>
         Структура университета
       </h2>
@@ -76,7 +76,7 @@ const IndexPage: React.FC<IndexPageProps> = () => {
           </a>
         ))}
       </div>
-    </StructurePage>
+    </WithoutSideBar>
   )
 }
 
