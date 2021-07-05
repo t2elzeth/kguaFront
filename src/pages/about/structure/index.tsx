@@ -1,4 +1,4 @@
-import { WithoutSideBar } from '../../../templetes'
+import { WithoutSideBar } from '../../../templates'
 import Link from 'next/link'
 export type IndexPageProps = {}
 
@@ -11,12 +11,12 @@ const categories = [
   {
     title: "Учебные подразделения ",
     img: "/images/students-2.svg",
-    route: '/about/structure/structural-units'
+    route: '/structure'
   },
   {
     title: "Структурные подразделения",
     img: "/images/students-3.svg",
-    route: '/about/structure/training-units'
+    route: '/about/structure/structural-units'
   },
   {
     title: "Кафедры",

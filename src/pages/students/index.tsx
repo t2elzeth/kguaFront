@@ -1,4 +1,4 @@
-import { WithoutSideBar } from '../../templetes'
+import { WithoutSideBar } from '../../templates'
 
 const categories = [
   {

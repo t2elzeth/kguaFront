@@ -23,7 +23,7 @@ const links =
 
     {
       title: 'Учебные подразделения ',
-      route: '/about/structure/training-units'
+      route: '/structure'
     },
     {
       title: 'Кафедры',

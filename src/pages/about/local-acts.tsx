@@ -1,4 +1,4 @@
-import { AboutPage } from '../../templetes'
+import { AboutPage } from '../../templates'
 import { Download } from '@Components'
 
 export type LocalActsPageProps = {}

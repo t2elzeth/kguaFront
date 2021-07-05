@@ -1,14 +1,15 @@
-import { StructurePage } from '../../../templetes/'
+import { WithoutSideBar } from '../../../templates'
 
-const AdministrationPage = () => {
-  <StructurePage pageName="Ректорат">
-    <h2>
-      Ректорат
+const Departments = () => {
+  return (
+    <WithoutSideBar pageName="Кафедры">
+      <h2>
+        Кафедры
     </h2>
-    <img />
-    <p>
-      Свою миссию КГЮА видит в укреплении позиции университета как ведущего, социально ориентированного вуза в области образования и развитие его как центра фундаментальных научных и экспертно-аналитических исследований в области права.
+      <p>
+        Реализацию образовательных программ КГЮА обеспечивают 18 кафедр, где работает высококвалифицированный профессорско-преподавательский состав
     </p>
-  </StructurePage>
+    </WithoutSideBar>
+  )
 }
-export default AdministrationPage
+export default Departments

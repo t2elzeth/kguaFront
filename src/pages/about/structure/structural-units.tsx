@@ -1,14 +1,16 @@
-import { StructurePage } from '../../../templetes/'
+import { StructurePage } from '../../../templates'
 
-const AdministrationPage = () => {
-  <StructurePage pageName="Ректорат">
-    <h2>
-      Ректорат
-    </h2>
-    <img />
-    <p>
-      Свою миссию КГЮА видит в укреплении позиции университета как ведущего, социально ориентированного вуза в области образования и развитие его как центра фундаментальных научных и экспертно-аналитических исследований в области права.
-    </p>
-  </StructurePage>
+
+const StructuralUnits = () => {
+  return (
+    <StructurePage pageName="Струтурные подразделения" pageTitle="Структурные подразделения" image="/images/symbolism.png">
+      <div className="structural-unit">
+        <img src='/images/plus.svg' />
+        <p>
+          ИПЦ Мастерская права
+        </p>
+      </div>
+    </StructurePage>
+  )
 }
-export default AdministrationPage
+export default StructuralUnits

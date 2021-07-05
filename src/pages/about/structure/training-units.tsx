@@ -1,4 +1,4 @@
-import { StructurePage } from '../../../templetes'
+import { StructurePage } from '../../../templates'
 
 const AdministrationPage = () => {
   <StructurePage pageName="Ректорат">

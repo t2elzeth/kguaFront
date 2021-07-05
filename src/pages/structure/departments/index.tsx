@@ -1,4 +1,4 @@
-import { WithoutSideBar } from '../../../templetes'
+import { WithoutSideBar } from '../../../templates'
 import { Collapse } from '@Components'
 
 const departments = [
