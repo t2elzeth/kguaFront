@@ -93,9 +93,25 @@ const links = [
   },
 
 ]
-
+const LANG = [
+  {
+    title: "EN",
+    locale: 'en'
+  },
+  {
+    title: "Рус",
+    locale: 'ru'
+  },
+  {
+    title: "Кыр",
+    locale: 'kg'
+  },
+]
 export const Header = () => {
+  const [open, setOpen] = useState(false)
+
   const router = useRouter()
+  const path = useRouter().pathname
 
   const [selectedItem, setSelectedItem] = useState(undefined)
   const onListItemClick = (index) => {
@@ -115,7 +131,6 @@ export const Header = () => {
         onClick={() => router.push('/')}
       />
       <ul>
-        <BurgerMenu links={links} />
         {links?.map((item, index) => (
           <li key={index}
             className={classnames(
@@ -134,6 +149,27 @@ export const Header = () => {
           </li>
         ))}
       </ul>
-    </div>
+      <div className="header__lang">
+        <button className='header__list-item' onClick={() => setOpen(!open)}>
+          {LANG.filter((item) => item.locale === router.locale)[0].title}
+          <img src="/images/arrow-down.svg" />
+        </button>
+        {open && (
+          <div >
+            {
+              LANG.map((item) => (
+                <Link
+                  href={path}
+                  locale={item.locale}
+                >
+                  <a>{item.title}</a>
+                </Link>
+              ))
+            }
+          </div>
+        )}
+      </div>
+      <BurgerMenu links={links} />
+    </div >
   )
 }

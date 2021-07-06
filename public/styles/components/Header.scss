@@ -63,6 +63,36 @@
       font-weight: normal;
     }
   }
+  &__lang {
+    position: relative;
+    button {
+      background: transparent;
+      color: white;
+      font-size: 18px;
+      border:none;
+      cursor: pointer;
+      img {
+        margin-left: 4pxg;
+      }
+    }
+    div {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top: calc(100% + 5px); 
+    z-index: 100;
+    background: $red;
+    padding: 10px;
+    left: 0;
+    width:max-content;
+    a {
+      text-decoration: none;
+      color:white;
+      cursor: pointer;
+      margin-bottom: 8px;
+    }
+    }
+  }
   @media screen and(max-width:$tablet){
     li {
       display: none;

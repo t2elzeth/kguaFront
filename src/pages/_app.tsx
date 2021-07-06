@@ -1,8 +1,8 @@
 import React from 'react'
-
+import { appWithTranslation } from 'next-i18next'
 import '../../public/styles/index.scss'
 
-export default function MyApp({
+function MyApp({
   Component,
   pageProps,
 }: {
@@ -11,3 +11,4 @@ export default function MyApp({
 }) {
   return <Component {...pageProps} />
 }
+export default appWithTranslation(MyApp)

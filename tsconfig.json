@@ -54,7 +54,7 @@
   },
   "include": [
     "src/**/*"
-  ],
+, "next-i18next.config.js"  ],
   "exclude": [
     "**/ui-kit",
     "**/node_modules",
