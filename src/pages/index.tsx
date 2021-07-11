@@ -88,7 +88,7 @@ const IndexPage: React.FC<IndexPageProps> = () => {
           <div className="section-3__right-part">
             <div className="section-3__block">
               <div className="section-3__logo">
-                <img src="/images/third-section-logo-1.png" alt="company-logo" />
+                <img src="/images/faculty-logo-1.png" alt="company-logo" />
               </div>
               <div className="section-3__block-text">
                 <h4>
@@ -102,7 +102,7 @@ const IndexPage: React.FC<IndexPageProps> = () => {
 
             <div className="section-3__block">
               <div className="section-3__logo">
-                <img src="/images/third-section-logo-2.png" alt="company-logo" />
+                <img src="/images/faculty-logo-2.png" alt="company-logo" />
               </div>
               <div className="section-3__block-text">
                 <h4>
@@ -115,7 +115,7 @@ const IndexPage: React.FC<IndexPageProps> = () => {
             </div>
             <div className="section-3__block">
               <div className="section-3__logo">
-                <img src="/images/third-section-logo-3.png" alt="company-logo" />
+                <img src="/images/faculty-logo-3.png" alt="company-logo" />
               </div>
               <div className="section-3__block-text">
                 <h4>
@@ -128,24 +128,11 @@ const IndexPage: React.FC<IndexPageProps> = () => {
             </div>
             <div className="section-3__block">
               <div className="section-3__logo">
-                <img src="/images/third-section-logo-4.png" alt="company-logo" />
+                <img src="/images/faculty-logo-4.png" alt="company-logo" />
               </div>
               <div className="section-3__block-text">
                 <h4>
                   ИНСТИТУТ ПРАВОСУДИЯ И ПРОКУРАТУРЫ
-                </h4>
-                <p className="headline-regular">
-                  КГЮА образован в целях совершенствования системы подготовки юридических кадров и повышения качества юридического образования
-                </p>
-              </div>
-            </div>
-            <div className="section-3__block">
-              <div className="section-3__logo">
-                <img src="/images/third-section-logo-2.png" alt="company-logo" />
-              </div>
-              <div className="section-3__block-text">
-                <h4>
-                  ИНСТИТУТ АДВОКАТУРЫ И ЮСТИЦИИ
                 </h4>
                 <p className="headline-regular">
                   КГЮА образован в целях совершенствования системы подготовки юридических кадров и повышения качества юридического образования

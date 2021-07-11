@@ -5,56 +5,56 @@ export type IndexPageProps = {}
 const institutions = [
   {
     title: 'Высшая школа права​',
-    img: '/images/third-section-logo-1.png',
+    img: '/images/faculty-logo-1.png',
     route: "structure/departments"
   },
   {
     title: 'Высшая школа экономики и бизнеса​',
-    img: '/images/third-section-logo-3.png',
+    img: '/images/faculty-logo-3.png',
     route: ""
   },
   {
     title: 'Высшая IT-школа​ ',
-    img: '/images/third-section-logo-4.png',
+    img: '/images/faculty-logo-4.png',
     route: ""
   },
   {
     title: 'Факультет заочного и дистанционного обучения ​',
-    img: '/images/third-section-logo-2.png',
+    img: '/images/faculty-logo-2.png',
     route: ""
   },
   {
     title: 'Институт магистратуры и Phd-программ ​',
-    img: '',
+    img: '/images/faculty-logo-5.png',
     route: ""
   },
   {
     title: 'Факультет социальных наук',
-    img: ''
+    img: '/images/faculty-logo-6.png'
   },
   {
     title: 'Факультет медиа и коммуникаций',
-    img: '',
+    img: '/images/faculty-logo-7.png',
     route: ""
   },
   {
     title: 'Факультет дополнительных образовательных программ ​',
-    img: '',
+    img: '/images/faculty-logo-8.png',
     route: ""
   },
   {
-    title: 'академический лицей ',
-    img: '',
+    title: 'Академический лицей ',
+    img: '/images/faculty-logo-9.png',
     route: ""
   },
   {
     title: 'Профессиональный лицей 99',
-    img: '',
+    img: '/images/faculty-logo-10.png',
     route: ""
   },
   {
     title: 'Иссык-Кульский юридический институт ',
-    img: '',
+    img: '/images/faculty-logo-11.png',
     route: ""
   },
 ]
