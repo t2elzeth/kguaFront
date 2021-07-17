@@ -1,14 +1,15 @@
 import { StructurePage } from '../../../templates'
 
-
 const StructuralUnits = () => {
   return (
-    <StructurePage pageName="Струтурные подразделения" pageTitle="Структурные подразделения" image="/images/symbolism.png">
+    <StructurePage
+      pageName="Струтурные подразделения"
+      pageTitle="Структурные подразделения"
+      image="/images/symbolism.png"
+    >
       <div className="structural-unit">
-        <img src='/images/plus.svg' />
-        <p>
-          ИПЦ Мастерская права
-        </p>
+        <img src="/images/plus.svg" alt="" />
+        <p>ИПЦ Мастерская права</p>
       </div>
     </StructurePage>
   )

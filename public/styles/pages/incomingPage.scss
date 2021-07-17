@@ -1,70 +1,71 @@
 .incoming-page {
-    .main {
-      width:80%;
-      margin: 0 auto;
+  .main {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    max-width: 1180px;
+    .mainImage {
+      width: 100%;
+    }
+    .bold {
+      font-weight: bold !important;
+    }
+    h2 {
+      font-weight: 500;
+      font-size: 36px;
+      line-height: 42px;
+      color: $blue;
+      text-transform: uppercase;
+      margin: 40px 0;
+    }
+    .body {
+      display: flex;
+      flex-direction: row;
+      margin-top: 40px;
+    }
+    .content {
       display: flex;
       flex-direction: column;
-      .mainImage {
-        width:100%;
+      width: 70%;
+      box-sizing: border-box;
+      ul {
+        padding-inline-start: 0;
       }
-      .bold {
-        font-weight: bold!important;
+      h4 {
+        font-weight: 600;
+        font-size: 24px;
+        letter-spacing: 0.02em;
+        color: #2e2e2e;
+        margin-bottom: 24px;
       }
-      h2 {
-        font-weight: 500;
+      h3 {
+        font-weight: normal;
         font-size: 36px;
-        line-height: 42px;
-        color:$blue;
-        text-transform: uppercase;
-        margin: 40px 0;
+        color: #2e2e2e;
+        margin-bottom: 40px;
       }
-      .body {
-        display: flex;
-        flex-direction: row;
-        margin-top:40px
+      p {
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 24px;
+        letter-spacing: 0.02em;
+        color: #2e2e2e;
+        margin-bottom: 24px;
       }
-      .content {
-        display: flex;
-        flex-direction: column;
-        width:70%;
-        box-sizing: border-box;
-        ul {
-          padding-inline-start: 0;
-        }
-        h4 {
-          font-weight: 600;
-          font-size: 24px;
-          letter-spacing: 0.02em;
-          color: #2E2E2E;
-          margin-bottom: 24px;
-        }
-        h3 {
-          font-weight: normal;
-          font-size: 36px;
-          color: #2E2E2E;
-          margin-bottom: 40px;
-        }
-        p {
-          font-weight: normal;    
-          font-size: 18px;
-          line-height: 24px;
-          letter-spacing: 0.02em;
-          color:#2E2E2E;
-          margin-bottom: 24px;
-        }
-        img {
-          margin-bottom:24px
-        }
+      img {
+        margin-bottom: 24px;
       }
     }
+  }
 
   h2 {
     margin-bottom: 24px;
   }
 
-  @media screen and (max-width:$tablet) {
+  @media screen and (max-width: $tablet) {
     .main {
-      width:90%;
+      width: 90%;
       h2 {
         font-size: 24px;
         margin: 40px 0 24px 0;
@@ -73,8 +74,8 @@
     }
     .body {
       .content {
-        width:100%;
-        p{
+        width: 100%;
+        p {
           font-size: 16px;
           line-height: 24px;
         }

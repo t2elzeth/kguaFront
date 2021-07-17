@@ -2,19 +2,17 @@ import { Header, Footer, News } from '@Components'
 import Head from 'next/head'
 
 export type WithoutSideBarProps = {
-  pageName: string,
+  pageName: string
 }
 
-const WithoutSideBar: React.FC<WithoutSideBarProps> = ({ pageName, children, }) => {
+const WithoutSideBar: React.FC<WithoutSideBarProps> = ({ pageName, children }) => {
   return (
     <div className="structure-page">
-      <Head >
+      <Head>
         <title>{pageName}</title>
       </Head>
       <Header />
-      <div className="main">
-        {children}
-      </div>
+      <div className="main">{children}</div>
       <News />
       <Footer />
     </div>
