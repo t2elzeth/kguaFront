@@ -101,5 +101,12 @@
       display: none;
       margin-left: 0 !important;
     }
+    .wrapper {
+      margin: 0 auto;
+      justify-content: initial;
+      align-items: unset;
+      display: flex;
+      flex-direction: column;
+    }
   }
 }
