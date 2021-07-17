@@ -6,7 +6,7 @@
   top: 0;
   bottom: 0;
   left: 0;
-  background-color:$red;
+  background-color: $red;
   overflow-x: hidden;
   transition: 0.5s;
   flex-direction: column;
@@ -18,9 +18,14 @@
     width: 0;
   }
   .wrapper {
-    width:90%;
+    width: 90%;
     margin: 0 auto;
-    height:calc(100vh - 80px)
+    height: calc(100vh - 80px);
+    justify-content: initial;
+    align-items: unset;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
   }
   &__icon {
     cursor: pointer;
@@ -38,31 +43,31 @@
   &__content {
     display: flex;
     flex-direction: column;
-    margin-top:12px;
+    margin-top: 12px;
     li {
-      display: flex!important;
+      display: flex !important;
       padding: 12px 0;
-      color:$white;
+      color: $white;
       justify-content: space-between;
     }
   }
   &__links {
     display: flex;
     flex-direction: column;
-    margin-left: 12px;;
+    margin-left: 12px;
     a {
       text-decoration: none;
       color: $white;
-      margin-top:12px;
+      margin-top: 12px;
     }
   }
 }
 
-@media screen and (max-width:$tablet) {
-  .burger-menu{
+@media screen and (max-width: $tablet) {
+  .burger-menu {
     display: flex;
     &__links {
-      a { 
+      a {
         margin: 12px 0;
       }
     }
