@@ -1,82 +1,78 @@
-import { StructurePage } from '../../templetes'
-
-export type IndexPageProps = {}
+import WithoutSideBar from '../../templates/WithoutSideBar'
 
 const institutions = [
   {
-    title: 'Высшая школа права​',
-    img: '/images/third-section-logo-1.png',
-    route: "structure/departments"
+    title: 'Инситут бизнес права',
+    img: '/images/faculty-logo-1.png',
+    route: 'structure/departments/business-law',
   },
   {
-    title: 'Высшая школа экономики и бизнеса​',
-    img: '/images/third-section-logo-3.png',
-    route: ""
+    title: 'Институт адвокатуры и юстиции',
+    img: '/images/faculty-logo-3.png',
+    route: 'structure/departments/law',
   },
   {
-    title: 'Высшая IT-школа​ ',
-    img: '/images/third-section-logo-4.png',
-    route: ""
+    title: 'IT-Академия',
+    img: '/images/faculty-logo-4.png',
+    route: 'structure/departments/it',
   },
   {
-    title: 'Факультет заочного и дистанционного обучения ​',
-    img: '/images/third-section-logo-2.png',
-    route: ""
+    title: 'Институт международного права и международных отношений​',
+    img: '/images/faculty-logo-2.png',
+    route: 'structure/departments/international-relations',
   },
   {
-    title: 'Институт магистратуры и Phd-программ ​',
-    img: '',
-    route: ""
+    title: 'Институт правосудия и прокуратуры​',
+    img: '/images/faculty-logo-5.png',
+    route: 'structure/departments/prosecution',
   },
   {
-    title: 'Факультет социальных наук',
-    img: ''
+    title: 'Институт экономики и управления',
+    img: '/images/faculty-logo-6.png',
+    route: 'structure/departments/economics-management',
   },
-  {
-    title: 'Факультет медиа и коммуникаций',
-    img: '',
-    route: ""
-  },
-  {
-    title: 'Факультет дополнительных образовательных программ ​',
-    img: '',
-    route: ""
-  },
-  {
-    title: 'академический лицей ',
-    img: '',
-    route: ""
-  },
-  {
-    title: 'Профессиональный лицей 99',
-    img: '',
-    route: ""
-  },
-  {
-    title: 'Иссык-Кульский юридический институт ',
-    img: '',
-    route: ""
-  },
+  // {
+  //   title: 'Факультет медиа и коммуникаций',
+  //   img: '/images/faculty-logo-7.png',
+  // },
+  // {
+  //   title: 'Факультет дополнительных образовательных программ ​',
+  //   img: '/images/faculty-logo-8.png',
+  //   route: '',
+  // },
+  // {
+  //   title: 'Академический лицей ',
+  //   img: '/images/faculty-logo-9.png',
+  //   route: '',
+  // },
+  // {
+  //   title: 'Профессиональный лицей 99',
+  //   img: '/images/faculty-logo-10.png',
+  //   route: '',
+  // },
+  // {
+  //   title: 'Иссык-Кульский юридический институт ',
+  //   img: '/images/faculty-logo-11.png',
+  //   route: '',
+  // },
 ]
 
-const IndexPage: React.FC<IndexPageProps> = () => {
+const IndexPage: React.FC = () => {
   return (
-    <StructurePage pageName="Структура университета">
-      <h2>
-        Структура университета
-      </h2>
+    <WithoutSideBar pageName="Структура университета">
+      <h2>Структура университета</h2>
       <p className="structure-page__subtitle">
         В настоящее время в составе КГЮА действуют следующие институты:
       </p>
       <div className="structure-page__institutes">
-        {institutions.map((item) => (
-          <a href={item.route}>
-            <img src={item.img} />
+        {institutions.map((item, index) => (
+          <a href={item.route} key={index}>
+            <img src={item.img} alt="" />
             <p>{item.title}</p>
           </a>
         ))}
       </div>
-    </StructurePage>
+    </WithoutSideBar>
   )
 }
 

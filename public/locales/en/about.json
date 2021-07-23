@@ -1,0 +1,25 @@
+{
+  "main": "The Kyrgyz State Law University (KSLA) is a state higher professional educational institution that performs national tasks, a center for training personnel in the system of higher education and postgraduate training in the field of jurisprudence, economics, management and information technology. ",
+  "mission": {
+    "title": "KSLA sees its mission in strengthening the position of the university as a leading, socially oriented university in the field of education and its development as a center for fundamental scientific and expert-analytical research in the field of law. The vision of the university: KSLA strives to be:",
+    "firstMission": "an active participant in the political, socio-economic and cultural development of the Kyrgyz Republic;",
+    "secondMission": "open for establishing partnerships with communities in educational, scientific projects;    ",
+    "thirdMission": "a center for the creation and transfer of their knowledge, skills, resources and values; a scientific community that develops a dynamic scientific environment, a community of engaged students and staff who share the responsibility for fulfilling the mission of the university and are recognized for their contribution to its development."
+  },
+  "strategy": {
+    "text1": "The goal  of the strategic development of the KSLU is to make the university one of the top 10 universities in the Kyrgyz Republic in terms of the quality of its competencies and developments, and to make a significant practical contribution to expert and analytical research in the field of law of the Kyrgyz Republic, and to form an advanced expert and advisory, analytical center in the field of law on the basis of the university.",
+    "text2": "This should allow the university to go out in its functions to stand on a par with universities that have a recognizable brand, to become the flagship of legal education in the country.",
+    "text3": "To implement the mission and achieve the goal of strategic development, the following areas of development of the KSLU were identified:",
+    "direction": "Direction",
+    "direction1": "Modernization of the educational process based on the development of innovative educational programs.",
+    "direction2": "Development of human resources.",
+    "direction3": "Modernization of research and expert activities.",
+    "direction4": "Development of international cooperation.",
+    "direction5": "Development of a socially responsible person.",
+    "direction6": "Strengthening the financial and economic situation.",
+    "direction7": " Infrastructure modernization."
+  },
+  "symbolism": {
+    "motto": "A confident step into the future!"
+  }
+}

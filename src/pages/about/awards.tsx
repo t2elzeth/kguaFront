@@ -1,4 +1,4 @@
-import { AboutPage } from '../../templetes'
+import { AboutPage } from '../../templates'
 
 export type AwardsPageProps = {}
 

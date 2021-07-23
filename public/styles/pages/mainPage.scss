@@ -1,29 +1,33 @@
 .main {
   .section-1 {
     position: relative;
-    background-size:cover;
-    background-image:  
-      radial-gradient(57.98% 46.59% at -0.27% 50.97%, rgba(14, 14, 14, 0.9) 0%, rgba(0, 0, 0, 0.243) 100%), 
-      url("/images/first-section.png");
+    background-size: cover;
+    background-image: radial-gradient(
+        57.98% 46.59% at -0.27% 50.97%,
+        rgba(14, 14, 14, 0.9) 0%,
+        rgba(0, 0, 0, 0.243) 100%
+      ),
+      url('/images/first-section.png');
     background-position: 100% 100%;
     &__wrapper {
-      width:90%;
+      width: 90%;
       margin: 0 auto;
+      max-width: 1180px;
       box-sizing: border-box;
     }
     &__text {
       display: flex;
       flex-direction: column;
-      padding:120px 0 150px 0;
-      width:50%;
-      color:$white;
+      padding: 200px 0 200px 0;
+      width: 50%;
+      color: $white;
       button {
-        margin-top:56px;
-        background:transparent;
-        border:none;
-        color:white;
+        margin-top: 56px;
+        background: transparent;
+        border: none;
+        color: white;
         cursor: pointer;
-        width:max-content;
+        width: max-content;
         display: flex;
         align-items: center;
         flex-direction: row;
@@ -32,7 +36,7 @@
         line-height: 17px;
         img {
           background-color: $white;
-          padding:14px 12px;
+          padding: 14px 12px;
           border-radius: 50%;
           margin-right: 16px;
         }
@@ -45,33 +49,33 @@
       box-shadow: 0px 5px 17px rgba(0, 0, 0, 0.1);
       border-radius: 5px;
       position: absolute;
-      width:max-content;
+      width: max-content;
       align-self: center;
       bottom: -120px;
-      left: 0; 
-      right: 0; 
-      margin-left: auto; 
-      margin-right: auto; 
+      left: 0;
+      right: 0;
+      margin-left: auto;
+      margin-right: auto;
       padding: 50px;
       box-sizing: border-box;
       div {
         display: flex;
         flex-direction: row;
         hr {
-          height:100%;
-          width:2px;
-          border:none;
+          height: 100%;
+          width: 2px;
+          border: none;
           background-color: $red;
           margin: 0 32px;
         }
         .headline-regular {
-          color:$black;
+          color: $black;
           display: flex;
           flex-direction: column;
           align-items: center;
           text-align: center;
           span {
-            color:$blue;
+            color: $blue;
             font-weight: 900;
             font-size: 64px;
             line-height: 75px;
@@ -81,37 +85,41 @@
     }
   }
   .section-2 {
-    margin-top:240px;
+    margin-top: 240px;
+    max-width: 1180px;
+    margin: 240px auto;
     h2 {
-      width:max-content;
+      width: max-content;
       padding-bottom: 10px;
-      padding-bottom: 10px;color:$black;
-      border-bottom:3px solid #ED1A3B;
+      padding-bottom: 10px;
+      color: $black;
+      border-bottom: 3px solid #ed1a3b;
     }
     .wrapper {
-      width:90%;
+      width: 90%;
       margin-left: auto;
       display: flex;
+      margin-left: auto;
       flex-direction: row;
       align-items: flex-start;
       box-sizing: border-box;
     }
-    &__text{
-      width:50%;
+    &__text {
+      width: 50%;
       box-sizing: border-box;
       margin-right: 64px;
       .text-regular {
-        margin-top:60px;
-        color:$black;
+        margin-top: 60px;
+        color: $black;
       }
-    };
+    }
     &__bottom {
       display: flex;
       flex-direction: row;
       margin: 40px auto;
       align-items: center;
       justify-content: center;
-      color:$red;
+      color: $red;
       font-weight: bold;
       font-size: 24px;
       line-height: 29px;
@@ -124,42 +132,46 @@
   }
   .section-3 {
     background-color: $red;
-    padding-top:80px;
+    padding-top: 80px;
     h2 {
       margin-bottom: 80px;
       text-align: center;
     }
     h2 > span {
-      color:$white;
-      width:max-content;
+      color: $white;
+      width: max-content;
       position: relative;
       padding-bottom: 24px;
     }
-    h2 span::after{
-      position: absolute; 
-      left: 0; 
-      right:0;
+    h2 span::after {
+      position: absolute;
+      left: 0;
+      right: 0;
       margin-left: auto;
       margin-right: auto;
-      bottom: 0; 
-      width: 90px; 
-      height: 1px; 
-      border-bottom: 4px solid $white; 
-      content: ""
-  }
+      bottom: 0;
+      width: 90px;
+      height: 1px;
+      border-bottom: 4px solid $white;
+      content: '';
+    }
     .wrapper {
-      width:90%;
-      margin-right: auto;
+      width: 90%;
+      margin: 0 auto;
+      max-width: 1180px;
       display: flex;
       flex-direction: row;
       box-sizing: border-box;
+    }
+    &__left-part {
+      margin-bottom: 140px;
     }
     &__right-part {
       display: flex;
       flex-direction: column;
       margin-left: 90px;
-      width:60%;
-      margin-top:100px;
+      width: 60%;
+      margin-top: 100px;
     }
     &__block {
       display: flex;
@@ -168,48 +180,49 @@
       align-items: flex-start;
       position: relative;
       img {
-        width:100%;
+        width: 100%;
       }
     }
     &__logo {
-      width:190px;
-      height:100%;
+      width: 190px;
+      height: 100%;
       padding: 0 26px;
       box-sizing: border-box;
-      background: #FFFFFF;
+      background: #ffffff;
       border-radius: 10px 0px 0px 10px;
       display: flex;
       align-items: center;
       justify-content: center;
     }
     &__block-text {
-      height:100%;
-      background-color: #CF1532;
-      box-shadow: 1px 3px 12px #CF1532;
-      color:$white;
+      height: 100%;
+      width: 100%;
+      background-color: #cf1532;
+      box-shadow: 1px 3px 12px #cf1532;
+      color: $white;
       padding: 10px 24px;
       box-sizing: border-box;
     }
   }
   .section-5 {
     display: flex;
+    max-width: 1180px;
     flex-direction: row;
-    width:80%;
+    width: 80%;
     margin: 90px auto;
     box-sizing: border-box;
     align-items: center;
     justify-content: space-between;
-    height:150px;
     img {
-      height:100%;
-      width:auto;
+      height: 150px;
+      width: auto;
     }
   }
 
-  @media screen and(max-width:$laptop){
+  @media screen and(max-width:$laptop) {
     .section-1 {
       &__text {
-        width:100%;
+        width: 100%;
         padding: 40px 0;
         h4 {
           font-weight: 600;
@@ -227,17 +240,17 @@
         }
       }
       button {
-        margin-top:24px
+        margin-top: 24px;
       }
       &__box {
-        width:100%;
+        width: 100%;
         flex-wrap: wrap;
         border-radius: 0;
-        padding:12px;
+        padding: 12px;
         display: none;
         justify-content: space-between;
         div {
-          width:20%;
+          width: 20%;
           .headline-regular {
             font-size: 12px;
             span {
@@ -248,42 +261,42 @@
       }
     }
     .section-2 {
-      margin-top:80px;
+      margin-top: 80px;
       .wrapper {
         flex-direction: column;
         margin: 0 auto;
       }
       &__text {
-        width:100%;
+        width: 100%;
         margin: 0 auto;
-        .text-regular{
+        .text-regular {
           margin: 24px 0;
         }
       }
       &__bottom {
-        width:90%;
+        width: 90%;
         margin: 24px auto;
         font-size: 16px;
         line-height: 20px;
       }
     }
     .section-3 {
-      padding-top:24px;
+      padding-top: 24px;
       h2 {
-        margin-bottom:24px;
+        margin-bottom: 24px;
       }
       h2 > span::after {
         display: none;
       }
       .wrapper {
-        margin : 0 auto;
+        margin: 0 auto;
       }
       &__left-part {
         display: none;
       }
       &__right-part {
-        width:100%;
-        margin: 0 auto
+        width: 100%;
+        margin: 0 auto;
       }
       &__block-text {
         padding: 10px 12px;
@@ -302,11 +315,11 @@
     }
     .section-5 {
       flex-wrap: wrap;
-      width:90%;
+      width: 90%;
       margin: 24px auto;
       height: max-content;
       img {
-        width:30%;
+        width: 30%;
         height: auto;
         margin-bottom: 12px;
       }

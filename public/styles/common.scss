@@ -73,3 +73,27 @@
     }
   }
 }
+.structural-unit {
+  display: flex;
+  flex-direction: row;
+  background: #F1F4F9;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  align-items: center;
+  width:50%;
+  padding:16px;
+  box-sizing: border-box;
+  img {
+    background: #FFFFFF;
+    border-radius: 50%;
+    width:73px;
+    height:73px;
+    padding:12px;
+    box-sizing: border-box;
+    margin-right: 16px;
+    margin-bottom: 0!important;
+  }
+  p {
+    margin-bottom: 0!important;
+  }
+}

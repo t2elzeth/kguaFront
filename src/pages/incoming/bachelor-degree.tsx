@@ -1,4 +1,4 @@
-import { IncomingPage } from '../../templetes'
+import { IncomingPage } from '../../templates'
 
 
 const BachelorDegree: React.FC = () => {

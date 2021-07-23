@@ -1,4 +1,4 @@
-import { IncomingPage } from '../../templetes'
+import { IncomingPage } from '../../templates'
 
 export type GraduatePageProps = {}
 
