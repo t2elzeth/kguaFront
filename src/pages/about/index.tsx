@@ -1,14 +1,16 @@
 import { AboutPage } from '../../templates'
 import { useTranslation } from 'next-i18next'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
+import Divider from '@src/components/Divider'
+import InfoCount from '@src/components/InfoCount'
 
 export type IndexPageProps = {}
 
 const IndexPage: React.FC<IndexPageProps> = () => {
-  const { t } = useTranslation("about")
+  const { t } = useTranslation('about')
 
   return (
-    <AboutPage pageName="О КГЮА" pageTitle='Основные сведения' image='/images/kgua-info.png'>
+    <AboutPage pageName="О КГЮА" pageTitle="Основные сведения" image="/images/kgua-info.png">
       {/* <p>КГЮА образован в целях совершенствования системы подготовки юридических кадров и повышения качества юридического образования Указом Президента Кыргызской Республики от 12.08.2003г. УП № 264 на базе Центра повышения квалификации прокурорско-следственных работников Генеральной прокуратуры Кыргызской Республики и Института переподготовки и повышения квалификации кадров Кыргызского национального университета им. Ж.Баласагына. Учредителем КГЮА является Правительство Кыргызской Республики.</p> */}
       {/* <p>Кыргызский государственный юридический университет (КГЮА) */}
       {/* является государственным высшим профессиональным учебным заведением, выполняющим общегосударственные задачи, центром подготовки кадров в системе высшего образования и послевузовской подготовки кадров в сфере юриспруденции, экономики, управления и информационных технологий. */}
@@ -17,6 +19,34 @@ const IndexPage: React.FC<IndexPageProps> = () => {
         {t('main')}
         {/* КГЮА образован в целях совершенствования системы подготовки юридических кадров и повышения качества юридического образования Указом Президента Кыргызской Республики от 12.08.2003г. УП № 264 на базе Центра повышения квалификации прокурорско-следственных работников Генеральной прокуратуры Кыргызской Республики и Института переподготовки и повышения квалификации кадров Кыргызского национального университета им. Ж.Баласагына. Учредителем КГЮА является Правительство Кыргызской Республики. */}
       </p>
+      <Divider />
+      <div className="infoCount">
+        <div>
+          <p className="headline-regular">
+            <span>47</span>
+            Информирование о мероприятиях в КГЮА
+          </p>
+        </div>
+        <div>
+          <p className="headline-regular">
+            <span>5</span>
+            Информирование о мероприятиях в КГЮА
+          </p>
+        </div>
+        <div>
+          <p className="headline-regular">
+            <span>6</span>
+            Информирование о мероприятиях в КГЮА
+          </p>
+        </div>
+        <div>
+          <p className="headline-regular">
+            <span>2500</span>
+            Информирование о мероприятиях в КГЮА
+          </p>
+        </div>
+      </div>
+      <Divider />
       {/* <div className="about-page__numbers">
         <div>
           <p>
@@ -54,7 +84,7 @@ const IndexPage: React.FC<IndexPageProps> = () => {
 }
 export const getStaticProps = async ({ locale }) => ({
   props: {
-    ...await serverSideTranslations(locale, ['common', 'about']),
+    ...(await serverSideTranslations(locale, ['common', 'about'])),
   },
 })
 

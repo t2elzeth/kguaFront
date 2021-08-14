@@ -2,44 +2,41 @@ import { Header, Footer, News, Sidebar, MobileMenu } from '@Components'
 import Head from 'next/head'
 
 export type StructurePageProps = {
-  pageName?: string,
-  pageTitle?: string,
+  pageName?: string
+  pageTitle?: string
   image?: string
 }
-const links =
-{
+const links = {
   title: 'Структура университета',
   active: false,
   routes: [
     {
       title: 'Ректорат',
-      route: '/about/structure/administration'
+      route: '/about/structure/administration',
     },
 
     {
       title: 'Структурные подразделения',
-      route: '/about/structure/structural-units'
+      route: '/about/structure/structural-units',
     },
 
     {
       title: 'Учебные подразделения ',
-      route: '/structure'
+      route: '/structure',
     },
     {
       title: 'Кафедры',
-      route: '/about/structure/departments'
+      route: '/about/structure/departments',
     },
-  ]
+  ],
 }
-
 
 const StructurePage: React.FC<StructurePageProps> = ({ pageName, pageTitle, children, image }) => {
   return (
     <div className="about-page">
-      <Head >
+      <Head>
         <title>{pageName}</title>
       </Head>
-      <Header />
       <MobileMenu links={links} />
       <div className="main">
         <h2>{pageTitle}</h2>
@@ -50,7 +47,6 @@ const StructurePage: React.FC<StructurePageProps> = ({ pageName, pageTitle, chil
         </div>
       </div>
       <News />
-      <Footer />
     </div>
   )
 }

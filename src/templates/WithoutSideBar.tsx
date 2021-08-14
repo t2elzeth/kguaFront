@@ -11,10 +11,8 @@ const WithoutSideBar: React.FC<WithoutSideBarProps> = ({ pageName, children }) =
       <Head>
         <title>{pageName}</title>
       </Head>
-      <Header />
       <div className="main">{children}</div>
       <News />
-      <Footer />
     </div>
   )
 }

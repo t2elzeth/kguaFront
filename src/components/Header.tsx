@@ -1,12 +1,14 @@
 import { useState } from 'react'
 import Link from 'next/link'
-import { BurgerMenu } from '@Components'
 import { useRouter } from 'next/router'
 import classnames from 'classnames'
 
+import { BurgerMenu } from '@Components'
+import { useTranslation } from 'next-i18next'
+
 const links = [
   {
-    title: 'О КГЮА',
+    title: 'about_us',
     routes: [
       {
         title: 'Информация о КГЮА',
@@ -47,7 +49,7 @@ const links = [
     ],
   },
   {
-    title: 'Учебные подразделения',
+    title: 'training_units',
     routes: [
       {
         title: 'Структура университета',
@@ -68,7 +70,7 @@ const links = [
   //   ]
   // },
   {
-    title: 'Поступающим',
+    title: 'applicants',
     routes: [
       {
         title: 'Поступающим',
@@ -83,7 +85,7 @@ const links = [
   //   ]
   // },
   {
-    title: 'Студентам',
+    title: 'students',
     routes: [
       {
         title: 'Студентам',
@@ -107,11 +109,12 @@ const LANG = [
   },
 ]
 export const Header = () => {
-  const [open, setOpen] = useState(false)
-
+  const { t } = useTranslation('header')
+  console.log('header', t('about_us'))
   const router = useRouter()
   const path = useRouter().pathname
 
+  const [open, setOpen] = useState(false)
   const [selectedItem, setSelectedItem] = useState(undefined)
   const onListItemClick = (index) => {
     if (selectedItem === index) {
@@ -140,7 +143,7 @@ export const Header = () => {
               )}
               onClick={() => onListItemClick(index)}
             >
-              {item.title}
+              {t(item.title)}
               {selectedItem === index && item.routes.length > 0 && (
                 <div className="header__links">
                   {item?.routes.map((route, index) => (

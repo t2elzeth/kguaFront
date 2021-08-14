@@ -1,9 +1,13 @@
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
+import { useTranslation } from 'next-i18next'
 import WithoutSideBar from '../templates/WithoutSideBar'
 
 const IndexPage: React.FC = () => {
+  const { t } = useTranslation('contacts')
+
   return (
     <WithoutSideBar pageName="Контакты">
-      <h2>Контакты</h2>
+      <h2>{t('main')}</h2>
       <p style={{ fontSize: '18px', lineHeight: '32px' }} className="contacts">
         <b> Отдел по внеучебной работе:</b>+996 312 392 105 <br />
         <b>Центр карьеры: </b>+996 312 392102
@@ -38,5 +42,11 @@ const IndexPage: React.FC = () => {
     </WithoutSideBar>
   )
 }
+
+export const getStaticProps = async ({ locale }) => ({
+  props: {
+    ...(await serverSideTranslations(locale, ['contacts', 'common'])),
+  },
+})
 
 export default IndexPage

@@ -2,41 +2,39 @@ import { Header, Footer, News, Sidebar, MobileMenu } from '@Components'
 import Head from 'next/head'
 
 export type IncomingPageProps = {
-  pageName: string,
-  pageTitle: string,
+  pageName: string
+  pageTitle: string
   image: string
 }
 
-const links =
-{
+const links = {
   title: 'Поступающим',
   routes: [
     {
       title: 'Аспирантура и докторантура ',
-      route: '/incoming/graduate-school'
+      route: '/incoming/graduate-school',
     },
     {
       title: 'Бакалавриат',
-      route: '/incoming/bachelor-degree'
+      route: '/incoming/bachelor-degree',
     },
     {
       title: 'Среднее профессиональное образование',
-      route: '/incoming/secondary-education'
+      route: '/incoming/secondary-education',
     },
     {
       title: 'Правила приёма в КГЮА',
-      route: '/incoming/admission-rules'
+      route: '/incoming/admission-rules',
     },
-  ]
+  ],
 }
 
 const IncomingPage: React.FC<IncomingPageProps> = ({ pageName, pageTitle, children, image }) => {
   return (
     <div className="incoming-page">
-      <Head >
+      <Head>
         <title>{pageName}</title>
       </Head>
-      <Header />
       <MobileMenu links={links} />
       <div className="main">
         <h2>{pageTitle}</h2>
@@ -47,7 +45,6 @@ const IncomingPage: React.FC<IncomingPageProps> = ({ pageName, pageTitle, childr
         </div>
       </div>
       <News />
-      <Footer />
     </div>
   )
 }

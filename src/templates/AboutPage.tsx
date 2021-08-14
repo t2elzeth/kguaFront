@@ -1,19 +1,19 @@
 import { Header, Footer, News, Sidebar, MobileMenu } from '@Components'
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 import Head from 'next/head'
 
 export type AboutPageProps = {
-  pageName: string,
-  pageTitle: string,
+  pageName: string
+  pageTitle: string
   image: string
 }
-const links =
-{
+const links = {
   title: 'Информация о КГЮА',
   active: false,
   routes: [
     {
       title: 'Основные сведения',
-      route: '/about'
+      route: '/about',
     },
     // {
     //   title: 'История образования и развития КГЮА',
@@ -21,39 +21,37 @@ const links =
     // },
     {
       title: 'Миссия и стратегия',
-      route: '/about/mission'
+      route: '/about/mission',
     },
     {
       title: 'Символика',
-      route: '/about/symbolism'
+      route: '/about/symbolism',
     },
     {
       title: 'Награды и звания',
-      route: '/about/awards'
+      route: '/about/awards',
     },
     {
       title: 'Документы',
-      route: '/about/documents'
+      route: '/about/documents',
     },
     {
       title: 'Локальные-нормативные акты',
-      route: '/about/local-acts'
+      route: '/about/local-acts',
     },
     // {
     //   title: 'Материально-техническая база университета',
     //   route: ''
     // },
-  ]
+  ],
 }
-
 
 const AboutPage: React.FC<AboutPageProps> = ({ pageName, pageTitle, children, image }) => {
   return (
     <div className="about-page">
-      <Head >
+      <Head>
         <title>{pageName}</title>
       </Head>
-      <Header />
       <MobileMenu links={links} />
       <div className="main">
         <h2>{pageTitle}</h2>
@@ -64,7 +62,6 @@ const AboutPage: React.FC<AboutPageProps> = ({ pageName, pageTitle, children, im
         </div>
       </div>
       <News />
-      <Footer />
     </div>
   )
 }
