@@ -11,7 +11,7 @@
 @import './components/burger-menu.scss';
 @import './components/mobile-menu.scss';
 @import './components/download.scss';
-
+@import './components/CardDepartments.scss';
 
 //pages
 @import './pages/mainPage.scss';
@@ -25,7 +25,9 @@ body {
   box-sizing: border-box;
   font-family: 'SFProDisplay', sans-serif;
 }
-ul, li, button {
+ul,
+li,
+button {
   font-family: inherit;
 }
 p {

@@ -31,30 +31,20 @@
     "outDir": "./build",
     "jsx": "preserve",
     "skipLibCheck": true,
-    "lib": [
-      "dom",
-      "dom.iterable"
-    ],
+    "lib": ["dom", "dom.iterable"],
     "checkJs": false,
     "target": "es2019",
     "baseUrl": ".",
     "paths": {
       "@src/*": ["src/*"],
-      "@Components": [
-        "src/components/index"
-      ],
-      "@Utils/*": [
-        "src/utils/*"
-      ],
-      "@Interfaces/*": [
-        "src/interfaces/*"
-      ]
+      "@Common/*": ["src/common/*"],
+      "@Components": ["src/components/index"],
+      "@Utils/*": ["src/utils/*"],
+      "@Interfaces/*": ["src/interfaces/*"]
     },
     "module": "esnext"
   },
-  "include": [
-    "src/**/*"
-, "next-i18next.config.js"  ],
+  "include": ["src/**/*", "next-i18next.config.js"],
   "exclude": [
     "**/ui-kit",
     "**/node_modules",

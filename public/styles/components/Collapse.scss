@@ -7,10 +7,10 @@
     width: 100%;
     .block {
       padding: 16px;
-      margin-bottom:20px;
+      margin-bottom: 20px;
       cursor: pointer;
       box-sizing: border-box;
-      background: #F1F4F9;
+      background: #f1f4f9;
       box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.15);
       border-radius: 10px;
       .titleLine {
@@ -19,7 +19,7 @@
         flex-direction: row;
         position: relative;
         .title {
-          color:#464646;
+          color: #464646;
           font-weight: bold;
           font-size: 18px;
           line-height: 26px;
@@ -32,15 +32,15 @@
             color: #464646;
           }
         }
-        .collapseButton{
+        .collapseButton {
           position: absolute;
-          top:0;
+          top: 0;
           cursor: pointer;
-          right:0;
+          right: 0;
         }
         .collapseImage {
-          width:73px;
-          height:73px;
+          width: 146px;
+          height: 146px;
           border-radius: 50%;
           margin-right: 40px;
         }
@@ -59,12 +59,12 @@
       align-items: flex-start;
       margin-bottom: 12px;
       p {
-        font-weight: 600!important;
-        font-size: 14px!important;
+        font-weight: 600 !important;
+        font-size: 14px !important;
         letter-spacing: 0.03em;
         color: #000000;
-        width:20%;
-        line-height: 18px!important;
+        width: 20%;
+        line-height: 18px !important;
         margin-right: 16px;
       }
       span {
@@ -72,7 +72,7 @@
         font-weight: normal;
         font-size: 14px;
         line-height: 18px;
-        width:80%;
+        width: 80%;
         letter-spacing: 0.03em;
         color: #464646;
       }

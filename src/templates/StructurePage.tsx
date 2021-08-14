@@ -21,8 +21,8 @@ const links = {
     },
 
     {
-      title: 'Учебные подразделения ',
-      route: '/structure',
+      title: 'Учебные подразделения',
+      route: '/about/structure/training-units',
     },
     {
       title: 'Кафедры',

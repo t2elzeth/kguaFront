@@ -1,4 +1,5 @@
-import { WithoutSideBar } from '../../../templates'
+import { WithoutSideBar } from '@src/templates'
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 import Link from 'next/link'
 
 const categories = [
@@ -48,5 +49,11 @@ const IndexPage: React.FC = () => {
     </WithoutSideBar>
   )
 }
+
+export const getStaticProps = async ({ locale }) => ({
+  props: {
+    ...(await serverSideTranslations(locale, ['structure', 'header'])),
+  },
+})
 
 export default IndexPage

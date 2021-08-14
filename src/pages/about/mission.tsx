@@ -50,7 +50,7 @@ const MissionPage: React.FC<MissionPageProps> = () => {
           <li>
             <img src="/images/mission-4.svg" />
             <p>
-              <span>{t('strategy.direction')} 1.</span>
+              <span>{t(`strategy.direction`)} 1.</span>
               {t('strategy.direction1')}
               {/* Модернизация образовательного процесса на основе разработки инновационных образовательных программ. */}
             </p>

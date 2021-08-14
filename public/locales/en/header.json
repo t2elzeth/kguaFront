@@ -1,6 +1,9 @@
 {
   "about_us": "About KSLA",
   "training_units": "Training units",
-  "applicants": "Applicants",
-  "students": "Students"
+  "incoming": "Applicants",
+  "students": "Students",
+  "science": "Science",
+  "international_cooperation": "International cooperation",
+  "employees": "Employees"
 }

@@ -1,116 +1,15 @@
 import { useState } from 'react'
+import { useTranslation } from 'next-i18next'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
 import classnames from 'classnames'
 
+import { HEADER_LINKS, LANG } from '@src/common/contants'
 import { BurgerMenu } from '@Components'
-import { useTranslation } from 'next-i18next'
 
-const links = [
-  {
-    title: 'about_us',
-    routes: [
-      {
-        title: 'Информация о КГЮА',
-        route: '/about',
-      },
-      {
-        title: 'Структура университета',
-        route: '/about/structure',
-      },
-      // {
-      //   title: 'Персонал',
-      //   route: ''
-      // },
-      // {
-      //   title: 'Электронные ресурсы',
-      //   route: ''
-      // },
-      {
-        title: 'Ассоциация выпускников',
-        route: '/alumni-association',
-      },
-      // {
-      //   title: 'Жизнь КГЮА',
-      //   route: ''
-      // },
-      // {
-      //   title: 'Информация о КГЮА ',
-      //   route: ''
-      // },
-      // {
-      //   title: 'Виртуальная экскурсия по КГЮА',
-      //   route: ''
-      // },
-      {
-        title: 'Контакты',
-        route: '/contacts',
-      },
-    ],
-  },
-  {
-    title: 'training_units',
-    routes: [
-      {
-        title: 'Структура университета',
-        route: '/structure',
-      },
-    ],
-  },
-  // {
-  //   title: 'Наука',
-  //   routes: [
-
-  //   ]
-  // },
-  // {
-  //   title: 'Международные сотрудничества',
-  //   routes: [
-
-  //   ]
-  // },
-  {
-    title: 'applicants',
-    routes: [
-      {
-        title: 'Поступающим',
-        route: '/incoming',
-      },
-    ],
-  },
-  // {
-  //   title: 'Сотрудникам',
-  //   routes: [
-
-  //   ]
-  // },
-  {
-    title: 'students',
-    routes: [
-      {
-        title: 'Студентам',
-        route: '/students',
-      },
-    ],
-  },
-]
-const LANG = [
-  {
-    title: 'EN',
-    locale: 'en',
-  },
-  {
-    title: 'Рус',
-    locale: 'ru',
-  },
-  {
-    title: 'Кыр',
-    locale: 'kg',
-  },
-]
 export const Header = () => {
   const { t } = useTranslation('header')
-  console.log('header', t('about_us'))
+
   const router = useRouter()
   const path = useRouter().pathname
 
@@ -134,7 +33,7 @@ export const Header = () => {
           onClick={() => router.push('/')}
         />
         <ul>
-          {links?.map((item, index) => (
+          {HEADER_LINKS?.map((item, index) => (
             <li
               key={index}
               className={classnames(
@@ -171,7 +70,7 @@ export const Header = () => {
             </div>
           )}
         </div>
-        <BurgerMenu links={links} />
+        <BurgerMenu links={HEADER_LINKS} />
       </div>
     </div>
   )
