@@ -1,8 +1,6 @@
 import { AboutPage } from '../../templates'
 import { useTranslation } from 'next-i18next'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
-import Divider from '@src/components/Divider'
-import InfoCount from '@src/components/InfoCount'
 
 export type IndexPageProps = {}
 

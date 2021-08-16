@@ -1,31 +1,27 @@
 import { CardDepartment } from '@src/components'
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
+import { useTranslation } from 'react-i18next'
 import { WithoutSideBar } from '../../../../templates'
 
-const mock = [
-  {
-    title: 'Кафедра Административного, финансового и информационного права',
-    name: 'к.ю.н., и.о. доцента Герасько Виктор Владимирович ',
-    contacts: 'Адрес  пр. Чуй 180а., тел: 0312 392 093., почта: afip.ksla@gmail.com',
-  },
-  {
-    title: 'Кафедра Административного, финансового и информационного права',
-    name: 'к.ю.н., и.о. доцента Герасько Виктор Владимирович ',
-    contacts: 'Адрес  пр. Чуй 180а., тел: 0312 392 093., почта: afip.ksla@gmail.com',
-  },
-]
-
 const Departments = () => {
+  const { t } = useTranslation('about')
+  const draft = t('structure.listDepartments', { returnObjects: true })
+  console.log('draft: ', draft)
   return (
     <WithoutSideBar pageName="Кафедры">
-      <h2>Кафедры</h2>
-      <p>
-        Реализацию образовательных программ КГЮА обеспечивают 18 кафедр, где работает
-        высококвалифицированный профессорско-преподавательский состав
-      </p>
+      <h2>{t('structure.departments.title')}</h2>
+      <p>{t('structure.departments.description')}</p>
       <div style={{ marginTop: 20 }}>
-        <CardDepartment items={mock} />
+        <CardDepartment items={draft} />
       </div>
     </WithoutSideBar>
   )
 }
+
+export const getStaticProps = async ({ locale }) => ({
+  props: {
+    ...(await serverSideTranslations(locale, ['about', 'header'])),
+  },
+})
+
 export default Departments

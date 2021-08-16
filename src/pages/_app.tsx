@@ -10,4 +10,5 @@ function MyApp({ Component, pageProps }: { Component: any; pageProps: any }) {
     </MainLayout>
   )
 }
+
 export default appWithTranslation(MyApp)

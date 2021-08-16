@@ -21,5 +21,96 @@
   },
   "symbolism": {
     "motto": "A confident step into the future!"
+  },
+  "structure": {
+    "departments": {
+      "title": "Departments",
+      "description": "The implementation of educational programs of the KSLA is provided by 18 departments, where a highly qualified teaching staff works:"
+    },
+    "listDepartments": [
+      {
+        "route": "/about/structure/departments/demc",
+        "title": "Department of Economics, Management and Customs",
+        "description": "The Department of Economics, Management and Customs is one of the educational and scientific structural units of the KSLA carrying out educational, methodological, scientific and educational work. Organizational and legal support of educational activities is carried out in accordance with the Regulations on the Department and job descriptions. The educational process on the implementation of the programs 'State and Municipal Administration', 'Economics', 'Customs', 'Logistics' and 'Business Informatics' in the Department is conducted by scientific and pedagogical personnel who have a basic education corresponding to the profile of the taught discipline, and who are systematically engaged in scientific and scientific-methodological activities.",
+        "head_teacher": "PhD in Economics, associate professor Omurova Jyldyz Namirovna",
+        "contacts": "(0312) 529174",
+        "email": "kafedraeutd2020@gmail.com",
+        "url": "keutp@ksla.kg",
+        "image": "/images/demc_omurova.jpg",
+        "year_of_foundation": "2003",
+        "number_of_teachers": "The teaching staff of 27 people, including 12 teachers with PhD degree, 2 teachers with the degree of Doctor of sciences carry out their professional activities in the Department of Economics and Management.",
+        "department_activities": "The most part of the teachers is engaged in practical activities, for example, Zh.N. Omurova. - member of the Public council of the State Tax Service of the Kyrgyz Republic, Zh.Zh Kerimkanova. - a member of the  Public council of the State Service for Combatting Economic Crimes,  K.A. Toktorbaeva and  D.D. Bavlankulova are experts of the Institute for Statistical Research and Professional Development of the National Statistical Committee of the Kyrgyz Republic,  A.S.Orozalieva - is an expert on accreditation and trainer of the Agency for Quality Assurance in Educational sector 'EdNet' and national consultant of the ADB project 'Professional training and skills development',  Z.A. Amankulova - accountant-consultant of A Clinic LLC; LLC 'Block-Post'. The part-time teachers - practitioners in the field of economics and management -  V.V.Pak - Ministry of Economy of the Kyrgyz Republic,  A.J. Kulnazarov - Mayor's office of Bishkek are also involved to the educational process of the Department. The Department has a general topic of research work. Within the framework of this topic, every teacher has his or her own field of scientific research. Based on the results of the research, PhD and Doctoral dissertations were defended, monographs, textbooks, teaching manuals, scientific articles were published. Textbooks and teaching manuals were published on the following disciplines: economic theory, management, macroeconomics, microeconomics, history of economics, accounting, economic analysis, business fundamentals, statistics.",
+        "info_of_staff": "Based on the results achieved in the recent years teachers of the Department are taking leading positions among the teaching staff of the KSLA. For example, A.S Orozalieva was awarded with the diploma of KSLA 'The best teacher' of the 2014-2015 academic year, and D.J. Bavlankulova was awarded the same diploma of the 2015-2016 academic year. A number of teachers were awarded the State and Departmental awards (Diplomas of the Ministry of Education and Science of the Kyrgyz Republic, 'Excellence in Education' titles, the title' Honored Worker of Education ', etc.). Six teachers of the Department ",
+        "awards": "In 2012 the Department was awarded with  the KSLA’s 'The best Department' Diploma.",
+        "teachers": [
+          {
+            "name": "Erkin uulu Maksatbek",
+            "position": "Teacher",
+            "image": "/images/demc_maksat.jpg"
+          },
+          {
+            "name": "Erdolatov Alymbek",
+            "position": "Acting Professor",
+            "image": "/images/demc_erdolatov.jpg"
+          }
+        ]
+      },
+      {
+        "route": "/about/structure/departments/dafil",
+        "title": "Department of Administrative, Financial and Information Law",
+        "description": "The Department of Administrative, Financial and Information Law is the main educational and scientific unit of the Kyrgyz State Law University, which provide educational, methodological, scientific and educational work. It was established on the basis of the Department of Constitutional and Administrative Law, formed in 2003 as a result of its division they were formed into two independent departments: The department of administrative and financial Law and the department of Constitutional and municipal Law according to the decision of the Academic Council of the KSLA from May 29, 2007. In 2020 by the decision of the Academic Council of the KSLA the Department of administrative and financial law was renamed into the department of administrative, financial and information law to comply with the scientific code 12.00.14 - Administrative Law, Financial Law, Information Law.",
+        "head_teacher": "PhD in Law (candidate of law sciences), Acting assistant professor  Gerasko Victor Vladimirovich",
+        "contacts": "",
+        "email": "afip.ksla@gmail.com",
+        "url": "",
+        "image": "/images/dafil_gerasko.jpg",
+        "year_of_foundation": "2003",
+        "number_of_teachers": "The teaching staff of 27 people, including 12 teachers with PhD degree, 2 teachers with the degree of Doctor of sciences carry out their professional activities in the Department of Economics and Management.",
+        "department_activities": "The main goals and tasks of  the department are: - to train highly qualified lawyers who are able to solve problems of any complexity in administrative, managerial, financial, informational and law fields in the current market economy, - to prepare specialists with professional competence and high moral qualities, being able to work in various business sectors, government and non-government organizations. A special attention during their education is paid to the formation of the skills to conduct scientific and analytical research in the legal field, as well as the development of practical skills, competent provision of qualified legal advice and etc.",
+        "task_of_department": [
+          "Improvement and application of modern effective teaching methods in order to develop the creativity of the students ’personality and their ability",
+          "Development of professional competencies of students",
+          "Implementation of scientific and theoretical training of students",
+          "Improvement of educational and methodological activities of the teaching staff",
+          "Conducting scientific researches on the specialty of the department",
+          "Training of scientific and pedagogical personnel and improvement of their qualifications",
+          "Working out  of the educational and methodological  aids for the assigned disciplines",
+          "Implementation of  the expertize  of bills  in the field of administrative, financial and information law",
+          "Support and implementation of legal projects"
+        ],
+        "courses_and_preparation": [
+          "Administrative procedural law",
+          "Financial law",
+          "Legal framework for the organization of public administration",
+          "Information law",
+          "Budgetary law",
+          "Public service",
+          "Tax law",
+          "Information security",
+          "Financial Law of China",
+          "Customs law",
+          "Customs disputes and their consideration",
+          "Customs law of foreign countries",
+          "China Customs Law",
+          "Legal liability for violation of the tax legislation",
+          "Organization  of the control to fight against Customs offenses",
+          "Tax disputes and their consideration"
+        ],
+        "info_of_staff": "",
+        "awards": "Letter of thanks from the Committee on Budget and Finance of the Parliament of the KR for training of the qualified personnel, contribute to the development of the financial law, monitoring of the bills and promoting of regulatory normative  acts of the Kyrgyz Republic in cooperation to conduct expertise giving conclusions.",
+        "teachers": [
+          {
+            "name": "Erkin uulu Maksatbek",
+            "position": "Teacher",
+            "image": "/images/demc_maksat.jpg"
+          },
+          {
+            "name": "Erdolatov Alymbek",
+            "position": "Acting Professor",
+            "image": "/images/demc_erdolatov.jpg"
+          }
+        ]
+      }
+    ]
   }
 }

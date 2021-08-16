@@ -1,4 +1,4 @@
-import { Header, Footer, News, Sidebar, MobileMenu } from '@Components'
+import { News, Sidebar, MobileMenu } from '@Components'
 import Head from 'next/head'
 
 export type StructurePageProps = {
@@ -40,7 +40,7 @@ const StructurePage: React.FC<StructurePageProps> = ({ pageName, pageTitle, chil
       <MobileMenu links={links} />
       <div className="main">
         <h2>{pageTitle}</h2>
-        <img className="mainImage" src={image} />
+        <img className="mainImage" src={image} alt="" />
         <div className="body">
           <Sidebar links={links} />
           <div className="content"> {children}</div>

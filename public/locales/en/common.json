@@ -1,6 +1,22 @@
 {
-  "about_us": "About KSLA",
-  "training_units": "Training units",
-  "applicants": "Applicants",
-  "students": "Students"
+  "departments": {
+    "dafil": "Department of Administrative, Financial and Information Law",
+    "dcfl": "Department of Civil and Family Law",
+    "dcpn": "Department of Civil Procedure and Notaries",
+    "dlael": "Department of Land, Agrarian and Environmental Law",
+    "ditnsd": "Department of Information Technology and Natural Science Disciplines",
+    "dcml": "Department of Constitutional and Municipal Law",
+    "dcfe": "Department of Criminalistics and Forensic Examinations",
+    "dpcs": "Department of Physical Culture and Sports",
+    "dlic": "Department of Languages ​​and Intercultural Communication",
+    "dilwp": "Department of International Law and World Politics",
+    "dbll": "Department of Business and Labor Law",
+    "dthsl": "Department of Theory and History of State and Law",
+    "dcl": "Department of Criminal Law",
+    "dcelc": "Department of Criminal Execution Law and Criminology",
+    "dcpps": "Department of Criminal Procedure and Prosecutor's Supervision",
+    "dpssh": "Department of Philosophy and Social Sciences and Humanities",
+    "demc": "Department of Economics, Management and Customs",
+    "slc": "State Language Center"
+  }
 }
