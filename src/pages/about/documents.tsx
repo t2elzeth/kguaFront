@@ -46,7 +46,7 @@ const DocumentsPage: React.FC<DocumentsPageProps> = () => {
 
 export const getStaticProps = async ({ locale }) => ({
   props: {
-    ...(await serverSideTranslations(locale, ['common', 'about', 'header'])),
+    ...(await serverSideTranslations(locale, ['common', 'about'])),
   },
 })
 

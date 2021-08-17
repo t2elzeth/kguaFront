@@ -23,7 +23,7 @@ const Dafil = () => {
 
 export const getStaticProps = async ({ locale }) => ({
   props: {
-    ...(await serverSideTranslations(locale, ['header', 'about', 'common'])),
+    ...(await serverSideTranslations(locale, ['about', 'common'])),
   },
 })
 

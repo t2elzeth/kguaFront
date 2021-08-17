@@ -1,5 +1,11 @@
 {
   "main": "The Kyrgyz State Law University (KSLA) is a state higher professional educational institution that performs national tasks, a center for training personnel in the system of higher education and postgraduate training in the field of jurisprudence, economics, management and information technology. ",
+  "sidebar_list": [
+    {
+      "route": "/about",
+      "name": "Basic information"
+    }
+  ],
   "mission": {
     "title": "KSLA sees its mission in strengthening the position of the university as a leading, socially oriented university in the field of education and its development as a center for fundamental scientific and expert-analytical research in the field of law. The vision of the university: KSLA strives to be:",
     "firstMission": "an active participant in the political, socio-economic and cultural development of the Kyrgyz Republic;",

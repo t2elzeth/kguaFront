@@ -1,3 +1,4 @@
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 import WithoutSideBar from '../../templates/WithoutSideBar'
 
 const IndexPage: React.FC = () => {
@@ -76,5 +77,11 @@ const IndexPage: React.FC = () => {
     </WithoutSideBar>
   )
 }
+
+export const getStaticProps = async ({ locale }) => ({
+  props: {
+    ...(await serverSideTranslations(locale, ['contacts', 'common'])),
+  },
+})
 
 export default IndexPage

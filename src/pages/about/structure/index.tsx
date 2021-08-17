@@ -52,7 +52,7 @@ const IndexPage: React.FC = () => {
 
 export const getStaticProps = async ({ locale }) => ({
   props: {
-    ...(await serverSideTranslations(locale, ['structure', 'header', 'common'])),
+    ...(await serverSideTranslations(locale, ['structure', 'common'])),
   },
 })
 

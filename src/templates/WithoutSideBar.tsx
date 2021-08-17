@@ -1,4 +1,4 @@
-import { Header, Footer, News } from '@Components'
+import { News } from '@Components'
 import Head from 'next/head'
 
 export type WithoutSideBarProps = {

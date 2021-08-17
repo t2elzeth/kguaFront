@@ -80,7 +80,7 @@ const SymbolismPage: React.FC<SymbolismPageProps> = () => {
 }
 export const getStaticProps = async ({ locale }) => ({
   props: {
-    ...(await serverSideTranslations(locale, ['common', 'about', 'header'])),
+    ...(await serverSideTranslations(locale, ['common', 'about'])),
   },
 })
 

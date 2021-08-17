@@ -4,23 +4,32 @@ import Link from 'next/link'
 import { useRouter } from 'next/router'
 import classnames from 'classnames'
 
-import { HEADER_LINKS, LANG } from '@src/common/contants'
+import { HEADER_LINKS, LANG } from '@src/common/constants'
 import { BurgerMenu } from '@Components'
 
 export const Header = () => {
-  const { t } = useTranslation('header')
+  const { t } = useTranslation('common')
 
   const router = useRouter()
   const path = useRouter().pathname
 
   const [open, setOpen] = useState(false)
-  const [selectedItem, setSelectedItem] = useState(undefined)
-  const onListItemClick = (index) => {
+  const [selectedItem, setSelectedItem] = useState(null)
+  console.log('selectedItem: ', selectedItem)
+
+  const onListItemClick = (index) => () => {
     if (selectedItem === index) {
-      setSelectedItem(undefined)
+      setSelectedItem(null)
     } else {
       setSelectedItem(index)
     }
+  }
+
+  const onItemClick = (item, index) => () => {
+    if (selectedItem !== index) {
+      setSelectedItem(index)
+    }
+    router.push(item.route)
   }
 
   return (
@@ -40,10 +49,10 @@ export const Header = () => {
                 'header__list-item',
                 selectedItem === index && 'header__selected'
               )}
-              onClick={() => onListItemClick(index)}
+              onClick={item.routes?.length ? onListItemClick(index) : onItemClick(item, index)}
             >
-              {t(item.title)}
-              {selectedItem === index && item.routes.length > 0 && (
+              {t(`header.${item.title}`)}
+              {selectedItem === index && item.routes?.length > 0 && (
                 <div className="header__links">
                   {item?.routes.map((route, index) => (
                     <Link key={index} href={route.route}>
@@ -70,7 +79,7 @@ export const Header = () => {
             </div>
           )}
         </div>
-        <BurgerMenu links={HEADER_LINKS} />
+        {/* <BurgerMenu links={HEADER_LINKS} /> */}
       </div>
     </div>
   )

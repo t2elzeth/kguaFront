@@ -53,12 +53,13 @@ export const HEADER_LINKS = [
   },
   {
     title: 'training_units',
-    routes: [
-      {
-        title: 'Структура университета',
-        route: '/structure',
-      },
-    ],
+    route: '/training-units',
+    // routes: [
+    //   {
+    //     title: 'Структура университета',
+    //     route: '/structure',
+    //   },
+    // ],
   },
   {
     title: 'science',

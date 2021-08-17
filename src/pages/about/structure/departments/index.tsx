@@ -20,7 +20,7 @@ const Departments = () => {
 
 export const getStaticProps = async ({ locale }) => ({
   props: {
-    ...(await serverSideTranslations(locale, ['about', 'header'])),
+    ...(await serverSideTranslations(locale, ['about', 'common'])),
   },
 })
 
