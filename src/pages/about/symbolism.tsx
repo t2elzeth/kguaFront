@@ -9,6 +9,7 @@ const SymbolismPage: React.FC<SymbolismPageProps> = () => {
 
   return (
     <AboutPage
+      t={t}
       pageName="Символика и атрибутика "
       pageTitle="Символика и атрибутика "
       image="/images/symbolism.png"

@@ -79,7 +79,7 @@ export const Header = () => {
             </div>
           )}
         </div>
-        {/* <BurgerMenu links={HEADER_LINKS} /> */}
+        <BurgerMenu links={HEADER_LINKS} />
       </div>
     </div>
   )

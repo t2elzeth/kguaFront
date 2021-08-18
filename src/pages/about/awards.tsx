@@ -1,12 +1,15 @@
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
+import { useTranslation } from 'react-i18next'
 
 import { AboutPage } from '../../templates'
 
 export type AwardsPageProps = {}
 
 const AwardsPage: React.FC<AwardsPageProps> = () => {
+  const { t } = useTranslation('about')
   return (
     <AboutPage
+      t={t}
       pageName="Награды и звания"
       pageTitle="Награды и звания"
       image="/images/symbolism.png"

@@ -1,6 +1,7 @@
 import { AboutPage } from '../../templates'
 import { Download } from '@Components'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
+import { useTranslation } from 'react-i18next'
 
 export type DocumentsPageProps = {}
 const documents = [
@@ -35,8 +36,9 @@ const documents = [
 ]
 
 const DocumentsPage: React.FC<DocumentsPageProps> = () => {
+  const { t } = useTranslation('about')
   return (
-    <AboutPage pageName="Документы" pageTitle="Документы" image="/images/documents.png">
+    <AboutPage t={t} pageName="Документы" pageTitle="Документы" image="/images/documents.png">
       {documents.map((item) => (
         <Download document={item} />
       ))}

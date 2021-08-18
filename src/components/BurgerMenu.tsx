@@ -2,10 +2,12 @@ import React, { useState } from 'react'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
 import classnames from 'classnames'
+import { useTranslation } from 'react-i18next'
 
 export const BurgerMenu: React.FC<any> = ({ links }) => {
   const [isOpen, setIsOpen] = useState(false)
   const router = useRouter()
+  const { t } = useTranslation()
 
   const closeNav = () => {
     setIsOpen(false)
@@ -15,13 +17,21 @@ export const BurgerMenu: React.FC<any> = ({ links }) => {
     setIsOpen(true)
   }
 
-  const [selectedItem, setSelectedItem] = useState(undefined)
-  const onListItemClick = (index) => {
+  const [selectedItem, setSelectedItem] = useState(null)
+
+  const onListItemClick = (index) => () => {
     if (selectedItem === index) {
-      setSelectedItem(undefined)
+      setSelectedItem(null)
     } else {
       setSelectedItem(index)
     }
+  }
+
+  const onItemClick = (item, index) => () => {
+    if (selectedItem !== index) {
+      setSelectedItem(index)
+    }
+    router.push(item.route)
   }
 
   return (
@@ -44,10 +54,10 @@ export const BurgerMenu: React.FC<any> = ({ links }) => {
                 <li
                   key={index}
                   className={classnames('burger__list-item')}
-                  onClick={() => onListItemClick(index)}
+                  onClick={item.routes?.length ? onListItemClick(index) : onItemClick(item, index)}
                 >
-                  {item.title}
-                  {item.routes.length > 0 && <img src="/images/arrow-down.svg" />}
+                  {t(`header.${item.title}`)}
+                  {item.routes?.length > 0 && <img src="/images/arrow-down.svg" />}
                 </li>
                 <>
                   {selectedItem === index && item.routes.length > 0 && (

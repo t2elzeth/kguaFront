@@ -1,54 +1,16 @@
-import { Header, Footer, News, Sidebar, MobileMenu } from '@Components'
-import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
+import { News, Sidebar, MobileMenu } from '@Components'
 import Head from 'next/head'
 
 export type AboutPageProps = {
+  t: any
   pageName: string
   pageTitle: string
   image: string
 }
-const links = [
-  {
-    title: 'Информация о КГЮА',
-    active: false,
-    routes: [
-      {
-        title: 'Основные сведения',
-        route: '/about',
-      },
-      // {
-      //   title: 'История образования и развития КГЮА',
-      //   route: ''
-      // },
-      {
-        title: 'Миссия и стратегия',
-        route: '/about/mission',
-      },
-      {
-        title: 'Символика',
-        route: '/about/symbolism',
-      },
-      {
-        title: 'Награды и звания',
-        route: '/about/awards',
-      },
-      {
-        title: 'Документы',
-        route: '/about/documents',
-      },
-      {
-        title: 'Локальные-нормативные акты',
-        route: '/about/local-acts',
-      },
-      // {
-      //   title: 'Материально-техническая база университета',
-      //   route: ''
-      // },
-    ],
-  },
-]
 
-const AboutPage: React.FC<AboutPageProps> = ({ pageName, pageTitle, children, links, image }) => {
+const AboutPage: React.FC<AboutPageProps> = ({ t, pageName, pageTitle, children, image }) => {
+  const links = t('sidebar_list', { returnObjects: true })
+
   return (
     <div className="about-page">
       <Head>

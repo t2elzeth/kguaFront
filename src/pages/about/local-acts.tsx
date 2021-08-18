@@ -1,6 +1,7 @@
 import { AboutPage } from '../../templates'
 import { Download } from '@Components'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
+import { useTranslation } from 'react-i18next'
 
 export type LocalActsPageProps = {}
 const documents = [
@@ -38,8 +39,10 @@ const documents = [
 ]
 
 const LocalActsPage: React.FC<LocalActsPageProps> = () => {
+  const { t } = useTranslation()
   return (
     <AboutPage
+      t={t}
       pageName="Документы"
       pageTitle="Локальные-нормативные акты"
       image="/images/documents.png"

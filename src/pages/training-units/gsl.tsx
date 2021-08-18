@@ -8,15 +8,6 @@ const GSL = () => {
   const { t } = useTranslation('common')
 
   const facultyLinks = t('faculties', { returnObjects: true })
-  console.log('facultyLinks: ', facultyLinks)
-
-  const facultyLinks2 = facultyLinks.reduce((acc, rec) => {
-    return {
-      ...acc,
-      [rec.name]: rec,
-    }
-  }, {})
-  console.log('facultyLinks2: ', facultyLinks2)
 
   return (
     <TrainingUnitsPage

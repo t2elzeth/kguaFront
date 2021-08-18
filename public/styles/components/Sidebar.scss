@@ -4,8 +4,7 @@
   padding: 12px 0;
   width: 25%;
   &__item {
-    font-weight: bold;
-    color: $blue;
+    font-weight: 600;
     font-size: 16px;
     line-height: 150%;
     border-bottom: 1px solid #ededed;
@@ -16,6 +15,14 @@
       text-decoration: none;
       color: inherit;
     }
+  }
+  &__subItem {
+    font-weight: normal;
+    font-size: 16px;
+    color: #2e2e2e;
+    padding-bottom: 6px;
+    margin-top: 4px;
+    cursor: pointer;
   }
   ul {
     list-style: none;
@@ -28,9 +35,14 @@
     border-bottom: 1px solid #ededed;
     padding-bottom: 6px;
     font-size: 16px;
-    color: #2e2e2e;
-    font-weight: normal;
+    color: $blue;
+    font-weight: bold;
     cursor: pointer;
+  }
+  &__subLink {
+    font-weight: 600;
+    font-size: 16px;
+    color: #2e2e2e;
   }
   &__active-link {
     font-weight: bold !important;

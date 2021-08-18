@@ -9,6 +9,7 @@ const MissionPage: React.FC<MissionPageProps> = () => {
 
   return (
     <AboutPage
+      t={t}
       pageName="Миссия и стратегия"
       pageTitle="Миссия и стратегия"
       image="/images/mission-1.png"

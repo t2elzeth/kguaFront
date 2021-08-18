@@ -7,15 +7,8 @@ export type IndexPageProps = {}
 const IndexPage: React.FC<IndexPageProps> = () => {
   const { t } = useTranslation('about')
 
-  const sidebarLinks = t('sidebar_list', { returnObjects: true })
-
   return (
-    <AboutPage
-      pageName="О КГЮА"
-      pageTitle="Основные сведения"
-      links={sidebarLinks}
-      image="/images/kgua-info.png"
-    >
+    <AboutPage t={t} pageName="О КГЮА" pageTitle="Основные сведения" image="/images/kgua-info.png">
       <p>{t('main')}</p>
       <div className="about-page__numbers">
         <div>

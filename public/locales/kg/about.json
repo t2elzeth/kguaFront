@@ -3,7 +3,57 @@
   "sidebar_list": [
     {
       "route": "/about",
-      "name": "Basic information"
+      "name": "Information about KSLA",
+      "img": "/images/faculty-gsl.svg",
+      "subLinks": [
+        {
+          "route": "/about",
+          "name": "Basic information"
+        },
+        {
+          "route": "/about/mission",
+          "name": "Mission and strategy"
+        },
+        {
+          "route": "/about/symbolism",
+          "name": "Symbolism"
+        }
+      ]
+    },
+    {
+      "route": "/about/structure",
+      "name": "University structure",
+      "img": "/images/faculty-gsl.svg"
+    },
+    {
+      "route": "/about/personal",
+      "name": "Personal",
+      "img": "/images/faculty-gsl.svg"
+    },
+    {
+      "route": "/about/electronic-resources",
+      "name": "Electronic resources",
+      "img": "/images/faculty-gsl.svg"
+    },
+    {
+      "route": "/about/alumni-association",
+      "name": "Alumni association",
+      "img": "/images/faculty-gsl.svg"
+    },
+    {
+      "route": "/about/life-of-ksla",
+      "name": "Life of KSLA",
+      "img": "/images/faculty-gsl.svg"
+    },
+    {
+      "route": "/about/virtual-tour",
+      "name": "Virtual tour",
+      "img": "/images/faculty-gsl.svg"
+    },
+    {
+      "route": "/contacts",
+      "name": "Contacts",
+      "img": "/images/faculty-gsl.svg"
     }
   ],
   "mission": {

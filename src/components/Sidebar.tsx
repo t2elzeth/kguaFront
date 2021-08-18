@@ -6,15 +6,13 @@ import { useCallback, useState } from 'react'
 export const Sidebar = ({ links }) => {
   const router = useRouter()
 
-  const [state, setState] = useState(null)
+  const [state, setState] = useState(0)
 
   const handleItemClick = useCallback(
     (link, index) => () => {
-      if (link.subLinks.length) {
+      if (link.subLinks?.length) {
         if (state !== index) {
           setState(index)
-        } else {
-          setState(null)
         }
       } else {
         router.push(link.route)
@@ -25,23 +23,29 @@ export const Sidebar = ({ links }) => {
 
   return (
     <div className="sidebar">
-      {/* <p className="sidebar__item">{links.title}</p> */}
       <ul>
         {links.map((route, index) => (
           <li
             key={index}
             onClick={handleItemClick(route, index)}
             className={classnames(
-              'sidebar__link',
-              route.route === router.pathname && 'sidebar__item'
+              'sidebar__item',
+              route.route === router.pathname && 'sidebar__link'
             )}
           >
             {route.name}
-            {state === index && route.subLinks.length && (
-              <ul>
+            {state === index && route.subLinks?.length && (
+              <ul style={{ paddingTop: '10px', paddingBottom: '10px' }}>
                 {route.subLinks.map((item) => (
                   <Link key={item.route} href={item.route}>
-                    <li>{item.name}</li>
+                    <li
+                      className={classnames(
+                        'sidebar__subItem',
+                        item.route === router.pathname && 'sidebar__subLink'
+                      )}
+                    >
+                      {item.name}
+                    </li>
                   </Link>
                 ))}
               </ul>
@@ -49,8 +53,8 @@ export const Sidebar = ({ links }) => {
           </li>
         ))}
       </ul>
-      {/* <img src="/images/sidebar.png" />
-      <p className="sidebar__virtual">Виртуальный тур по КГЮА</p> */}
+      <img src="/images/sidebar.png" />
+      <p className="sidebar__virtual">Виртуальный тур по КГЮА</p>
     </div>
   )
 }
