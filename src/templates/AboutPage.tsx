@@ -22,7 +22,7 @@ const AboutPage: React.FC<AboutPageProps> = ({ t, pageName, pageTitle, children,
         <img alt="" className="mainImage" src={image} />
         <div className="body">
           <Sidebar links={links} />
-          <div className="content"> {children}</div>
+          <div className="content">{children}</div>
         </div>
       </div>
       <News />

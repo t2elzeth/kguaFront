@@ -15,7 +15,6 @@ export const Header = () => {
 
   const [open, setOpen] = useState(false)
   const [selectedItem, setSelectedItem] = useState(null)
-  console.log('selectedItem: ', selectedItem)
 
   const onListItemClick = (index) => () => {
     if (selectedItem === index) {

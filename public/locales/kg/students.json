@@ -1,0 +1,41 @@
+{
+  "title": "Студенческий совет",
+  "description": "",
+  "sidebar_list": [
+    {
+      "route": "/students/schedule-educational-process",
+      "name": "Schedule of the educational process",
+      "img": "/images/students-1.svg"
+    },
+    {
+      "route": "/students/documents-student",
+      "name": "Documents for the student",
+      "img": "/images/students-2.svg"
+    },
+    {
+      "route": "/students/student-self-government",
+      "name": "Student self-government",
+      "img": "/images/students-3.svg"
+    },
+    {
+      "route": "/students/practice-employment",
+      "name": "Practice and employment",
+      "img": "/images/students-4.svg"
+    },
+    {
+      "route": "/students/legal-clinic",
+      "name": "Legal clinic",
+      "img": "/images/students-5.svg"
+    },
+    {
+      "route": "/students/foreign-students",
+      "name": "Foreign students",
+      "img": "/images/students-6.svg"
+    },
+    {
+      "route": "/students/club-circles",
+      "name": "Clubs and Circles",
+      "img": "/images/students-7.svg"
+    }
+  ]
+}

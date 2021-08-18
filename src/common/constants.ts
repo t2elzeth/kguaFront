@@ -54,42 +54,25 @@ export const HEADER_LINKS = [
   {
     title: 'training_units',
     route: '/training-units',
-    // routes: [
-    //   {
-    //     title: 'Структура университета',
-    //     route: '/structure',
-    //   },
-    // ],
   },
   {
     title: 'science',
-    routes: [],
     route: '/science',
   },
   {
     title: 'international_cooperation',
-    routes: [],
+    route: '/international-cooperation',
   },
   {
     title: 'incoming',
-    routes: [
-      {
-        title: 'Поступающим',
-        route: '/incoming',
-      },
-    ],
+    route: '/incoming',
   },
   {
     title: 'employees',
-    routes: [],
+    route: '/employees',
   },
   {
     title: 'students',
-    routes: [
-      {
-        title: 'Студентам',
-        route: '/students',
-      },
-    ],
+    route: '/students',
   },
 ]

@@ -1,35 +1,19 @@
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
+import Link from 'next/link'
+import { useTranslation } from 'react-i18next'
 import { WithoutSideBar } from '../../templates'
 
-const categories = [
-  {
-    title: 'Кружки и клубы',
-    img: '/images/students-1.svg',
-  },
-  {
-    title: 'Налоговая и таможенная клиника',
-    img: '/images/students-2.svg',
-  },
-  {
-    title: 'Cтуденческий совет',
-    img: '/images/students-3.svg',
-  },
-  {
-    title: 'Уполномоченный по правам студентов',
-    img: '/images/students-4.svg',
-  },
-  {
-    title: 'Юридическая клиника',
-    img: '/images/students-5.svg',
-  },
-]
-const IndexPage = () => {
+const Students = () => {
+  const { t } = useTranslation('students')
+  const categories = t('sidebar_list', { returnObjects: true })
+
   return (
     <WithoutSideBar pageName="Студентам">
       <div className="students-page">
         <div className="slider">
           <img src="/images/financial.png" alt="" />
           <div>
-            <h4>Студенческая совет</h4>
+            <h4>{t('title')}</h4>
             <p>
               Студенческий совет КГЮА является студенческой организацией – одной из форм
               самоуправления студентов, созданной в соответствии с Конституцией КР, Законом КР «Об
@@ -46,14 +30,23 @@ const IndexPage = () => {
         <p>В настоящее время в составе КГЮА действуют следующие институты:</p>
         <div className="categories">
           {categories.map((item, index) => (
-            <div key={index}>
-              <img src={item.img} alt="" />
-              <p>{item.title}</p>
-            </div>
+            <Link key={index} href={item.route}>
+              <div>
+                <img src={item.img} alt="" />
+                <p>{item.name}</p>
+              </div>
+            </Link>
           ))}
         </div>
       </div>
     </WithoutSideBar>
   )
 }
-export default IndexPage
+
+export const getStaticProps = async ({ locale }) => ({
+  props: {
+    ...(await serverSideTranslations(locale, ['common', 'students'])),
+  },
+})
+
+export default Students
