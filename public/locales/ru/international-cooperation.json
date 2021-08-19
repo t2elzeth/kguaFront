@@ -1,0 +1,51 @@
+{
+  "title": "Международное сотрудничество",
+  "description": "На сегодняшний момент КГЮА осуществляет взаимодействие с зарубежными образовательными учреждениями, научными и международными организациями по совершенствованию системы высшего образования в условиях глобальных социально-культурных и экономических перемен в мире, проведение совместных научных исследований, международных конференций и семинаров, участие в совместных проектах, международных образовательных и научных программах, усиление академической мобильности студентов и преподавателей за рубеж и обучение в институте иностранных учащихся как ближнего, так и дальнего зарубежья.",
+  "sidebar_list": [
+    {
+      "route": "/international-cooperation/international-events",
+      "name": "Международные мероприятия",
+      "img": "/images/international-cooperation-1.png"
+    },
+    {
+      "route": "/international-cooperation/international-programs",
+      "name": "Международные программы",
+      "img": "/images/international-cooperation-2.png"
+    },
+    {
+      "route": "/international-cooperation/project-work",
+      "name": "Проектная работа",
+      "img": "/images/international-cooperation-3.png"
+    },
+    {
+      "route": "/international-cooperation/partner-organizations",
+      "name": "Организации-партнёры",
+      "img": "/images/international-cooperation-4.png"
+    }
+  ],
+  "project_work": {
+    "title": "Проектная работа",
+    "sidebar_list": [
+      {
+        "route": "/international-cooperation/project-work/e-learning",
+        "name": "E-lerning",
+        "img": "/images/project-work-1.png"
+      },
+      {
+        "route": "/international-cooperation/project-work/confucius-class",
+        "name": "Класс Конфуция",
+        "img": "/images/project-work-2.png"
+      },
+      {
+        "route": "/international-cooperation/project-work/complex-g-gross",
+        "name": "Учебно-инновационный криминалистический комплекс им. Г.Гросса",
+        "img": "/images/project-work-3.png"
+      },
+      {
+        "route": "/international-cooperation/project-work/workshop-of-law",
+        "name": "Мастерская права",
+        "img": "/images/project-work-4.png"
+      }
+    ]
+  }
+}

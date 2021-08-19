@@ -8,6 +8,7 @@
 @import './pages/structurePage.scss';
 @import './pages/studentsPage.scss';
 @import './pages/incomingPage.scss';
+@import './pages/international-cooperation.scss';
 
 //components
 @import './components//Header.scss';
@@ -22,6 +23,7 @@
 @import './components/CardHeadDepartment.scss';
 @import './components/CardTeacher.scss';
 @import './components/CardTrainingUnit.scss';
+@import './components/CardProject.scss';
 
 body {
   margin: 0 auto;

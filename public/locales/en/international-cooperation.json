@@ -1,0 +1,52 @@
+{
+  "title": "Internationa cooperation",
+  "description": "At the moment, KSLA interacts with foreign educational institutions, scientific and international organizations to improve the higher education system in the context of global socio-cultural and economic changes in the world, conduct joint research, international conferences and seminars, participate in joint projects, international educational and  scientific programs, strengthening the academic mobility of students and teachers abroad and training at the institute for foreign students from both near and far abroad.",
+  "description_type": "Currently, the following institutions operate as part of the KSLA:",
+  "sidebar_list": [
+    {
+      "route": "/international-cooperation/international-events",
+      "name": "International events",
+      "img": "/images/international-cooperation-1.png"
+    },
+    {
+      "route": "/international-cooperation/international-programs",
+      "name": "International programs",
+      "img": "/images/international-cooperation-2.png"
+    },
+    {
+      "route": "/international-cooperation/project-work",
+      "name": "Project work",
+      "img": "/images/international-cooperation-3.png"
+    },
+    {
+      "route": "/international-cooperation/partner-organizations",
+      "name": "Partner organizations",
+      "img": "/images/international-cooperation-4.png"
+    }
+  ],
+  "project_work": {
+    "title": "Project work",
+    "sidebar_list": [
+      {
+        "route": "/international-cooperation/project-work/e-learning",
+        "name": "E-lerning",
+        "img": "/images/project-work-1.png"
+      },
+      {
+        "route": "/international-cooperation/project-work/confucius-class",
+        "name": "Confucius class",
+        "img": "/images/project-work-2.png"
+      },
+      {
+        "route": "/international-cooperation/project-work/complex-g-gross",
+        "name": "Educational and innovative forensic complex named after G. Gross",
+        "img": "/images/project-work-3.png"
+      },
+      {
+        "route": "/international-cooperation/project-work/workshop-of-law",
+        "name": "Workshop of law",
+        "img": "/images/project-work-4.png"
+      }
+    ]
+  }
+}
