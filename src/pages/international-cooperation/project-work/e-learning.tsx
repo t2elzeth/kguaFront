@@ -1,6 +1,6 @@
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 import { useTranslation } from 'next-i18next'
-import { WithoutSideBar } from '@src/templates'
+import { DraftPage } from '@src/templates'
 import { Grid } from '@material-ui/core'
 
 const ELearning: React.FC = () => {
@@ -23,9 +23,9 @@ const ELearning: React.FC = () => {
   })
 
   return (
-    <WithoutSideBar pageName={t('e-learning')}>
+    <DraftPage pageName={t('e-learning')}>
       <div className="e-learning">
-        <div>
+        <section>
           <h2>{t('project_work.e-learning.title')}</h2>
           <img style={{ width: '100%' }} alt="e-learning" src="/images/e-learning.png" />
           <h4>{t('project_work.e-learning.title-1')}</h4>
@@ -49,8 +49,8 @@ const ELearning: React.FC = () => {
           <p>{t('project_work.e-learning.description-4')}</p>
           <p>{t('project_work.e-learning.description-5')}</p>
           <p>{t('project_work.e-learning.description-6')}</p>
-        </div>
-        <div>
+        </section>
+        <section style={{ background: '#F1F4F9' }}>
           <h4>{t('project_work.e-learning.e-learning-center-ksla')}</h4>
           <p>{t('project_work.e-learning.e-learning_center_ksla_desc-1')}</p>
           <p>{t('project_work.e-learning.e-learning_center_ksla_desc-2')}</p>
@@ -89,12 +89,12 @@ const ELearning: React.FC = () => {
               <p>{t('project_work.e-learning.catalog_desc-2')}</p>
             </Grid>
             <Grid xs={12} md={4} style={{ textAlign: 'center' }}>
-              <img alt="" src="/images/directory_objective-3.png" />
+              <img alt="" src="/images/directory_objective-3.png" width="100%" />
             </Grid>
           </Grid>
-        </div>
+        </section>
       </div>
-    </WithoutSideBar>
+    </DraftPage>
   )
 }
 

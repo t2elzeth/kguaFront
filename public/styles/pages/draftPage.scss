@@ -1,0 +1,30 @@
+.draftPage {
+  .main {
+    section {
+      padding: 3% 10%;
+      h2 {
+        font-weight: bold;
+        font-size: 36px;
+        line-height: 43px;
+        color: #0054a6;
+      }
+      h4 {
+        margin: 10px 0;
+      }
+      img {
+        margin: 20px 0;
+      }
+      p {
+        margin: 15px 0;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: $tablet) {
+  .main {
+    section {
+      padding: 0% 0;
+    }
+  }
+}
