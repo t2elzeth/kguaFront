@@ -4,7 +4,7 @@ import WithoutSideBar from '../../templates/WithoutSideBar'
 const IndexPage: React.FC = () => {
   return (
     <WithoutSideBar pageName="Ассоциация выпускников">
-      <img src="/images/incoming-2.png" alt="" />
+      <img src="/images/incoming-title-2.png" alt="" />
       <h2>Ассоциация выпускников</h2>
       <h4 style={{ marginTop: '32px' }}>Главной целью создания Ассоциации является:</h4>
       <ul>

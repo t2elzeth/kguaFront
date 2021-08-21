@@ -3,14 +3,14 @@ import Link from 'next/link'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 import { useTranslation } from 'react-i18next'
 
-const IndexPage = () => {
-  const { t } = useTranslation('incoming')
+const Employees = () => {
+  const { t } = useTranslation('employees')
   const categories = t('sidebar_list', { returnObjects: true })
   return (
     <WithoutSideBar pageName="Поступающим">
       <div className="students-page">
         <div className="slider">
-          <img alt="incoming" src="/images/incoming-title-1.png" />
+          <img alt="employees" src="/images/science-title-1.png" />
           <div>
             <h4>{t('title')}</h4>
             <p>{t('description')}</p>
@@ -21,10 +21,10 @@ const IndexPage = () => {
         <div className="categories">
           {categories.map((item) => (
             <Link key={item.route} href={item.route}>
-              <div>
+              <a>
                 <img alt={item.name} src={item.img} />
                 <p>{item.name}</p>
-              </div>
+              </a>
             </Link>
           ))}
         </div>
@@ -35,8 +35,8 @@ const IndexPage = () => {
 
 export const getStaticProps = async ({ locale }) => ({
   props: {
-    ...(await serverSideTranslations(locale, ['common', 'incoming'])),
+    ...(await serverSideTranslations(locale, ['common', 'employees'])),
   },
 })
 
-export default IndexPage
+export default Employees

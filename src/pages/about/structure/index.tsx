@@ -1,6 +1,7 @@
 import { WithoutSideBar } from '@src/templates'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 import Link from 'next/link'
+import { useTranslation } from 'react-i18next'
 
 const categories = [
   {
@@ -26,9 +27,12 @@ const categories = [
 ]
 
 const IndexPage: React.FC = () => {
+  const { t } = useTranslation('about')
+  const categories = t('sidebar_list', { returnObjects: true })
+  console.log('categories: ', categories)
   return (
     <WithoutSideBar pageName="Структура университета">
-      <img src="/images/incoming-2.png" alt="" />
+      <img src="/images/incoming-title-2.png" alt="" />
       <h2>Структура университета</h2>
       <p>
         Кыргызский государственный юридический университет (КГЮА) является государственным высшим
@@ -37,11 +41,11 @@ const IndexPage: React.FC = () => {
         юриспруденции, экономики, управления и информационных технологий.
       </p>
       <div className="categories">
-        {categories.map((item, index) => (
+        {categories[1].subLinks?.map((item, index) => (
           <Link href={item.route} key={index}>
             <a>
               <img src={item.img} alt="" />
-              <p>{item.title}</p>
+              <p>{item.name}</p>
             </a>
           </Link>
         ))}
@@ -52,7 +56,7 @@ const IndexPage: React.FC = () => {
 
 export const getStaticProps = async ({ locale }) => ({
   props: {
-    ...(await serverSideTranslations(locale, ['structure', 'common'])),
+    ...(await serverSideTranslations(locale, ['about', 'common'])),
   },
 })
 

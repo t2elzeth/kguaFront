@@ -1,5 +1,7 @@
-import { StructurePage } from '../../../templates'
+import { AboutPage } from '../../../templates'
 import { Collapse } from '@Components'
+import { useTranslation } from 'react-i18next'
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 
 const staff = [
   {
@@ -37,15 +39,22 @@ const staff = [
   },
 ]
 const AdministrationPage = () => {
+  const { t } = useTranslation('about')
   return (
-    <StructurePage pageName="Ректорат" pageTitle="Ректорат" image="/images/symbolism.png">
+    <AboutPage t={t} pageName="Ректорат" pageTitle="Ректорат" image="/images/symbolism.png">
       <p>
         Свою миссию КГЮА видит в укреплении позиции университета как ведущего, социально
         ориентированного вуза в области образования и развитие его как центра фундаментальных
         научных и экспертно-аналитических исследований в области права.
       </p>
       <Collapse items={staff} />
-    </StructurePage>
+    </AboutPage>
   )
 }
+
+export const getStaticProps = async ({ locale }) => ({
+  props: {
+    ...(await serverSideTranslations(locale, ['common', 'about'])),
+  },
+})
 export default AdministrationPage

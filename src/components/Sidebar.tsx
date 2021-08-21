@@ -6,7 +6,7 @@ import { useCallback, useState } from 'react'
 export const Sidebar = ({ links }) => {
   const router = useRouter()
 
-  const [state, setState] = useState(0)
+  const [state, setState] = useState(null)
 
   const handleItemClick = useCallback(
     (link, index) => () => {

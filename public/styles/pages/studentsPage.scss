@@ -1,11 +1,12 @@
 .students-page {
-  margin: 100px 0;
+  margin: 10px 0;
   .categories {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
     div {
+      transition: 0.3s;
       width: 30%;
       background-color: #f1f4f9;
       box-sizing: border-box;
@@ -37,6 +38,9 @@
     }
   }
   @media screen and (max-width: $tablet) {
+    .students-page {
+      margin-top: 10px;
+    }
     .categories {
       flex-direction: column;
       div {

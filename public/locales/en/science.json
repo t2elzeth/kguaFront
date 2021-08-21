@@ -1,0 +1,21 @@
+{
+  "title": "Science",
+  "description": "В настоящее время КГЮА является ведущим специализированным вузом в Кыргызстане по подготовке высокопрофессиональных юридических научных кадров. Диссертационные советы КГЮА известны и пользуется авторитетом не только в Кыргызстане, но и в Казахстане и России. Члены Диссертационного совета, в составе которого известные ученые-юристы из Кыргызстана и Казахстана, вносят существенный вклад в развитие юридической науки и образования. Также университетом периодически выпускается «Вестник КГЮА», который является официальным периодическим печатным изданием КГЮА, основанным в 2004 г. Журнал зарегистрирован Международным Центром регистрации мировой периодики, индекс ISSN 1694-5344.",
+  "sidebar_list": [
+    {
+      "route": "/science/postgraduate-doctoral-studies",
+      "name": "Department of Postgraduate Studies, Doctoral Studies and Organization of Scientific Activities",
+      "img": "/images/science-1.png"
+    },
+    {
+      "route": "/science/dissertation-council",
+      "name": "Dissertation Council",
+      "img": "/images/science-2.png"
+    },
+    {
+      "route": "/science/scientific-publications",
+      "name": "Scientific publications of KSLA",
+      "img": "/images/science-3.png"
+    }
+  ]
+}
