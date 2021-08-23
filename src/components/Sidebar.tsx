@@ -6,7 +6,7 @@ import { useCallback, useState } from 'react'
 export const Sidebar = ({ links }) => {
   const router = useRouter()
 
-  const [state, setState] = useState(router.pathname)
+  const [state, setState] = useState()
 
   const handleItemClick = useCallback(
     (link, index) => () => {
@@ -34,7 +34,7 @@ export const Sidebar = ({ links }) => {
             )}
           >
             {route.name}
-            {(state === index || route.route === router.pathname) && route.subLinks?.length && (
+            {(state === index || router.pathname == route.route) && route.subLinks?.length && (
               <ul style={{ paddingTop: '10px', paddingBottom: '10px' }}>
                 {route.subLinks?.map((item) => (
                   <Link key={item.route} href={item.route}>
