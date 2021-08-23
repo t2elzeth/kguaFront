@@ -1,0 +1,26 @@
+{
+  "title": "Incoming",
+  "description": "Now you are facing the main choice in your life - who to become in the future, what profession to choose? There are many roads in front of you, and we, the KGLA team, sincerely wish that, having chosen your profession, you follow it to the end, not knowing disappointment and fatigue! Every year a new generation of freshmen within the walls of KSLA begins their journey into the wonderful world of knowledge and adventure.  The doors of not only lecture halls and libraries, but also laboratories are open for students.  Any student can join the KSLA team of activists and contribute to a promising future.  Also, every graduate of the school can become part of a large family of our university.",
+  "sidebar_list": [
+    {
+      "route": "/incoming/graduate-school",
+      "name": "Postgraduate and doctoral studies",
+      "img": "/images/incoming-1.png"
+    },
+    {
+      "route": "/incoming/admission-rules",
+      "name": "Admission rules",
+      "img": "/images/incoming-2.png"
+    },
+    {
+      "route": "/incoming/secondary-education",
+      "name": "Secondary education",
+      "img": "/images/incoming-3.png"
+    },
+    {
+      "route": "/incoming/bachelor-degree",
+      "name": "Bachelor degree",
+      "img": "/images/incoming-4.svg"
+    }
+  ]
+}

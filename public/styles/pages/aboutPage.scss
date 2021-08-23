@@ -1,35 +1,35 @@
 .about-page {
   .main {
-    width:80%;
+    width: 80%;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
     .mainImage {
-      width:100%;
+      width: 100%;
     }
     h2 {
       font-weight: 500;
       font-size: 36px;
       line-height: 42px;
-      color:$blue;
+      color: $blue;
       text-transform: uppercase;
       margin: 40px 0;
     }
     .body {
       display: flex;
       flex-direction: row;
-      margin-top:40px
+      margin-top: 40px;
     }
     .content {
       display: flex;
       flex-direction: column;
-      width:70%;
+      width: 70%;
       box-sizing: border-box;
       h4 {
         font-weight: 600;
         font-size: 24px;
         letter-spacing: 0.02em;
-        color: #2E2E2E;
+        color: #2e2e2e;
         margin-bottom: 24px;
       }
       h3 {
@@ -39,7 +39,7 @@
         margin-bottom: 40px;
       }
       p {
-        font-weight: normal;    
+        font-weight: normal;
         font-size: 18px;
         line-height: 29px;
         letter-spacing: 0.02em;
@@ -47,26 +47,26 @@
         margin-bottom: 24px;
       }
       img {
-        margin-bottom:24px
+        margin-bottom: 24px;
       }
     }
   }
   &__numbers {
     display: flex;
     flex-direction: row;
-    width:100%;
+    width: 100%;
     box-sizing: border-box;
     justify-content: space-between;
-    border-top:  2px solid #ED1A3B;
-    border-bottom:  2px solid #ED1A3B;
-    padding:24px 0;
+    border-top: 2px solid #ed1a3b;
+    border-bottom: 2px solid #ed1a3b;
+    padding: 24px 0;
     margin-bottom: 24px;
     div {
       display: flex;
       flex-direction: row;
 
       p {
-        color:$black;
+        color: $black;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -74,7 +74,7 @@
         font-size: 14px;
         line-height: 17px;
         span {
-          color:$blue;
+          color: $blue;
           font-weight: 900;
           font-size: 48px;
           line-height: 57px;
@@ -104,21 +104,21 @@
           font-weight: bold;
         }
         p {
-          margin-bottom: 0!important;
+          margin-bottom: 0 !important;
         }
       }
       img {
         margin-right: 24px;
-        width:72px
+        width: 72px;
       }
     }
   }
   &__mission-img {
-    width:100%;
+    width: 100%;
   }
   &__hymn {
-    background-color:$lightBlue;
-    padding:20px ;
+    background-color: $lightBlue;
+    padding: 20px;
     box-sizing: border-box;
     margin-bottom: 40px;
     p {
@@ -127,15 +127,15 @@
         font-weight: bold;
         display: block;
       }
-      span:not(:last-child){
+      span:not(:last-child) {
         margin-top: 24px;
       }
     }
   }
   &__awards {
     img {
-      width:240px;
-      height:300px
+      width: 240px;
+      height: 300px;
     }
     span {
       font-weight: bold;
@@ -144,7 +144,7 @@
       font-size: 18px;
       line-height: 32px;
       letter-spacing: 0.03em;
-      color: #2E2E2E;
+      color: #2e2e2e;
     }
     .leftImg {
       margin-left: 24px;
@@ -157,9 +157,9 @@
     display: flex;
     flex-direction: row;
   }
-  @media screen and (max-width:$tablet) {
+  @media screen and (max-width: $tablet) {
     .main {
-      width:90%;
+      width: 90%;
       h2 {
         font-size: 24px;
         margin: 40px 0 24px 0;
@@ -168,8 +168,8 @@
     }
     .body {
       .content {
-        width:100%;
-        p{
+        width: 100%;
+        p {
           font-size: 16px;
           line-height: 24px;
         }
@@ -181,7 +181,7 @@
     &__awards-block {
       flex-direction: column-reverse;
       img {
-        width:100%;
+        width: 100%;
         margin-left: 0;
       }
       .leftImg {
@@ -190,18 +190,38 @@
       .rightImg {
         margin-right: 0;
       }
-  
     }
     &__mission {
-      ul{
+      ul {
         li {
           img {
-            width:50px;
-            height:50px;
+            width: 50px;
+            height: 50px;
             margin-right: 12px;
           }
         }
       }
     }
+  }
+}
+
+.infoCount {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.headline-regular {
+  color: $black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  span {
+    color: $blue;
+    font-weight: 900;
+    font-size: 64px;
+    line-height: 75px;
   }
 }

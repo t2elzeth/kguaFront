@@ -1,0 +1,82 @@
+{
+  "title": "Science",
+  "description": "Азыркы учурда КГЮА юридикалык жогорку кесипкөй илимий кадрларды даярдоо боюнча Кыргызстандагы адистешкен алдынкы ЖОЖ болуп саналат. КГЮАнын Диссертациялык кеңеши кеңири белгилүү болуп, Кыргызстанда гана эмес, Казакстанда жана Россияда да абройго ээ. Кыргызстандын жана Казакстандын белгилүү юрист-окумуштууларынан турган Диссертациялык кеңештин мүчөлөрү юридикалык илим жана билимдин өнүгүшүнө олуттуу салымын кошуп келишет.Ошондой эле КГЮАнын 2004-жылы негизделген расмий мезгилдүү басмасы «КГЮАнын жарчысы» чыгып турат. Журнал дүйнөлүк мезгилдүү басманын Эл аралык Борбору тарабынан катталган, индекси ISSN 1694-5344.",
+  "sidebar_list": [
+    {
+      "route": "/science/postgraduate-doctoral-studies",
+      "name": "Аспирантура, докторантура жана илимий ишмердүүлүктү уюштуруу бөлүмү",
+      "img": "/images/science-1.png"
+    },
+    {
+      "route": "/science/dissertation-council",
+      "name": "Диссертациялык кеңеш",
+      "img": "/images/science-2.png",
+      "subLinks": [
+        {
+          "route": "/science/dissertation-council/",
+          "name": "Диссертационный совет",
+          "img": ""
+        },
+        {
+          "route": "/science/dissertation-council/info-members",
+          "name": "Сведения о членах диссертационного совета",
+          "img": ""
+        },
+        {
+          "route": "/science/dissertation-council/order",
+          "name": "Приказ",
+          "img": ""
+        },
+        {
+          "route": "/science/dissertation-council/passports-specialties",
+          "name": "Паспорта специальностей",
+          "img": ""
+        },
+        {
+          "route": "/science/dissertation-council/specialist-passports",
+          "name": "Паспорта специалистов",
+          "img": ""
+        },
+        {
+          "route": "/science/dissertation-council/abstracts",
+          "name": "Авторефераты",
+          "img": ""
+        },
+        {
+          "route": "/science/dissertation-council/reviews",
+          "name": "Отзывы",
+          "img": ""
+        },
+        {
+          "route": "/science/dissertation-council/electronic-queue",
+          "name": "Электронная очередь",
+          "img": ""
+        },
+        {
+          "route": "/science/dissertation-council/expert-opinions",
+          "name": "Экспертные заключения",
+          "img": ""
+        }
+      ]
+    },
+    {
+      "route": "/science/scientific-publications",
+      "name": "КГЮАнын Илимий басылмалары",
+      "img": "/images/science-3.png",
+      "subLinks": [
+        {
+          "route": "/science/scientific-publications/vestnik-ksla",
+          "name": "Научно-методический журнал «Вестник КГЮА»"
+        },
+        {
+          "route": "/science/scientific-publications/vestnik-ksla-info",
+          "name": "Информация редакционной коллегии журнала «Вестник КГЮА»"
+        },
+        {
+          "route": "/science/scientific-publications/sample",
+          "name": "Образец оформления статьи"
+        }
+      ]
+    }
+  ]
+}

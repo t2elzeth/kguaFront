@@ -1,45 +1,51 @@
 .students-page {
-  margin: 100px 0;
+  margin: 10px 0;
   .categories {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
     div {
-      width:30%;
-      background-color: #F1F4F9;
+      transition: 0.3s;
+      width: 30%;
+      background-color: #f1f4f9;
       box-sizing: border-box;
       display: flex;
       justify-content: center;
-      padding:40px;
+      padding: 40px;
       flex-direction: column;
       align-items: center;
       margin-top: 36px;
       cursor: pointer;
       img {
-        width:130px;
-        height:120px;
+        width: 130px;
+        height: 120px;
         margin-bottom: 40px;
       }
       p {
-      font-weight: bold;
-      font-size: 24px;
-      line-height: 29px;
-      color:$blue;
-      text-align: center;
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 29px;
+        color: $blue;
+        text-align: center;
       }
     }
     :hover {
       background-color: $red;
+      p {
+        color: #fff;
+      }
     }
-    
   }
-  @media screen and (max-width:$tablet) {
+  @media screen and (max-width: $tablet) {
+    .students-page {
+      margin-top: 10px;
+    }
     .categories {
       flex-direction: column;
       div {
-        width:100%;
-        padding:16px;
+        width: 100%;
+        padding: 16px;
       }
     }
   }

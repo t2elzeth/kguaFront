@@ -1,4 +1,4 @@
-import { Header, Footer, News } from '@Components'
+import { News } from '@Components'
 import Head from 'next/head'
 
 export type WithoutSideBarProps = {
@@ -11,10 +11,8 @@ const WithoutSideBar: React.FC<WithoutSideBarProps> = ({ pageName, children }) =
       <Head>
         <title>{pageName}</title>
       </Head>
-      <Header />
       <div className="main">{children}</div>
       <News />
-      <Footer />
     </div>
   )
 }

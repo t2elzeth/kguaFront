@@ -1,0 +1,17 @@
+.international-cooperation {
+  h2 {
+    font-weight: bold;
+    font-size: 36px !important;
+    text-transform: uppercase;
+
+    color: #0054a6 !important;
+  }
+}
+
+@media screen and (max-width: $tablet) {
+  .international-cooperation {
+    h2 {
+      font-size: 16px !important;
+    }
+  }
+}

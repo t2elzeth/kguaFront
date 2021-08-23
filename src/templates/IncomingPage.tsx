@@ -1,42 +1,22 @@
-import { Header, Footer, News, Sidebar, MobileMenu } from '@Components'
+import { News, Sidebar, MobileMenu } from '@Components'
 import Head from 'next/head'
+import { useTranslation } from 'react-i18next'
 
 export type IncomingPageProps = {
-  pageName: string,
-  pageTitle: string,
+  pageName: string
+  pageTitle: string
   image: string
 }
 
-const links =
-{
-  title: 'Поступающим',
-  routes: [
-    {
-      title: 'Аспирантура и докторантура ',
-      route: '/incoming/graduate-school'
-    },
-    {
-      title: 'Бакалавриат',
-      route: '/incoming/bachelor-degree'
-    },
-    {
-      title: 'Среднее профессиональное образование',
-      route: '/incoming/secondary-education'
-    },
-    {
-      title: 'Правила приёма в КГЮА',
-      route: '/incoming/admission-rules'
-    },
-  ]
-}
-
 const IncomingPage: React.FC<IncomingPageProps> = ({ pageName, pageTitle, children, image }) => {
+  const { t } = useTranslation()
+  const links = t('sidebar_list', { returnObjects: true })
+
   return (
     <div className="incoming-page">
-      <Head >
+      <Head>
         <title>{pageName}</title>
       </Head>
-      <Header />
       <MobileMenu links={links} />
       <div className="main">
         <h2>{pageTitle}</h2>
@@ -47,7 +27,6 @@ const IncomingPage: React.FC<IncomingPageProps> = ({ pageName, pageTitle, childr
         </div>
       </div>
       <News />
-      <Footer />
     </div>
   )
 }

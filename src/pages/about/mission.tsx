@@ -5,10 +5,15 @@ import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 export type MissionPageProps = {}
 
 const MissionPage: React.FC<MissionPageProps> = () => {
-  const { t } = useTranslation("about")
+  const { t } = useTranslation('about')
 
   return (
-    <AboutPage pageName="Миссия и стратегия" pageTitle='Миссия и стратегия' image='/images/mission-1.png'>
+    <AboutPage
+      t={t}
+      pageName="Миссия и стратегия"
+      pageTitle="Миссия и стратегия"
+      image="/images/mission-1.png"
+    >
       <div className="about-page__mission">
         {/* <p>Свою миссию КГЮА видит в укреплении позиции университета как ведущего, социально ориентированного вуза в области образования и развитие его как центра фундаментальных научных и экспертно-аналитических исследований в области права.</p> */}
         <p>{t('mission.title')}</p>
@@ -16,15 +21,18 @@ const MissionPage: React.FC<MissionPageProps> = () => {
           Видение университета: КГЮА  стремится быть:
       </h4> */}
         <ul>
-          <li><img src='/images/mission-1.svg' />
+          <li>
+            <img src="/images/mission-1.svg" />
             {t('mission.firstMission')}
             {/* активным участником политического, социально–экономического и культурного развития Кыргызской Республики; */}
           </li>
-          <li><img src='/images/mission-2.svg' />
+          <li>
+            <img src="/images/mission-2.svg" />
             {t('mission.secondMission')}
             {/* открытым для установления партнерских отношений с сообществами в образовательных, научных проектах; */}
           </li>
-          <li><img src='/images/mission-3.svg' />
+          <li>
+            <img src="/images/mission-3.svg" />
             {t('mission.thirdMission')}
             {/* центром создания и передачи своих знаний, умений, ресурсов и ценностей; научным сообществом, развивающим динамичную научную среду,      сообществом вовлеченных студентов и сотрудников, разделяющих ответственность за выполнение миссии  университета и получающих признание за свой вклад в его развитие. */}
           </li>
@@ -41,15 +49,15 @@ const MissionPage: React.FC<MissionPageProps> = () => {
         </h4>
         <ul>
           <li>
-            <img src='/images/mission-4.svg' />
+            <img src="/images/mission-4.svg" />
             <p>
-              <span>{t('strategy.direction')} 1.</span>
+              <span>{t(`strategy.direction`)} 1.</span>
               {t('strategy.direction1')}
               {/* Модернизация образовательного процесса на основе разработки инновационных образовательных программ. */}
             </p>
           </li>
           <li>
-            <img src='/images/mission-5.svg' />
+            <img src="/images/mission-5.svg" />
             <p>
               <span>{t('strategy.direction')} 2.</span>
               {t('strategy.direction2')}
@@ -57,7 +65,7 @@ const MissionPage: React.FC<MissionPageProps> = () => {
             </p>
           </li>
           <li>
-            <img src='/images/mission-6.svg' />
+            <img src="/images/mission-6.svg" />
             <p>
               <span>{t('strategy.direction')} 3.</span>
               {t('strategy.direction3')}
@@ -65,7 +73,7 @@ const MissionPage: React.FC<MissionPageProps> = () => {
             </p>
           </li>
           <li>
-            <img src='/images/mission-7.svg' />
+            <img src="/images/mission-7.svg" />
             <p>
               <span>{t('strategy.direction')} 4.</span>
               {t('strategy.direction4')}
@@ -73,7 +81,7 @@ const MissionPage: React.FC<MissionPageProps> = () => {
             </p>
           </li>
           <li>
-            <img src='/images/mission-8.svg' />
+            <img src="/images/mission-8.svg" />
             <p>
               <span>{t('strategy.direction')} 5.</span>
               {t('strategy.direction5')}
@@ -81,7 +89,7 @@ const MissionPage: React.FC<MissionPageProps> = () => {
             </p>
           </li>
           <li>
-            <img src='/images/mission-9.svg' />
+            <img src="/images/mission-9.svg" />
             <p>
               <span>{t('strategy.direction')} 6.</span>
               {t('strategy.direction6')}
@@ -89,7 +97,7 @@ const MissionPage: React.FC<MissionPageProps> = () => {
             </p>
           </li>
           <li>
-            <img src='/images/mission-10.svg' />
+            <img src="/images/mission-10.svg" />
             <p>
               <span>{t('strategy.direction')} 7.</span>
               {t('strategy.direction7')}
@@ -103,7 +111,7 @@ const MissionPage: React.FC<MissionPageProps> = () => {
 }
 export const getStaticProps = async ({ locale }) => ({
   props: {
-    ...await serverSideTranslations(locale, ['common', 'about']),
+    ...(await serverSideTranslations(locale, ['common', 'about'])),
   },
 })
 export default MissionPage

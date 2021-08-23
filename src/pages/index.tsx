@@ -1,20 +1,23 @@
 import Head from 'next/head'
-import { Header, News, Footer } from '@Components'
+import { News } from '@Components'
 import Image from 'next/image'
+import { useTranslation } from 'next-i18next'
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
+import InfoCount from '@src/components/InfoCount'
 
 const IndexPage: React.FC = () => {
+  const { t } = useTranslation('index')
   return (
     <div className="main">
       <Head>
         <title>Главная</title>
       </Head>
-      <Header />
       <section className="section-1">
         <div className="section-1__wrapper">
           <div className="section-1__text">
-            <h4>ДОБРО ПОЖАЛОВАТЬ</h4>
+            <h4>{t('welcome')}</h4>
             <h1>В КЫРГЫЗСКИЙ ГОСУДАРСТВЕННЫЙ ЮРИДИЧЕСКИЙ УНИВЕРСИТЕТ</h1>
-            <p className="headline-regular">
+            <p className="headline-regular" style={{ color: '#fff', textAlign: 'left' }}>
               КГЮА образован в целях совершенствования системы подготовки юридических кадров и
               повышения качества юридического образования Указом Президента Кыргызской Республики от
               12.08.2003г. УП № 264 на базе Центра повышения квалификации
@@ -24,36 +27,7 @@ const IndexPage: React.FC = () => {
               Узнать больше
           </button> */}
           </div>
-          <div className="section-1__box">
-            <div>
-              <p className="headline-regular">
-                <span>47</span>
-                Информирование <br />о мероприятиях в КГЮА
-              </p>
-              <hr />
-            </div>
-            <div>
-              <p className="headline-regular">
-                <span>5</span>
-                Информирование <br />о мероприятиях в КГЮА
-              </p>
-              <hr />
-            </div>
-            <div>
-              <p className="headline-regular">
-                <span>6</span>
-                Информирование
-                <br /> о мероприятиях в КГЮА
-              </p>
-              <hr />
-            </div>
-            <div>
-              <p className="headline-regular">
-                <span>2500</span>
-                Информирование <br />о мероприятиях в КГЮА
-              </p>
-            </div>
-          </div>
+          <InfoCount />
         </div>
       </section>
       <section className="section-2">
@@ -94,7 +68,7 @@ const IndexPage: React.FC = () => {
               </div>
               <div className="section-3__block-text">
                 <h4>ИНСТИТУТ ЭКОНОМИКИ И УПРАВЛЕНИЯ</h4>
-                <p>
+                <p style={{ padding: '10px 0' }}>
                   КГЮА образован в целях совершенствования системы подготовки юридических кадров и
                   повышения качества юридического образования
                 </p>
@@ -107,7 +81,7 @@ const IndexPage: React.FC = () => {
               </div>
               <div className="section-3__block-text">
                 <h4>ИНСТИТУТ АДВОКАТУРЫ И ЮСТИЦИИ</h4>
-                <p className="headline-regular">
+                <p style={{ padding: '10px 0' }}>
                   КГЮА образован в целях совершенствования системы подготовки юридических кадров и
                   повышения качества юридического образования
                 </p>
@@ -119,7 +93,7 @@ const IndexPage: React.FC = () => {
               </div>
               <div className="section-3__block-text">
                 <h4>ИНСТИТУТ ЭКОНОМИКИ И УПРАВЛЕНИЯ</h4>
-                <p className="headline-regular">
+                <p style={{ padding: '10px 0' }}>
                   КГЮА образован в целях совершенствования системы подготовки юридических кадров и
                   повышения качества юридического образования
                 </p>
@@ -131,7 +105,7 @@ const IndexPage: React.FC = () => {
               </div>
               <div className="section-3__block-text">
                 <h4>ИНСТИТУТ ПРАВОСУДИЯ И ПРОКУРАТУРЫ</h4>
-                <p className="headline-regular">
+                <p style={{ padding: '10px 0' }}>
                   КГЮА образован в целях совершенствования системы подготовки юридических кадров и
                   повышения качества юридического образования
                 </p>
@@ -146,8 +120,14 @@ const IndexPage: React.FC = () => {
           <img key={index} alt="" src={`/images/fifth-section-${index + 1}.png`} />
         ))}
       </section>
-      <Footer />
     </div>
   )
 }
+
+export const getStaticProps = async ({ locale }) => ({
+  props: {
+    ...(await serverSideTranslations(locale, ['index', 'common'])),
+  },
+})
+
 export default IndexPage

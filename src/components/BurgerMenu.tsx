@@ -1,38 +1,42 @@
-import React, { useState } from "react";
+import React, { useState } from 'react'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
-import classnames from "classnames";
+import classnames from 'classnames'
+import { useTranslation } from 'react-i18next'
 
 export const BurgerMenu: React.FC<any> = ({ links }) => {
-  const [isOpen, setIsOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(false)
   const router = useRouter()
+  const { t } = useTranslation()
 
   const closeNav = () => {
     setIsOpen(false)
   }
 
   const openNav = () => {
-    setIsOpen(true);
-  };
+    setIsOpen(true)
+  }
 
-  const [selectedItem, setSelectedItem] = useState(undefined)
-  const onListItemClick = (index) => {
+  const [selectedItem, setSelectedItem] = useState(null)
+
+  const onListItemClick = (index) => () => {
     if (selectedItem === index) {
-      setSelectedItem(undefined)
-    }
-    else {
+      setSelectedItem(null)
+    } else {
       setSelectedItem(index)
     }
   }
 
+  const onItemClick = (item, index) => () => {
+    if (selectedItem !== index) {
+      setSelectedItem(index)
+    }
+    router.push(item.route)
+  }
+
   return (
     <>
-      <div
-        className={classnames(
-          "burger-menu",
-          isOpen ? "open" : "close",
-        )}
-      >
+      <div className={classnames('burger-menu', isOpen ? 'open' : 'close')}>
         <div className="wrapper">
           <div className="burger-menu__header">
             <img
@@ -41,33 +45,28 @@ export const BurgerMenu: React.FC<any> = ({ links }) => {
               onClick={() => router.push('/')}
             />
             <div className="burger-menu__icon">
-              <img
-                src="/images/close-burger-icon.svg"
-                alt="burger-menu-icon"
-                onClick={closeNav}
-              />
+              <img src="/images/close-burger-icon.svg" alt="burger-menu-icon" onClick={closeNav} />
             </div>
           </div>
           <div className="burger-menu__content">
             {links?.map((item, index) => (
               <>
-                <li key={index}
-                  className={classnames(
-                    'burger__list-item')}
-                  onClick={() => onListItemClick(index)}
+                <li
+                  key={index}
+                  className={classnames('burger__list-item')}
+                  onClick={item.routes?.length ? onListItemClick(index) : onItemClick(item, index)}
                 >
-                  {item.title}
-                  {item.routes.length > 0 && <img src="/images/arrow-down.svg" />}
+                  {t(`header.${item.title}`)}
+                  {item.routes?.length > 0 && <img src="/images/arrow-down.svg" />}
                 </li>
                 <>
-                  {selectedItem === index && item.routes.length > 0 &&
+                  {selectedItem === index && item.routes.length > 0 && (
                     <div className="burger-menu__links">
                       {item?.routes.map((route) => (
                         <Link href={route.route}>{route.title}</Link>
                       ))}
                     </div>
-
-                  }
+                  )}
                 </>
               </>
             ))}
@@ -75,12 +74,8 @@ export const BurgerMenu: React.FC<any> = ({ links }) => {
         </div>
       </div>
       <div className="burger-menu__icon">
-        <img
-          src="/images/burger-menu-icon.svg"
-          alt="burger-menu-icon"
-          onClick={openNav}
-        />
+        <img src="/images/burger-menu-icon.svg" alt="burger-menu-icon" onClick={openNav} />
       </div>
     </>
-  );
-};
+  )
+}

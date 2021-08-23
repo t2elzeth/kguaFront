@@ -4,7 +4,7 @@
     margin: 40px auto;
     display: flex;
     flex-direction: column;
-    max-width: 1180px;
+    // max-width: 1180px;
     h2 {
       font-weight: 500;
       font-size: 36px;
@@ -130,6 +130,11 @@
       }
     }
   }
+  .e-learning {
+    p {
+      margin: 15px 0;
+    }
+  }
   .contacts {
     b {
       margin-right: 8px;
@@ -138,6 +143,15 @@
   @media screen and (max-width: $tablet) {
     .main {
       width: 90%;
+      margin-top: 0;
+      h2 {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 40px;
+        color: $black;
+        text-transform: uppercase;
+        // margin: 24px 0;
+      }
     }
     &__institutes {
       flex-direction: column;

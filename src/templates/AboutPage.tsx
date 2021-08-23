@@ -1,70 +1,31 @@
-import { Header, Footer, News, Sidebar, MobileMenu } from '@Components'
+import { News, Sidebar, MobileMenu } from '@Components'
 import Head from 'next/head'
 
 export type AboutPageProps = {
-  pageName: string,
-  pageTitle: string,
+  t: any
+  pageName: string
+  pageTitle: string
   image: string
 }
-const links =
-{
-  title: 'Информация о КГЮА',
-  active: false,
-  routes: [
-    {
-      title: 'Основные сведения',
-      route: '/about'
-    },
-    // {
-    //   title: 'История образования и развития КГЮА',
-    //   route: ''
-    // },
-    {
-      title: 'Миссия и стратегия',
-      route: '/about/mission'
-    },
-    {
-      title: 'Символика',
-      route: '/about/symbolism'
-    },
-    {
-      title: 'Награды и звания',
-      route: '/about/awards'
-    },
-    {
-      title: 'Документы',
-      route: '/about/documents'
-    },
-    {
-      title: 'Локальные-нормативные акты',
-      route: '/about/local-acts'
-    },
-    // {
-    //   title: 'Материально-техническая база университета',
-    //   route: ''
-    // },
-  ]
-}
 
+const AboutPage: React.FC<AboutPageProps> = ({ t, pageName, pageTitle, children, image }) => {
+  const links = t('sidebar_list', { returnObjects: true })
 
-const AboutPage: React.FC<AboutPageProps> = ({ pageName, pageTitle, children, image }) => {
   return (
     <div className="about-page">
-      <Head >
+      <Head>
         <title>{pageName}</title>
       </Head>
-      <Header />
       <MobileMenu links={links} />
       <div className="main">
         <h2>{pageTitle}</h2>
-        <img className="mainImage" src={image} />
+        <img alt="" className="mainImage" src={image} />
         <div className="body">
           <Sidebar links={links} />
-          <div className="content"> {children}</div>
+          <div className="content">{children}</div>
         </div>
       </div>
       <News />
-      <Footer />
     </div>
   )
 }

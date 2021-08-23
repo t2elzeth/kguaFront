@@ -31,7 +31,7 @@ export const Collapse: React.FC<CollapseProps> = ({ items }) => {
         {items.map((item: any, index: any) => (
           <div onClick={() => handleItemClick(index)} className="block" key={index}>
             <div className="titleLine">
-              {/* <img src={item.image} className="collapseImage" /> */}
+              <img src={item.image} className="collapseImage" />
               <p className="title">
                 {item.name}
                 <span className="subtitle">{item.position}</span>
@@ -49,13 +49,11 @@ export const Collapse: React.FC<CollapseProps> = ({ items }) => {
             >
               <div className="collapsedContent">
                 <div>
-                  {' '}
-                  <p>Email </p>
-                  <span>{item.email}</span>
+                  <p>Общий стаж работы</p>
+                  <span>{item.experience}</span>
                 </div>
                 <div>
-                  {' '}
-                  <p>Телефон </p> <span> {item.phoneNumber}</span>
+                  <p>Научно-педагогический стаж</p> <span> {item.pedagogicalExperience}</span>
                 </div>
                 <div>
                   <p> Образование </p>{' '}

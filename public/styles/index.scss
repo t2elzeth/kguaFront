@@ -2,6 +2,15 @@
 @import './typography.scss';
 @import './common.scss';
 
+//pages
+@import './pages/mainPage.scss';
+@import './pages//aboutPage.scss';
+@import './pages/structurePage.scss';
+@import './pages/studentsPage.scss';
+@import './pages/incomingPage.scss';
+@import './pages/international-cooperation.scss';
+@import './pages/draftPage.scss';
+
 //components
 @import './components//Header.scss';
 @import './components//Footer.scss';
@@ -11,21 +20,20 @@
 @import './components/burger-menu.scss';
 @import './components/mobile-menu.scss';
 @import './components/download.scss';
-
-
-//pages
-@import './pages/mainPage.scss';
-@import './pages//aboutPage.scss';
-@import './pages/structurePage.scss';
-@import './pages/studentsPage.scss';
-@import './pages/incomingPage.scss';
+@import './components/CardDepartment.scss';
+@import './components/CardHeadDepartment.scss';
+@import './components/CardTeacher.scss';
+@import './components/CardTrainingUnit.scss';
+@import './components/CardProject.scss';
 
 body {
   margin: 0 auto;
   box-sizing: border-box;
   font-family: 'SFProDisplay', sans-serif;
 }
-ul, li, button {
+ul,
+li,
+button {
   font-family: inherit;
 }
 p {

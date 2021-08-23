@@ -1,0 +1,100 @@
+{
+  "header": {
+    "about_us": "About KSLA",
+    "training_units": "Training units",
+    "incoming": "Applicants",
+    "students": "Students",
+    "science": "Science",
+    "international_cooperation": "International cooperation",
+    "employees": "Employees"
+  },
+  "faculties_and_institutes": "Faculties and Institutes",
+  "departments": {
+    "dafil": "Department of Administrative, Financial and Information Law",
+    "dcfl": "Department of Civil and Family Law",
+    "dcpn": "Department of Civil Procedure and Notaries",
+    "dlael": "Department of Land, Agrarian and Environmental Law",
+    "ditnsd": "Department of Information Technology and Natural Science Disciplines",
+    "dcml": "Department of Constitutional and Municipal Law",
+    "dcfe": "Department of Criminalistics and Forensic Examinations",
+    "dpcs": "Department of Physical Culture and Sports",
+    "dlic": "Department of Languages ​​and Intercultural Communication",
+    "dilwp": "Department of International Law and World Politics",
+    "dbll": "Department of Business and Labor Law",
+    "dthsl": "Department of Theory and History of State and Law",
+    "dcl": "Department of Criminal Law",
+    "dcelc": "Department of Criminal Execution Law and Criminology",
+    "dcpps": "Department of Criminal Procedure and Prosecutor's Supervision",
+    "dpssh": "Department of Philosophy and Social Sciences and Humanities",
+    "demc": "Department of Economics, Management and Customs",
+    "slc": "State Language Center"
+  },
+  "faculties": [
+    {
+      "route": "/training-units/gsl",
+      "name": "Graduate School of Law",
+      "img": "/images/faculty-gsl.svg",
+      "subLinks": [
+        {
+          "route": "/training-units/gsl/gsl2",
+          "name": "TEST GSL2"
+        }
+      ]
+    },
+    {
+      "route": "/training-units/hseb",
+      "name": "Higher School of Economics and Business",
+      "img": "/images/faculty-gsl.svg"
+    },
+    {
+      "route": "/training-units/hit",
+      "name": "Higher IT School (IT - Academy)",
+      "img": "/images/faculty-gsl.svg"
+    },
+    {
+      "route": "/training-units/iiril",
+      "name": "Institute of International Relations and International Law",
+      "img": "/images/faculty-gsl.svg"
+    },
+    {
+      "route": "/training-units/impp",
+      "name": "Institute for Master's and PhD Programs",
+      "img": "/images/faculty-gsl.svg"
+    },
+    {
+      "route": "/training-units/fcdl",
+      "name": "Faculty of Correspondence and Distance Learning",
+      "img": "/images/faculty-gsl.svg"
+    },
+    {
+      "route": "/training-units/fss",
+      "name": "Faculty of Social Sciences",
+      "img": "/images/faculty-gsl.svg"
+    },
+    {
+      "route": "/training-units/fmc",
+      "name": "Faculty of Media and Communications",
+      "img": "/images/faculty-gsl.svg"
+    },
+    {
+      "route": "/training-units/ikli",
+      "name": "Issyk-Kul Law Institute",
+      "img": "/images/faculty-gsl.svg"
+    },
+    {
+      "route": "/training-units/faep",
+      "name": "Faculty of Additional Educational Programs",
+      "img": "/images/faculty-gsl.svg"
+    },
+    {
+      "route": "/training-units/al",
+      "name": "Academic Lyceum",
+      "img": "/images/faculty-gsl.svg"
+    },
+    {
+      "route": "/training-units/pl99",
+      "name": "Professional Lyceum No. 99",
+      "img": "/images/faculty-gsl.svg"
+    }
+  ]
+}
