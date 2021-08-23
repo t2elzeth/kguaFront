@@ -3,7 +3,6 @@ import { Download } from '@Components'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 import { useTranslation } from 'react-i18next'
 
-export type DocumentsPageProps = {}
 const documents = [
   {
     title: 'Отзыв ведущей организации на диссертацию Джумалиева Д.С.',
@@ -35,12 +34,12 @@ const documents = [
   },
 ]
 
-const DocumentsPage: React.FC<DocumentsPageProps> = () => {
+const DocumentsPage: React.FC = () => {
   const { t } = useTranslation('about')
   return (
     <AboutPage t={t} pageName="Документы" pageTitle="Документы" image="/images/documents.png">
       {documents.map((item) => (
-        <Download document={item} />
+        <Download key={item.title} document={item} />
       ))}
     </AboutPage>
   )

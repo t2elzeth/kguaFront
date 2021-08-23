@@ -5,7 +5,7 @@ export type TrainingUnitsProps = {
   pageName?: string
   pageTitle?: string
   image?: string
-  links: []
+  links: any
 }
 
 const TrainingUnits: React.FC<TrainingUnitsProps> = ({

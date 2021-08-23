@@ -34,13 +34,13 @@ const ELearning: React.FC = () => {
           <p>{t('project_work.e-learning.project_coordinator_desc')}</p>
           <h4>{t('project_work.e-learning.objectives_project')}</h4>
           <ul>
-            {objectivesList.map((item) => (
+            {Array.from(objectivesList).map((item) => (
               <li key={item}>{item}</li>
             ))}
           </ul>
           <h4>{t('project_work.e-learning.specific_tasks_project')}</h4>
           <ul>
-            {specificTaskList.map((item) => (
+            {Array.from(specificTaskList).map((item) => (
               <li key={item}>{item}</li>
             ))}
           </ul>
@@ -60,7 +60,7 @@ const ELearning: React.FC = () => {
           <Grid container direction="row" justifyContent="space-between">
             <Grid item xs={12} md={8}>
               <ul>
-                {directoryObjectivesList.map((item) => (
+                {Array.from(directoryObjectivesList).map((item) => (
                   <li key={item}>{item}</li>
                 ))}
               </ul>
@@ -82,7 +82,7 @@ const ELearning: React.FC = () => {
             <Grid item xs={12} md={8}>
               <h5>{t('project_work.e-learning.structure_catalog')}</h5>
               <ul>
-                {catalogList.map((item) => (
+                {Array.from(catalogList).map((item) => (
                   <li key={item}>{item}</li>
                 ))}
               </ul>

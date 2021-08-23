@@ -3,33 +3,12 @@ import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 import Link from 'next/link'
 import { useTranslation } from 'react-i18next'
 
-const categories = [
-  {
-    title: 'Ректорат',
-    img: '/images/students-1.svg',
-    route: '/about/structure/administration',
-  },
-  {
-    title: 'Учебные подразделения ',
-    img: '/images/students-2.svg',
-    route: '/structure',
-  },
-  {
-    title: 'Структурные подразделения',
-    img: '/images/students-3.svg',
-    route: '/about/structure/structural-units',
-  },
-  {
-    title: 'Кафедры',
-    img: '/images/students-4.svg',
-    route: '/about/structure/departments',
-  },
-]
-
 const IndexPage: React.FC = () => {
   const { t } = useTranslation('about')
-  const categories = t('sidebar_list', { returnObjects: true })
-  console.log('categories: ', categories)
+  const categories = Array.from(t('sidebar_list', { returnObjects: true }))
+
+  const strucutureCategories = categories.find((item: any) => item.route.includes('structure'))
+
   return (
     <WithoutSideBar pageName="Структура университета">
       <img src="/images/incoming-title-2.png" alt="" />
@@ -41,7 +20,7 @@ const IndexPage: React.FC = () => {
         юриспруденции, экономики, управления и информационных технологий.
       </p>
       <div className="categories">
-        {categories[1].subLinks?.map((item, index) => (
+        {Object(strucutureCategories).subLinks?.map((item, index) => (
           <Link href={item.route} key={index}>
             <a>
               <img src={item.img} alt="" />

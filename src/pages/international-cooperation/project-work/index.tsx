@@ -15,7 +15,7 @@ const ProjectWork: React.FC = () => {
         <h2>{t('project_work.title')}</h2>
         <div className="content">
           <Grid container spacing={2} justifyContent="space-between" alignItems="baseline">
-            {categories.map((item) => (
+            {Array.from(categories).map((item: any) => (
               <Link key={item.route} href={item.route}>
                 <Grid item xs={12} md={4}>
                   <CardProject data={item} />

@@ -19,7 +19,7 @@ const IndexPage = () => {
         <h2>{t('title')}</h2>
         <p>В настоящее время в составе КГЮА действуют следующие институты:</p>
         <div className="categories">
-          {categories.map((item) => (
+          {Array.from(categories).map((item: any) => (
             <Link key={item.route} href={item.route}>
               <div>
                 <img alt={item.name} src={item.img} />

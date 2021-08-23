@@ -20,7 +20,7 @@ const IncomingPage: React.FC<IncomingPageProps> = ({ pageName, pageTitle, childr
       <MobileMenu links={links} />
       <div className="main">
         <h2>{pageTitle}</h2>
-        <img className="mainImage" src={image} />
+        <img alt="" className="mainImage" src={image} />
         <div className="body">
           <Sidebar links={links} />
           <div className="content"> {children}</div>

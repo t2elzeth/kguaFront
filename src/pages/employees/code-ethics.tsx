@@ -6,23 +6,21 @@ import { Download } from '@src/components'
 
 const CodeEthics: React.FC = () => {
   const router = useRouter()
-  console.log('router: ', router)
   const { t } = useTranslation('employees')
 
   const list = t('sidebar_list', { returnObjects: true })
-  const currentData = list.find((item) => item.route === router.pathname)
+  const currentData = Array.from(list).find((item: any) => item.route === router.pathname)
 
   const document = {
     title: 'Этический кодекс работников и обучающихся КГЮА',
-    document: currentData.document,
+    document: Object(currentData).document,
   }
-  console.log('document: ', document)
 
   return (
     <AboutPage
       t={t}
-      pageName={currentData.name}
-      pageTitle={currentData.name}
+      pageName={Object(currentData).name}
+      pageTitle={Object(currentData).name}
       image="/images/documents.png"
     >
       <Download document={document} />

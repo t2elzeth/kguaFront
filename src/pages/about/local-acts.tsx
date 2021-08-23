@@ -3,7 +3,6 @@ import { Download } from '@Components'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 import { useTranslation } from 'react-i18next'
 
-export type LocalActsPageProps = {}
 const documents = [
   {
     title: 'Лицензии IT-академии',
@@ -38,8 +37,8 @@ const documents = [
   },
 ]
 
-const LocalActsPage: React.FC<LocalActsPageProps> = () => {
-  const { t } = useTranslation()
+const LocalActsPage: React.FC = () => {
+  const { t } = useTranslation('about')
   return (
     <AboutPage
       t={t}
@@ -48,7 +47,7 @@ const LocalActsPage: React.FC<LocalActsPageProps> = () => {
       image="/images/documents.png"
     >
       {documents.map((item) => (
-        <Download document={item} />
+        <Download key={item.title} document={item} />
       ))}
     </AboutPage>
   )

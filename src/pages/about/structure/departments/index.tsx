@@ -6,7 +6,6 @@ import { WithoutSideBar } from '../../../../templates'
 const Departments = () => {
   const { t } = useTranslation('about')
   const draft = t('structure.listDepartments', { returnObjects: true })
-  console.log('draft: ', draft)
   return (
     <WithoutSideBar pageName="Кафедры">
       <h2>{t('structure.departments.title')}</h2>

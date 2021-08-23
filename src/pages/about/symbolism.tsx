@@ -2,9 +2,7 @@ import { AboutPage } from '../../templates'
 import { useTranslation } from 'next-i18next'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 
-export type SymbolismPageProps = {}
-
-const SymbolismPage: React.FC<SymbolismPageProps> = () => {
+const SymbolismPage: React.FC = () => {
   const { t } = useTranslation('about')
 
   return (
