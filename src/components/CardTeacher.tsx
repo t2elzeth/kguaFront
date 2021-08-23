@@ -1,12 +1,14 @@
 import React from 'react'
 
-export type CardTeacherItem = {}
-
 import { Grid, Avatar } from '@material-ui/core'
 
-export type CardTeacherProps = {}
+interface TeacherType {
+  image: string
+  name: string
+  position: string
+}
 
-export const CardTeacher: React.FC<CardTeacherProps> = ({ teacher, ...rest }) => {
+export const CardTeacher: React.FC<TeacherType> = (teacher) => {
   return (
     <Grid
       className="CardTeacher"
@@ -14,7 +16,6 @@ export const CardTeacher: React.FC<CardTeacherProps> = ({ teacher, ...rest }) =>
       justifyContent="space-between"
       direction="row"
       alignItems="center"
-      {...rest}
     >
       <Grid item xs={12} md={2} style={{ display: 'flex', justifyContent: 'center' }}>
         <Avatar style={{ width: '77px', height: '77px' }} alt="Omurova" src={teacher.image} />

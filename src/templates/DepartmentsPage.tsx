@@ -113,7 +113,14 @@ const Departments: React.FC<DepartmentsProps> = ({
           <div className="content">
             <h3>Информация о кафедре</h3>
             <div style={{ marginBottom: 50 }}>
-              <CardHeadDepartment teacher={currentDepartments} />
+              <CardHeadDepartment
+                head_teacher={currentDepartments.head_teacher}
+                image={currentDepartments.image}
+                url={currentDepartments.url}
+                address={currentDepartments.address}
+                contacts={currentDepartments.contacts}
+                email={currentDepartments.email}
+              />
             </div>
             <p>{currentDepartments.description}</p>
             {currentDepartments?.info_of_staff && (
@@ -125,7 +132,12 @@ const Departments: React.FC<DepartmentsProps> = ({
 
             <h3>Состав ППС кафедры</h3>
             {currentDepartments.teachers.map((teacher) => (
-              <CardTeacher key={teacher.name} teacher={teacher} />
+              <CardTeacher
+                key={teacher.name}
+                image={teacher.image}
+                name={teacher.name}
+                position={teacher.position}
+              />
             ))}
             {currentDepartments?.task_of_department && (
               <>

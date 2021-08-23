@@ -2,9 +2,7 @@ import { AboutPage } from '../../templates'
 import { useTranslation } from 'next-i18next'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 
-export type IndexPageProps = {}
-
-const IndexPage: React.FC<IndexPageProps> = () => {
+const IndexPage: React.FC = () => {
   const { t } = useTranslation('about')
 
   return (
@@ -36,7 +34,7 @@ const IndexPage: React.FC<IndexPageProps> = () => {
           </p>
         </div>
       </div>
-      <img src="/images/kgua-info-2.png" className="mainImage" />
+      <img alt="" src="/images/kgua-info-2.png" className="mainImage" />
       {/* <p>
         КГЮА образован в целях совершенствования системы подготовки юридических кадров и повышения
         качества юридического образования Указом Президента Кыргызской Республики от 12.08.2003г. УП

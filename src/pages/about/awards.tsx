@@ -3,9 +3,7 @@ import { useTranslation } from 'react-i18next'
 
 import { AboutPage } from '../../templates'
 
-export type AwardsPageProps = {}
-
-const AwardsPage: React.FC<AwardsPageProps> = () => {
+const AwardsPage: React.FC = () => {
   const { t } = useTranslation('about')
   return (
     <AboutPage
@@ -39,11 +37,11 @@ const AwardsPage: React.FC<AwardsPageProps> = () => {
             Президиумом Верховного Совета СССР он был награжден медалью «За доблестный труд в
             Великой Отечественной войне».
           </p>
-          <img src="/images/awards-1.png" className="leftImg" />
+          <img alt="" src="/images/awards-1.png" className="leftImg" />
         </div>
 
         <div className="about-page__awards-block">
-          <img src="/images/awards-2.png" className="rightImg" />
+          <img alt="" src="/images/awards-2.png" className="rightImg" />
           <p>
             <span>Тургунбеков Рафик Тургунбекович </span>- доктор юридических наук, профессор,
             член-корреспондент Академии наук Кыргызской Республики, член Комитета конституционного
@@ -81,7 +79,7 @@ const AwardsPage: React.FC<AwardsPageProps> = () => {
           разработке учебников.
         </p>
       </div>
-      <img src="/images/news-section-1.png" className="mainImage" />
+      <img alt="" src="/images/news-section-1.png" className="mainImage" />
       <p>
         «Почетному доктору КГЮА» в торжественной обстановке вручается мантия, специальная медаль с
         надписью «Почетный доктор КГЮА» и выдается диплом, подписанный ректором КГЮА. Портрет

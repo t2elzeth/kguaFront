@@ -1,4 +1,4 @@
-import { useRouter, withRouter } from 'next/router'
+import { withRouter } from 'next/router'
 
 import { TrainingUnitsPage } from '@src/templates'
 import { useTranslation } from 'react-i18next'

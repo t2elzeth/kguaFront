@@ -10,7 +10,7 @@ import Link from 'next/link'
 const TrainingUnits: React.FC = () => {
   const { t } = useTranslation('')
   const faculties = t('faculties', { returnObjects: true })
-  console.log('faculties: ', faculties)
+
   return (
     <WithoutSideBar pageName="Высшая школа права">
       <h2 style={{ marginBottom: 50 }}>{t('faculties_and_institutes')}</h2>
@@ -18,11 +18,11 @@ const TrainingUnits: React.FC = () => {
         В настоящее время в составе КГЮА действуют следующие институты:
       </p>
       <Grid container direction="row" justifyContent="center" alignItems="stretch" spacing={2}>
-        {faculties.map((item) => (
+        {Array.from(faculties).map((item: any) => (
           <Link href={item.route} key={item.route}>
             <Grid key={item.route} item xs={12} md={4}>
               <a style={{ cursor: 'pointer' }}>
-                <CardTrainingUnit unit={item} />
+                <CardTrainingUnit img={item.img} name={item.name} />
               </a>
             </Grid>
           </Link>

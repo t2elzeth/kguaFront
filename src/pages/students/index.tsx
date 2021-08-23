@@ -29,7 +29,7 @@ const Students = () => {
         <h2>Студентам</h2>
         <p>В настоящее время в составе КГЮА действуют следующие институты:</p>
         <div className="categories">
-          {categories.map((item, index) => (
+          {Array.from(categories).map((item: any, index) => (
             <Link key={index} href={item.route}>
               <div>
                 <img src={item.img} alt="" />

@@ -23,6 +23,18 @@
         {
           "route": "/about/symbolism",
           "name": "Symbolism"
+        },
+        {
+          "route": "/about/local-acts",
+          "name": "Local acts"
+        },
+        {
+          "route": "/about/awards",
+          "name": "Awards and titles"
+        },
+        {
+          "route": "/about/documents",
+          "name": "Documents"
         }
       ]
     },

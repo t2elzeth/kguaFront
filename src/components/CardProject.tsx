@@ -1,7 +1,7 @@
 import { memo } from 'react'
 import { Card, CardActionArea, CardContent, CardMedia, Typography } from '@material-ui/core'
 
-const CardProject = ({ data }) => {
+const CardProject = ({ data }: any) => {
   return (
     <Card className="CardProject">
       <CardActionArea>
@@ -14,7 +14,7 @@ const CardProject = ({ data }) => {
           title={data.name}
         />
         <CardContent>
-          <Typography className="title" variant="p">
+          <Typography className="title" component="p">
             {data.name}
           </Typography>
         </CardContent>

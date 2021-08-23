@@ -9,14 +9,16 @@ const Dafil = () => {
   const { t } = useTranslation('about')
   const departmentsList = t('structure.listDepartments', { returnObjects: true })
 
-  const currentDepartments = departmentsList.find((item) => item.route === router.pathname)
+  const currentDepartments = Array.from(departmentsList).find(
+    (item: any) => item.route === router.pathname
+  )
 
   return (
     <DepartmentsPage
       links={departmentsList}
       currentDepartments={currentDepartments}
-      pageName={currentDepartments.title}
-      pageTitle={currentDepartments.title}
+      pageName={Object(currentDepartments)?.title}
+      pageTitle={Object(currentDepartments)?.title}
       image="/images/symbolism.png"
     />
   )

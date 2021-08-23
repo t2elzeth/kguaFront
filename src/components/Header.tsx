@@ -48,12 +48,12 @@ export const Header = () => {
                 'header__list-item',
                 selectedItem === index && 'header__selected'
               )}
-              onClick={item.routes?.length ? onListItemClick(index) : onItemClick(item, index)}
+              onClick={item?.routes?.length ? onListItemClick(index) : onItemClick(item, index)}
             >
               {t(`header.${item.title}`)}
-              {selectedItem === index && item.routes?.length > 0 && (
+              {selectedItem === index && item?.routes?.length && (
                 <div className="header__links">
-                  {item?.routes.map((route, index) => (
+                  {item?.routes?.map((route, index) => (
                     <Link key={index} href={route.route}>
                       {route.title}
                     </Link>

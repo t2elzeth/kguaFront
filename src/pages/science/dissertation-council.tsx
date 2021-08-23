@@ -4,18 +4,16 @@ import { useTranslation } from 'react-i18next'
 
 import { AboutPage } from '../../templates'
 
-export type DissertationCouncilProps = {}
-
-const DissertationCouncil: React.FC<DissertationCouncilProps> = () => {
+const DissertationCouncil: React.FC = () => {
   const router = useRouter()
   const { t } = useTranslation('science')
   const list = t('sidebar_list', { returnObjects: true })
-  const currentRoute = list.find((item) => item.route === router.pathname)
+  const currentRoute = [list].find((item: any) => item.route === router.pathname)
   return (
     <AboutPage
       t={t}
-      pageName={currentRoute.name}
-      pageTitle={currentRoute.name}
+      pageName={Object(currentRoute).name}
+      pageTitle={Object(currentRoute).name}
       image="/images/science-title-2.png"
     >
       <section style={{ marginBottom: 50 }}>
