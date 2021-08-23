@@ -13,6 +13,7 @@ const Demc = () => {
 
   return (
     <DepartmentsPage
+      links={departmentsList}
       currentDepartments={currentDepartments}
       pageName={currentDepartments.title}
       pageTitle={currentDepartments.title}

@@ -10,12 +10,73 @@
     {
       "route": "/science/dissertation-council",
       "name": "Dissertation Council",
-      "img": "/images/science-2.png"
+      "img": "/images/science-2.png",
+      "subLinks": [
+        {
+          "route": "/science/dissertation-council/",
+          "name": "Диссертационный совет",
+          "img": ""
+        },
+        {
+          "route": "/science/dissertation-council/info-members",
+          "name": "Сведения о членах диссертационного совета",
+          "img": ""
+        },
+        {
+          "route": "/science/dissertation-council/order",
+          "name": "Приказ",
+          "img": ""
+        },
+        {
+          "route": "/science/dissertation-council/passports-specialties",
+          "name": "Паспорта специальностей",
+          "img": ""
+        },
+        {
+          "route": "/science/dissertation-council/specialist-passports",
+          "name": "Паспорта специалистов",
+          "img": ""
+        },
+        {
+          "route": "/science/dissertation-council/abstracts",
+          "name": "Авторефераты",
+          "img": ""
+        },
+        {
+          "route": "/science/dissertation-council/reviews",
+          "name": "Отзывы",
+          "img": ""
+        },
+        {
+          "route": "/science/dissertation-council/electronic-queue",
+          "name": "Электронная очередь",
+          "img": ""
+        },
+        {
+          "route": "/science/dissertation-council/expert-opinions",
+          "name": "Экспертные заключения",
+          "img": ""
+        }
+      ]
     },
     {
       "route": "/science/scientific-publications",
       "name": "Scientific publications of KSLA",
-      "img": "/images/science-3.png"
+      "img": "/images/science-3.png",
+      "subLinks": [
+        {
+          "route": "/science/scientific-publications/vestnik-ksla",
+          "name": "Научно-методический журнал «Вестник КГЮА»"
+        },
+        {
+          "route": "/science/scientific-publications/vestnik-ksla-info",
+          "name": "Информация редакционной коллегии журнала «Вестник КГЮА»"
+        },
+        {
+          "route": "/science/scientific-publications/sample",
+          "name": "Образец оформления статьи"
+        }
+      ]
     }
   ]
 }
