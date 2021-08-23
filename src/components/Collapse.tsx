@@ -31,7 +31,7 @@ export const Collapse: React.FC<CollapseProps> = ({ items }) => {
         {items.map((item: any, index: any) => (
           <div onClick={() => handleItemClick(index)} className="block" key={index}>
             <div className="titleLine">
-              <img src={item.image} className="collapseImage" />
+              <img alt="" src={item.image} className="collapseImage" />
               <p className="title">
                 {item.name}
                 <span className="subtitle">{item.position}</span>
