@@ -51,7 +51,7 @@
         {
           "name": "Учебные подразделения ",
           "img": "/images/students-2.svg",
-          "route": "/structure/training-units"
+          "route": "/training-units"
         },
         {
           "name": "Структурные подразделения",
@@ -280,6 +280,28 @@
         "route": "/about/structure/structural-units/hr-department",
         "name": "Центр карьеры",
         "img": "/images/s_unit_3.png"
+      }
+    ]
+  },
+  "life_of_ksla": {
+    "title": "Жизнь КГЮА",
+    "desc_categories": "В настоящее время в составе КГЮА действуют следующие институты:",
+    "description": "",
+    "sidebar_list": [
+      {
+        "route": "/about/life-of-ksla/activity",
+        "name": "Мероприятия (Конференции, круглые столы",
+        "img": "/images/life_of_ksla-1.svg"
+      },
+      {
+        "route": "/about/life-of-ksla/promotions",
+        "name": "Акции и благотворительность",
+        "img": "/images/life_of_ksla-2.png"
+      },
+      {
+        "route": "/about/life-of-ksla/significant-dates",
+        "name": "Значимые даты (Юбилеи)",
+        "img": "/images/life_of_ksla-3.png"
       }
     ]
   }

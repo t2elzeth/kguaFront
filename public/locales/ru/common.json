@@ -28,11 +28,12 @@
     "demc": "Кафедра Экономики, управления и таможенного дела",
     "slc": "Центр государственного языка"
   },
+  "faculties_and_institutes": "Факультеты и институты",
   "faculties": [
     {
       "route": "/training-units/gsl",
       "name": "Высшая школа права",
-      "img": "/images/faculty-",
+      "img": "/images/faculty-1.png",
       "subLinks": [
         {
           "route": "/training-units/gsl/gsl2",
@@ -43,57 +44,57 @@
     {
       "route": "/training-units/hseb",
       "name": "Высшая школа экономики и бизнеса",
-      "img": "/images/faculty-"
+      "img": "/images/faculty-2.png"
     },
     {
       "route": "/training-units/hit",
       "name": "Высшая IT школа (IT - академия)",
-      "img": "/images/faculty-"
+      "img": "/images/faculty-3.png"
     },
     {
       "route": "/training-units/iiril",
       "name": "Институт международных отношений и международного права",
-      "img": "/images/faculty-"
+      "img": "/images/faculty-4.png"
     },
     {
       "route": "/training-units/impp",
       "name": "Институт магистратуры и PhD программ",
-      "img": "/images/faculty-"
+      "img": "/images/faculty-5.png"
     },
     {
       "route": "/training-units/fcdl",
       "name": "Факультет заочного и дистанционного обучения",
-      "img": "/images/faculty-"
+      "img": "/images/faculty-6.png"
     },
     {
       "route": "/training-units/fss",
       "name": "Факультет социальных наук",
-      "img": "/images/faculty-"
+      "img": "/images/faculty-7.png"
     },
     {
       "route": "/training-units/fmc",
       "name": "Факультет медиа и коммуникаций",
-      "img": "/images/faculty-"
+      "img": "/images/faculty-8.png"
     },
     {
       "route": "/training-units/ikli",
       "name": "Иссык-Кульский юридический институт",
-      "img": "/images/faculty-"
+      "img": "/images/faculty-9.png"
     },
     {
       "route": "/training-units/faep",
       "name": "Факультет дополнительных образовательных программ",
-      "img": "/images/faculty-"
+      "img": "/images/faculty-10.png"
     },
     {
       "route": "/training-units/al",
       "name": "Академический лицей",
-      "img": "/images/faculty-"
+      "img": "/images/faculty-11.png"
     },
     {
       "route": "/training-units/pl99",
       "name": "Профессиональный лицей №99",
-      "img": "/images/faculty-"
+      "img": "/images/faculty-12.png"
     }
   ]
 }

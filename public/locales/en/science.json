@@ -10,7 +10,7 @@
     {
       "route": "/science/dissertation-council",
       "name": "Dissertation Council",
-      "img": "/images/science-2.png",
+      "img": "/images/science-2.svg",
       "subLinks": [
         {
           "route": "/science/dissertation-council/",
@@ -78,5 +78,32 @@
         }
       ]
     }
-  ]
+  ],
+  "postgraduate": {
+    "title": "POSTGRADUATE STUDY",
+    "desc_1": "The KSLU also trains highly qualified scientific and pedagogical personnel in the framework of postgraduate studies in the field of 'Jurisprudence'.",
+    "desc_2": "Postgraduate studies are the main form of training of scientific, pedagogical and scientific personnel in the system of postgraduate professional education and provide citizens with the opportunity to improve the level of education, scientific and pedagogical qualifications on the basis of higher professional education.",
+    "title_2": "Rules for admission to graduate school",
+    "desc_3": "Admission to the graduate school is held annually from September 1 to October 15, and the entrance exams are held from October 15 to November 30. Postgraduate studies are conducted in full-time (3 years) and part-time (4 years) forms of study. For postgraduates and applicants of KSLU and other universities, courses are organized annually to prepare for the candidate's exams •",
+    "list_1": [
+      "in the history and philosophy of science",
+      "in a foreign language",
+      "in the Kyrgyz language"
+    ]
+  },
+  "dissertation_council": {
+    "title": "Dissertation council",
+    "desc_1": "Since 2006, the KSLA has been operating “Dissertation Councils” to meet the needs of the university, the state for insulated scientific workers, as well as the needs of the individual for intellectual development.",
+    "desc_2": "Currently, KSLA is the leading specialized university in Kyrgyzstan for the training of highly professional legal scientific personnel. The dissertation councils of KSLA are known and enjoy authority not only in Kyrgyzstan, but also in Kazakhstan and Russia. Members of the Dissertation Council, which includes well-known legal scholars from Kyrgyzstan and Kazakhstan, make a significant contribution to the development of legal science and education",
+    "desc_3": "An all time of existence of KSLA, three dissertation councils functioned at the university:",
+    "desc_4": "- in the dissertation council D.12.06.329, which has been functioning since 2006, the KSLA defended dissertations for the degree of doctor (candidate) of sciences in the following scientific specialties: 12.00.08 - criminal law and criminology; Penal enforcement law; for the degree of candidate of legal sciences: 12.00.02 - constitutional law, municipal law; 12.00.14 - administrative law, financial law, information law.",
+    "desc_5": "- in 2009, the dissertation council of the D.12.09.387 for the defense of dissertations for the degree of Doctor (Candidate) of Sciences in specialties was created at KSLA: 12.00.02 - constitutional law, municipal law; 12.00.08- criminal law and criminology; Penal enforcement law; 12.00.14 - administrative law, financial law, information law.",
+    "desc_6": "- in the dissertation council D.12.11.033, which has been in force since 2011, they were defended for the degree of doctor (candidate) of sciences in the following scientific specialties: 12.00.02 - constitutional law, municipal law; 12.00.14 - administrative law, financial law, information law.",
+    "desc_7": "- in 2014, the Academy created a dissertation council D.12.14.490 co-founded by the Academy of the Ministry of Internal Affairs of the Kyrgyz Republic named after Major General of the Police E.A. Aliyev for the defense of dissertations for the degree of doctor (candidate) of sciences in specialties: 12.00.02- constitutional law, municipal law; 12.00.14 - administrative law, financial law, information law and for the degree of candidate of sciences in the specialty; 12.00.10 - European law, international law; 12.00.11- judicial power, prosecutor's supervision, organization of law enforcement activities.",
+    "desc_8": "- on October 20, 2016, a dissertation council was opened at the academy D.12.16.539 co-founded by the Academy of the Ministry of Internal Affairs of the KR named after Major General of the Police E.A. Aliyev for the defense of dissertations for the degree of doctor (candidate) of sciences in specialties: 12.00.02- constitutional law, municipal law; 12.00.11- judicial power, prosecutorial supervision, organization of law enforcement activities; 12.00.14 - administrative law, financial law, information law and for the degree of candidate of sciences in specialties: 12.00.06 - natural resource law, agrarian law, environmental law; 12.00.10 - European law, international law.",
+    "desc_9": "-on April 08, 2019, was approved the composition of the current dissertation council D. 12.19.592 for the defense of dissertations for the degree of doctor (candidate) of sciences in specialties: 12.00.02 - constitutional law, municipal law; 12.00.06 - natural resource law, agrarian law, environmental law; 12.00.10 - international law, European law; 12.00.11 - judicial power, prosecutorial supervision, organization of law enforcement activities; 12.00.14 - administrative law, financial law, information law.",
+    "desc_10": "Работа диссертационных советов стала катализатором для научно-исследовательской деятельности профессорско-преподавательского состава академии."
+  },
+  "order": "Order",
+  "electronic_queue": "Electronic queue"
 }

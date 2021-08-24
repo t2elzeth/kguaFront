@@ -35,7 +35,29 @@
     {
       "route": "/about/structure",
       "name": "University structure",
-      "img": "/images/faculty-gsl.svg"
+      "img": "/images/faculty-gsl.svg",
+      "subLinks": [
+        {
+          "name": "Administration",
+          "img": "/images/students-1.svg",
+          "route": "/about/structure/administration"
+        },
+        {
+          "name": "Training units",
+          "img": "/images/students-2.svg",
+          "route": "/training-units"
+        },
+        {
+          "name": "Structural units",
+          "img": "/images/students-3.svg",
+          "route": "/about/structure/structural-units"
+        },
+        {
+          "name": "Departments",
+          "img": "/images/students-4.svg",
+          "route": "/about/structure/departments"
+        }
+      ]
     },
     {
       "route": "/about/personal",
@@ -178,6 +200,28 @@
             "image": "/images/demc_erdolatov.jpg"
           }
         ]
+      }
+    ]
+  },
+  "life_of_ksla": {
+    "title": "Life of KSLA",
+    "desc_categories": "Currently, the following institutions operate as part of the KSLA:",
+    "description": "",
+    "sidebar_list": [
+      {
+        "route": "/about/life-of-ksla/activity",
+        "name": "Activity",
+        "img": "/images/life_of_ksla-1.svg"
+      },
+      {
+        "route": "/about/life-of-ksla/promotions",
+        "name": "Promotions",
+        "img": "/images/life_of_ksla-2.png"
+      },
+      {
+        "route": "/about/life-of-ksla/significant-dates",
+        "name": "Significant dates",
+        "img": "/images/life_of_ksla-3.png"
       }
     ]
   }
