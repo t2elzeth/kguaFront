@@ -56,6 +56,21 @@
           "route": "/science/dissertation-council/expert-opinions",
           "name": "Экспертные заключения",
           "img": ""
+        },
+        {
+          "route": "/science/dissertation-council/ads",
+          "name": "Объявления",
+          "img": ""
+        },
+        {
+          "route": "/science/dissertation-council/sample-documents",
+          "name": "Образцы документов",
+          "img": ""
+        },
+        {
+          "route": "/science/dissertation-council/regulatory-framework",
+          "name": "Нормативно-правовая база",
+          "img": ""
         }
       ]
     },
@@ -116,5 +131,10 @@
   },
   "order": "Приказ",
   "electronic_queue": "Электронная очередь",
-  "specialist_passports": "Паспорта специалистов"
+  "specialist_passports": "Паспорта специалистов",
+  "reviews": "Отзывы",
+  "expert_opinions": "Экспертные заключения",
+  "ads": "Объявления",
+  "regulatory_framework": "Нормативно-правовая база",
+  "sample_documents": "Образцы документов"
 }

@@ -72,10 +72,30 @@ const Reviews: React.FC = () => {
       document:
         '/documents/reviews/Отзыв официального оппонента на диссертацию Исмаилбекова М.С..pdf',
     },
+    {
+      title: 'отзыв  Айдарбаев С.Ж. , Аскарбеков',
+      document: '/documents/reviews/отзыв  Айдарбаев С.Ж. , Аскарбеков.pdf',
+    },
+    {
+      title: 'Отзыв оппонента №1 Амангелдиев (1)',
+      document: '/documents/reviews/Отзыв оппонента №1 Амангелдиев (1).pdf',
+    },
+    {
+      title: 'отзыв оппонента №1',
+      document: '/documents/reviews/отзыв оппонента №1.pdf',
+    },
+    {
+      title: 'отзыв оппонента №2',
+      document: '/documents/reviews/отзыв оппонента №2.pdf',
+    },
+    {
+      title: 'Отзыв Сабитова А.А., Аскарбеков',
+      document: '/documents/reviews/Отзыв Сабитова А.А., Аскарбеков.pdf',
+    },
   ]
 
   return (
-    <AboutPage t={t} pageName={t('order')} pageTitle={t('order')} image="/images/documents.png">
+    <AboutPage t={t} pageName={t('reviews')} pageTitle={t('reviews')} image="/images/documents.png">
       {documents.map((item) => (
         <Download key={item.title} document={item} />
       ))}

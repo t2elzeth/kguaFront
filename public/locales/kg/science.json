@@ -56,6 +56,21 @@
           "route": "/science/dissertation-council/expert-opinions",
           "name": "Экспертные заключения",
           "img": ""
+        },
+        {
+          "route": "/science/dissertation-council/ads",
+          "name": "Объявления",
+          "img": ""
+        },
+        {
+          "route": "/science/dissertation-council/sample-documents",
+          "name": "Образцы документов",
+          "img": ""
+        },
+        {
+          "route": "/science/dissertation-council/regulatory-framework",
+          "name": "Нормативно-правовая база",
+          "img": ""
         }
       ]
     },
