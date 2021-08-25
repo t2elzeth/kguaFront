@@ -93,5 +93,46 @@
       "Prevention of any form of discrimination in the exercise by university students of their rights in the field of education;",
       "Promoting the right awareness of university students."
     ]
+  },
+  "tax": {
+    "title": "The Tax and Customs Clinic",
+    "desc_1": "The Tax and Customs Clinic at the Law Clinic of the Kyrgyz State Law University is a structural subdivision of the Kyrgyz State Law Academy.",
+    "title_1": "Goals of creating a clinic:",
+    "list_1": [
+      "Introduction of advanced, innovative and improvement of existing forms and methods of teaching students;",
+      "Strengthening and developing the link between theory and practice;",
+      "Consolidation of students ' practical skills in the tax and customs sphere;",
+      "Developing students ' professionally oriented sides of character;",
+      "Moral formation of the future specialist in the field of tax and customs legislation, as a socially active person;",
+      "Participation in solving social problems of society by providing assistance to socially vulnerable segments and groups of the population."
+    ],
+    "desc_2": "The Tax and customs clinic carries out its activities in accordance with the curriculum developed by the head of the clinic and approved by the rector of the KSUA, as well as the regulations on the passage of students of the 3rd, 4th courses of practice.",
+    "desc_3": "The clinic's activities are also carried out in the form of a public reception room, where students, under the guidance of a teacher, organize the reception of citizens on tax issues and provide them with the necessary services on tax literacy.",
+    "desc_4": "The Tax and Customs Clinic organizes, as far as possible, the practice of students outside the KSUA with private tax consultants, in tax and other bodies and institutions, various ministries and departments.",
+    "title_2": "Tasks of the tax clinic:",
+    "list_2": [
+      "introduction of elements of practical work of students in the provision of tax services into the educational process;",
+      "developing students ' professional skills: interviewing clients, providing advice, conducting negotiations, assessing the tax situation, tax analysis, preparing tax documents and reports.",
+      "conducting research in the field of practical education;",
+      "provision of tax services to low-income segments of the population of the Kyrgyz Republic;",
+      "providing students with in-depth study of certain academic disciplines, as well as issues of professional ethics and professional responsibility;",
+      "expansion of cooperation with educational institutions of the Kyrgyz Republic;",
+      "development of methodological recommendations for practitioners on the consideration and resolution of individual tax situations;",
+      "organization and holding of seminars, conferences, 'round tables' on the study of highly specialized tax regimes and types of taxes;",
+      "development of professionally oriented character traits in students;",
+      "Assistance to state programs for the dissemination of tax knowledge in the Kyrgyz Republic."
+    ],
+    "title_3": "The Tax and Customs clinic provides specialized assistance to the population in the form of:",
+    "list_3": [
+      "consultations and explanations, oral and written references on tax and customs issues, consultations via the Internet system and answers on the website of the KCSA;",
+      "filling in the declaration, information calculations, and other documents of a tax and customs nature;",
+      "under a power of attorney to represent the interests of taxpayers in the Federal Tax Service and other institutions;",
+      "assistance in preparing for tax and accounting registration, preparation of accounting documentation for citizens and legal entities in the field of entrepreneurship;",
+      "other services of a tax nature that meet the goals and objectives of the tax and customs clinic."
+    ],
+    "desc_5": "Reception of citizens is carried out from Monday to Saturday",
+    "desc_6": "Sunday is a day off",
+    "work": "Working hours: from 9-00 to 17-00",
+    "address": "Address: pr. Chui 180 a., tel. 0312 392041"
   }
 }

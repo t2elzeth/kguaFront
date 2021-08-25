@@ -1,4 +1,3 @@
-import {} from '@src/components'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 import { useTranslation } from 'react-i18next'
 
