@@ -1,6 +1,15 @@
 {
   "title": "Student council",
-  "description": "",
+  "description": "Student life at KSLA is diverse and eventful.  In addition to classes, open educational and scientific seminars, conferences and lectures, KSLA annually hosts various student events.  Among them:",
+  "list_1": [
+    "Rector's ball;",
+    "Sports activities;",
+    "Concert events on holidays;",
+    "Participation in the 'Immortal Regiment';",
+    "Mind games championships;",
+    "Initiation into students, etc."
+  ],
+  "desc_2": "Student volunteer movements are working in KSLA, which organize subbotniks, environmental campaigns, visits to orphanages, and assist in various events at the University.",
   "sidebar_list": [
     {
       "route": "/students/schedule-educational-process",

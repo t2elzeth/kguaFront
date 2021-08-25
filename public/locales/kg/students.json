@@ -1,40 +1,49 @@
 {
   "title": "Студенческий совет",
-  "description": "",
+  "description": "КГЮАдагы студенттик турмуш кызыктуу окуяларга бай. Сабактардан, ачык окуу жана илимий семинарлардан, конференциялардан жана лекциялардан тышкары КГЮАда жыл сайын ар кандай студенттик иш-чаралар өтүп турат. Алардын ичинен:",
+  "list_1": [
+    "Ректордук бал;",
+    "Спорттук иш-чаралар;",
+    "Майрам күндөрү концерттик иш-чаралар;",
+    "«Өлбөс полкко» катышуу",
+    "Интеллектуалдык оюндар боюнча таймаштар;",
+    "Студенттикке кабыл алуу ж.б."
+  ],
+  "desc_2": "КГЮАда студенттик ыктыярчылардын иштери жүргүзүлүп, алар ишембиликтерди, экологиялык акцияларды, балдар үйүнө барууларды уюштуруп, университетте ар кандай иш-чаралардын өтүшүнө көмөктөшөт.",
   "sidebar_list": [
     {
       "route": "/students/schedule-educational-process",
-      "name": "Schedule of the educational process",
+      "name": "Окуу процессинин графиги",
       "img": "/images/students-1.svg"
     },
     {
       "route": "/students/documents-student",
-      "name": "Documents for the student",
+      "name": "Студент үчүн документтер",
       "img": "/images/students-2.svg"
     },
     {
       "route": "/students/student-self-government",
-      "name": "Student self-government",
+      "name": "Студенческое самоуправление",
       "img": "/images/students-3.svg"
     },
     {
       "route": "/students/practice-employment",
-      "name": "Practice and employment",
+      "name": "Студенттик өзүн-өзү башкаруу",
       "img": "/images/students-4.svg"
     },
     {
       "route": "/students/legal-clinic",
-      "name": "Legal clinic",
+      "name": "Юридическая клиника",
       "img": "/images/students-5.svg"
     },
     {
       "route": "/students/foreign-students",
-      "name": "Foreign students",
+      "name": "Иностранным студентам",
       "img": "/images/students-6.svg"
     },
     {
       "route": "/students/club-circles",
-      "name": "Clubs and Circles",
+      "name": "Кружки и клуюы",
       "img": "/images/students-7.svg"
     }
   ],
