@@ -55,5 +55,31 @@
     "desc_4": "The cooperation of the KSLU Student Council with the university administration, institutes, law college, student governments and other individuals and legal entities (organizations, enterprises, institutions) is based on the principles of mutual assistance, respect and partnership.",
     "desc_5": "The Student Council of KSLU is an association of students and is created as a permanent representative body of students, acting on the basis of the Regulations of the Student Council of KSLU, adopted by the student assets of the institutes and the law college and approved by the rector of the university.",
     "desc_6": "The activities and decisions of the KSLU Student Council apply to all students of the university."
+  },
+  "legal_clinic": {
+    "title": "Legal clinic",
+    "desc_1": "The KSLA Legal Clinic provides legal advice to all citizens, without exception, who need help on the following issues:",
+    "list_1": [
+      "civil law;",
+      "family law;",
+      "inheritance law;",
+      "housing law;",
+      "labor law;",
+      "social security rights;",
+      "criminal law.",
+      "Consulting",
+      "Drafting of legal documents",
+      "Representation of interests in courts and bodies of state power and local self-government."
+    ],
+    "title_2": "Our goals:",
+    "list_2": [
+      "Acquisition by students of practical work experience and skills to comply with the norms of professional ethics;",
+      "Qualified free legal aid to low-income citizens."
+    ],
+    "desc_2": "Senior students who have successfully completed the training program in the relevant subjects, as well as trainings on the provision of legal assistance, are involved in the work in the public reception of the legal clinic.",
+    "desc_3": "Reception of citizens is carried out from Monday to Saturday",
+    "desc_4": "Sunday is a day off",
+    "work": "Working hours: from 9-00 to 17-00",
+    "address": "Address: Chui Ave. 180 a., Tel. 0312 392041"
   }
 }

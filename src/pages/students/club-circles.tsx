@@ -17,6 +17,9 @@ const ClubCircles: React.FC = () => {
       pageTitle={t('circles.title')}
       image="/images/students-self-1.png"
     >
+      <p>{t('circles.desc_1')}</p>
+      <p>{t('circles.desc_2')}</p>
+      <p>{t('circles.desc_3')}</p>
       <Grid container>
         {Array.from(circles).map((item: any) => (
           <Grid key={item.title} item xs={12} md={6}>
