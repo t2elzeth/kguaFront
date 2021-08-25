@@ -27,8 +27,8 @@
       "img": "/images/students-3.svg"
     },
     {
-      "route": "/students/practice-employment",
-      "name": "Practice and employment",
+      "route": "/students/tax-customs-clinic",
+      "name": "Tax and customs clinic",
       "img": "/images/students-4.svg"
     },
     {
@@ -37,8 +37,8 @@
       "img": "/images/students-5.svg"
     },
     {
-      "route": "/students/foreign-students",
-      "name": "Foreign students",
+      "route": "/students/student-ombudsman",
+      "name": "Student ombudsman",
       "img": "/images/students-6.svg"
     },
     {
@@ -81,5 +81,17 @@
     "desc_4": "Sunday is a day off",
     "work": "Working hours: from 9-00 to 17-00",
     "address": "Address: Chui Ave. 180 a., Tel. 0312 392041"
+  },
+  "ombudsman": {
+    "title": "Commissioner for Students ' Rights",
+    "desc_1": "The Office of the Student Rights Commissioner is the human rights student body of the Kyrgyz State Law University ( KSLU) headed by a student-elected Student Rights Commissioner.",
+    "desc_2": "In its activities, the service is guided by the Constitution of the Kyrgyz Republic, international human rights acts and national legislation, the Charter and internal regulations of the University, the regulations on the Student Council of the University.",
+    "title_1": "The main objectives of the Office of the Student Rights Commissioner are:",
+    "list_1": [
+      "Protection of the rights and freedoms of university students proclaimed by the Constitution and laws of the Kyrgyz Republic, international treaties and agreements ratified by the Kyrgyz Republic;",
+      "Prevention of violations of rights and promotion of the reform of the educational process at the university;",
+      "Prevention of any form of discrimination in the exercise by university students of their rights in the field of education;",
+      "Promoting the right awareness of university students."
+    ]
   }
 }
