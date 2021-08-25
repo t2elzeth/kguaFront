@@ -8,6 +8,9 @@
     "international_cooperation": "International cooperation",
     "employees": "Employees"
   },
+  "phone": "Phone",
+  "email": "Email",
+  "address": "Address",
   "faculties_and_institutes": "Faculties and Institutes",
   "departments": {
     "dafil": "Department of Administrative, Financial and Information Law",

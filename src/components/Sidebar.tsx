@@ -3,6 +3,9 @@ import { useRouter } from 'next/router'
 import Link from 'next/link'
 import { useCallback, useState } from 'react'
 
+// import default minimal styling or your own styling
+// import 'node_modules/react-simple-tree-menu/dist/main.css'
+
 export const Sidebar = ({ links }) => {
   const router = useRouter()
 
@@ -23,6 +26,19 @@ export const Sidebar = ({ links }) => {
 
   return (
     <div className="sidebar">
+      {/* <TreeViewMenu
+        data={links}
+        onClickItem={({ key, label, ...props }) => {
+          setState(props)
+          router.replace({ pathname: props.route }) // user defined prop
+        }}
+        debounceTime={125}
+        initialActiveKey={router.pathname}
+        activeKey={router.pathname}
+        // focusKey={router.pathname}
+        // initialFocusKey={router.pathname}
+      /> */}
+
       <ul>
         {links.map((route, index) => (
           <li
@@ -53,7 +69,7 @@ export const Sidebar = ({ links }) => {
           </li>
         ))}
       </ul>
-      <img src="/images/sidebar.png" />
+      <img alt="sidebar" src="/images/sidebar.png" />
       <p className="sidebar__virtual">Виртуальный тур по КГЮА</p>
     </div>
   )

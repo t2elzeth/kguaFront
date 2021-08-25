@@ -40,6 +40,7 @@
     "react-dom": "16.14.0",
     "react-i18next": "^11.11.1",
     "react-input-mask": "^2.0.4",
+    "react-simple-tree-menu": "^1.1.18",
     "sass": "^1.26.11"
   },
   "devDependencies": {

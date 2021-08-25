@@ -37,5 +37,14 @@
       "name": "Clubs and Circles",
       "img": "/images/students-7.svg"
     }
-  ]
+  ],
+  "students_self": {
+    "title": "Student council",
+    "desc_1": "The Student Council of KSLU is a student organization – one of the forms of student self-government, established in accordance with the Constitution of the Kyrgyz Republic, the Law of the Kyrgyz Republic 'On Education', the Charter of the University and other normative acts.",
+    "desc_2": "The mission of the KSLU Student Council is to realize the rights of students to participate in the management of the educational process, to solve important issues of the life of students, to develop their social activity, to support and implement student initiatives in the life of the university and civil society.",
+    "desc_3": "The Student Council of KSLU in its activities is guided by the principles of voluntariness, equality, legality, transparency, initiative, electability, respect for the individual, representation of the rights and interests of students.",
+    "desc_4": "The cooperation of the KSLU Student Council with the university administration, institutes, law college, student governments and other individuals and legal entities (organizations, enterprises, institutions) is based on the principles of mutual assistance, respect and partnership.",
+    "desc_5": "The Student Council of KSLU is an association of students and is created as a permanent representative body of students, acting on the basis of the Regulations of the Student Council of KSLU, adopted by the student assets of the institutes and the law college and approved by the rector of the university.",
+    "desc_6": "The activities and decisions of the KSLU Student Council apply to all students of the university."
+  }
 }

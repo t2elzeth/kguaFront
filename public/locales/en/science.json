@@ -80,7 +80,7 @@
       "img": "/images/science-3.png",
       "subLinks": [
         {
-          "route": "/science/scientific-publications/vestnik-ksla",
+          "route": "/science/scientific-publications",
           "name": "Научно-методический журнал «Вестник КГЮА»"
         },
         {
@@ -120,5 +120,63 @@
     "desc_10": "Работа диссертационных советов стала катализатором для научно-исследовательской деятельности профессорско-преподавательского состава академии."
   },
   "order": "Order",
-  "electronic_queue": "Electronic queue"
+  "electronic_queue": "Electronic queue",
+  "specialist_passports": "Specialist passports",
+  "reviews": "Reviews",
+  "expert_opinions": "Expert opinions",
+  "ads": "Ads",
+  "regulatory_framework": "Regulatory framework",
+  "sample_documents": "Sample documents",
+  "scientific_publications": {
+    "title": "Scientific publications",
+    "title_2": "Scientific-methodical journal 'Bulletin of KSLA'",
+    "desc_1": "'Bulletin of KSLA' is the official periodical of KSLA, founded in 2004. The journal is registered by the International Center for Registration of World Periodicals, index ISSN 1694-5344.The 'Bulletin of the KSLA' publishes original scientific materials highlighting the topical problems of the branches of knowledge represented in the research activities of universities, as well as aimed at introducing the results of scientific research into educational activities; articles on the problems of improving legislation, law enforcement practice, legislative process, highlighting innovations in the training of specialists in the field of higher education; articles with analysis of bills, scientific reports."
+  },
+  "vestnik_ksla_info": {
+    "title": "THE INFORMATION OF THE EDITORIAL BOARD OF THE JOURNAL 'VESTNIK OF THE KYRGYZ STATE LAW ACADEMY'",
+    "desc_1": "Articles on the problems of improving legislation, enforcement, legislative process and innovations in the training of specialists in the field of higher and secondary vocational education of the article with the analysis of law drafts and scientific reports in the field of legal and social Sciences and Humanities are accepted  for publication in the journal 'Vestnik of the KSLA.'",
+    "desc_2": "1.Scientific articles made in strict accordance with the established rules for submitting materials for publication are accepted for publication. The author (s) is responsible for the originality of the research and the scientific and theoretical level of the published material, for the accuracy of the facts, statistics, proper names and other information, as well as for the publication of materials that are not subject to open publication.",
+    "desc_3": "Applicants, postgraduates, and students are required to receive a recommendation for publication from a research supervisor or other scientist with a doctorate or PhD degree.",
+    "desc_4": "For the purpose of expert evaluation, the editorial board conducts a review by recognized experts on the subject of peer-reviewed materials, all articles submitted to the editorial board that correspond to the subject of the journal. Reviews of the received materials are stored for 5 years.",
+    "desc_5": "The editorial board reserves the right not to publish an article in the absence of a review, non-compliance with the requirements and conditions of publication, if the content of the submitted article contains more than 30% of borrowed material or matches.",
+    "desc_6": "The authors have the right to modify the article or replace it with other material.",
+    "desc_7": "2. The article is submitted in electronic and printed form, signed by the author (s). The content of the articles should reflect the novelty and completeness of the results, the relevance. The number of authors of one article should not exceed three people.",
+    "desc_8": "The article can be submitted in Kyrgyz, Russian or English. The article should be accompanied by a review.",
+    "desc_9": "The text of the publication should be typed in a Word text editor, font - Times New Roman 12, line spacing – 1 (single), the volume of the article is up to 6 pages.",
+    "title_1": "Each scientific article should contain the following data:",
+    "list_1": [
+      "schifr UDC;",
+      "Full name of the author (s), position, title, academic degree (issued in Kyrgyz, Russian and English);",
+      "full name of the organization - place of work of each author in the nominative case (issued in Kyrgyz, Russian and English);",
+      "email address of the author (s);",
+      "correspondent mailing address and phone number for contacts with the author (s) of the article;",
+      "the title of the article is given in Kyrgyz, Russian and English, should be short (not exceed 10-12 words) and reflect the content of the work;",
+      "the abstract is given in Kyrgyz, Russian and English, should be informative (do not contain general words), original, informative (reflect the main content of the article and the results of research), structured (follow the logic of the description of the results in the article), compact (fit into 3-5 sentences);",
+      "keywords are given in Kyrgyz, Russian and English, may reflect the main provisions, results, terms and represent a certain value for expressing the content of the article and for its search (at least 7 words); words or phrases are separated from each other by a semicolon;",
+      "list of sources and literature used."
+    ],
+    "desc_10": "3. The text of the article should contain footnotes to the source used according to the list given at the end of the article. All footnotes and the list of sources should be designed in accordance with GOST 7.1-2003 according to the requirements of the Instructions for the design of the dissertation and the abstract (approved by the Russian Federation). Resolution of the Presidium of the Higher Attestation Commission of the Kyrgyz Republic No. 112 of 28.06.2018).",
+    "desc_11": "4. All manuscripts accepted by the editorial board of the journal for consideration are subject to mandatory peer review. Reviews of the received materials are stored for 5 (five) years.",
+    "desc_12": "5. Manuscripts drawn up in violation of these requirements will not be considered and will not be returned. If the manuscript is rejected by the decision of the editorial board (based on the results of internal review), a reasoned refusal is sent to the author, and the rejected manuscripts are not returned.",
+    "desc_13": "6. When sending an article (material) to another publication, the author is obliged to inform the editorial board.",
+    "desc_14": "7. Questions related to the requirements for the registration and submission of manuscripts are accepted by phone: +996 (312) 39-19-92 or at: nauka.ski@mail.ru .",
+    "desc_15": "8. The editorial board does not enter into private correspondence with the authors on other issues.",
+    "desc_16": "9.The fee for reviewing the manuscripts is not charged. The fee is not paid.",
+    "desc_17": "10. Articles of KSLA staff and teachers are accepted in the 'KSLA Vestnik' free of charge.",
+    "title_2": "Articles of third-party authors are accepted on a paid basis:",
+    "list_2": [
+      "from graduate students and applicants of the KSLA - 200 soms;",
+      "from representatives of other organizations - 800 soms;",
+      "from authors of foreign states - 1500 soms."
+    ],
+    "desc_18": "No royalties are paid to the authors.",
+    "desc_19": "No royalties are paid to the authors.",
+    "address": "Address of the editorial office of the journal 'Vestnik of the Kyrgyz State Law Academy»:",
+    "phone": "+996 (312) 39-19-92",
+    "email": "nauka.ski@mail.ru",
+    "site": "http://www.ksla.kg"
+  },
+  "sample": {
+    "title": "Үлгү макала форматы"
+  }
 }

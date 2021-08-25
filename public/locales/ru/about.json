@@ -9,59 +9,83 @@
   "sidebar_list": [
     {
       "route": "/about",
+      "key": "/about",
+      "label": "Информация о КГЮА",
       "name": "Информация о КГЮА",
       "img": "/images/faculty-gsl.svg",
       "subLinks": [
         {
           "route": "/about",
-          "name": "Основные сведения"
+          "name": "Основные сведения",
+          "key": "/about",
+          "label": "Основные сведения"
         },
         {
           "route": "/about/mission",
-          "name": "Миссии и стратегии"
+          "name": "Миссии и стратегии",
+          "key": "/about/mission",
+          "label": "Миссии и стратегии"
         },
         {
           "route": "/about/symbolism",
-          "name": "Символика"
+          "name": "Символика",
+          "key": "/about/symbolism",
+          "label": "Символика"
         },
         {
           "route": "/about/local-acts",
-          "name": "Локальные-нормативные акты"
+          "name": "Локальные-нормативные акты",
+          "key": "/about/local-acts",
+          "label": "Локальные-нормативные акты"
         },
         {
           "route": "/about/awards",
-          "name": "Награды и звания"
+          "name": "Награды и звания",
+          "key": "/about/awards",
+          "label": "Награды и звания"
         },
         {
           "route": "/about/documents",
-          "name": "Документы"
+          "name": "Документы",
+          "key": "/about/documents",
+          "label": "Документы"
         }
       ]
     },
     {
       "route": "/about/structure",
+      "key": "/about/structure",
+      "label": "Структура университета",
       "name": "Структура университета",
       "img": "/images/faculty-gsl.svg",
       "subLinks": [
         {
           "name": "Ректорат",
           "img": "/images/students-1.svg",
-          "route": "/about/structure/administration"
+          "route": "/about/structure/administration",
+          "key": "/about/structure/administration",
+          "label": "Ректорат"
         },
         {
-          "name": "Учебные подразделения ",
+          "name": "Учебные подразделения",
           "img": "/images/students-2.svg",
-          "route": "/training-units"
+          "route": "/training-units",
+          "key": "/training-units",
+          "label": "Учебные подразделения"
         },
         {
           "name": "Структурные подразделения",
           "img": "/images/students-3.svg",
-          "route": "/about/structure/structural-units"
+          "route": "/about/structure/structural-units",
+          "key": "/about/structure/structural-units",
+          "label": "Структурные подразделения"
         },
         {
           "name": "Кафедры",
           "img": "/images/students-4.svg",
-          "route": "/about/structure/departments"
+          "route": "/about/structure/departments",
+          "key": "/about/structure/departments",
+          "label": "Кафедры"
         }
       ]
     },
