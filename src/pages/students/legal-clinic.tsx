@@ -20,7 +20,7 @@ const LegalClinic: React.FC = () => {
       t={t}
       pageName={t('legal_clinic.title')}
       pageTitle={t('legal_clinic.title')}
-      image="/images/students-self-1.png"
+      image="/images/news-section-3.png"
     >
       <p>{t('legal_clinic.desc_1')}</p>
       <ul>
@@ -34,12 +34,11 @@ const LegalClinic: React.FC = () => {
           <li key={index}>{item}</li>
         ))}
       </ul>
+      <Download document={docPosition} />
       <h6>{t('legal_clinic.desc_3')}</h6>
       <h6>{t('legal_clinic.desc_4')}</h6>
       <h5>{t('legal_clinic.work')}</h5>
       <h5>{t('legal_clinic.address')}</h5>
-
-      <Download document={docPosition} />
     </AboutPage>
   )
 }

@@ -1,3 +1,4 @@
+import { Download } from '@src/components'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 import { useTranslation } from 'react-i18next'
 
@@ -10,12 +11,17 @@ const TaxCustomsClinic: React.FC = () => {
   const list2 = t('tax.list_2', { returnObjects: true })
   const list3 = t('tax.list_3', { returnObjects: true })
 
+  const docPosition = {
+    title: 'Положение О Налоговой клинике.docx',
+    document: '/documents/Положени О Налоговой клинике.docx.pdf',
+  }
+
   return (
     <AboutPage
       t={t}
       pageName={t('tax.title')}
       pageTitle={t('tax.title')}
-      image="/images/students-self-1.png"
+      image="/images/news-section-3.png"
     >
       <p>{t('tax.desc_1')}</p>
       <p>{t('tax.title_1')}</p>
@@ -41,7 +47,7 @@ const TaxCustomsClinic: React.FC = () => {
           <li key={index}>{item}</li>
         ))}
       </ul>
-
+      <Download document={docPosition} />
       <h6>{t('tax.desc_5')}</h6>
       <h6>{t('tax.desc_6')}</h6>
       <h5>{t('tax.work')}</h5>

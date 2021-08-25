@@ -15,7 +15,7 @@ const ClubCircles: React.FC = () => {
       t={t}
       pageName={t('circles.title')}
       pageTitle={t('circles.title')}
-      image="/images/students-self-1.png"
+      image="/images/news-section-3.png"
     >
       <p>{t('circles.desc_1')}</p>
       <p>{t('circles.desc_2')}</p>

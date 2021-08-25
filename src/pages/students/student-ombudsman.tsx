@@ -12,7 +12,7 @@ const StudentOmbudsman: React.FC = () => {
       t={t}
       pageName={t('ombudsman.title')}
       pageTitle={t('ombudsman.title')}
-      image="/images/students-self-1.png"
+      image="/images/news-section-3.png"
     >
       <p>{t('ombudsman.desc_1')}</p>
       <p>{t('ombudsman.desc_2')}</p>
