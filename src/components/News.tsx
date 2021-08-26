@@ -28,7 +28,7 @@ const news = [
   },
 ]
 
-export const News = () => {
+export const News = ({ news }) => {
   const [selected, setSelected] = useState(undefined)
 
   const handleClick = (index) => {
@@ -44,9 +44,9 @@ export const News = () => {
         <span>Новости</span>
       </h2>
       <div className="wrapper">
-        {news.map((item, index) => (
+        {news.slice(0, 3).map((item, index) => (
           <div className={classnames('newsItem', selected === index && 'newsOpenItem')} key={index}>
-            <img alt="" className="newsBackgroundImg" src={item.img} />
+            <img alt="" className="newsBackgroundImg" src={item.image} />
             <p className="newsDate">{item.date}</p>
             <p className="newsTitle">{item.title}</p>
             <img
@@ -55,13 +55,7 @@ export const News = () => {
               className="newsButton"
               src={selected === index ? '/images/close-news-icon.svg' : '/images/more-icon.svg'}
             />
-            {selected === index && (
-              <p className="newsContent">
-                Кыргызский государственный юридический университет (КГЮА) является государственным
-                высшим профессиональным учебным заведением, выполняющим общегосударственные задачи,
-                центром подготовки кадров в системе высшего образования
-              </p>
-            )}
+            {selected === index && <p className="newsContent">{item.description}</p>}
           </div>
         ))}
       </div>
