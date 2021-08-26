@@ -8,19 +8,210 @@
       "img": "/images/international-cooperation-1.png"
     },
     {
-      "route": "/international-cooperation/international-programs",
-      "name": "Международные программы",
-      "img": "/images/international-cooperation-2.png"
-    },
-    {
       "route": "/international-cooperation/project-work",
       "name": "Проектная работа",
-      "img": "/images/international-cooperation-3.png"
+      "img": "/images/international-cooperation-3.svg"
     },
     {
       "route": "/international-cooperation/partner-organizations",
       "name": "Организации-партнёры",
-      "img": "/images/international-cooperation-4.png"
+      "img": "/images/international-cooperation-4.png",
+      "subLinks": [
+        {
+          "route": "/international-cooperation/partner-organizations/",
+          "name": "Партнеры"
+        },
+        {
+          "route": "/international-cooperation/partner-organizations/memorandums-agreements",
+          "name": "Меморандумы и соглашения"
+        },
+        {
+          "route": "/international-cooperation/partner-organizations/treaties",
+          "name": "Договора и международное сотрудничество"
+        }
+      ]
+    }
+  ],
+  "partners": [
+    {
+      "name": "ГККП 'Жамбылский Инновационный Колледж' управления образования акимата Жамбылской области",
+      "img": "/images/partners/1.png"
+    },
+    {
+      "name": "Общественный Фонд по научным исследованиям 'Средняя Азия'",
+      "img": "/images/partners/1.png"
+    },
+    {
+      "name": "КОСТАНАЙСКАЯ АКАДЕМИЯ МИНИСТЕРСТВА ВНУТРЕННИХ ДЕЛ РЕСПУБЛИКИ КАЗАХСТАН ИМЕНИ ШРАКБЕКА КАБЫЛБАЕВА",
+      "img": "/images/partners/1.png"
+    },
+    {
+      "name": "NAMA Foundation",
+      "img": "/images/partners/1.png"
+    },
+    {
+      "name": "Северо-Западный университет Политики и Права",
+      "img": "/images/partners/1.png"
+    },
+    {
+      "name": "Сибирский Федеральный Университет",
+      "img": "/images/partners/sibir.png"
+    },
+    {
+      "name": "Французский институт исследований Центральной Азии",
+      "img": "/images/partners/1.png"
+    },
+    {
+      "name": "Национальная академия наук Кыргызской Республики",
+      "img": "/images/partners/1.png"
+    },
+    {
+      "name": "Аньшаньский педагогический институт",
+      "img": "/images/partners/1.png"
+    },
+    {
+      "name": "Южно-Китайский педагогический университет",
+      "img": "/images/partners/ukpu.png.png"
+    },
+    {
+      "name": "Университет Феррары",
+      "img": "/images/partners/1.png"
+    },
+    {
+      "name": "Российский исламский институт",
+      "img": "/images/partners/1.png"
+    },
+    {
+      "name": "Алматинская Академия МВД",
+      "img": "/images/partners/1.png"
+    },
+    {
+      "name": "Американский университет Гирне",
+      "img": "/images/partners/1.png"
+    },
+    {
+      "name": "Международный университет 'МИТС'",
+      "img": "/images/partners/1.png"
+    },
+    {
+      "name": "Университет Штат Монтана",
+      "img": "/images/partners/1.png"
+    },
+    {
+      "name": "Алтайский государственный университет",
+      "img": "/images/partners/1.png"
+    },
+    {
+      "name": "Московский государственный институт международных отношений (МГИМО)",
+      "img": "/images/partners/mgimo.png"
+    },
+    {
+      "name": "Российский университет дружбы народов",
+      "img": "/images/partners/rudn.png"
+    },
+    {
+      "name": "КазГЮ имени М.С. Нарикбаева",
+      "img": "/images/partners/1.png"
+    },
+    {
+      "name": "Институтом Конфуция при БГУ",
+      "img": "/images/partners/1.png"
+    },
+    {
+      "name": "Евразийский национальный университет им. Л.Н. Гумилева",
+      "img": "/images/partners/euro.png"
+    },
+    {
+      "name": "Национальный исследовательский институт 'Высшая школа экономики'",
+      "img": "/images/partners/1.png"
+    },
+    {
+      "name": "Академия МВД им. Генерал-майора милиции Алиева Э.А",
+      "img": "/images/partners/1.png"
+    },
+    {
+      "name": "Государственный университет управления",
+      "img": "/images/partners/1.png"
+    },
+    {
+      "name": "Казанский (Приволжский) федеральный университет",
+      "img": "/images/partners/kazan.png"
+    },
+    {
+      "name": "Полоцкий государственный университет",
+      "img": "/images/partners/pgu.png"
+    },
+    {
+      "name": "Оренбургский государственный университет",
+      "img": "/images/partners/orenburg.png"
+    },
+    {
+      "name": "Российский государственный социальный университет",
+      "img": "/images/partners/rgsu.png.png"
+    },
+    {
+      "name": "АНПО Эдвокаси Центр по Правам Человека",
+      "img": "/images/partners/1.png"
+    },
+    {
+      "name": "Институт Бизнеса БГУ",
+      "img": "/images/partners/1.png"
+    },
+    {
+      "name": "Уральский государственный юридический университет",
+      "img": "/images/partners/uguu.png.png"
+    },
+    {
+      "name": "Башкирский государственный университет",
+      "img": "/images/partners/bashkir.png"
+    },
+    {
+      "name": "Российский государственный университет правосудия",
+      "img": "/images/partners/rgup.png"
+    },
+    {
+      "name": "Казахский национальный педагогический университет имени Абая",
+      "img": "/images/partners/abai.png"
+    },
+    {
+      "name": "Государственная служба исполнения наказаний при правительстве Кыргызской Республики",
+      "img": "/images/partners/1.png"
+    },
+    {
+      "name": "Учебный центр адвокатов при Адвокатуре КР",
+      "img": "/images/partners/1.png"
+    },
+    {
+      "name": "Министерство внутренних дел КР",
+      "img": "/images/partners/1.png"
+    },
+    {
+      "name": "Государственная налоговая служба при Правительстве Кыргызской Республики",
+      "img": "/images/partners/1.png"
+    },
+    {
+      "name": "Государственная служба по борьбе с экономической преступностью при Правительстве КР",
+      "img": "/images/partners/1.png"
+    },
+    {
+      "name": "Мэрия города Бишкек",
+      "img": "/images/partners/1.png"
+    },
+    {
+      "name": "Свердловский районный суд города Бишкек",
+      "img": "/images/partners/1.png"
+    },
+    {
+      "name": "Конституционной палаты Верховного суда Кыргызской Республики",
+      "img": "/images/partners/1.png"
+    },
+    {
+      "name": "Общественный фонд  BizExpert",
+      "img": "/images/partners/1.png"
+    },
+    {
+      "name": "Адвокатура Кыргызской Республики",
+      "img": "/images/partners/1.png"
     }
   ],
   "project_work": {
@@ -97,5 +288,12 @@
       ],
       "catalog_desc-2": "В академии уже определены дисциплины, в рамках которых будут апробироваться, а затем и внедряться новые инструменты электронного обучения, которые позволят  обеспечить высокий уровень доступности образования и одновременно повысить его качество."
     }
-  }
+  },
+  "memorandums": {
+    "title": "Меморандумы и соглашения"
+  },
+  "treaties": {
+    "title": "Договора и международное сотрудничество"
+  },
+  "international_events": {}
 }
