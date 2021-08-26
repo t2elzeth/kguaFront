@@ -6,7 +6,6 @@ import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 
 const GSL = () => {
   const router = useRouter()
-  const { t } = useTranslation('training-units')
   const common = useTranslation('common')
 
   const facultyLinks = common.t('faculties', { returnObjects: true })

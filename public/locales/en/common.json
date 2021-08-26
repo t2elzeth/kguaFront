@@ -42,24 +42,29 @@
     {
       "route": "/training-units/gsl",
       "name": "Graduate School of Law",
-      "img": "/images/faculty-1.png",
-      "subLinks": [
-        {
-          "route": "/training-units/gsl/djle",
-          "name": "Department of Justice and Law Enforcement",
-          "img": ""
-        },
-        {
-          "route": "/training-units/gsl/djle",
-          "name": "Department of Justice and Law Enforcement",
-          "img": ""
-        }
-      ]
+      "img": "/images/faculty-1.png"
     },
     {
       "route": "/training-units/hseb",
       "name": "Higher School of Economics and Business",
-      "img": "/images/faculty-2.png"
+      "img": "/images/faculty-2.png",
+      "desc_1": "Высшая школа экономики и бизнеса функционирует в структуре Кыргызского государственного юридического университета более 15 лет (с 2005 года)  – сначала в качестве Факультета управления и права, с 2019 года в качестве Института, а с 2021 года в качестве Высшей школы.",
+      "desc_2": "На сегодняшний день здесь обучается более 700 студентов. Высшую школу экономики и бизнеса отличают динамичность, готовность осваивать и внедрять всё новое и передовое в области экономической, государственной, таможенной науки, образования.",
+      "title_1": "В настоящее время в Высшей школе экономики и бизнеса функционируют:",
+      "list_1": [
+        {
+          "title": "Департамент экономики и управления,",
+          "desc": " в котором студенты могут обучаться по направлениям: 580100 Экономика – по профилям (Налоги налообложения, Финансы и кредит, Бухгалтерский учет и аудит); 580900 Государственное и муниципальное управление – по профилю (Правовой менеджмент) и специальности 530004 Таможенное дело – по профилю (Таможенный менеджмент);"
+        },
+        {
+          "title": "Департамент бизнеса и маркетинга,",
+          "desc": " студенты в этом департаменте обучаются по направлениям: 580600 Логистика – по профилю (Логистика и управление цепями); 580500 Бизнес-информатика-по профилю (Электронный бизнес); 581000 Маркетинг по профилю (Интернет-маркетинг); 580200 Менеджмент по профилю (Менеджмент организаций)"
+        },
+        {
+          "title": "Экономический колледж",
+          "desc": " осуществляет подготовку среднего профессионального образования базового уровня по специальности 080110 Экономика и бухгалтерский учет (по отраслям)"
+        }
+      ]
     },
     {
       "route": "/training-units/hit",
@@ -74,7 +79,26 @@
     {
       "route": "/training-units/impp",
       "name": "Institute for Master's and PhD Programs",
-      "img": "/images/faculty-5.png"
+      "img": "/images/faculty-5.png",
+      "desc_1": "In 2021, by the decision of the Academic Council of the KSUA  was established and the Institute of Master's  PhD  programs , where students can continue to improve their qualifications in relevant areas and study profiles, namely:",
+      "list_1": [
+        "530500 Jurisprudence-according to the profiles:",
+        "580100 Economics-by profile (Legal regulation of business);",
+        "580900 State and municipal Administration - by profile (Economic and Financial Management);",
+        "530500 Jurisprudence-PhD programs",
+        "MBA School (MBA Programs)."
+      ],
+      "list_1_1": [
+        "Judicial power, prosecutor's supervision, organization of law enforcement activities;",
+        "Criminal law and criminology; criminal enforcement law;",
+        "Criminal procedure; criminalistics; operational and investigative activities;",
+        "Legal profession and notary office;",
+        "Administrative law, financial law, customs and tax law;",
+        "Business law; civil law; land law;",
+        "International law; European law;",
+        "Information law;",
+        "Legal conflictology and mediation"
+      ]
     },
     {
       "route": "/training-units/fcdl",
@@ -84,12 +108,24 @@
     {
       "route": "/training-units/fss",
       "name": "Faculty of Social Sciences",
-      "img": "/images/faculty-7.png"
+      "img": "/images/faculty-7.png",
+      "desc_1": "С 2021 года решением ученого совета КГЮА был образован Факультет социальных наук, с целью подготовки квалифицированных кадров с сильными теоретическими и практическими навыками по основным образовательным программам.",
+      "title_1": "В настоящее время в факультете осуществляется следующие направления:",
+      "list_1": [
+        "530300 Психология – по профилю (Юридическая психология)",
+        "530001 Клиническая психология по профилю (Клиническая психология)",
+        "540002 Социальная работа по профилю (Социальная работа с различными группами населения )",
+        "550700 Педагогика по профилю (Юридическая педагогика)"
+      ]
     },
     {
       "route": "/training-units/fmc",
       "name": "Faculty of Media and Communications",
-      "img": "/images/faculty-8.png"
+      "img": "/images/faculty-8.png",
+      "desc_1": "Since 2021, the Faculty of Media and Communications has been established by the decision of the Academic Council of the KSUA, the purpose of creating this faculty is to train qualified personnel with strong theoretical and practical skills in the rapidly developing field of mass media.",
+      "desc_2": "At the faculty, a student can gain tremendous knowledge in organizing and conducting work to support the development and production of an advertising product, taking into account the requirements of the customer.",
+      "title_1": "Currently, the faculty provides training in the following areas",
+      "list_1": ["530700 Advertising and public relations"]
     },
     {
       "route": "/training-units/ikli",
