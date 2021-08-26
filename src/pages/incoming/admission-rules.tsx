@@ -1,74 +1,71 @@
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
+import { useRouter } from 'next/router'
 import { useTranslation } from 'react-i18next'
 import { AboutPage } from '../../templates'
 
 const AdmissionRules: React.FC = () => {
   const { t } = useTranslation('incoming')
+  const router = useRouter()
+  const common = useTranslation('common')
+
+  const list1 = t('sidebar_list', { returnObjects: true })
+  const currentRoute = Array.from(list1).find((item: any) => item.route === router.pathname)
+
+  const list2 = t('rules.list_2', { returnObjects: true })
+  const list3 = t('rules.list_3', { returnObjects: true })
+
   return (
     <AboutPage
       t={t}
-      pageName="Правила приёма в КГЮА"
-      pageTitle="Правила приёма в КГЮА"
+      pageName={Object(currentRoute).name}
+      pageTitle={Object(currentRoute).name}
       image="/images/incoming-title-3.png"
     >
-      <h4>Прием абитуриентов</h4>
+      <h4>{t('rules.title_1')}</h4>
       <p>
-        Для поступления необходимо пройти:
+        {t('rules.title_2')}
         <br />
-        Общереспубликанское тестирование (ОРТ) – основной тест;
+        {t('rules.title_3')}
       </p>
 
-      <p className="bold"> Дополнительный предметный тест:</p>
+      <p className="bold">{t('rules.title_4')}</p>
       <ul>
-        <li>
-          История (юриспруденция, правоохранительная деятельность, государственное муниципальное
-          управление, правоведение);
-        </li>
-        <li>
-          Математика (экономика, информационные системы и технологии, бизнес-информатика, прикладная
-          информатика, информационная безопасность, таможенное дело, экономика и бухгалтерский учет,
-          прикладная информатика, информационная безопасность автоматизированных систем);
-        </li>
-        <li>Английский язык (международные отношения).</li>
+        {Array.from(list2).map((item: string, index: number) => (
+          <li key={index}>{item}</li>
+        ))}
       </ul>
-      <p className="bold">
-        {' '}
-        Перечень документов, предоставляемых в приемную комиссию при поступлении:
-      </p>
+      <p className="bold">{t('rules.title_5')}</p>
       <ul>
-        <li> Заявление установленного образца;</li>
-        <li> Сертификат ОРТ (оригинал);</li>
-        <li> Документ об образовании (оригинал);</li>
-        <li>Документ, удостоверяющий личность и гражданство (оригинал и копия);</li>
-        <li> 6 фотографий 3х4.</li>
+        {Array.from(list3).map((item: string, index: number) => (
+          <li key={index}>{item}</li>
+        ))}
       </ul>
-      <h4>Контакты:</h4>
+      <h4>{common.t('contacts')}</h4>
 
       <p>
-        <span> Адрес:</span> город Бишкек, пр. Чуй 180А
+        <span>{common.t('address')}: </span>
+        {t('rules.address')}
       </p>
       <p>
-        {' '}
-        <span>Тел:</span> +996 (312) 392 010
+        <span>{common.t('phone')}: </span>
+        {t('rules.phone')}
       </p>
       <p>
-        {' '}
-        <span>Факс:</span> +996 (312) 392 110
+        <span>{common.t('fax')}: </span>
+        {t('rules.fax')}
       </p>
       <p>
-        {' '}
-        <span>Сайт:</span> www.ksla.kg
+        <span>{common.t('site')}: </span>
+        {t('rules.site')}
       </p>
 
-      <p className="bold"> График работы</p>
+      <p className="bold">{common.t('schedule')}</p>
       <p>
-        {' '}
-        понедельник - суббота – с 8.30 до 17:00 часов;
+        {t('rules.work')}
         <br />
-        Обед – с 12:30 до 13:30.
+        {t('rules.work_2')}
         <br />
-        Прием документов об участии в конкурсе абитуриентов осуществляется в главном учебном корпусе
-        КГЮА.
+        {t('rules.desc_1')}
       </p>
     </AboutPage>
   )

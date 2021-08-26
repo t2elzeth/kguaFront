@@ -11,6 +11,12 @@
   "phone": "Phone",
   "email": "Email",
   "address": "Address",
+  "site": "Site",
+  "fax": "Fax",
+  "contacts": "Contacts",
+  "learn_more": "Learn more",
+  "shedule": "Shedule",
+
   "faculties_and_institutes": "Faculties and Institutes",
   "departments": {
     "dafil": "Department of Administrative, Financial and Information Law",

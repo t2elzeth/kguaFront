@@ -28,5 +28,71 @@
   },
   "bachelor": {
     "title": "Higher professional education"
+  },
+  "graduate": {
+    "title": "POSTGRADUATE STUDY",
+    "title_2": "Докторантура",
+    "desc_1": "The KSLU also trains highly qualified scientific and pedagogical personnel in the framework of postgraduate studies in the field of 'Jurisprudence'.",
+    "desc_2": "Postgraduate studies are the main form of training of scientific, pedagogical and scientific personnel in the system of postgraduate professional education and provide citizens with the opportunity to improve the level of education, scientific and pedagogical qualifications on the basis of higher professional education.",
+    "title_3": "Rules for admission to graduate school",
+    "desc_3": "Admission to the graduate school is held annually from September 1 to October 15, and the entrance exams are held from October 15 to November 30.",
+    "desc_4": "Postgraduate studies are conducted in full-time (3 years) and part-time (4 years) forms of study.",
+    "desc_5": "For postgraduates and applicants of KSLU and other universities, courses are organized annually to prepare for the candidate's exams:",
+    "list_1": [
+      "in the history and philosophy of science;",
+      "in a foreign language;",
+      "in the Kyrgyz language."
+    ],
+    "title_4": "Documents for admission to the doctoral program:",
+    "list_2": [
+      "Application",
+      "2) Copies of the diplomas of the Higher education with an insert, a copy of the diploma of the candidate of law sciences, certified by a notary",
+      "Autobiography",
+      "Personal leaflet",
+      "List of published scientific papers",
+      "Detailed plan of the dissertation for the degree of Doctor of Law",
+      "A copy of the employment record, certified at the place of work",
+      "A copy of the passport",
+      "6-3x4 photos",
+      "Folder-folder"
+    ],
+    "title_5": "Specialty ciphers:",
+    "list_3": [
+      "12.00.01 - Theory and history of law and the state; history of legal doctrines.",
+      "12.00.02 - Constitutional law; municipal law",
+      "12.00.03 - Civil law; business law; family law; private international law",
+      "12.00.06 - Land law; agricultural law; environmental law; natural resource law",
+      "12.00.08 - Criminal law and criminology; criminal executive law",
+      "12.00.09 - Criminal procedure, criminalistics; operational and investigative activities",
+      "12.00.11 - Judicial power, prosecutor's supervision, organization of law enforcement activities",
+      "12.00.14 - Administrative law, Financial law, Information law",
+      "12.00.10 - International law, European law."
+    ]
+  },
+  "rules": {
+    "title_1": "Admission of applicants",
+    "title_2": "For admission, you must pass:",
+    "title_3": "National Test (GRT) - the main test;",
+    "title_4": "Additional subject test:",
+    "list_2": [
+      "History (Law, Law enforcement, state municipal administration, Law);",
+      "Mathematics (economics, information systems and technologies, business informatics, applied informatics, information security, customs, economics and accounting, applied informatics, information security of automated systems);",
+      "English (International relations)."
+    ],
+    "title_5": "List of documents submitted to the admissions committee upon admission:",
+    "list_3": [
+      "Standard application form;",
+      "GRT certificate (original);",
+      "Certificate of education (original);",
+      "Identity and citizenship document (original and copy)",
+      "6 3x4 photos."
+    ],
+    "address": "180A Chui Ave., Bishkek city",
+    "phone": "+996 (312) 392 010",
+    "fax": "+996 (312) 392 110",
+    "site": "www.ksla.kg",
+    "work": "Monday-Saturday - from 8.30 to 17: 00;",
+    "work_2": "Lunch - from 12: 30 to 13: 30.",
+    "desc_1": "Acceptance of documents on participation in the competition of applicants is carried out in the main educational building of the KSLU."
   }
 }
