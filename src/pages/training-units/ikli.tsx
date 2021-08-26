@@ -4,7 +4,7 @@ import { TrainingUnitsPage } from '@src/templates'
 import { useTranslation } from 'react-i18next'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 
-const HIT = () => {
+const IKLI = () => {
   const router = useRouter()
   const common = useTranslation('common')
 
@@ -19,8 +19,6 @@ const HIT = () => {
       image="/images/symbolism.png"
     >
       <p>{Object(currentRoutes).desc_1}</p>
-      <p>{Object(currentRoutes).desc_2}</p>
-      <p>{Object(currentRoutes).desc_3}</p>
       <p>{Object(currentRoutes).title_1}</p>
       <ul>
         {Array.from(Object(currentRoutes).list_1).map((item: any, index: number) => (
@@ -30,7 +28,6 @@ const HIT = () => {
           </li>
         ))}
       </ul>
-      <p>{Object(currentRoutes).desc_4}</p>
     </TrainingUnitsPage>
   )
 }
@@ -41,4 +38,4 @@ export const getStaticProps = async ({ locale }) => ({
   },
 })
 
-export default withRouter(HIT)
+export default withRouter(IKLI)

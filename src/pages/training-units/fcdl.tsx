@@ -4,7 +4,7 @@ import { TrainingUnitsPage } from '@src/templates'
 import { useTranslation } from 'react-i18next'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 
-const HIT = () => {
+const FCDL = () => {
   const router = useRouter()
   const common = useTranslation('common')
 
@@ -21,6 +21,9 @@ const HIT = () => {
       <p>{Object(currentRoutes).desc_1}</p>
       <p>{Object(currentRoutes).desc_2}</p>
       <p>{Object(currentRoutes).desc_3}</p>
+      <p>{Object(currentRoutes).desc_4}</p>
+      <p>{Object(currentRoutes).desc_5}</p>
+      <p>{Object(currentRoutes).desc_6}</p>
       <p>{Object(currentRoutes).title_1}</p>
       <ul>
         {Array.from(Object(currentRoutes).list_1).map((item: any, index: number) => (
@@ -30,7 +33,26 @@ const HIT = () => {
           </li>
         ))}
       </ul>
-      <p>{Object(currentRoutes).desc_4}</p>
+
+      <h6>
+        {common.t('address')}: <span>{Object(currentRoutes).address}</span>
+      </h6>
+      <h6>
+        {common.t('phone')}: <span>{Object(currentRoutes).phone}</span>
+      </h6>
+      <h6>
+        {common.t('schedule')}: <span>{Object(currentRoutes).schedule}</span>
+      </h6>
+      <br />
+      <h6>
+        {common.t('address')}: <span>{Object(currentRoutes).address_2}</span>
+      </h6>
+      <h6>
+        {common.t('phone')}: <span>{Object(currentRoutes).phone_2}</span>
+      </h6>
+      <h6>
+        {common.t('schedule')}: <span>{Object(currentRoutes).schedule_2}</span>
+      </h6>
     </TrainingUnitsPage>
   )
 }
@@ -41,4 +63,4 @@ export const getStaticProps = async ({ locale }) => ({
   },
 })
 
-export default withRouter(HIT)
+export default withRouter(FCDL)

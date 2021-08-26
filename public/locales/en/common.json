@@ -69,12 +69,46 @@
     {
       "route": "/training-units/hit",
       "name": "Higher IT School (IT - Academy)",
-      "img": "/images/faculty-3.png"
+      "img": "/images/faculty-3.png",
+      "desc_1": "IT-Академия сегодня готовит лучших: программистов, специалистов в области информационной безопасности и информационных технологий, которые могут предоставлять услуги по автоматизации управления и учета предприятий, используя лучшие IT решения.",
+      "desc_2": "Миссия IT-Академии: подготовка высококвалифицированных специалистов, способных обеспечить направления стратегического развития Кыргызской Республики – по модернизации экономики и развитию современных информационных технологий во всех сферах хозяйственной деятельности.",
+      "desc_3": "В IT-Академии отличная материально-техническая база – компьютерные классы, оснащенные современными ПК и проекторами, учебные аудитории, спортивный зал, стадион, футбольное поле, комфортная столовая.",
+      "title_1": "В настоящее время в Высшей школе права функционируют:",
+      "list_1": [
+        {
+          "title": "Департамент цифровых технологий",
+          "desc": ", в котором студенты могут обучаться по направлениям: 710300 Прикладная информатика (в правовой сфере); 710200 Информационные системы и технологии (в правовой сфере); 590100 Информационная безопасность (в правовой сфере); 710500 Интернет-технологии и управление;"
+        },
+        {
+          "title": "IT - колледж",
+          "desc": " осуществляет подготовку среднего профессионального образования базового уровня по специальности 230701 Прикладная информатика (в области юриспруденции); 100203 Информационная безопасность автоматизированных систем."
+        }
+      ],
+      "desc_4": "Важным акцентом во всем образовательном процессе в IT-Академии является правовая направленность. Выпускники смогут не только защитить свои права в интернет среде, но и урегулировать отношения, связанные с разработкой, владением, продажей информационных технологий. Задачей IT-Академии является формирование у обучающихся непримиримого отношения к преступлениям и правонарушениям в области информационных технологий."
     },
     {
       "route": "/training-units/iiril",
       "name": "Institute of International Relations and International Law",
-      "img": "/images/faculty-4.png"
+      "img": "/images/faculty-4.png",
+      "desc_1": "Институт был создан с целью подготовки высококвалифицированных юристов-специалистов, интеллектуальной, политической и деловой элиты нашего государства, обладающей широким кругозором и глубокими профессиональными компетенциями, способностями к рациональному мышлению и глубокими познаниями как национального, так и международного законодательства.",
+      "desc_2": "За годы существования института сформировались основные направления его деятельности, ориентированные, с одной стороны, на проблематику сравнительного правоведения, а с другой — на проведение фундаментальных исследований в области международного публичного и международного частного права, а также специализированной языковой подготовке, так как в институте изучаются французский, китайский, арабский, английский и другие языки, которые играют немаловажную роль на трудовом рынке.",
+      "desc_3": "На сегодняшний день в институте международных отношений и международного права обучаются более 600 студентов. Институт славится своими традициями, сотрудничеством с иностранными ВУЗами и своей креативностью.",
+      "title_1": "В настоящее время в институте ведется подготовка кадров по следующим направлениям:",
+      "list_1": [
+        {
+          "title": "530500 Юриспруденция",
+          "desc": " – по профилям (Международное право; Китайское право; Европейское право; Исламское право);"
+        },
+        {
+          "title": "530800 Международные отношения",
+          "desc": " – по профилю (Дипломатическая и консульская служба);"
+        },
+        {
+          "title": "530500 Юриспруденция",
+          "desc": " (Магистерская образовательная программа по двудипломному образованию) по профилям (Международное право; европейское право)."
+        }
+      ],
+      "desc_4": "Студенты института активно участвуют в различных брейн-рингах, международных конференциях, модели ООН, где показывают отличные результаты и занимают призовые места. Вместе с тем студенты выезжают на международные конференции в страны ближнего и дальнего зарубежья."
     },
     {
       "route": "/training-units/impp",
@@ -103,7 +137,33 @@
     {
       "route": "/training-units/fcdl",
       "name": "Faculty of Correspondence and Distance Learning",
-      "img": "/images/faculty-6.png"
+      "img": "/images/faculty-6.png",
+      "desc_1": "Заочный факультет был образован 15 марта 2004 года на базе Кыргызской государственной юридической академии. ",
+      "desc_2": "Решением Ученого Совета КГЮА от 20 февраля 2017 г. (Протокол №6) факультет Заочного обучения был переименован в факультет Заочного и дистанционного обучения.",
+      "desc_3": "Миссия факультета – подготовка высококвалифицированных и конкурентноспособных специалистов в области юриспруденции, экономики и государственного управления, востребованных на рынке труда.",
+      "desc_4": "Заочная форма обучения с применением дистанционных образовательных технологий (ДОТ) – это форма обучения, которая сочетает в себе черты самообучения и очной учёбы с использованием ДОТ. ",
+      "desc_5": "Данная форма обучения является удобной для лиц, занятых трудовой деятельностью, а также для граждан, проживающих за пределами столицы и страны в целом, поскольку позволяет получить образование аналогичное очному обучению. Более того, стоимость обучения на факультете Заочного и дистанционного обучения значительно ниже очной формы обучения.",
+      "desc_6": "Факультет Заочного и дистанционного обучения является структурным подразделением КГЮА, реализует профессиональные образовательные программы высшего, послевузовского и среднего профессионального образования по направлениям:",
+      "list_1": [
+        {
+          "title": "530500 Юриспруденция",
+          "desc": " на базе высшего образования, на базе среднего профессионального образования, на базе среднего общего образования-по профилям (Судебная деятельность, Прокурорская деятельность, Гражданское право)"
+        },
+        {
+          "title": "580100 Экономика",
+          "desc": " на базе высшего образования, на базе среднего профессионального образования, на базе среднего общего образования – по профилю (Налоги и налогообложение)"
+        },
+        {
+          "title": "580900 Государственное и муниципальное управление",
+          "desc": " на базе высшего образования, на базе среднего профессионального образования, на базе среднего общего образования – по профилю (Правовой менеджмент)"
+        }
+      ],
+      "address": "Проспект Чуй 190 А, главный корпус №1, кабинет №112 (магистратуры)",
+      "phone": "0 (312) 392108",
+      "schedule": "9.00 – 17.00",
+      "address_2": "село Көк-Жар, ул. К. Амата №4,  корпус №2 кабинет №212 (бакалавр)",
+      "phone_2": "0 (312) 529201",
+      "schedule_2": "8.00 – 17.00"
     },
     {
       "route": "/training-units/fss",
@@ -133,19 +193,40 @@
       "img": "/images/faculty-9.png"
     },
     {
-      "route": "/training-units/faep",
-      "name": "Faculty of Additional Educational Programs",
-      "img": "/images/faculty-10.png"
-    },
-    {
-      "route": "/training-units/al",
-      "name": "Academic Lyceum",
-      "img": "/images/faculty-11.png"
-    },
-    {
       "route": "/training-units/pl99",
       "name": "Professional Lyceum No. 99",
-      "img": "/images/faculty-12.png"
+      "img": "/images/faculty-12.png",
+      "desc_1": "We train competent competitive qualification workers from among school graduates and unemployed citizens, taking into account the needs of the labor market, the requirements of employers in the service sector.",
+      "title_1": "Directions and specialties:",
+      "desc_2": "Vocational Lyceum No. 99 trains personnel on the basis of 9 classes in the following areas:",
+      "list_1": [
+        "code 7231 «The mechanic for car repairs»",
+        "code 6753  «Computer Device Maintenance Operator»"
+      ],
+      "desc_3": "ОTraining is conducted on a budgetary basis, a scholarship is paid. Upon graduation, a certificate of secondary general education and a diploma of primary vocational education are issued.",
+      "desc_4": "On the basis of 11 classes in directions",
+      "list_2": ["code 7231  «The mechanic for car repairs»"],
+      "desc_5": "Training is conducted on a budgetary basis, a scholarship is paid. Upon graduation, a diploma of primary vocational education is issued. ⠀",
+      "title_2": "Contingent of students:",
+      "desc_6": "At the moment, 376 students of them are studying in PL № 99",
+      "list_3": [
+        "On the basis of grade 9 - 348 students",
+        "On the basis of grade 11 - 28 students"
+      ],
+      "title_3": "Brief history of the development of lyceum №99",
+      "history": [
+        "The specialized educational institution-TU-4 was organized on October 04, 1971 as the basic technical school of the Frunze Plant of Electric ",
+        "Vacuum Engineering and was located on the territory of the plant. Personnel training was conducted in working professions: turner, milling machine operator, machine fitter.",
+        "In 1975, the professions of draftsman and controller  of STC were added. ",
+        "In 1979, a new modern academic building and workshops were built for the school.",
+        "In 1984, TU № 4 was, re formed into vocational school No 99. ",
+        "Since 1984, the school provides not only professional, but also general secondary education. ",
+        "In 1990, vocational school No. 99 was, re formed into VPU (higher vocational school). The level of training of specialists allowed graduates to continue their studies at universities with which cooperation Agreements were concluded.",
+        "In 1992, the school was separated from the basic enterprise.",
+        "In 1993, VTU No. 99 was renamed 'Business Lyceum' No. 99. From this period, in addition to vocational education, students receive education in the field of small business, to ensure self-employment of graduates. In 2000, the lyceum began to train graduates in a new profession 'Specialist in automation and computerization of applied processes'. In 2000, it was, re formed into a Professional Lyceum No. 99.",
+        " From 2002 to 2008, with the support of the GTZ (German Society for Technical Cooperation), the lyceum formed a Department of Secondary Vocational Education. The technical school trained specialists in the profession of 'Information Technology Manager', 'Manager of a commodity and service cooperative', 'Manager of a credit union. Since 2008, a new specialty' Computer device on servicing «has been introduced. In 2018, PL No. 99 was transferred by the decision of the Government of the Kyrgyz Republic to the jurisdiction of the Kyrgyz State Law Academy for the implementation of the project.",
+        "At each stage, the lyceum trains young people in those professions that were in demand by the time."
+      ]
     }
   ]
 }

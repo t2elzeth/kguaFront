@@ -4,7 +4,7 @@ import { TrainingUnitsPage } from '@src/templates'
 import { useTranslation } from 'react-i18next'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 
-const HIT = () => {
+const IIRIL = () => {
   const router = useRouter()
   const common = useTranslation('common')
 
@@ -41,4 +41,4 @@ export const getStaticProps = async ({ locale }) => ({
   },
 })
 
-export default withRouter(HIT)
+export default withRouter(IIRIL)
