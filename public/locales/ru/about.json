@@ -15,9 +15,9 @@
       "img": "/images/faculty-gsl.svg",
       "subLinks": [
         {
-          "route": "/about",
+          "route": "/about/",
           "name": "Основные сведения",
-          "key": "/about",
+          "key": "/about/",
           "label": "Основные сведения"
         },
         {
