@@ -2,11 +2,11 @@ import { AboutPage } from '../../templates'
 import { useTranslation } from 'next-i18next'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 
-const IndexPage: React.FC = (props) => {
+const IndexPage: React.FC = () => {
   const { t } = useTranslation('about')
 
   return (
-    <AboutPage t={t} pageName="О КГЮА" pageTitle="Основные сведения" image={props?.image}>
+    <AboutPage t={t} pageName="О КГЮА" pageTitle="Основные сведения" image="/images/kgua-info.png">
       <p>{t('main')}</p>
       <div className="about-page__numbers">
         <div>
@@ -48,7 +48,6 @@ const IndexPage: React.FC = (props) => {
 }
 export const getStaticProps = async ({ locale }) => ({
   props: {
-    image: '/images/kgua-info.png',
     ...(await serverSideTranslations(locale, ['common', 'about'])),
   },
 })
