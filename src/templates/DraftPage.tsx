@@ -1,4 +1,4 @@
-import { News } from '@Components'
+// import { News } from '@Components'
 import Head from 'next/head'
 
 export type DraftPageProps = {
@@ -12,7 +12,7 @@ const DraftPage: React.FC<DraftPageProps> = ({ pageName, children }) => {
         <title>{pageName}</title>
       </Head>
       <div className="main">{children}</div>
-      <News />
+      {/* <News /> */}
     </div>
   )
 }

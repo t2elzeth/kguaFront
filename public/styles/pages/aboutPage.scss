@@ -6,6 +6,7 @@
     flex-direction: column;
     .mainImage {
       width: 100%;
+      max-height: 90vh;
     }
     h2 {
       font-weight: 500;
@@ -115,6 +116,15 @@
   }
   &__mission-img {
     width: 100%;
+  }
+  &__symbolism {
+    h6 {
+      margin: 15px 0;
+    }
+    img {
+      width: 200px;
+      height: 200px;
+    }
   }
   &__hymn {
     background-color: $lightBlue;

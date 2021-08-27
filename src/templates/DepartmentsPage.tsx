@@ -1,4 +1,4 @@
-import { News, Sidebar, MobileMenu, CardHeadDepartment, CardTeacher } from '@Components'
+import { Sidebar, MobileMenu, CardHeadDepartment, CardTeacher } from '@Components'
 import Head from 'next/head'
 
 export type DepartmentsProps = {
@@ -166,7 +166,7 @@ const Departments: React.FC<DepartmentsProps> = ({
           </div>
         </div>
       </div>
-      <News />
+      {/* <News /> */}
     </div>
   )
 }

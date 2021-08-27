@@ -1,4 +1,4 @@
-import { News, Sidebar, MobileMenu } from '@Components'
+import { Sidebar, MobileMenu } from '@Components'
 import Head from 'next/head'
 
 export type AboutPageProps = {
@@ -25,7 +25,6 @@ const AboutPage: React.FC<AboutPageProps> = ({ t, pageName, pageTitle, children,
           <div className="content">{children}</div>
         </div>
       </div>
-      <News />
     </div>
   )
 }

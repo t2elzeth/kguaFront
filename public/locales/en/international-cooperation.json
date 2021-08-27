@@ -9,19 +9,28 @@
       "img": "/images/international-cooperation-1.png"
     },
     {
-      "route": "/international-cooperation/international-programs",
-      "name": "International programs",
-      "img": "/images/international-cooperation-2.png"
-    },
-    {
       "route": "/international-cooperation/project-work",
       "name": "Project work",
-      "img": "/images/international-cooperation-3.png"
+      "img": "/images/international-cooperation-3.svg"
     },
     {
       "route": "/international-cooperation/partner-organizations",
       "name": "Partner organizations",
-      "img": "/images/international-cooperation-4.png"
+      "img": "/images/international-cooperation-4.png",
+      "subLinks": [
+        {
+          "route": "/international-cooperation/partner-organizations/",
+          "name": "Partner organizations"
+        },
+        {
+          "route": "/international-cooperation/partner-organizations/memorandums-agreements",
+          "name": "Memorandums and Agreements"
+        },
+        {
+          "route": "/international-cooperation/partner-organizations/treaties",
+          "name": "Treaties and international cooperation"
+        }
+      ]
     }
   ],
   "project_work": {
@@ -98,5 +107,11 @@
       ],
       "catalog_desc-2": "В академии уже определены дисциплины, в рамках которых будут апробироваться, а затем и внедряться новые инструменты электронного обучения, которые позволят  обеспечить высокий уровень доступности образования и одновременно повысить его качество."
     }
+  },
+  "memorandums": {
+    "title": "Memorandums and Agreements"
+  },
+  "treaties": {
+    "title": "Treaties and international cooperation"
   }
 }

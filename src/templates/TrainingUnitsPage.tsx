@@ -1,4 +1,4 @@
-import { News, Sidebar, MobileMenu } from '@Components'
+import { Sidebar, MobileMenu } from '@Components'
 import Head from 'next/head'
 
 export type TrainingUnitsProps = {
@@ -29,7 +29,7 @@ const TrainingUnits: React.FC<TrainingUnitsProps> = ({
           <div className="content"> {children}</div>
         </div>
       </div>
-      <News />
+      {/* <News /> */}
     </div>
   )
 }

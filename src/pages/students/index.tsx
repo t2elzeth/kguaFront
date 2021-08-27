@@ -6,6 +6,7 @@ import { WithoutSideBar } from '../../templates'
 const Students = () => {
   const { t } = useTranslation('students')
   const categories = t('sidebar_list', { returnObjects: true })
+  const list1 = t('list_1', { returnObjects: true })
 
   return (
     <WithoutSideBar pageName="Студентам">
@@ -14,16 +15,13 @@ const Students = () => {
           <img src="/images/financial.png" alt="" />
           <div>
             <h4>{t('title')}</h4>
-            <p>
-              Студенческий совет КГЮА является студенческой организацией – одной из форм
-              самоуправления студентов, созданной в соответствии с Конституцией КР, Законом КР «Об
-              образовании», Уставом Университета и иными нормативными актами.
-              <br />
-              Миссией Студенческого совета КГЮА является реализация прав студентов на участие в
-              управлении образовательным процессом, решении важных вопросов жизнедеятельности
-              студенческой молодежи, развитии ее социальной активности, поддержки и реализации
-              студенческих инициатив в жизни университета и гражданского общества.
-            </p>
+            <p>{t('description')}</p>
+            <ul>
+              {Array.from(list1).map((item: any, index) => (
+                <li key={index}>{item}</li>
+              ))}
+            </ul>
+            <p>{t('desc_2')}</p>
           </div>
         </div>
         <h2>Студентам</h2>

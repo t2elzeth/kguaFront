@@ -7,7 +7,7 @@ const Employees = () => {
   const { t } = useTranslation('employees')
   const categories = t('sidebar_list', { returnObjects: true })
   return (
-    <WithoutSideBar pageName="Поступающим">
+    <WithoutSideBar pageName={t('title')}>
       <div className="students-page">
         <div className="slider">
           <img alt="employees" src="/images/science-title-1.png" />

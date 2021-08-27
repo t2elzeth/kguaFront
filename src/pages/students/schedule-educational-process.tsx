@@ -1,20 +1,28 @@
+import { AboutPage } from '@src/templates'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 import { useTranslation } from 'react-i18next'
+import { Download } from '@src/components'
 
-import { AboutPage } from '../../templates'
-
-export type ScheduleEducationalProcessProps = {}
-
-const ScheduleEducationalProcess: React.FC<ScheduleEducationalProcessProps> = () => {
+const ScheduleEducationalProcess: React.FC = () => {
   const { t } = useTranslation('students')
+
+  const documents = [
+    {
+      title: 'График-учебного-процесса',
+      document: '/documents/График-учебного-процесса.pdf',
+    },
+  ]
+
   return (
     <AboutPage
       t={t}
-      pageName="Schedule_educational_process"
-      pageTitle="Schedule educational process"
-      image="/images/studentsTitleImg.png"
+      pageName={t('shedule.title')}
+      pageTitle={t('shedule.title')}
+      image="/images/documents.png"
     >
-      EDUCATIONAL
+      {documents.map((item) => (
+        <Download key={item.title} document={item} />
+      ))}
     </AboutPage>
   )
 }

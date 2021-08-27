@@ -2,6 +2,7 @@
   background-color: $lightBlue;
   padding: 80px 0;
   box-sizing: border-box;
+  will-change: transform;
   h2 {
     text-align: center;
     border-bottom: 3px solid #ed1a3b;

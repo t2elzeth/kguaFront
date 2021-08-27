@@ -8,16 +8,26 @@ const SymbolismPage: React.FC = () => {
   return (
     <AboutPage
       t={t}
-      pageName="Символика и атрибутика "
-      pageTitle="Символика и атрибутика "
+      pageName={t('symbolism.title')}
+      pageTitle={t('symbolism.title')}
       image="/images/symbolism.png"
     >
-      {/* <h3>
-        Символика
-      </h3> */}
-      {/* <p>Для подготовки юридических кадров с сильными теоретическими и практическими навыками в прокурорской и судебной деятельности в 2006 году был образован – Судебно-прокурорский факультет. Постановлением Правительства Кыргызской Республики № 367 от 23.07.2019 года Кыргызская государственная юридическая академия была переименована в Кыргызский государственный юридический университет (КГЮА). Приказом ректора </p> */}
+      <div className="about-page__symbolism">
+        <h3>{t('symbolism.logo_title')}</h3>
+        <img src="/images/logo.png" alt="logo" />
+        <p>{t('symbolism.logo')}</p>
+        <h6>{t('symbolism.logo-1')}</h6>
+        <h6>{t('symbolism.logo-2')}</h6>
+        <h6>{t('symbolism.logo-3')}</h6>
+        <h4>{t('symbolism.logo-color')}</h4>
+        <h4 style={{ color: '#ED1A3B' }}>{t('symbolism.logo-color-scarlet')}</h4>
+        <p>{t('symbolism.logo-color-scarlet-desc')}</p>
+        <h4 style={{ color: '#0054A6' }}>{t('symbolism.logo-color-blue')}</h4>
+        <p>{t('symbolism.logo-color-blue-desc')}</p>
+      </div>
+
       <div className="about-page__hymn">
-        <h3>Гимн КГЮА</h3>
+        <h3>{t('symbolism.anthem')}</h3>
         <p>
           Текст гимна
           <br />
