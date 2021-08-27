@@ -1,4 +1,4 @@
-import { News, Sidebar, MobileMenu } from '@Components'
+import { Sidebar, MobileMenu } from '@Components'
 import Head from 'next/head'
 
 export type StructurePageProps = {
@@ -46,7 +46,7 @@ const StructurePage: React.FC<StructurePageProps> = ({ pageName, pageTitle, chil
           <div className="content"> {children}</div>
         </div>
       </div>
-      <News />
+      {/* <News /> */}
     </div>
   )
 }

@@ -56,7 +56,7 @@ export default function ControlledTreeView({ links }) {
       defaultCollapseIcon={<ExpandMoreIcon />}
       defaultExpandIcon={<ChevronRightIcon />}
       expanded={expanded}
-      selected={router.pathname}
+      selected={selected}
       onNodeToggle={handleToggle}
       onNodeSelect={handleSelect}
     >

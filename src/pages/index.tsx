@@ -1,5 +1,4 @@
 import Head from 'next/head'
-import { News } from '@Components'
 import Image from 'next/image'
 import { useTranslation } from 'next-i18next'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
@@ -114,7 +113,7 @@ const IndexPage: React.FC = () => {
           </div>
         </div>
       </section>
-      <News />
+      {/* <News /> */}
       <section className="section-5">
         {[...Array(6).keys()].map((index) => (
           <img key={index} alt="" src={`/images/fifth-section-${index + 1}.png`} />

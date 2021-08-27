@@ -1,4 +1,4 @@
-import { News, Sidebar, MobileMenu } from '@Components'
+import { Sidebar, MobileMenu } from '@Components'
 import Head from 'next/head'
 import { useTranslation } from 'react-i18next'
 
@@ -26,7 +26,7 @@ const IncomingPage: React.FC<IncomingPageProps> = ({ pageName, pageTitle, childr
           <div className="content"> {children}</div>
         </div>
       </div>
-      <News />
+      {/* <News /> */}
     </div>
   )
 }
