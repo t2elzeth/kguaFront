@@ -1,4 +1,4 @@
-import { WithoutSideBar } from '../../templates'
+import { WithoutSideBar } from '@src/templates'
 import Link from 'next/link'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 import { useTranslation } from 'react-i18next'
