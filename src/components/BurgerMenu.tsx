@@ -32,6 +32,7 @@ export const BurgerMenu: React.FC<any> = ({ links }) => {
       setSelectedItem(index)
     }
     router.push(item.route)
+    closeNav()
   }
 
   return (
@@ -40,6 +41,7 @@ export const BurgerMenu: React.FC<any> = ({ links }) => {
         <div className="wrapper">
           <div className="burger-menu__header">
             <img
+              alt=""
               src="/images/text-logo.png"
               className="burger-menu__logo"
               onClick={() => router.push('/')}
@@ -54,15 +56,17 @@ export const BurgerMenu: React.FC<any> = ({ links }) => {
                 <li
                   key={index}
                   className={classnames('burger__list-item')}
-                  onClick={item.routes?.length ? onListItemClick(index) : onItemClick(item, index)}
+                  onClick={
+                    item.subLinks?.length ? onListItemClick(index) : onItemClick(item, index)
+                  }
                 >
                   {t(`header.${item.title}`)}
-                  {item.routes?.length > 0 && <img src="/images/arrow-down.svg" />}
+                  {item.subLinks?.length > 0 && <img src="/images/arrow-down.svg" />}
                 </li>
                 <>
-                  {selectedItem === index && item.routes.length > 0 && (
+                  {selectedItem === index && item?.subLinks?.length > 0 && (
                     <div className="burger-menu__links">
-                      {item?.routes.map((route) => (
+                      {item?.subLinks.map((route) => (
                         <Link href={route.route}>{route.title}</Link>
                       ))}
                     </div>

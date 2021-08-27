@@ -11,6 +11,10 @@
           "name": "Basic information"
         },
         {
+          "route": "/about/history",
+          "name": "History of education and development of KSLA"
+        },
+        {
           "route": "/about/mission",
           "name": "Mission and strategy"
         },
@@ -110,7 +114,20 @@
     "direction7": " Infrastructure modernization."
   },
   "symbolism": {
-    "motto": "A confident step into the future!"
+    "motto": "A confident step into the future!",
+    "title": "Symbols and attributes",
+    "logo_title": "Symbols",
+    "logo": "The KSLA new logo is a scarlet square inside which is a shield with the book",
+    "logo-1": "Shield is a simbolism of protection of rights, honor, dignity, justice and loyalty.",
+    "logo-2": "Book. An open book, located in the very heart of the shied, is the personification of the perfection of knowledge, without the geranium flight of thought and creativity.",
+    "logo-3": "quare. The shield and the open book are laid out in a square.",
+    "logo-4": "The square is one of the simplest and most ubiquitous geometric simbols. Simbolizes truth, justice, wisdom, intelligence, knowledge.",
+    "logo-color": "The main colors of the symbolizm",
+    "logo-color-scarlet": "Scarlet",
+    "logo-color-scarlet-desc": "is a color of life, which also expresses the desire for heights. Color inspires, motivates to set high goals and achieve them.",
+    "logo-color-blue": "Blue",
+    "logo-color-blue-desc": "By choosing blue as the second color, the university promotes some of the main values: loyalty, honesty, perseverance, dedication, justice and peace.",
+    "anthem": "Anthem KSLA"
   },
   "structure": {
     "departments": {
@@ -223,6 +240,58 @@
         "name": "Significant dates",
         "img": "/images/life_of_ksla-3.png"
       }
+    ]
+  },
+  "history": {
+    "title": "History of education and development of KSLA",
+    "title_2": "About KSLA",
+    "desc_1": "The Kyrgyz State Law University (KSLA) is a state higher professional educational institution that performs national tasks, a center for training personnel in the system of higher education and postgraduate training in the field of jurisprudence, economics, management and information technology.",
+    "desc_2": "KSLA was established in order to improve the system of training legal personnel and improve the quality of legal education by the Decree of the President of the Kyrgyz Republic dated 12.08.2003. UE No. 264 on the basis of the Center for Advanced Studies of Prosecutors and Investigators of the General Prosecutor's Office of the Kyrgyz Republic and the Institute for Retraining and Advanced Training of Personnel of the Kyrgyz National University named after J. Balasagyn.",
+    "desc_3": "The founder of KSLA is the Government of the Kyrgyz Republic.",
+    "desc_4": "By the Decree of the Government of the Kyrgyz Republic dated July 23, 2019 No. 367, the status and name of the KSLA were changed into the institution 'Kyrgyz State Law University (KSLA)', the Charter was approved and a certificate of re-registration of a legal entity was received. "
+  },
+  "electronic_resources": {
+    "title": "Electronic_resources",
+    "title_1": "Useful links for IT disciplines:",
+    "title_2": "Useful websites of government agencies:",
+    "title_3": "Legal and regulatory framework:",
+    "title_4": "Basic textbooks for jurisprudence:",
+    "title_5": "Textbooks and scientific publications by discipline:"
+  },
+  "alumni": {
+    "title": "The Association of Graduates",
+    "desc_1": "пof the Career Center of the Kyrgyz State Law University (hereinafter referred to as the Association) is a membership-based voluntary association of graduates established in accordance with the Charter of the KSLU, the regulations on the Career Center and on the basis of the decision of the Academic Council of the KSLU.",
+    "title_2": "Goals and objectives of the Association",
+    "title_3": "The main purpose of creating an Association is:",
+    "list_1": [
+      "consolidating the efforts of graduates to increase the public importance and recognition of the Kyrgyz State Law University( hereinafter-KSLA), maintaining the corporate spirit of KSLU graduates.",
+      "formation of a complex of relations among the members of the Association.",
+      "strengthening corporate unity at all levels.",
+      "implementation of an effective mechanism for lobbying the interests of members of the Association.",
+      "improving the efficiency of using the intellectual potential of graduates of the Kyrgyz State Law University and its opportunities for training and retraining of personnel to improve the well-being and internal potential of the members of the Association;",
+      "assistance in the training of highly qualified specialists in the field of law."
+    ],
+    "title_4": "The subject of the Association's activities is:",
+    "list_2": [
+      "Organization of relationships between university graduates and strengthening their ties with the university.",
+      "Establishing links between government authorities, business representatives and the university to train qualified specialists, develop mechanisms for social integration and scientific activities.",
+      "Attracting talented young people to the university.",
+      "Support for talented students, postgraduates, teachers, as well as research programs and projects.",
+      "Development and strengthening of the university's traditions.",
+      "Holding thematic meetings."
+    ],
+    "title_5": "To achieve this goal, the Association, realizing its rights, solves the following tasks:",
+    "list_3": [
+      "creates a database of KSLU graduates;",
+      "promotes the development of effective forms of professional development of KSLU graduates;",
+      "promotes the development of effective forms and technologies for organizing the educational process;",
+      "provides assistance to the KSLU in the work on career guidance for young people, on the new recruitment in the KSLU, on the distribution and employment of KSLU graduates;",
+      "develops (creates) new collective forms of information, legal and advertising services of the Association, providing consulting assistance to the members of the Association in their professional activities;",
+      "creates conditions for the priority implementation of scientific and practical ideas directly related to the members of the Association;",
+      "identifies sources of funding, resource support and organizes competitions for projects and programs to receive state and other most significant orders;",
+      "organizes exhibitions, conferences, seminars, schools, competitions, etc.;",
+      "resolves disputes arising between members of the Association;",
+      "promotes the development of effective forms of participation of members of the Association in the creation of a well-equipped material base of the KSLU"
     ]
   }
 }

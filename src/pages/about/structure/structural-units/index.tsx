@@ -1,7 +1,7 @@
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 import Link from 'next/link'
 import { useTranslation } from 'react-i18next'
-import { AboutPage } from '../../../templates'
+import { AboutPage } from '@src/templates'
 
 const StructuralUnits = () => {
   const { t } = useTranslation('about')

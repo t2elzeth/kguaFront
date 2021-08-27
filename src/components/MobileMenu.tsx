@@ -8,7 +8,7 @@ export const MobileMenu = ({ links }) => {
     <div className="mobile-menu">
       <div className="mobile-menu__header" onClick={() => setIsOpen(!isOpen)}>
         <a className="text-small-medium">{/* {links.title} */}</a>
-        <img src="/images/dark-arrow-down.svg" />
+        <img alt="alt" src="/images/dark-arrow-down.svg" />
       </div>
       {isOpen && (
         <div className="mobile-menu__body">
