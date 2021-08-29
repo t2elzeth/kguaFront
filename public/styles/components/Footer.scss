@@ -13,6 +13,7 @@
   &__links {
     display: flex;
     flex-direction: row;
+    color: $white;
     a {
       color: $white;
       margin-right: 24px;
@@ -42,8 +43,12 @@
   &__social-icons {
     display: flex;
     flex-direction: row;
-    img:not(:last-child) {
-      margin-right: 6px;
+    align-items: center;
+    a {
+      cursor: pointer;
+      img:not(:last-child) {
+        margin-right: 6px;
+      }
     }
   }
   &__copyright {

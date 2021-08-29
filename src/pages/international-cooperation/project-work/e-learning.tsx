@@ -23,7 +23,7 @@ const ELearning: React.FC = () => {
   })
 
   return (
-    <DraftPage pageName={t('e-learning')}>
+    <DraftPage pageName={t('project_work.e-learning.title')}>
       <div className="e-learning">
         <section>
           <h2>{t('project_work.e-learning.title')}</h2>
