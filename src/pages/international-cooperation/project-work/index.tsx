@@ -10,7 +10,7 @@ const ProjectWork: React.FC = () => {
   const { t } = useTranslation('international-cooperation')
   const categories = t('project_work.sidebar_list', { returnObjects: true })
   return (
-    <WithoutSideBar pageName={t('international_events')}>
+    <WithoutSideBar pageName={t('project_work.international_events.title')}>
       <div className="international-cooperation">
         <h2>{t('project_work.title')}</h2>
         <div className="content">
