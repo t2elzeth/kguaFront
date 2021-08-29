@@ -3,6 +3,7 @@ export const BASE_URL = process.env.BASE_URL
 
 export const URLS = {
   NEWS: '/api/v1/news/',
+  VACANCIES: '/api/v1/vacancies/',
 }
 
 export const LANG = [
