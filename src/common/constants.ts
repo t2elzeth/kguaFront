@@ -5,6 +5,7 @@ export const URLS = {
   NEWS: '/api/v1/news/',
   VACANCIES: '/api/v1/vacancies/',
   STAFF: '/api/v1/staff',
+  DEPARTMENT: '/api/v1/department/',
 }
 
 export const LANG = [
