@@ -2,7 +2,6 @@ import { useCallback, useEffect, useState } from 'react'
 import Head from 'next/head'
 import { useRouter } from 'next/router'
 
-import Loader from '@src/components/Loader'
 import fetchData from '@src/services/fetchData'
 import { News } from '@Components'
 
@@ -28,9 +27,6 @@ const WithoutSideBar: React.FC<WithoutSideBarProps> = ({ pageName, children }) =
     fetch()
   }, [fetch])
 
-  if (!news.length) {
-    return <Loader />
-  }
   return (
     <div className="structure-page">
       <Head>

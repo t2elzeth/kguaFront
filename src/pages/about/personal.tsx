@@ -12,13 +12,11 @@ const Personal = () => {
   const common = useTranslation('common')
   const router = useRouter()
   const [state, setState] = useState(null)
-  console.log('state: ', state)
   const [data, setData] = useState([])
 
   const alphabet = common.t('alphabet', { returnObjects: true })
 
   const handleClick = (item) => () => {
-    console.log('item: ', item)
     if (item === state) {
       setState(null)
     } else {

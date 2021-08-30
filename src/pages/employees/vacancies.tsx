@@ -29,15 +29,11 @@ const Vacancies: React.FC = ({ data }: any) => {
 }
 
 export const getStaticProps = async (context) => {
-  const res = await fetchData('news')
-  const vacancies = Array.from(res).map((item: any) => {
-    if (item[context.locale]) {
-      return { ...item[context.locale] }
-    }
-  })
+  const res = await fetchData('vacancies', { lang: context.locale })
+
   return {
     props: {
-      data: vacancies,
+      data: res,
       ...(await serverSideTranslations(context.locale, ['common', 'employees'])),
     },
   }
