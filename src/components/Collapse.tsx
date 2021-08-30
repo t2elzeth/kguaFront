@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import classnames from 'classnames'
 import { Collapse as CollapseComponent } from 'react-collapse'
 import { Grid } from '@material-ui/core'
+import { useTranslation } from 'react-i18next'
 
 export type CollapseItem = {
   full_name?: string
@@ -16,6 +17,7 @@ export type CollapseProps = {
 }
 
 export const Collapse: React.FC<CollapseProps> = ({ items }) => {
+  const { t } = useTranslation('common')
   const [selectedItems, setSelectedItems] = useState<Array<number>>([])
 
   const handleItemClick = (index: number) => {
@@ -35,7 +37,7 @@ export const Collapse: React.FC<CollapseProps> = ({ items }) => {
               <img alt="" src={item.image} className="collapseImage" />
               <p className="title">
                 {item.full_name}
-                <span className="subtitle">{item.position}</span>
+                <span className="subtitle">{t(item.position)}</span>
               </p>
               <img
                 style={{ marginLeft: '4px' }}
