@@ -54,9 +54,14 @@ const Department = () => {
 }
 
 // pages/blog/[slug].js
-export async function getStaticPaths() {
+export async function getStaticPaths(props) {
+  console.log('props: ', props)
   return {
-    paths: ['/about/structure/departments/department/[id]'],
+    paths: [
+      {
+        params: { id: '2' },
+      },
+    ],
     fallback: true,
   }
 }
@@ -72,7 +77,6 @@ export const getStaticProps = async (context) => {
   // }
   return {
     props: {
-      id: context.params.id,
       ...(await serverSideTranslations(context.locale, ['about', 'common'])),
     },
   }
