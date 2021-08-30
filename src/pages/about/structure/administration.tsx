@@ -2,6 +2,9 @@ import { AboutPage } from '../../../templates'
 // import { Collapse } from '@Components'
 import { useTranslation } from 'react-i18next'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
+import fetchData from '@src/services/fetchData'
+import { Collapse } from '@src/components'
+import Loader from '@src/components/Loader'
 
 // const staff = [
 //   {
@@ -38,8 +41,12 @@ import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 //     image: '/images/collapse.png',
 //   },
 // ]
-const AdministrationPage = () => {
+const AdministrationPage = (props) => {
   const { t } = useTranslation('about')
+
+  if (!props.data) {
+    return <Loader />
+  }
   return (
     <AboutPage t={t} pageName="Ректорат" pageTitle="Ректорат" image="/images/symbolism.png">
       <p>
@@ -47,14 +54,18 @@ const AdministrationPage = () => {
         ориентированного вуза в области образования и развитие его как центра фундаментальных
         научных и экспертно-аналитических исследований в области права.
       </p>
-      {/* <Collapse items={staff} /> */}
+      <Collapse items={props.data} />
     </AboutPage>
   )
 }
 
-export const getStaticProps = async ({ locale }) => ({
-  props: {
-    ...(await serverSideTranslations(locale, ['common', 'about'])),
-  },
-})
+export const getStaticProps = async (context) => {
+  const res = await fetchData('staff', { lang: context.locale, position: 'rector' })
+  return {
+    props: {
+      data: res,
+      ...(await serverSideTranslations(context.locale, ['common', 'about'])),
+    },
+  }
+}
 export default AdministrationPage
