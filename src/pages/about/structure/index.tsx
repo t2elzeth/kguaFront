@@ -8,7 +8,6 @@ const IndexPage: React.FC = () => {
   const categories = Array.from(t('sidebar_list', { returnObjects: true }))
 
   const strucutureCategories = categories.find((item: any) => item.route.includes('structure'))
-  console.log('strucutureCategories: ', strucutureCategories)
 
   return (
     <WithoutSideBar pageName="Структура университета">

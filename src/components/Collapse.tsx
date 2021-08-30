@@ -98,34 +98,16 @@ export const Collapse: React.FC<CollapseProps> = ({ items }) => {
                 </div>
 
                 <div>
-                  <Grid container>
-                    <Grid item xs={6} md={3}>
-                      <p>Копроративный Email:</p>
-                    </Grid>
-                    <Grid item xs={6} md={9}>
-                      <span> {item.contacts.email.corporate}</span>
-                    </Grid>
-                  </Grid>
+                  <p>Копроративный Email:</p>
+                  <span> {item.contacts.email.corporate}</span>
                 </div>
                 <div>
-                  <Grid container>
-                    <Grid item xs={6} md={3}>
-                      <p>Персональный Email:</p>
-                    </Grid>
-                    <Grid item xs={6} md={9}>
-                      <span>{item.contacts.email.personal}</span>
-                    </Grid>
-                  </Grid>
+                  <p>Персональный Email:</p>
+                  <span>{item.contacts.email.personal}</span>
                 </div>
                 <div>
-                  <Grid container>
-                    <Grid item xs={6} md={3}>
-                      <p>Phone:</p>
-                    </Grid>
-                    <Grid item xs={6} md={9}>
-                      <span>{item.contacts.phone}</span>
-                    </Grid>
-                  </Grid>
+                  <p>Phone:</p>
+                  <span>{item.contacts.phone}</span>
                 </div>
               </div>
             </CollapseComponent>

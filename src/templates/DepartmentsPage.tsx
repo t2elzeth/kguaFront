@@ -95,10 +95,11 @@ const Departments: React.FC<DepartmentsProps> = ({
   image,
   currentDepartments,
 }) => {
-  const serializedLinks = links.map((item) => ({
+  const serializedLinks = links?.map((item) => ({
     name: item.title,
-    route: item.route,
+    route: `/about/structure/departments/department/${item.id}`,
   }))
+
   return (
     <div className="about-page">
       <Head>
@@ -114,28 +115,27 @@ const Departments: React.FC<DepartmentsProps> = ({
             <h3>Информация о кафедре</h3>
             <div style={{ marginBottom: 50 }}>
               <CardHeadDepartment
-                head_teacher={currentDepartments.head_teacher}
-                image={currentDepartments.image}
-                url={currentDepartments.url}
-                address={currentDepartments.address}
-                contacts={currentDepartments.contacts}
-                email={currentDepartments.email}
+                full_name={currentDepartments?.head_teacher?.full_name}
+                image={currentDepartments?.head_teacher?.image}
+                corporate={currentDepartments?.head_teacher?.contacts.email?.corporate}
+                personal={currentDepartments?.head_teacher?.contacts.email?.personal}
+                phone={currentDepartments?.head_teacher?.contacts.phone}
               />
             </div>
-            <p>{currentDepartments.description}</p>
-            {currentDepartments?.info_of_staff && (
+            <p>{currentDepartments?.description}</p>
+            {currentDepartments?.pps_info && (
               <>
                 <h3>Информация о ППС</h3>
-                <p>{currentDepartments.info_of_staff}</p>
+                <p>{currentDepartments?.pps_info}</p>
               </>
             )}
 
             <h3>Состав ППС кафедры</h3>
-            {currentDepartments.teachers.map((teacher) => (
+            {currentDepartments?.teachers?.map((teacher) => (
               <CardTeacher
                 key={teacher.name}
                 image={teacher.image}
-                name={teacher.name}
+                full_name={teacher.full_name}
                 position={teacher.position}
               />
             ))}
@@ -143,7 +143,7 @@ const Departments: React.FC<DepartmentsProps> = ({
               <>
                 <h3 style={{ marginTop: 10 }}>Задачи кафедры</h3>
                 <ul>
-                  {currentDepartments.task_of_department.map((task) => (
+                  {currentDepartments?.task_of_department?.map((task) => (
                     <li key={task}>{task}</li>
                   ))}
                 </ul>
@@ -153,16 +153,21 @@ const Departments: React.FC<DepartmentsProps> = ({
               <>
                 <h3 style={{ marginTop: 10 }}>Задачи кафедры</h3>
                 <ul>
-                  {currentDepartments.courses_and_preparation.map((task) => (
+                  {currentDepartments?.courses_and_preparation.map((task) => (
                     <li key={task}>{task}</li>
                   ))}
                 </ul>
               </>
             )}
             <h3>Деятельность кафедры</h3>
-            <p>{currentDepartments.department_activities}</p>
+            <p>{currentDepartments?.activities}</p>
             <h3>Награды</h3>
-            <p>{currentDepartments.awards}</p>
+            {currentDepartments?.rewards?.map((item) => (
+              <>
+                <p>{item.year}</p>
+                <p>{item.description}</p>
+              </>
+            ))}
           </div>
         </div>
       </div>

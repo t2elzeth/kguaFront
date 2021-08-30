@@ -1,27 +1,55 @@
 import { useRouter, withRouter } from 'next/router'
 
 import { DepartmentsPage } from '@src/templates'
-import { useTranslation } from 'react-i18next'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
+import fetchData from '@src/services/fetchData'
+import { useCallback, useEffect, useState } from 'react'
+import Loader from '@src/components/Loader'
 
 const Department = () => {
   const router = useRouter()
-  const { t } = useTranslation('about')
-  const departmentsList = t('structure.listDepartments', { returnObjects: true })
 
-  const currentDepartments = Array.from(departmentsList).find(
-    (item: any) => item.route === router.pathname
-  )
+  const [data, setData] = useState(null)
+  const [list, setList] = useState([])
+
+  const fetch = useCallback(async () => {
+    try {
+      const res = await fetchData('department', { lang: router.locale }, `${router.query.id}`)
+      setData(res)
+    } catch (e) {
+      console.log(e)
+    }
+  }, [router])
+
+  useEffect(() => {
+    fetch()
+  }, [fetch])
+
+  const fetchList = useCallback(async () => {
+    try {
+      const res = await fetchData('department', { lang: router.locale })
+      setList(res)
+    } catch (e) {
+      console.log(e)
+    }
+  }, [router])
+
+  useEffect(() => {
+    fetchList()
+  }, [fetchList])
+
+  if (!data || !list.length) {
+    return <Loader />
+  }
 
   return (
-    <div>asdasdadsda</div>
-    // <DepartmentsPage
-    //   links={departmentsList}
-    //   currentDepartments={currentDepartments}
-    //   pageName={Object(currentDepartments).title}
-    //   pageTitle={Object(currentDepartments).title}
-    //   image="/images/symbolism.png"
-    // />
+    <DepartmentsPage
+      links={list}
+      currentDepartments={data}
+      pageName={Object(data).title}
+      pageTitle={Object(data).title}
+      image="/images/symbolism.png"
+    />
   )
 }
 
@@ -33,10 +61,21 @@ export async function getStaticPaths() {
   }
 }
 
-export const getStaticProps = async ({ locale }) => ({
-  props: {
-    ...(await serverSideTranslations(locale, ['about', 'common'])),
-  },
-})
+export const getStaticProps = async (context) => {
+  // if (!context.params.id) {
+  //   return {
+  //     redirect: {
+  //       destination: '/',
+  //       permanent: false,
+  //     },
+  //   }
+  // }
+  return {
+    props: {
+      id: context.params.id,
+      ...(await serverSideTranslations(context.locale, ['about', 'common'])),
+    },
+  }
+}
 
 export default withRouter(Department)
