@@ -6,6 +6,7 @@ export const URLS = {
   VACANCIES: '/api/v1/vacancies/',
   STAFF: '/api/v1/staff',
   DEPARTMENT: '/api/v1/department/',
+  EVENTS: '/api/v1/events/',
 }
 
 export const LANG = [

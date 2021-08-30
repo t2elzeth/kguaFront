@@ -6,6 +6,7 @@ import { useTranslation } from 'react-i18next'
 const LifeOfKSLA = () => {
   const { t } = useTranslation('about')
   const categories = t('life_of_ksla.sidebar_list', { returnObjects: true })
+
   return (
     <WithoutSideBar pageName={t('life_of_ksla.title')}>
       <div className="slider">

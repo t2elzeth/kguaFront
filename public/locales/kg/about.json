@@ -295,7 +295,7 @@
     "description": "",
     "sidebar_list": [
       {
-        "route": "/about/life-of-ksla/activity",
+        "route": "/about/life-of-ksla/activities",
         "name": "Мероприятия",
         "img": "/images/life_of_ksla-1.svg"
       },

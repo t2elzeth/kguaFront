@@ -339,10 +339,11 @@
     "title": "Жизнь КГЮА",
     "desc_categories": "В настоящее время в составе КГЮА действуют следующие институты:",
     "description": "",
+    "activity": "Мероприятия (Конференции, круглые столы)",
     "sidebar_list": [
       {
-        "route": "/about/life-of-ksla/activity",
-        "name": "Мероприятия (Конференции, круглые столы",
+        "route": "/about/life-of-ksla/activities",
+        "name": "Мероприятия (Конференции, круглые столы)",
         "img": "/images/life_of_ksla-1.svg"
       },
       {
