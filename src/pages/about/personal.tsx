@@ -6,16 +6,24 @@ import { IconButton } from '@material-ui/core'
 import { useState, useEffect, useCallback } from 'react'
 import { useRouter } from 'next/router'
 import { Collapse } from '@Components'
-
-const alphabet = ['A', 'Б', 'В', 'Г']
+import { useTranslation } from 'react-i18next'
 
 const Personal = () => {
+  const common = useTranslation('common')
   const router = useRouter()
   const [state, setState] = useState(null)
+  console.log('state: ', state)
   const [data, setData] = useState([])
 
+  const alphabet = common.t('alphabet', { returnObjects: true })
+
   const handleClick = (item) => () => {
-    setState(item)
+    console.log('item: ', item)
+    if (item === state) {
+      setState(null)
+    } else {
+      setState(item)
+    }
   }
 
   const fetch = useCallback(async () => {
@@ -34,16 +42,15 @@ const Personal = () => {
   return (
     <WithoutSideBar pageName="Персонал">
       <h2>Персонал</h2>
-      <div style={{ display: 'flex' }}>
+      <div style={{ display: 'flex', width: '100%' }}>
         {Array.from(alphabet).map((item: any, index: number) => (
-          <span key={index}>
-            <IconButton
-              color={item === state ? 'secondary' : 'primary'}
-              onClick={handleClick(item)}
-            >
-              {item}
-            </IconButton>
-          </span>
+          <IconButton
+            key={index}
+            color={item === state ? 'secondary' : 'inherit'}
+            onClick={handleClick(item)}
+          >
+            {item}
+          </IconButton>
         ))}
       </div>
 

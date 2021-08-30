@@ -2,13 +2,18 @@
 
 .collapse {
   display: flex !important;
+  flex-direction: row;
   justify-content: space-between;
   .blocks {
+    display: flex !important;
+    justify-content: space-between;
     width: 100%;
     .block {
       padding: 16px;
       margin-bottom: 20px;
+      margin-right: 20px;
       cursor: pointer;
+      width: 100%;
       box-sizing: border-box;
       background: #f1f4f9;
       box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.15);

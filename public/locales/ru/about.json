@@ -295,21 +295,45 @@
         "img": "/images/s_unit_3.png"
       },
       {
-        "route": "/about/structure/structural-units/hr-department",
+        "route": "/about/structure/structural-units/extra-activities",
         "name": "Отдел по внеучебной работе",
         "img": "/images/s_unit_3.png"
       },
       {
-        "route": "/about/structure/structural-units/hr-department",
+        "route": "/about/structure/structural-units/high",
         "name": "Отдел Цифрового развития",
         "img": "/images/s_unit_3.png"
       },
       {
-        "route": "/about/structure/structural-units/hr-department",
+        "route": "/about/structure/structural-units/career-center",
         "name": "Центр карьеры",
         "img": "/images/s_unit_3.png"
       }
-    ]
+    ],
+    "book_keeping": {
+      "title": "Бухгалтерия"
+    },
+    "workshop": {
+      "title": "Мастерская права"
+    },
+    "career_center": {
+      "title": "Центр карьеры"
+    },
+    "common_department": {
+      "title": "Общий отдел"
+    },
+    "edu_process": {
+      "title": "Отдел сопровождения образовательного процесса"
+    },
+    "extra": {
+      "title": "Отдел по внеучебной работе"
+    },
+    "high": {
+      "title": "Отдел Цифрового развития"
+    },
+    "HR": {
+      "title": "Отдел кадров"
+    }
   },
   "life_of_ksla": {
     "title": "Жизнь КГЮА",
