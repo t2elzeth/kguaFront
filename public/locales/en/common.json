@@ -207,7 +207,33 @@
     {
       "route": "/training-units/ikli",
       "name": "Issyk-Kul Law Institute",
-      "img": "/images/faculty-9.png"
+      "img": "/images/faculty-9.png",
+      "title_1": "HISTORY OF THE INSTITUTE",
+      "desc_1": "In 2003, the Issyk-Kul Law Institute of the KSLA was founded, the founder is the Kyrgyz State Law University (KSLA).",
+      "desc_2": "ssyk-Kul Law Institute is an educational institution that has a modern educational and material base, provided with highly qualified specialists and scientific and pedagogical personnel. Since its opening (since 2003), the Institute has produced 3282 graduates, of whom 2828 graduated from Law (higher), and 465 students from college (secondary-special).",
+      "desc_3": "The Issyk-Kul Law Institute of the KSLA is the main state institution that provides the Issyk-Kul and Naryn regions with personnel in the field of jurisprudence. ",
+      "desc_4": "The employability of graduates of the IUI KSLA is more than 70 %. In order to apply theoretical knowledge in practice, the Institute operates a Legal Clinic to provide legal advice to vulnerable segments of the population.",
+      "desc_5": "t provides additional support for effective education  The Institute also has student self-education programs: the Student Council, the scientific and practical circle 'Intellectual', the creative circle 'Zhash Kalem'.",
+      "title_2": "The mission",
+      "desc_6": " of the IUI KGUA is to strengthen the position of the Academy as a leading, socially oriented university in the field of education and to develop it as a center for fundamental scientific and expert-analytical research in the field of law",
+      "title_3": "PURPOSE",
+      "desc_7": " - The main purpose of the Institute is to implement secondary and higher professional education, as well as additional professional education and the production of highly qualified specialists.",
+
+      "title_4": "INSTITUTE PROFILES BACHELOR'S DEGREE PROGRAM",
+      "desc_8": "The form of training at the Institute is full–time with a standard training period of 4 years (bachelor's degree). The organization of the educational process is based on the classical legal education and includes fundamental and special training in the framework of the competence approach, which is based on the State Educational Standard of professional higher education in the direction of 'Jurisprudence'.",
+      "desc_9": "On the basis of secondary special education-the Institute prepares secondary vocational education of the basic level in the specialty 'Jurisprudence' with the assignment of the graduate qualification - 'Lawyer'.",
+      "title_5": "Graduates of the Issyk-Kul Law Institute can carry out professional activities in the following areas:",
+      "list_1": [
+        "Practicing lawyers",
+        "Prosecutors, employees of the prosecutor's office",
+        "Employees of the Ministry of Internal Affairs",
+        "Employee of the Judicial Department",
+        "Judges of local courts",
+        "Lawyers",
+        "Lawyers in public and private organizations",
+        "Corporate lawyer, employee of a law firm.",
+        "Employees of tax and customs services."
+      ]
     },
     {
       "route": "/training-units/pl99",

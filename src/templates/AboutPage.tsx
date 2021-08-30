@@ -45,12 +45,12 @@ const AboutPage: React.FC<AboutPageProps> = ({
       <Head>
         <title>{pageName}</title>
       </Head>
-      <MobileMenu links={secondLinks ? secondLinks : links} />
+      <MobileMenu links={secondLinks.length ? secondLinks : links} />
       <div className="main">
         <h2>{pageTitle}</h2>
         <img alt="" className="mainImage" src={image} />
         <div className="body">
-          <Sidebar links={secondLinks ? secondLinks : links} />
+          <Sidebar links={secondLinks.length ? secondLinks : links} />
           <div className="content">{children}</div>
         </div>
       </div>

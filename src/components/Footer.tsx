@@ -1,33 +1,35 @@
 import Link from 'next/link'
+import { useTranslation } from 'react-i18next'
 
 const links = [
   {
-    title: 'О КГЮА',
+    title: 'header.about_us',
     route: '/about',
   },
   {
-    title: 'Учебные подразделения',
-    route: '/structure',
+    title: 'header.training_units',
+    route: '/training-units',
   },
-  // {
-  //   title: 'Наука',
-  //   route: '/',
-  // },
-  // {
-  //   title: 'Международные сотрудничества',
-  //   route: '',
-  // },
   {
-    title: 'Поступающим',
+    title: 'header.science',
+    route: '/science',
+  },
+  {
+    title: 'header.international_cooperation',
+    route: '/international-cooperation',
+  },
+  {
+    title: 'header.incoming',
     route: '/incoming',
   },
-  // {
-  //   title: 'Сотрудникам',
-  //   route: '',
-  // },
   {
-    title: 'Студентам',
+    title: 'header.students',
     route: '/students',
+  },
+
+  {
+    title: 'header.employees',
+    route: '/employees',
   },
 ]
 const socials = [
@@ -53,13 +55,15 @@ const socials = [
   },
 ]
 export const Footer = () => {
+  const { t } = useTranslation('common')
+
   return (
     <div className="footer">
       <div className="wrapper">
         <div className="footer__links">
           {links.map((link) => (
             <Link key={link.title} href={link.route}>
-              <a>{link.title}</a>
+              <a style={{ textDecoration: 'none' }}>{t(link.title)}</a>
             </Link>
           ))}
         </div>
@@ -72,7 +76,7 @@ export const Footer = () => {
           </p>
           <img className="footer__logo" src="/images/text-logo.png" alt="logo" />
           <div className="footer__social">
-            <p> Мы в социальных сетях</p>
+            <p>Мы в социальных сетях</p>
             <div className="footer__social-icons">
               {socials.map((social) => (
                 <Link key={social.href} href={social.href}>

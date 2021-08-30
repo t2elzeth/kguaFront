@@ -18,7 +18,33 @@ const IKLI = () => {
       pageTitle={Object(currentRoutes).name}
       image="/images/symbolism.png"
     >
-      PAGE
+      <h4>{Object(currentRoutes).title_1}</h4>
+      <p>{Object(currentRoutes).desc_1}</p>
+      <p>{Object(currentRoutes).desc_2}</p>
+      <p>{Object(currentRoutes).desc_3}</p>
+      <p>{Object(currentRoutes).desc_4}</p>
+      <p>{Object(currentRoutes).desc_5}</p>
+      <h4>
+        {Object(currentRoutes).title_2}
+        <span>
+          <p>{Object(currentRoutes).desc_6}</p>
+        </span>
+      </h4>
+      <h4>
+        {Object(currentRoutes).title_3}
+        <span>
+          <p>{Object(currentRoutes).desc_7}</p>
+        </span>
+      </h4>
+      <h4>{Object(currentRoutes).title_4}</h4>
+      <p>{Object(currentRoutes).desc_8}</p>
+      <p>{Object(currentRoutes).desc_9}</p>
+      <h5>{Object(currentRoutes).title_5}</h5>
+      <ul>
+        {Array.from(Object(currentRoutes).list_1).map((item: any, index: number) => (
+          <li key={index}>{item}</li>
+        ))}
+      </ul>
     </TrainingUnitsPage>
   )
 }

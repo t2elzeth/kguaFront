@@ -6,6 +6,7 @@ import { useTranslation } from 'react-i18next'
 const Employees = () => {
   const { t } = useTranslation('employees')
   const categories = t('sidebar_list', { returnObjects: true })
+
   return (
     <WithoutSideBar pageName={t('title')}>
       <div className="students-page">

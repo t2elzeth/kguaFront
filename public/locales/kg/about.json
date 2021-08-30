@@ -3,12 +3,12 @@
   "sidebar_list": [
     {
       "route": "/about",
-      "name": "Information about KSLA",
+      "name": "КГЮА жөнүндө маалымат",
       "img": "/images/faculty-gsl.svg",
       "subLinks": [
         {
           "route": "/about/",
-          "name": "Basic information"
+          "name": "Негизги маалымат"
         },
         {
           "route": "/about/history",
@@ -16,29 +16,29 @@
         },
         {
           "route": "/about/mission",
-          "name": "Mission and strategy"
+          "name": "Миссия жана стратегия"
         },
         {
           "route": "/about/symbolism",
-          "name": "Symbolism"
+          "name": "Символика"
         },
         {
           "route": "/about/local-acts",
-          "name": "Local acts"
+          "name": "Жергиликтүү актылар"
         },
         {
           "route": "/about/awards",
-          "name": "Awards and titles"
+          "name": "Сыйлыктар жана наамдар"
         },
         {
           "route": "/about/documents",
-          "name": "Documents"
+          "name": "Документтер"
         }
       ]
     },
     {
       "route": "/about/structure",
-      "name": "University structure",
+      "name": "Университеттин структурасы",
       "img": "/images/faculty-gsl.svg",
       "subLinks": [
         {
@@ -47,17 +47,17 @@
           "route": "/about/structure/administration"
         },
         {
-          "name": "Учебные подразделения ",
+          "name": "Окутуу бирдиктери",
           "img": "/images/students-2.svg",
           "route": "/training-units"
         },
         {
-          "name": "Структурные подразделения",
+          "name": "Структуралык бирдиктер",
           "img": "/images/students-3.svg",
           "route": "/about/structure/structural-units"
         },
         {
-          "name": "Кафедры",
+          "name": "Кафедралар",
           "img": "/images/students-4.svg",
           "route": "/about/structure/departments"
         }
@@ -65,32 +65,32 @@
     },
     {
       "route": "/about/personal",
-      "name": "Personal",
+      "name": "Персонал",
       "img": "/images/faculty-gsl.svg"
     },
     {
       "route": "/about/electronic-resources",
-      "name": "Electronic resources",
+      "name": "Электрондук ресурстар",
       "img": "/images/faculty-gsl.svg"
     },
     {
       "route": "/about/alumni-association",
-      "name": "Alumni association",
+      "name": "Бүтүрүүчүлөр ассоциациясы",
       "img": "/images/faculty-gsl.svg"
     },
     {
       "route": "/about/life-of-ksla",
-      "name": "Life of KSLA",
+      "name": "КГЮАнын жашоосу",
       "img": "/images/faculty-gsl.svg"
     },
     {
       "route": "/about/virtual-tour",
-      "name": "Virtual tour",
+      "name": "Виртуалдык тур",
       "img": "/images/faculty-gsl.svg"
     },
     {
       "route": "/contacts",
-      "name": "Contacts",
+      "name": "Байланыштар",
       "img": "/images/faculty-gsl.svg"
     }
   ],
