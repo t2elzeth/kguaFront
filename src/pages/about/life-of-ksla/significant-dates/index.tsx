@@ -6,17 +6,16 @@ import fetchData from '@src/services/fetchData'
 import { Grid } from '@material-ui/core'
 import { useRouter } from 'next/router'
 
-const Activity: React.FC = (props: any) => {
-  console.log('props: ', props)
+const SignificantDates: React.FC = (props: any) => {
   const router = useRouter()
   const { t } = useTranslation('about')
 
   return (
-    <DraftPage pageName={t('life_of_ksla.activity')}>
+    <DraftPage pageName={t('life_of_ksla.jubilee')}>
       <div className="e-learning">
         <section>
           <h2 className="title" style={{ marginBottom: 30 }}>
-            {t('life_of_ksla.activity')}
+            {t('life_of_ksla.jubilee')}
           </h2>
           <Grid container>
             {props?.data?.map((item: any, index: number) => {
@@ -25,7 +24,9 @@ const Activity: React.FC = (props: any) => {
                   <Activities
                     data={item}
                     onClick={() =>
-                      router.push(`/about/life-of-ksla/activities/activity/${item.id}`)
+                      router.push(
+                        `/about/life-of-ksla/significant-dates/significant-date/${item.id}`
+                      )
                     }
                   />
                 </Grid>
@@ -39,14 +40,14 @@ const Activity: React.FC = (props: any) => {
 }
 
 export const getStaticProps = async ({ locale }) => {
-  const res = await fetchData('events', { lang: locale })
+  const res = await fetchData('promotion', { lang: locale })
 
   return {
     props: {
       data: res,
-      ...(await serverSideTranslations(locale, ['common', 'about'])),
+      ...(await serverSideTranslations(locale, ['jubilee', 'about'])),
     },
   }
 }
 
-export default Activity
+export default SignificantDates

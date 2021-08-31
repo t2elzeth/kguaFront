@@ -293,6 +293,9 @@
     "title": "Life of KSLA",
     "desc_categories": "Currently, the following institutions operate as part of the KSLA:",
     "description": "",
+    "activity": "Events (Conferences, round tables)",
+    "promotion": "Promotions and charity",
+    "jubilee": "Significant dates (anniversaries)",
     "sidebar_list": [
       {
         "route": "/about/life-of-ksla/activities",

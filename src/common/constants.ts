@@ -8,6 +8,9 @@ export const URLS = {
   DEPARTMENT: '/api/v1/department/',
   EVENTS: '/api/v1/events/',
   CLUBS: '/api/v1/clubs/',
+  CHARITY: '/api/v1/charity/',
+  JUBILEE: '/api/v1/jubilee/',
+  PROMOTION: '/api/v1/promotion/',
 }
 
 export const LANG = [
