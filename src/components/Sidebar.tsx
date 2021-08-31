@@ -25,17 +25,19 @@ export const Sidebar = ({ links }) => {
     typeof window !== 'undefined' && localStorage.getItem(`__ksla:sidebar_${routeName}`)
 
   const [state, setState] = useState(Number(initIndex) || null)
+  console.log('state: ', state)
 
   const handleItemClick = useCallback(
     (link, index) => () => {
+      console.log('index: ', index)
       if (link.subLinks?.length) {
         if (state !== index) {
           setState(index)
-          localStorage.setItem(`__ksla:sidebar_${routeName}`, index)
         }
       } else {
         router.push(link.route)
       }
+      localStorage.setItem(`__ksla:sidebar_${routeName}`, index)
     },
     [state, router, routeName]
   )
@@ -56,15 +58,13 @@ export const Sidebar = ({ links }) => {
       /> */}
 
       <ul>
-        {links.map((route, index) => {
+        {links.map((route, idx) => {
+          const index = idx + 1
           return (
             <li
               key={index}
               onClick={handleItemClick(route, index)}
-              className={classnames(
-                'sidebar__item',
-                (state === index || route.route === router.pathname) && 'sidebar__link'
-              )}
+              className={classnames('sidebar__item', state === index && 'sidebar__link')}
             >
               {route.name}
               {state === index && route.subLinks?.length && (
