@@ -1,14 +1,14 @@
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
-import { useTranslation } from 'next-i18next'
 import { DraftPage } from '@src/templates'
 import Loader from '@src/components/Loader'
 import { useRouter } from 'next/router'
 import { useCallback, useEffect, useState } from 'react'
 import fetchData from '@src/services/fetchData'
+import { Paper } from '@material-ui/core'
+import Carousel from 'react-material-ui-carousel'
 
 const Activity: React.FC = () => {
   const router = useRouter()
-  const { t } = useTranslation('about')
 
   const [data, setData] = useState(null)
 
@@ -30,11 +30,32 @@ const Activity: React.FC = () => {
   }
 
   return (
-    <DraftPage pageName={t('')}>
+    <DraftPage pageName={Object(data).title}>
       <div className="e-learning">
-        <section></section>
+        <section>
+          <h2>{Object(data).title} </h2>
+          <Carousel>
+            {Object(data).images?.length &&
+              Object(data).images.map((item, i) => <Item key={i} item={item} />)}
+          </Carousel>
+
+          <p
+            style={{ fontWeight: 'normal', fontSize: '14px', lineHeight: '5px', color: '#575757' }}
+          >
+            {`${Object(data).date_from} - ${Object(data).date_to}`}
+          </p>
+          <p>{Object(data).description}</p>
+        </section>
       </div>
     </DraftPage>
+  )
+}
+
+function Item(props) {
+  return (
+    <Paper>
+      <img style={{ width: '100%' }} alt="" src={props.item.image} />
+    </Paper>
   )
 }
 

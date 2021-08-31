@@ -134,6 +134,11 @@
     p {
       margin: 15px 0;
     }
+    @media screen and (max-width: $tablet) {
+      .title {
+        font-size: 10px;
+      }
+    }
   }
   .contacts {
     b {

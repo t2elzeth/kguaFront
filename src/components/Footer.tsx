@@ -42,15 +42,15 @@ const socials = [
     img: '/images/tiktok.svg',
   },
   {
-    href: '',
+    href: 'https://www.facebook.com/ksla.kg/',
     img: '/images/gmail.svg',
   },
   {
-    href: '',
+    href: 'https://www.facebook.com/ksla.kg/',
     img: '/images/whatsapp.svg',
   },
   {
-    href: '',
+    href: 'https://www.facebook.com/ksla.kg/',
     img: '/images/telegram.svg',
   },
 ]
@@ -78,8 +78,8 @@ export const Footer = () => {
           <div className="footer__social">
             <p>Мы в социальных сетях</p>
             <div className="footer__social-icons">
-              {socials.map((social) => (
-                <Link key={social.href} href={social.href}>
+              {socials.map((social: any, index: number) => (
+                <Link key={index} href={social.href}>
                   <a target="_blank">
                     <img alt="social" src={social.img} />
                   </a>

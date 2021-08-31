@@ -15,7 +15,9 @@ const Activity: React.FC = (props: any) => {
     <DraftPage pageName={t('life_of_ksla.title')}>
       <div className="e-learning">
         <section>
-          <h2>{t('life_of_ksla.activity')}</h2>
+          <h2 className="title" style={{ marginBottom: 30 }}>
+            {t('life_of_ksla.activity')}
+          </h2>
           <Grid container>
             {props?.data?.map((item: any, index: number) => {
               return (

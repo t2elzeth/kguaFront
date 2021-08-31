@@ -52,27 +52,26 @@ export const BurgerMenu: React.FC<any> = ({ links }) => {
           </div>
           <div className="burger-menu__content">
             {links?.map((item, index) => (
-              <>
+              <div key={index}>
                 <li
-                  key={index}
                   className={classnames('burger__list-item')}
                   onClick={item.routes?.length ? onListItemClick(index) : onItemClick(item, index)}
                 >
                   {t(`header.${item.title}`)}
-                  {item.routes?.length > 0 && <img src="/images/arrow-down.svg" />}
+                  {item.routes?.length > 0 && <img alt="" src="/images/arrow-down.svg" />}
                 </li>
                 <>
                   {selectedItem === index && item?.routes?.length > 0 && (
                     <div className="burger-menu__links">
-                      {item?.routes.map((route) => (
-                        <Link key={route.rote} href={route.route}>
+                      {item?.routes.map((route: any, index: number) => (
+                        <Link key={index} href={route.route}>
                           {route.title}
                         </Link>
                       ))}
                     </div>
                   )}
                 </>
-              </>
+              </div>
             ))}
           </div>
         </div>
