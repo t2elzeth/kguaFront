@@ -9,13 +9,16 @@ import { useCallback, useState } from 'react'
 export const Sidebar = ({ links }) => {
   const router = useRouter()
 
-  const [state, setState] = useState()
+  const initIndex = typeof window !== 'undefined' && localStorage.getItem('sidebar')
+
+  const [state, setState] = useState(Number(initIndex) || 0)
 
   const handleItemClick = useCallback(
     (link, index) => () => {
       if (link.subLinks?.length) {
         if (state !== index) {
           setState(index)
+          localStorage.setItem('sidebar', index)
         }
       } else {
         router.push(link.route)
@@ -40,34 +43,36 @@ export const Sidebar = ({ links }) => {
       /> */}
 
       <ul>
-        {links.map((route, index) => (
-          <li
-            key={index}
-            onClick={handleItemClick(route, index)}
-            className={classnames(
-              'sidebar__item',
-              (state === index || route.route === router.pathname) && 'sidebar__link'
-            )}
-          >
-            {route.name}
-            {(state === index || router.pathname == route.route) && route.subLinks?.length && (
-              <ul style={{ paddingTop: '10px', paddingBottom: '10px' }}>
-                {route.subLinks?.map((item) => (
-                  <Link key={item.route} href={item.route}>
-                    <li
-                      className={classnames(
-                        'sidebar__subItem',
-                        item.route === router.pathname && 'sidebar__subLink'
-                      )}
-                    >
-                      {item.name}
-                    </li>
-                  </Link>
-                ))}
-              </ul>
-            )}
-          </li>
-        ))}
+        {links.map((route, index) => {
+          return (
+            <li
+              key={index}
+              onClick={handleItemClick(route, index)}
+              className={classnames(
+                'sidebar__item',
+                (state === index || route.route === router.pathname) && 'sidebar__link'
+              )}
+            >
+              {route.name}
+              {state === index && route.subLinks?.length && (
+                <ul style={{ paddingTop: '10px', paddingBottom: '10px' }}>
+                  {route.subLinks?.map((item) => (
+                    <Link key={item.route} href={item.route}>
+                      <li
+                        className={classnames(
+                          'sidebar__subItem',
+                          item.route === router.pathname && 'sidebar__subLink'
+                        )}
+                      >
+                        {item.name}
+                      </li>
+                    </Link>
+                  ))}
+                </ul>
+              )}
+            </li>
+          )
+        })}
       </ul>
       <img alt="sidebar" src="/images/sidebar.png" />
       <p className="sidebar__virtual">Виртуальный тур по КГЮА</p>
