@@ -2,6 +2,7 @@ import classnames from 'classnames'
 import { useRouter } from 'next/router'
 import Link from 'next/link'
 import { useCallback, useState } from 'react'
+import { useMemo } from 'react'
 
 // import default minimal styling or your own styling
 // import 'node_modules/react-simple-tree-menu/dist/main.css'
@@ -9,22 +10,34 @@ import { useCallback, useState } from 'react'
 export const Sidebar = ({ links }) => {
   const router = useRouter()
 
-  const initIndex = typeof window !== 'undefined' && localStorage.getItem('sidebar')
+  const routeName = useMemo(() => {
+    if (router.pathname.includes('/about/')) return 'about'
+    else if (router.pathname.includes('/training-units/')) return 'training-units'
+    else if (router.pathname.includes('/science/')) return 'science'
+    else if (router.pathname.includes('/international-cooperation/'))
+      return 'international-cooperation'
+    else if (router.pathname.includes('/incoming/')) return 'incoming'
+    else if (router.pathname.includes('/employees/')) return 'employees'
+    else if (router.pathname.includes('/students/')) return 'students'
+  }, [router])
 
-  const [state, setState] = useState(Number(initIndex) || 0)
+  const initIndex =
+    typeof window !== 'undefined' && localStorage.getItem(`__ksla:sidebar_${routeName}`)
+
+  const [state, setState] = useState(Number(initIndex) || null)
 
   const handleItemClick = useCallback(
     (link, index) => () => {
       if (link.subLinks?.length) {
         if (state !== index) {
           setState(index)
-          localStorage.setItem('sidebar', index)
+          localStorage.setItem(`__ksla:sidebar_${routeName}`, index)
         }
       } else {
         router.push(link.route)
       }
     },
-    [state, router]
+    [state, router, routeName]
   )
 
   return (
