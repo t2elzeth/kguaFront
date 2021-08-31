@@ -7,6 +7,7 @@ export const URLS = {
   STAFF: '/api/v1/staff',
   DEPARTMENT: '/api/v1/department/',
   EVENTS: '/api/v1/events/',
+  CLUBS: '/api/v1/clubs/',
 }
 
 export const LANG = [

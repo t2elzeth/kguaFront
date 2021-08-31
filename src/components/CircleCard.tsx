@@ -29,9 +29,9 @@ const useStyles = makeStyles((theme: any) => ({
   },
 }))
 
-const CircleCard = ({ img, title, desc }: any) => {
+const CircleCard = ({ img, title, desc, supervisor, phone }: any) => {
   const classes = useStyles()
-  const { t } = useTranslation()
+  const { t } = useTranslation('common')
   const [expanded, setExpanded] = useState(false)
 
   const handleExpandClick = () => {
@@ -56,6 +56,8 @@ const CircleCard = ({ img, title, desc }: any) => {
       <Collapse in={expanded} timeout="auto" unmountOnExit>
         <CardContent>
           <Typography paragraph>{desc}</Typography>
+          <Typography>{`${t('supervisor')}: ${supervisor}`}</Typography>
+          <Typography>{`${t('phone')}: ${phone}`}</Typography>
         </CardContent>
       </Collapse>
     </Card>
