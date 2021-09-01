@@ -165,6 +165,13 @@
     "title": "Local-Regulatory acts"
   },
   "structure": {
+    "title": "University structure",
+    "administration": {
+      "title": "Administration"
+    },
+    "structural_units": {
+      "title": "Structural units"
+    },
     "departments": {
       "title": "Departments",
       "description": "The implementation of educational programs of the KSLA is provided by 18 departments, where a highly qualified teaching staff works:"

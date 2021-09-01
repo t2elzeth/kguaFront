@@ -7,7 +7,7 @@ import { WithoutSideBar } from '../../../../templates'
 const Departments = ({ data }: any) => {
   const { t } = useTranslation('about')
   return (
-    <WithoutSideBar pageName="Кафедры">
+    <WithoutSideBar pageName={t('structure.departments.title')}>
       <h2>{t('structure.departments.title')}</h2>
       <p>{t('structure.departments.description')}</p>
       <div style={{ marginTop: 20 }}>

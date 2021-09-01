@@ -9,8 +9,8 @@ const StructuralUnits = () => {
   return (
     <AboutPage
       t={t}
-      pageName="Струтурные подразделения"
-      pageTitle="Структурные подразделения"
+      pageTitle={t('structure.structural_units.title')}
+      pageName={t('structure.structural_units.title')}
       image="/images/symbolism.png"
     >
       <div style={{ display: 'flex', flexDirection: 'row', flexWrap: 'wrap' }}>

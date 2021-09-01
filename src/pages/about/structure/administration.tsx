@@ -48,7 +48,12 @@ const AdministrationPage = (props) => {
     return <Loader />
   }
   return (
-    <AboutPage t={t} pageName="Ректорат" pageTitle="Ректорат" image="/images/symbolism.png">
+    <AboutPage
+      t={t}
+      pageName={t('structure.administration.title')}
+      pageTitle={t('structure.administration.title')}
+      image="/images/symbolism.png"
+    >
       <p>
         Свою миссию КГЮА видит в укреплении позиции университета как ведущего, социально
         ориентированного вуза в области образования и развитие его как центра фундаментальных

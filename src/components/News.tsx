@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import classnames from 'classnames'
+import { useTranslation } from 'react-i18next'
 
 // const news = [
 //   {
@@ -29,6 +30,8 @@ import classnames from 'classnames'
 // ]
 
 export const News = ({ news }) => {
+  const { t } = useTranslation('common')
+
   const [selected, setSelected] = useState(undefined)
 
   const handleClick = (index) => {
@@ -41,7 +44,7 @@ export const News = ({ news }) => {
   return (
     <div className="news">
       <h2>
-        <span>Новости</span>
+        <span>{t('news')}</span>
       </h2>
       <div className="wrapper">
         {news?.slice(0, 3).map((item, index) => (

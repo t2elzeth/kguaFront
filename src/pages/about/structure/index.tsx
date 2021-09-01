@@ -13,9 +13,9 @@ const IndexPage: React.FC = () => {
   const [isHovered, setIsHovered] = useState({})
 
   return (
-    <WithoutSideBar pageName="Структура университета">
+    <WithoutSideBar pageName={t('structure.title')}>
       <img src="/images/about/structure/structure-page-hero.png" alt="structure-page-hero" />
-      <h2>Структура университета</h2>
+      <h2>{t('structure.title')}</h2>
       <p>
         Кыргызский государственный юридический университет (КГЮА) является государственным высшим
         профессиональным учебным заведением, выполняющим общегосударственные задачи, центром
