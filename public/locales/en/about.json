@@ -43,22 +43,26 @@
       "subLinks": [
         {
           "name": "Administration",
-          "img": "/images/students-1.svg",
+          "img": "/images/about/structure/administration-icon.svg",
+          "img_hov": "/images/about/structure/administration-hov-icon.svg",
           "route": "/about/structure/administration"
         },
         {
           "name": "Training units",
-          "img": "/images/students-2.svg",
+          "img": "/images/about/structure/training-units-icon.svg",
+          "img_hov": "/images/about/structure/training-units-hov-icon.svg",
           "route": "/training-units"
         },
         {
           "name": "Structural units",
-          "img": "/images/students-3.svg",
+          "img": "/images/about/structure/structural-units-icon.svg",
+          "img_hov": "/images/about/structure/structural-units-hov-icon.svg",
           "route": "/about/structure/structural-units"
         },
         {
           "name": "Departments",
-          "img": "/images/students-4.svg",
+          "img": "/images/about/structure/departments-icon.svg",
+          "img_hov": "/images/about/structure/departments-hov-icon.svg",
           "route": "/about/structure/departments"
         }
       ]

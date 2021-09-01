@@ -1,6 +1,7 @@
 import { WithoutSideBar } from '@src/templates'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 import Link from 'next/link'
+import { useState } from 'react'
 import { useTranslation } from 'react-i18next'
 
 const IndexPage: React.FC = () => {
@@ -8,6 +9,8 @@ const IndexPage: React.FC = () => {
   const categories = Array.from(t('sidebar_list', { returnObjects: true }))
 
   const strucutureCategories = categories.find((item: any) => item.route.includes('structure'))
+
+  const [isHovered, setIsHovered] = useState({})
 
   return (
     <WithoutSideBar pageName="Структура университета">
@@ -22,8 +25,11 @@ const IndexPage: React.FC = () => {
       <div className="categories">
         {Object(strucutureCategories).subLinks?.map((item, index) => (
           <Link href={item.route} key={index}>
-            <a>
-              <img src={item.img} alt="" />
+            <a
+              onMouseEnter={() => setIsHovered({ [index]: true })}
+              onMouseLeave={() => setIsHovered({ [index]: false })}
+            >
+              <img src={isHovered[index] ? item.img_hov : item.img} alt="" />
               <p>{item.name}</p>
             </a>
           </Link>

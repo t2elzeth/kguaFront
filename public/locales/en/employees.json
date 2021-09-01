@@ -5,13 +5,15 @@
     {
       "route": "/employees/vacancies",
       "name": "Vacancies",
-      "img": "/images/employees-vacancies.svg",
+      "img": "/images/employees/employees-1.svg",
+      "img_hov": "/images/employees/employees-1-hov.svg",
       "description": "The positions of research and teaching staff are filled based on the results of a competition or election at the Kyrgyz State Law University  . The positions of the dean of the faculty, the director of the Institute, and the head of the department are elective. The replacement of the positions of the teaching staff and researchers is preceded by the election by competition. Conclusion (amendment) of employment contracts for other positions (professions) is carried out in a general manner, except for cases when special procedures are provided for by regulatory legal acts, the Charter and (or) local regulations of the KSLU."
     },
     {
       "route": "/employees/code-ethics",
       "name": "Code of Ethics",
-      "img": "/images/employees-ethics.png",
+      "img": "/images/employees/employees-2.svg",
+      "img_hov": "/images/employees/employees-2-hov.svg",
       "document": "/documents/code-of-ethics.pdf"
     }
   ]

@@ -14,37 +14,44 @@
     {
       "route": "/students/schedule-educational-process",
       "name": "Schedule of the educational process",
-      "img": "/images/students-1.svg"
+      "img": "/images/students/students-1.svg",
+      "img_hov": "/images/students/students-1-hov.svg"
     },
     {
       "route": "/students/documents-student",
       "name": "Documents for the student",
-      "img": "/images/students-2.svg"
+      "img": "/images/students/students-2.svg",
+      "img_hov": "/images/students/students-2-hov.svg"
     },
     {
       "route": "/students/student-self-government",
       "name": "Student self-government",
-      "img": "/images/students-3.svg"
+      "img": "/images/students/students-3.svg",
+      "img_hov": "/images/students/students-3-hov.svg"
     },
     {
       "route": "/students/tax-customs-clinic",
       "name": "Tax and customs clinic",
-      "img": "/images/students-4.svg"
+      "img": "/images/students/students-4.svg",
+      "img_hov": "/images/students/students-4-hov.svg"
     },
     {
       "route": "/students/legal-clinic",
       "name": "Legal clinic",
-      "img": "/images/students-5.svg"
+      "img": "/images/students/students-5.svg",
+      "img_hov": "/images/students/students-5-hov.svg"
     },
     {
       "route": "/students/student-ombudsman",
       "name": "Student ombudsman",
-      "img": "/images/students-6.svg"
+      "img": "/images/students/students-6.svg",
+      "img_hov": "/images/students/students-6-hov.svg"
     },
     {
       "route": "/students/club-circles",
       "name": "Clubs and Circles",
-      "img": "/images/students-7.svg"
+      "img": "/images/students/students-7.svg",
+      "img_hov": "/images/students/students-7-hov.svg"
     }
   ],
   "students_self": {

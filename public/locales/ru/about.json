@@ -65,28 +65,32 @@
       "subLinks": [
         {
           "name": "Ректорат",
-          "img": "/images/students-1.svg",
+          "img": "/images/about/structure/administration-icon.svg",
+          "img_hov": "/images/about/structure/administration-hov-icon.svg",
           "route": "/about/structure/administration",
           "key": "/about/structure/administration",
           "label": "Ректорат"
         },
         {
           "name": "Учебные подразделения",
-          "img": "/images/students-2.svg",
+          "img": "/images/about/structure/training-units-icon.svg",
+          "img_hov": "/images/about/structure/training-units-hov-icon.svg",
           "route": "/training-units",
           "key": "/training-units",
           "label": "Учебные подразделения"
         },
         {
           "name": "Структурные подразделения",
-          "img": "/images/students-3.svg",
+          "img": "/images/about/structure/structural-units-icon.svg",
+          "img_hov": "/images/about/structure/structural-units-hov-icon.svg",
           "route": "/about/structure/structural-units",
           "key": "/about/structure/structural-units",
           "label": "Структурные подразделения"
         },
         {
           "name": "Кафедры",
-          "img": "/images/students-4.svg",
+          "img": "/images/about/structure/departments-icon.svg",
+          "img_hov": "/images/about/structure/departments-hov-icon.svg",
           "route": "/about/structure/departments",
           "key": "/about/structure/departments",
           "label": "Кафедры"

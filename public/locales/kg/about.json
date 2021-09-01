@@ -43,22 +43,26 @@
       "subLinks": [
         {
           "name": "Ректорат",
-          "img": "/images/students-1.svg",
+          "img": "/images/about/structure/administration-icon.svg",
+          "img_hov": "/images/about/structure/administration-hov-icon.svg",
           "route": "/about/structure/administration"
         },
         {
           "name": "Окутуу бирдиктери",
-          "img": "/images/students-2.svg",
+          "img": "/images/about/structure/training-units-icon.svg",
+          "img_hov": "/images/about/structure/training-units-hov-icon.svg",
           "route": "/training-units"
         },
         {
           "name": "Структуралык бирдиктер",
-          "img": "/images/students-3.svg",
+          "img": "/images/about/structure/structural-units-icon.svg",
+          "img_hov": "/images/about/structure/structural-units-hov-icon.svg",
           "route": "/about/structure/structural-units"
         },
         {
           "name": "Кафедралар",
-          "img": "/images/students-4.svg",
+          "img": "/images/about/structure/departments-icon.svg",
+          "img_hov": "/images/about/structure/departments-hov-icon.svg",
           "route": "/about/structure/departments"
         }
       ]
