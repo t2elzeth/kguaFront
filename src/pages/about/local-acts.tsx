@@ -13,8 +13,8 @@ const LocalActsPage: React.FC = () => {
   return (
     <AboutPage
       t={t}
-      pageName="Локальные-нормативные акты"
-      pageTitle="Локальные-нормативные акты"
+      pageName={t('local_acts.title')}
+      pageTitle={t('local_acts.title')}
       image="/images/documents.png"
     >
       <Download document={document} />

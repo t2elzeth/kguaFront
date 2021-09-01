@@ -55,7 +55,7 @@ export const Header = () => {
                 <div className="header__links">
                   {item?.routes?.map((route, index) => (
                     <Link key={index} href={route.route}>
-                      {route.title}
+                      {t(`header.${route.title}`)}
                     </Link>
                   ))}
                 </div>

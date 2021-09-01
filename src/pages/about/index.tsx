@@ -6,7 +6,12 @@ const IndexPage: React.FC = () => {
   const { t } = useTranslation('about')
 
   return (
-    <AboutPage t={t} pageName="О КГЮА" pageTitle="Основные сведения" image="/images/kgua-info.png">
+    <AboutPage
+      t={t}
+      pageName={t('title')}
+      pageTitle={t('basic')}
+      image="/images/about/about-hero.png"
+    >
       <p>{t('main')}</p>
       <div className="about-page__numbers">
         <div>
@@ -34,15 +39,7 @@ const IndexPage: React.FC = () => {
           </p>
         </div>
       </div>
-      <img alt="" src="/images/kgua-info-2.png" className="mainImage" />
-      {/* <p>
-        КГЮА образован в целях совершенствования системы подготовки юридических кадров и повышения
-        качества юридического образования Указом Президента Кыргызской Республики от 12.08.2003г. УП
-        № 264 на базе Центра повышения квалификации прокурорско-следственных работников Генеральной
-        прокуратуры Кыргызской Республики и Института переподготовки и повышения квалификации кадров
-        Кыргызского национального университета им. Ж.Баласагына. Учредителем КГЮА является
-        Правительство Кыргызской Республики.
-      </p> */}
+      <img alt="" src="/images/about/about-content-1.png" className="mainImage" />
     </AboutPage>
   )
 }

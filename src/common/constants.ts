@@ -37,31 +37,31 @@ export const HEADER_LINKS = [
         route: '/about',
       },
       {
-        title: 'Структура университета',
+        title: 'structure',
         route: '/about/structure',
       },
       {
-        title: 'Персонал',
+        title: 'personal',
         route: '/about/personal',
       },
       {
-        title: 'Электронные ресурсы',
+        title: 'electronic_resources',
         route: '/about/electronic-resources',
       },
       {
-        title: 'Ассоциация выпускников',
+        title: 'alumni_association',
         route: '/about/alumni-association',
       },
       {
-        title: 'Жизнь КГЮА',
+        title: 'life_ksla',
         route: '/about/life-of-ksla',
       },
       {
-        title: 'Виртуальная экскурсия по КГЮА',
+        title: 'virtual_tour',
         route: '/about/virtual-tour-of-ksla',
       },
       {
-        title: 'Контакты',
+        title: 'contacts',
         route: '/contacts',
       },
     ],

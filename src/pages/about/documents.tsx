@@ -33,7 +33,12 @@ const documents = [
 const DocumentsPage: React.FC = () => {
   const { t } = useTranslation('about')
   return (
-    <AboutPage t={t} pageName="Документы" pageTitle="Документы" image="/images/documents.png">
+    <AboutPage
+      t={t}
+      pageName={t('documents.title')}
+      pageTitle={t('documents.title')}
+      image="/images/documents.png"
+    >
       {documents.map((item) => (
         <Download key={item.title} document={item} />
       ))}
