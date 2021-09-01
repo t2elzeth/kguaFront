@@ -9,7 +9,6 @@ const Vacancies: React.FC = ({ data }: any) => {
   const { t } = useTranslation('employees')
   const router = useRouter()
   const list = t('sidebar_list', { returnObjects: true })
-  console.log('list: ', list)
   const currentData = [list].find((item: any) => item.route === router.pathname)
 
   return (

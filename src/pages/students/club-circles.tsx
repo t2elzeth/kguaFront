@@ -1,13 +1,13 @@
+import { useTranslation } from 'react-i18next'
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
+
 import { Grid } from '@material-ui/core'
+
 import CircleCard from '@src/components/CircleCard'
 import fetchData from '@src/services/fetchData'
-import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
-import { useTranslation } from 'react-i18next'
-
-import { AboutPage } from '../../templates'
+import { AboutPage } from '@src/templates'
 
 const ClubCircles: React.FC = ({ data }: any) => {
-  console.log('data: ', data)
   const { t } = useTranslation('students')
 
   return (

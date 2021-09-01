@@ -3,9 +3,30 @@ import Image from 'next/image'
 import { useTranslation } from 'next-i18next'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 import InfoCount from '@src/components/InfoCount'
+import Carousel from 'react-material-ui-carousel'
 
 const IndexPage: React.FC = () => {
   const { t } = useTranslation('index')
+  const common = useTranslation('common')
+
+  const faculties = common.t('faculties', { returnObjects: true })
+
+  const newFaculties = Array.from(faculties)
+    .map((item, i, arr) => {
+      if (i === 0 || i % 3 === 0) {
+        return (
+          <>
+            <Item item={item} />
+            <Item item={arr[i + 1]} />
+            <Item item={arr[i + 2]} />
+          </>
+        )
+      } else {
+        return null
+      }
+    })
+    .filter((el) => el !== null)
+
   return (
     <div className="main">
       <Head>
@@ -15,11 +36,9 @@ const IndexPage: React.FC = () => {
         <div className="section-1__wrapper">
           <div className="section-1__text">
             <h4>{t('welcome')}</h4>
-            <h1>В КЫРГЫЗСКИЙ ГОСУДАРСТВЕННЫЙ ЮРИДИЧЕСКИЙ УНИВЕРСИТЕТ</h1>
+            <h1>{t('ksla')}</h1>
             <p className="headline-regular" style={{ color: '#fff', textAlign: 'left' }}>
-              КГЮА образован в целях совершенствования системы подготовки юридических кадров и
-              повышения качества юридического образования Указом Президента Кыргызской Республики от
-              12.08.2003г. УП № 264 на базе Центра повышения квалификации
+              {t('desc')}
             </p>
             {/* <button>
               <img src="/images/arrow.svg" alt="arrow" />
@@ -32,84 +51,26 @@ const IndexPage: React.FC = () => {
       <section className="section-2">
         <div className="wrapper">
           <div className="section-2__text">
-            <h2>О нас</h2>
-            <p className="text-regular">
-              КГЮА образован в целях совершенствования системы подготовки юридических кадров и
-              повышения качества юридического образования Указом Президента Кыргызской Республики от
-              12.08.2003г. УП № 264 на базе Центра повышения квалификации прокурорско-следственных
-              работников Генеральной прокуратуры Кыргызской Республики и Института переподготовки и
-              повышения квалификации кадров Кыргызского национального университета им. Ж.Баласагына.
-              Учредителем КГЮА является Правительство Кыргызской Республики. Постановлением
-              Правительства Кыргызской Республики от 23 июля 2019 года №367 изменены статус и
-              наименование КГЮА в учреждение «Кыргызский государственный юридический университет
-              (КГЮА)», утвержден Устав и получено свидетельство о перерегистрации юридического лица.
-            </p>
+            <h2>{t('about_us_1')}</h2>
+            <p className="text-regular">{t('desc')}</p>
           </div>
           <Image width="636px" height="656px" src="/images/second-section.png" />
         </div>
         <p className="section-2__bottom">
           <img src="/images/logo.png" alt="logo" />
-          КГЮА - уверенный шаг в будущее !
+          {t('motto')}
         </p>
       </section>
       <section className="section-3">
         <h2>
-          <span>Учебные подразделения</span>
+          <span>{t('training_units')}</span>
         </h2>
         <div className="wrapper">
           <div className="section-3__left-part">
             <Image width="500px" height="878px" src="/images/third-section.png" />
           </div>
           <div className="section-3__right-part">
-            <div className="section-3__block">
-              <div className="section-3__logo">
-                <img src="images/faculty-logo-1.png" alt="company-logo" />
-              </div>
-              <div className="section-3__block-text">
-                <h4>ИНСТИТУТ ЭКОНОМИКИ И УПРАВЛЕНИЯ</h4>
-                <p style={{ padding: '10px 0' }}>
-                  КГЮА образован в целях совершенствования системы подготовки юридических кадров и
-                  повышения качества юридического образования
-                </p>
-              </div>
-            </div>
-
-            <div className="section-3__block">
-              <div className="section-3__logo">
-                <img src="/images/faculty-logo-2.png" alt="company-logo" />
-              </div>
-              <div className="section-3__block-text">
-                <h4>ИНСТИТУТ АДВОКАТУРЫ И ЮСТИЦИИ</h4>
-                <p style={{ padding: '10px 0' }}>
-                  КГЮА образован в целях совершенствования системы подготовки юридических кадров и
-                  повышения качества юридического образования
-                </p>
-              </div>
-            </div>
-            <div className="section-3__block">
-              <div className="section-3__logo">
-                <img src="/images/faculty-logo-3.png" alt="company-logo" />
-              </div>
-              <div className="section-3__block-text">
-                <h4>ИНСТИТУТ ЭКОНОМИКИ И УПРАВЛЕНИЯ</h4>
-                <p style={{ padding: '10px 0' }}>
-                  КГЮА образован в целях совершенствования системы подготовки юридических кадров и
-                  повышения качества юридического образования
-                </p>
-              </div>
-            </div>
-            <div className="section-3__block">
-              <div className="section-3__logo">
-                <img src="/images/faculty-logo-4.png" alt="company-logo" />
-              </div>
-              <div className="section-3__block-text">
-                <h4>ИНСТИТУТ ПРАВОСУДИЯ И ПРОКУРАТУРЫ</h4>
-                <p style={{ padding: '10px 0' }}>
-                  КГЮА образован в целях совершенствования системы подготовки юридических кадров и
-                  повышения качества юридического образования
-                </p>
-              </div>
-            </div>
+            <Carousel autoPlay={false}>{newFaculties}</Carousel>
           </div>
         </div>
       </section>
@@ -120,6 +81,24 @@ const IndexPage: React.FC = () => {
         ))}
       </section>
     </div>
+  )
+}
+
+function Item(props) {
+  return (
+    <>
+      {props.item?.route ? (
+        <div className="section-3__block">
+          <div className="section-3__logo">
+            <img src="images/faculty-logo-1.png" alt="company-logo" />
+          </div>
+          <div className="section-3__block-text">
+            <h4>{props.item?.name}</h4>
+            <p style={{ padding: '10px 0' }}>{props.item?.desc_1}</p>
+          </div>
+        </div>
+      ) : null}
+    </>
   )
 }
 

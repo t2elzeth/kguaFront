@@ -1,5 +1,4 @@
 import React, { useState } from 'react'
-import Link from 'next/link'
 import { useRouter } from 'next/router'
 import classnames from 'classnames'
 import { useTranslation } from 'react-i18next'
@@ -30,8 +29,13 @@ export const BurgerMenu: React.FC<any> = ({ links }) => {
   const onItemClick = (item, index) => () => {
     if (selectedItem !== index) {
       setSelectedItem(index)
+      closeNav()
     }
     router.push(item.route)
+  }
+
+  const handleSubItemClick = (subItem) => () => {
+    router.push(subItem.route)
     closeNav()
   }
 
@@ -64,9 +68,13 @@ export const BurgerMenu: React.FC<any> = ({ links }) => {
                   {selectedItem === index && item?.routes?.length > 0 && (
                     <div className="burger-menu__links">
                       {item?.routes.map((route: any, index: number) => (
-                        <Link key={index} href={route.route}>
-                          {route.title}
-                        </Link>
+                        <div
+                          style={{ color: 'white', padding: '10px 0px' }}
+                          key={index}
+                          onClick={handleSubItemClick(route)}
+                        >
+                          {t(`header.${route.title}`)}
+                        </div>
                       ))}
                     </div>
                   )}

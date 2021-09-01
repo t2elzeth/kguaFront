@@ -7,7 +7,6 @@ import { Grid } from '@material-ui/core'
 import { useRouter } from 'next/router'
 
 const Activity: React.FC = (props: any) => {
-  console.log('props: ', props)
   const router = useRouter()
   const { t } = useTranslation('about')
 

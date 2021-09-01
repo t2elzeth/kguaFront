@@ -54,8 +54,7 @@ const Department = () => {
 }
 
 // pages/blog/[slug].js
-export async function getStaticPaths(props) {
-  console.log('props: ', props)
+export async function getStaticPaths() {
   return {
     paths: [
       {
