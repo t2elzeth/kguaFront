@@ -59,7 +59,7 @@ function Item(props) {
   )
 }
 
-export async function getStaticPaths(props) {
+export async function getStaticPaths() {
   return {
     paths: [
       {
