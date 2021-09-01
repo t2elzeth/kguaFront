@@ -5,12 +5,14 @@
     {
       "route": "/science/postgraduate-doctoral-studies",
       "name": "Department of Postgraduate Studies, Doctoral Studies and Organization of Scientific Activities",
-      "img": "/images/science-1.png"
+      "img": "/images/science/science-1.svg",
+      "img_hov": "/images/science/science-1-hov.svg"
     },
     {
       "route": "/science/dissertation-council",
       "name": "Dissertation Council",
-      "img": "/images/science-2.svg",
+      "img": "/images/science/science-2.svg",
+      "img_hov": "/images/science/science-2-hov.svg",
       "subLinks": [
         {
           "route": "/science/dissertation-council/",
@@ -77,7 +79,8 @@
     {
       "route": "/science/scientific-publications",
       "name": "Scientific publications of KSLA",
-      "img": "/images/science-3.png",
+      "img": "/images/science/science-3.svg",
+      "img_hov": "/images/science/science-3-hov.svg",
       "subLinks": [
         {
           "route": "/science/scientific-publications",
