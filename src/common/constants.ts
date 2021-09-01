@@ -33,7 +33,7 @@ export const HEADER_LINKS = [
     title: 'about_us',
     routes: [
       {
-        title: 'Информация о КГЮА',
+        title: 'about_us',
         route: '/about',
       },
       {

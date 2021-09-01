@@ -19,7 +19,6 @@ export const Sidebar = ({ links }) => {
   })
 
   const [state, setState] = useState(draft?.route)
-  console.log('state: ', state)
 
   const handleItemClick = useCallback(
     (link) => () => {
