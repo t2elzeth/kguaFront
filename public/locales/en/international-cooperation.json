@@ -6,17 +6,20 @@
     {
       "route": "/international-cooperation/international-events",
       "name": "International events",
-      "img": "/images/international-cooperation-1.png"
+      "img": "/images/international/international-1.svg",
+      "img_hov": "/images/international/international-1-hov.svg"
     },
     {
       "route": "/international-cooperation/project-work",
       "name": "Project work",
-      "img": "/images/international-cooperation-3.svg"
+      "img": "/images/international/international-2.svg",
+      "img_hov": "/images/international/international-2-hov.svg"
     },
     {
       "route": "/international-cooperation/partner-organizations",
       "name": "Partner organizations",
-      "img": "/images/international-cooperation-4.png",
+      "img": "/images/international/international-3.svg",
+      "img_hov": "/images/international/international-3-hov.svg",
       "subLinks": [
         {
           "route": "/international-cooperation/partner-organizations/",

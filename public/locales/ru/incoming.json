@@ -5,22 +5,26 @@
     {
       "route": "/incoming/graduate-school",
       "name": "Аспирантура и докторантура",
-      "img": "/images/incoming-1.png"
+      "img": "/images/incoming/incoming-1.svg",
+      "img_hov": "/images/incoming/incoming-1-hov.svg"
     },
     {
       "route": "/incoming/admission-rules",
       "name": "Правила приёма",
-      "img": "/images/incoming-2.png"
+      "img": "/images/incoming/incoming-2.svg",
+      "img_hov": "/images/incoming/incoming-2-hov.svg"
     },
     {
       "route": "/incoming/secondary-education",
       "name": "Среднее образование",
-      "img": "/images/incoming-3.png"
+      "img": "/images/incoming/incoming-3.svg",
+      "img_hov": "/images/incoming/incoming-3-hov.svg"
     },
     {
       "route": "/incoming/bachelor-degree",
       "name": "Бакалавриат; Специалитет; Магистратура",
-      "img": "/images/incoming-4.svg"
+      "img": "/images/incoming/incoming-4.svg",
+      "img_hov": "/images/incoming/incoming-4-hov.svg"
     }
   ],
   "secondary": {
