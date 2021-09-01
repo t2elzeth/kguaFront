@@ -48,7 +48,7 @@ const Department = () => {
       currentDepartments={data}
       pageName={Object(data).title}
       pageTitle={Object(data).title}
-      image="/images/symbolism.png"
+      image="/images/about/structure/departments/department-info-page-hero.png"
     />
   )
 }

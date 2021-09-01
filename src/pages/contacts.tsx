@@ -8,6 +8,7 @@ const IndexPage: React.FC = () => {
   return (
     <WithoutSideBar pageName="Контакты">
       <h2>{t('main')}</h2>
+      <img src="/images/symbolism.png" alt="" />
       <p style={{ fontSize: '18px', lineHeight: '32px' }} className="contacts">
         <b> Отдел по внеучебной работе:</b>+996 312 392 105 <br />
         <b>Центр карьеры: </b>+996 312 392102

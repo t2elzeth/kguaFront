@@ -14,7 +14,7 @@ const IndexPage: React.FC = () => {
 
   return (
     <WithoutSideBar pageName="Структура университета">
-      <img src="/images/incoming-title-2.png" alt="" />
+      <img src="/images/about/structure/structure-page-hero.png" alt="structure-page-hero" />
       <h2>Структура университета</h2>
       <p>
         Кыргызский государственный юридический университет (КГЮА) является государственным высшим

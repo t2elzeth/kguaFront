@@ -11,7 +11,7 @@ const IndexPage: React.FC = () => {
 
   return (
     <WithoutSideBar pageName={t('alumni.title')}>
-      <img src="/images/incoming-title-2.png" alt="" />
+      <img src="/images/about/alumni-association-hero.png" alt="" />
       <h2>{t('alumni.title')}</h2>
       <p>{t('alumni.desc_1')}</p>
       <h2>{t('alumni.title_2')}</h2>
