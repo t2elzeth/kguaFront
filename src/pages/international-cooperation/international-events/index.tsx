@@ -11,11 +11,11 @@ const InternationalEvents: React.FC = (props: any) => {
   const { t } = useTranslation('international-cooperation')
 
   return (
-    <DraftPage pageName={t('life_of_ksla.activity')}>
+    <DraftPage pageName={t('international_events.title')}>
       <div className="e-learning">
         <section>
           <h2 className="title" style={{ marginBottom: 30 }}>
-            {t('life_of_ksla.activity')}
+            {t('international_events.title')}
           </h2>
           <Grid container>
             {props?.data?.map((item: any, index: number) => {

@@ -28,7 +28,7 @@ export function Activities({ data, onClick }: any) {
         <CardMedia
           onClick={onClick}
           className={classes.media}
-          image={data?.images[0].image}
+          image={data?.images[0]?.image}
           title={data?.title}
         />
         <CardContent>

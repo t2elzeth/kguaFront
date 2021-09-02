@@ -458,5 +458,7 @@
   "treaties": {
     "title": "Договора и международное сотрудничество"
   },
-  "international_events": {}
+  "international_events": {
+    "title": "Международные мероприятия"
+  }
 }

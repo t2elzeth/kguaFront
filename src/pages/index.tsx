@@ -94,6 +94,7 @@ function Item(props) {
           </div>
           <div className="section-3__block-text">
             <h4>{props.item?.name}</h4>
+
             <p style={{ padding: '10px 0' }}>{props.item?.desc_1}</p>
           </div>
         </div>
