@@ -407,5 +407,36 @@
       "resolves disputes arising between members of the Association;",
       "promotes the development of effective forms of participation of members of the Association in the creation of a well-equipped material base of the KSLU"
     ]
+  },
+  "virtual_tour": {
+    "title": "Virtual tour of KSLA",
+    "desc": "We invite you to a virtual tour of the Kyrgyz State Law University. A fascinating walk will introduce you to the territory of three buildings of the KSLA (Main building, IT-Academy building, Kok-Zhar building) and Dolphin Sports and Health Camp, which is located on the shores of Lake Issyk-Kul. You can look into the classrooms and institutes of the KSLA, visit lecture halls and scientific laboratories, visit the gym and the football field, as well as visit the scientific library and many other fascinating places of the university.",
+    "sidebar_list": [
+      {
+        "route": "http://213.139.209.59:8001/",
+        "name": "Main building",
+        "img": "/images/about/virtual_tour/main_building.png"
+      },
+      {
+        "route": "http://213.139.209.59:8001/",
+        "name": "Kok-Zhar building",
+        "img": "/images/about/virtual_tour/kok_zhar.png"
+      },
+      {
+        "route": "http://213.139.209.59:8001/",
+        "name": "IT academy",
+        "img": "/images/about/virtual_tour/it.png"
+      },
+      {
+        "route": "http://213.139.209.59:8001/",
+        "name": "Dolphin",
+        "img": "/images/about/virtual_tour/sol.png"
+      },
+      {
+        "route": "http://213.139.209.59:8001/",
+        "name": "IYUI (Karakol)",
+        "img": "/images/about/virtual_tour/karakol.png"
+      }
+    ]
   }
 }
