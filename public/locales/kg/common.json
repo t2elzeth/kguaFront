@@ -26,6 +26,13 @@
   "rector": "Ректор",
   "teacher": "Мугалим",
   "news": "Жаңылыктар",
+  "total_work_exp": "Жалпы иш тажрыйбасы",
+  "scientific_exp": "Илимий жана педагогикалык тажрыйба",
+  "education": "Билим",
+  "awards": "Сыйлыктар",
+  "training": "Квалификацияны жогорулатуу",
+  "corporate_email": "Корпоративдык Email",
+  "personal_email": "Жеке Email",
 
   "departments": {
     "dafil": "Административдик жана финансы укугу кафедрасы",

@@ -11,6 +11,7 @@ export const URLS = {
   CHARITY: '/api/v1/charity/',
   JUBILEE: '/api/v1/jubilee/',
   PROMOTION: '/api/v1/promotion/',
+  INTERNATIONAL: '/api/v1/international_events/',
 }
 
 export const LANG = [

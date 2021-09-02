@@ -52,63 +52,69 @@ export const Collapse: React.FC<CollapseProps> = ({ items }) => {
             >
               <div className="collapsedContent">
                 <div>
-                  <p>Общий стаж работы</p>
+                  <p>{t('total_work_exp')}</p>
                   <span>{item.experience.overall}</span>
                 </div>
                 <div>
-                  <p>Научно-педагогический стаж</p> <span> {item.experience.pedagogical}</span>
+                  <p>{t('scientific_exp')}</p> <span> {item.experience.pedagogical}</span>
                 </div>
                 <div>
-                  <p> Образование </p>
-                  {item.education.map((item: any, index: number) => (
-                    <Grid key={index} container direction="column">
-                      <Grid item xs={12}>
-                        <h6>{item.description}</h6>
-                      </Grid>
-                      <Grid item>
-                        <h6>{`${item.from_year} - ${item.to_year}`}</h6>
-                      </Grid>
-                    </Grid>
-                  ))}
-                </div>
-
-                <div>
-                  <p>Награды: </p>
-                  {item.rewards.map((item: any, index: number) => (
-                    <Grid key={index} container direction="column">
-                      <Grid item xs={12}>
-                        <h6>{item.year}</h6>
-                      </Grid>
-                      <Grid item>
-                        <h6>{item.description}</h6>
-                      </Grid>
-                    </Grid>
-                  ))}
-                </div>
-                <div>
-                  <p>Повышение квалификации: </p>
-                  {item.trainings.map((item: any, index: number) => (
-                    <Grid key={index} container direction="column">
-                      <Grid item xs={12}>
-                        <h6>{item.description}</h6>
-                      </Grid>
-                      <Grid item>
-                        <h6>{`${item.from_year} - ${item.to_year}`}</h6>
-                      </Grid>
-                    </Grid>
-                  ))}
+                  <p>{t('education')}</p>
+                  <Grid key={index} container direction="row">
+                    {item.education.map((item: any) => (
+                      <>
+                        <Grid item>
+                          <h6>{`${item.from_year} - ${item.to_year}`}</h6>
+                        </Grid>
+                        <Grid item xs={12}>
+                          <h6>{item.description}</h6>
+                        </Grid>
+                      </>
+                    ))}
+                  </Grid>
                 </div>
 
                 <div>
-                  <p>Копроративный Email:</p>
+                  <p>{t('awards')}: </p>
+                  <Grid key={index} container direction="column">
+                    {item.rewards.map((item: any) => (
+                      <>
+                        <Grid item xs={12}>
+                          <h6>{item.year}</h6>
+                        </Grid>
+                        <Grid item>
+                          <h6>{item.description}</h6>
+                        </Grid>
+                      </>
+                    ))}
+                  </Grid>
+                </div>
+                <div>
+                  <p>{t('training')}: </p>
+                  <Grid key={index} container direction="column">
+                    {item.trainings.map((item: any) => (
+                      <>
+                        <Grid item>
+                          <h6>{`${item.from_year} - ${item.to_year}`}</h6>
+                        </Grid>
+                        <Grid item xs={12}>
+                          <h6>{item.description}</h6>
+                        </Grid>
+                      </>
+                    ))}
+                  </Grid>
+                </div>
+
+                <div>
+                  <p>{t('corporate_email')}:</p>
                   <span> {item.contacts.email.corporate}</span>
                 </div>
                 <div>
-                  <p>Персональный Email:</p>
+                  <p>{t('personal_email')}:</p>
                   <span>{item.contacts.email.personal}</span>
                 </div>
                 <div>
-                  <p>Phone:</p>
+                  <p>{t('phone')}:</p>
                   <span>{item.contacts.phone}</span>
                 </div>
               </div>

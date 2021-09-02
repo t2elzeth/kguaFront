@@ -26,6 +26,13 @@
   "rector": "Rector",
   "teacher": "Teacher",
   "news": "News",
+  "total_work_exp": "Total work experience",
+  "scientific_exp": "Scientific and pedagogical experience",
+  "education": "Education",
+  "awards": "Awards",
+  "training": "Training",
+  "corporate_email": "Corporate email",
+  "personal_email": "personal email",
 
   "faculties_and_institutes": "Faculties and Institutes",
   "departments": {

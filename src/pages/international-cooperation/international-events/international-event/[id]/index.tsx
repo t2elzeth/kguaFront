@@ -9,14 +9,14 @@ import fetchData from '@src/services/fetchData'
 import Loader from '@src/components/Loader'
 import { DraftPage } from '@src/templates'
 
-const Activity: React.FC = () => {
+const InternationalEvent: React.FC = () => {
   const router = useRouter()
 
   const [data, setData] = useState(null)
 
   const fetch = useCallback(async () => {
     try {
-      const res = await fetchData('events', { lang: router.locale }, `${router.query.id}`)
+      const res = await fetchData('international', { lang: router.locale }, `${router.query.id}`)
       setData(res)
     } catch (e) {
       console.log(e)
@@ -78,4 +78,4 @@ export const getStaticProps = async ({ locale }) => ({
   },
 })
 
-export default Activity
+export default InternationalEvent

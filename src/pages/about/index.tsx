@@ -15,27 +15,30 @@ const IndexPage: React.FC = () => {
       <p>{t('main')}</p>
       <div className="about-page__numbers">
         <div>
-          <p>
-            <span>47</span>
-            Информирование о мероприятиях в КГЮА
+          <p className="headline-regular">
+            <span>7 600</span>
+            студентов обучаются на данный момент
           </p>
+          <hr />
         </div>
         <div>
-          <p>
-            <span>5</span>
-            Информирование о мероприятиях в КГЮА
+          <p className="headline-regular">
+            <span>300</span>
+            квалифицированных преподавателей
           </p>
+          <hr />
         </div>
         <div>
-          <p>
-            <span>6</span>
-            Информирование о мероприятиях в КГЮА
+          <p className="headline-regular">
+            <span>20</span>
+            доктора наук
           </p>
+          <hr />
         </div>
         <div>
-          <p>
-            <span>2500</span>
-            Информирование о мероприятиях в КГЮА
+          <p className="headline-regular">
+            <span>91</span>
+            кандидаты наук
           </p>
         </div>
       </div>

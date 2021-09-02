@@ -90,7 +90,7 @@ function Item(props) {
       {props.item?.route ? (
         <div className="section-3__block">
           <div className="section-3__logo">
-            <img src="images/faculty-logo-1.png" alt="company-logo" />
+            <img src={props.item?.img} alt="company-logo" />
           </div>
           <div className="section-3__block-text">
             <h4>{props.item?.name}</h4>
