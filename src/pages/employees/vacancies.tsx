@@ -9,16 +9,15 @@ const Vacancies: React.FC = ({ data }: any) => {
   const { t } = useTranslation('employees')
   const router = useRouter()
   const list = t('sidebar_list', { returnObjects: true })
-  const currentData = [list].find((item: any) => item.route === router.pathname)
+  const currentData = Array.from(list).find((item: any) => item.route === router.pathname)
 
   return (
     <AboutPage
       t={t}
       pageName={Object(currentData).name}
       pageTitle={Object(currentData).name}
-      image="/images/documents.png"
+      image="/images/employees/employees-1-hero.png"
     >
-      <p>{Object(currentData).description}</p>
       <h3>Вакансии</h3>
       {data &&
         Array.from(data).map((item: any, index: number) => (

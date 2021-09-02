@@ -52,7 +52,7 @@
     {
       "route": "/training-units/gsl",
       "name": "Graduate School of Law",
-      "img": "/images/faculty-1.png",
+      "img": "/images/faculties/gsl.png",
       "desc_1": "Для подготовки квалифицированных кадров с сильными теоретическими и практическими навыками по основным образовательным программам в сфере юридической деятельности, в 2021 году решением ученого совета КГЮА была образована Высшая школа права.",
       "title_1": "В настоящее время в Высшей школе права функционируют:",
       "list_1": [
@@ -74,7 +74,7 @@
     {
       "route": "/training-units/hseb",
       "name": "Higher School of Economics and Business",
-      "img": "/images/faculty-2.png",
+      "img": "/images/faculties/hseb.png",
       "desc_1": "Высшая школа экономики и бизнеса функционирует в структуре Кыргызского государственного юридического университета более 15 лет (с 2005 года)  – сначала в качестве Факультета управления и права, с 2019 года в качестве Института, а с 2021 года в качестве Высшей школы.",
       "desc_2": "На сегодняшний день здесь обучается более 700 студентов. Высшую школу экономики и бизнеса отличают динамичность, готовность осваивать и внедрять всё новое и передовое в области экономической, государственной, таможенной науки, образования.",
       "title_1": "В настоящее время в Высшей школе экономики и бизнеса функционируют:",
@@ -96,7 +96,7 @@
     {
       "route": "/training-units/hit",
       "name": "Higher IT School (IT - Academy)",
-      "img": "/images/faculty-3.png",
+      "img": "/images/faculties/hit.png",
       "desc_1": "IT-Академия сегодня готовит лучших: программистов, специалистов в области информационной безопасности и информационных технологий, которые могут предоставлять услуги по автоматизации управления и учета предприятий, используя лучшие IT решения.",
       "desc_2": "Миссия IT-Академии: подготовка высококвалифицированных специалистов, способных обеспечить направления стратегического развития Кыргызской Республики – по модернизации экономики и развитию современных информационных технологий во всех сферах хозяйственной деятельности.",
       "desc_3": "В IT-Академии отличная материально-техническая база – компьютерные классы, оснащенные современными ПК и проекторами, учебные аудитории, спортивный зал, стадион, футбольное поле, комфортная столовая.",
@@ -116,7 +116,7 @@
     {
       "route": "/training-units/iiril",
       "name": "Institute of International Relations and International Law",
-      "img": "/images/faculty-4.png",
+      "img": "/images/faculties/iiril.png",
       "desc_1": "Институт был создан с целью подготовки высококвалифицированных юристов-специалистов, интеллектуальной, политической и деловой элиты нашего государства, обладающей широким кругозором и глубокими профессиональными компетенциями, способностями к рациональному мышлению и глубокими познаниями как национального, так и международного законодательства.",
       "desc_2": "За годы существования института сформировались основные направления его деятельности, ориентированные, с одной стороны, на проблематику сравнительного правоведения, а с другой — на проведение фундаментальных исследований в области международного публичного и международного частного права, а также специализированной языковой подготовке, так как в институте изучаются французский, китайский, арабский, английский и другие языки, которые играют немаловажную роль на трудовом рынке.",
       "desc_3": "На сегодняшний день в институте международных отношений и международного права обучаются более 600 студентов. Институт славится своими традициями, сотрудничеством с иностранными ВУЗами и своей креативностью.",
@@ -140,7 +140,7 @@
     {
       "route": "/training-units/impp",
       "name": "Institute for Master's and PhD Programs",
-      "img": "/images/faculty-5.png",
+      "img": "/images/faculties/impp.png",
       "desc_1": "In 2021, by the decision of the Academic Council of the KSUA  was established and the Institute of Master's  PhD  programs , where students can continue to improve their qualifications in relevant areas and study profiles, namely:",
       "list_1": [
         "530500 Jurisprudence-according to the profiles:",
@@ -164,7 +164,7 @@
     {
       "route": "/training-units/fcdl",
       "name": "Faculty of Correspondence and Distance Learning",
-      "img": "/images/faculty-6.png",
+      "img": "/images/faculties/fcdl.png",
       "desc_1": "Заочный факультет был образован 15 марта 2004 года на базе Кыргызской государственной юридической академии. ",
       "desc_2": "Решением Ученого Совета КГЮА от 20 февраля 2017 г. (Протокол №6) факультет Заочного обучения был переименован в факультет Заочного и дистанционного обучения.",
       "desc_3": "Миссия факультета – подготовка высококвалифицированных и конкурентноспособных специалистов в области юриспруденции, экономики и государственного управления, востребованных на рынке труда.",
@@ -195,7 +195,7 @@
     {
       "route": "/training-units/fss",
       "name": "Faculty of Social Sciences",
-      "img": "/images/faculty-7.png",
+      "img": "/images/faculties/fss.png",
       "desc_1": "С 2021 года решением ученого совета КГЮА был образован Факультет социальных наук, с целью подготовки квалифицированных кадров с сильными теоретическими и практическими навыками по основным образовательным программам.",
       "title_1": "В настоящее время в факультете осуществляется следующие направления:",
       "list_1": [
@@ -208,7 +208,7 @@
     {
       "route": "/training-units/fmc",
       "name": "Faculty of Media and Communications",
-      "img": "/images/faculty-8.png",
+      "img": "/images/faculties/fmc.png",
       "desc_1": "Since 2021, the Faculty of Media and Communications has been established by the decision of the Academic Council of the KSUA, the purpose of creating this faculty is to train qualified personnel with strong theoretical and practical skills in the rapidly developing field of mass media.",
       "desc_2": "At the faculty, a student can gain tremendous knowledge in organizing and conducting work to support the development and production of an advertising product, taking into account the requirements of the customer.",
       "title_1": "Currently, the faculty provides training in the following areas",
@@ -217,7 +217,7 @@
     {
       "route": "/training-units/ikli",
       "name": "Issyk-Kul Law Institute",
-      "img": "/images/faculty-9.png",
+      "img": "/images/faculties/ikli.png",
       "title_1": "HISTORY OF THE INSTITUTE",
       "desc_1": "In 2003, the Issyk-Kul Law Institute of the KSLA was founded, the founder is the Kyrgyz State Law University (KSLA).",
       "desc_2": "ssyk-Kul Law Institute is an educational institution that has a modern educational and material base, provided with highly qualified specialists and scientific and pedagogical personnel. Since its opening (since 2003), the Institute has produced 3282 graduates, of whom 2828 graduated from Law (higher), and 465 students from college (secondary-special).",
@@ -248,7 +248,7 @@
     {
       "route": "/training-units/pl99",
       "name": "Professional Lyceum No. 99",
-      "img": "/images/faculty-12.png",
+      "img": "/images/faculties/pl99.png",
       "desc_1": "We train competent competitive qualification workers from among school graduates and unemployed citizens, taking into account the needs of the labor market, the requirements of employers in the service sector.",
       "title_1": "Directions and specialties:",
       "desc_2": "Vocational Lyceum No. 99 trains personnel on the basis of 9 classes in the following areas:",

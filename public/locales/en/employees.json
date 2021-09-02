@@ -15,6 +15,13 @@
       "img": "/images/employees/employees-2.svg",
       "img_hov": "/images/employees/employees-2-hov.svg",
       "document": "/documents/code-of-ethics.pdf"
+    },
+    {
+      "route": "/employees/occupational-safety-health",
+      "name": "Occupational Safety and Health",
+      "img": "/images/employees/employees-3.svg",
+      "img_hov": "/images/employees/employees-3-hov.svg",
+      "description": "In the Kyrgyz State Law University, the replacement of posts of scientific and pedagogical workers is carried out according to the results of a competition or elections. Elective are the positions of the dean of the faculty, director of the institute, head of the department. The replacement of the positions of the teaching staff and scientific workers is preceded by selection by competition. The conclusion (change) of employment contracts for other positions (professions) is carried out in a general manner, except for cases when special procedures are provided for by regulatory legal acts, the Charter and (or) local regulatory acts of the KSLA."
     }
   ]
 }
