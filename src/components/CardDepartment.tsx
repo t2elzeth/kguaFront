@@ -25,13 +25,13 @@ export const CardDepartment: React.FC<CardDepartmentProps> = ({ items }) => {
             <a style={{ cursor: 'pointer' }}>
               <h4 className="title">{item.title}</h4>
               <p>
-                Заведующий кафедрой:{' '}
-                <span style={{ fontWeight: 500, fontSize: 15 }}>
-                  {t(item?.head_teacher?.position)}
+                {t('head_department')}:
+                <span style={{ fontWeight: 500, fontSize: 15, paddingLeft: 10 }}>
+                  {`${t(item?.head_teacher?.position)}`}
                 </span>
               </p>
               <span style={{ fontSize: 17 }}>{item?.head_teacher?.full_name}</span>
-              <p>Контактные данные: </p>
+              <p>{t('contact_details')}: </p>
               <span>{item.contacts.phone}</span>
             </a>
           </Grid>

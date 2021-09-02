@@ -33,6 +33,8 @@
   "training": "Training",
   "corporate_email": "Corporate email",
   "personal_email": "personal email",
+  "head_department": "Head of the Department",
+  "contact_details": "Contact details",
 
   "faculties_and_institutes": "Faculties and Institutes",
   "departments": {

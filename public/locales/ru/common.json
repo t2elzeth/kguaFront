@@ -34,6 +34,8 @@
   "training": "Повышение квалификации",
   "corporate_email": "Корпоративный Email",
   "personal_email": "Персональный Email",
+  "head_department": "Заведующий кафедрой",
+  "contact_details": "Контактные данные",
 
   "departments": {
     "dafil": "Кафедра Административного, финансового и информационного права",
