@@ -19,6 +19,7 @@ export type CollapseProps = {
 export const Collapse: React.FC<CollapseProps> = ({ items }) => {
   const { t } = useTranslation('common')
   const [selectedItems, setSelectedItems] = useState<Array<number>>([])
+  console.log('selectedItems: ', selectedItems)
 
   const handleItemClick = (index: number) => {
     if (selectedItems.includes(index)) {
