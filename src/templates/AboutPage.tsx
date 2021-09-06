@@ -4,6 +4,7 @@ import { useRouter } from 'next/router'
 
 import { Sidebar, MobileMenu, News } from '@Components'
 import fetchData from '@src/services/fetchData'
+import { Slide } from '@material-ui/core'
 
 export type AboutPageProps = {
   t: any
@@ -48,7 +49,9 @@ const AboutPage: React.FC<AboutPageProps> = ({
       <MobileMenu links={secondLinks.length ? secondLinks : links} />
       <div className="main">
         <h2>{pageTitle}</h2>
-        <img alt="" className="mainImage" src={image} />
+        <Slide in={true} direction="right">
+          <img alt="" className="mainImage" src={image} />
+        </Slide>
         <div className="body">
           <Sidebar links={secondLinks.length ? secondLinks : links} />
           <div className="content">{children}</div>

@@ -2,7 +2,7 @@ import { AboutPage } from '../../templates'
 import { useTranslation } from 'next-i18next'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 
-const MissionPage: React.FC = () => {
+const MissionPage: React.FC = (props: any) => {
   const { t } = useTranslation('about')
 
   return (
@@ -10,7 +10,7 @@ const MissionPage: React.FC = () => {
       t={t}
       pageName={t('mission.title')}
       pageTitle={t('mission.title')}
-      image="/images/mission-1.png"
+      image={props?.img}
     >
       <div className="about-page__mission">
         <p>{t('mission.desc_1')}</p>
@@ -89,6 +89,7 @@ const MissionPage: React.FC = () => {
 }
 export const getStaticProps = async ({ locale }) => ({
   props: {
+    img: '/images/mission-1.png',
     ...(await serverSideTranslations(locale, ['common', 'about'])),
   },
 })

@@ -1,9 +1,10 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import { useTranslation } from 'next-i18next'
-import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
-import InfoCount from '@src/components/InfoCount'
 import Carousel from 'react-material-ui-carousel'
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
+
+import { Slide, Fade } from '@material-ui/core'
 
 const IndexPage: React.FC = () => {
   const { t } = useTranslation('index')
@@ -52,31 +53,73 @@ const IndexPage: React.FC = () => {
   return (
     <div className="main">
       <Head>
-        <title>Главная</title>
+        <title>{t('title')}</title>
       </Head>
       <section className="section-1">
         <div className="section-1__wrapper">
-          <div className="section-1__text">
-            <h4>{t('welcome')}</h4>
-            <h1>{t('ksla')}</h1>
-            <p className="headline-regular" style={{ color: '#fff', textAlign: 'left' }}>
-              {t('desc')}
-            </p>
-            {/* <button>
+          <Slide in={true} direction="right" timeout={670}>
+            <div className="section-1__text">
+              <h4>{t('welcome')}</h4>
+              <h1>{t('ksla')}</h1>
+              <p className="headline-regular" style={{ color: '#fff', textAlign: 'left' }}>
+                {t('desc')}
+              </p>
+              {/* <button>
               <img src="/images/arrow.svg" alt="arrow" />
               Узнать больше
-          </button> */}
+            </button> */}
+            </div>
+          </Slide>
+          <div className="section-1__box">
+            <div>
+              <p className="headline-regular">
+                <Fade in timeout={670}>
+                  <span>7 670</span>
+                </Fade>
+                студентов обучаются на данный момент
+              </p>
+              <hr />
+            </div>
+            <div>
+              <p className="headline-regular">
+                <Fade in timeout={670}>
+                  <span>300</span>
+                </Fade>
+                квалифицированных преподавателей
+              </p>
+              <hr />
+            </div>
+            <div>
+              <p className="headline-regular">
+                <Fade in timeout={670}>
+                  <span>20</span>
+                </Fade>
+                доктора наук
+              </p>
+              <hr />
+            </div>
+            <div>
+              <p className="headline-regular">
+                <Fade in timeout={670}>
+                  <span>91</span>
+                </Fade>
+                кандидаты наук
+              </p>
+            </div>
           </div>
-          <InfoCount />
         </div>
       </section>
       <section className="section-2">
         <div className="wrapper">
-          <div className="section-2__text">
-            <h2>{t('about_us_1')}</h2>
-            <p className="text-regular">{t('desc')}</p>
-          </div>
-          <Image width="636px" height="656px" src="/images/second-section.png" />
+          <Slide in={true} direction="right" timeout={670}>
+            <div className="section-2__text">
+              <h2>{t('about_us_1')}</h2>
+              <p className="text-regular">{t('desc')}</p>
+            </div>
+          </Slide>
+          <Slide direction="left" in={true} timeout={670}>
+            <img alt="" width="636px" height="656px" src="/images/second-section.png" />
+          </Slide>
         </div>
         <p className="section-2__bottom">
           <img src="/images/logo.png" alt="logo" />
@@ -89,7 +132,7 @@ const IndexPage: React.FC = () => {
         </h2>
         <div className="wrapper">
           <div className="section-3__left-part">
-            <Image width="500px" height="878px" src="/images/third-section.png" />
+            <Image width="670px" height="878px" src="/images/third-section.png" />
           </div>
           <div className="section-3__right-part">
             <Carousel>{newFaculties}</Carousel>
