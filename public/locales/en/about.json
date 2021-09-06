@@ -426,16 +426,6 @@
         "route": "http://213.139.209.59:8001/",
         "name": "IT academy",
         "img": "/images/about/virtual_tour/it.png"
-      },
-      {
-        "route": "http://213.139.209.59:8001/",
-        "name": "Dolphin",
-        "img": "/images/about/virtual_tour/sol.png"
-      },
-      {
-        "route": "http://213.139.209.59:8001/",
-        "name": "IYUI (Karakol)",
-        "img": "/images/about/virtual_tour/karakol.png"
       }
     ]
   }

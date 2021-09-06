@@ -9,7 +9,10 @@ const IndexPage: React.FC = () => {
   const { t } = useTranslation('index')
   const common = useTranslation('common')
 
+  const international = useTranslation('international-cooperation')
+
   const faculties = common.t('faculties', { returnObjects: true })
+  const partners = international.t('partners', { returnObjects: true })
 
   const newFaculties = Array.from(faculties)
     .map((item, i, arr) => {
@@ -19,6 +22,25 @@ const IndexPage: React.FC = () => {
             <Item item={item} />
             <Item item={arr[i + 1]} />
             <Item item={arr[i + 2]} />
+          </>
+        )
+      } else {
+        return null
+      }
+    })
+    .filter((el) => el !== null)
+
+  const newPartners = Array.from(partners)
+    .map((item, i, arr) => {
+      if (i === 0 || i % 5 === 0) {
+        return (
+          <>
+            <ItemPartner item={item} />
+            <ItemPartner item={arr[i + 1]} />
+            <ItemPartner item={arr[i + 2]} />
+            <ItemPartner item={arr[i + 3]} />
+            <ItemPartner item={arr[i + 4]} />
+            <ItemPartner item={arr[i + 5]} />
           </>
         )
       } else {
@@ -70,15 +92,15 @@ const IndexPage: React.FC = () => {
             <Image width="500px" height="878px" src="/images/third-section.png" />
           </div>
           <div className="section-3__right-part">
-            <Carousel autoPlay={false}>{newFaculties}</Carousel>
+            <Carousel>{newFaculties}</Carousel>
           </div>
         </div>
       </section>
       {/* <News /> */}
       <section className="section-5">
-        {[...Array(6).keys()].map((index) => (
-          <img key={index} alt="" src={`/images/fifth-section-${index + 1}.png`} />
-        ))}
+        <Carousel className="w-100" autoPlay={false}>
+          {newPartners}
+        </Carousel>
       </section>
     </div>
   )
@@ -103,9 +125,13 @@ function Item(props) {
   )
 }
 
+function ItemPartner(props) {
+  return <img className="partnerImage" alt="" src={props.item?.img} />
+}
+
 export const getStaticProps = async ({ locale }) => ({
   props: {
-    ...(await serverSideTranslations(locale, ['index', 'common'])),
+    ...(await serverSideTranslations(locale, ['index', 'common', 'international-cooperation'])),
   },
 })
 

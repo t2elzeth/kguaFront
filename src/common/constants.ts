@@ -20,11 +20,11 @@ export const LANG = [
     locale: 'en',
   },
   {
-    title: 'Рус',
+    title: 'RU',
     locale: 'ru',
   },
   {
-    title: 'Кыр',
+    title: 'KG',
     locale: 'kg',
   },
 ]
