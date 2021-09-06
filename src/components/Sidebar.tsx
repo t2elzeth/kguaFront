@@ -64,8 +64,13 @@ export const Sidebar = ({ links }) => {
           )
         })}
       </ul>
-      <img alt="sidebar" src="/images/sidebar.png" />
-      <p className="sidebar__virtual">Виртуальный тур по КГЮА</p>
+      <Link href="/about/virtual-tour">
+        <div style={{ cursor: 'pointer' }}>
+          <img alt="sidebar" src="/images/sidebar.png" />
+
+          <p className="sidebar__virtual">Виртуальный тур по КГЮА</p>
+        </div>
+      </Link>
     </div>
   )
 }

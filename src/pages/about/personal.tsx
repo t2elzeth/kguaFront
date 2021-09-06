@@ -1,16 +1,18 @@
-import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
-import { WithoutSideBar } from '../../templates'
-
-import fetchData from '@src/services/fetchData'
-import { IconButton } from '@material-ui/core'
 import { useState, useEffect, useCallback } from 'react'
-import { useRouter } from 'next/router'
-import { Collapse } from '@Components'
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 import { useTranslation } from 'react-i18next'
+import { useRouter } from 'next/router'
+
+import { IconButton } from '@material-ui/core'
+import { Collapse } from '@Components'
+import fetchData from '@src/services/fetchData'
+import { WithoutSideBar } from '@src/templates'
 
 const Personal = () => {
   const common = useTranslation('common')
+  const { t } = useTranslation('about')
   const router = useRouter()
+
   const [state, setState] = useState(null)
   const [data, setData] = useState([])
 
@@ -38,9 +40,9 @@ const Personal = () => {
   }, [fetch])
 
   return (
-    <WithoutSideBar pageName="Персонал">
-      <h2>Персонал</h2>
-      <div style={{ display: 'flex', width: '100%' }}>
+    <WithoutSideBar pageName={t('personal.title')}>
+      <h2>{t('personal.title')}</h2>
+      <div style={{ display: 'flex', width: '100%', flexWrap: 'wrap' }}>
         {Array.from(alphabet).map((item: any, index: number) => (
           <IconButton
             key={index}

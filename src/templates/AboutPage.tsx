@@ -49,7 +49,7 @@ const AboutPage: React.FC<AboutPageProps> = ({
       <MobileMenu links={secondLinks.length ? secondLinks : links} />
       <div className="main">
         <h2>{pageTitle}</h2>
-        <Slide in={true} direction="right">
+        <Slide in={true} direction="down" timeout={700}>
           <img alt="" className="mainImage" src={image} />
         </Slide>
         <div className="body">
