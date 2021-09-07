@@ -9,7 +9,7 @@
       "img": "/images/faculty-gsl.svg",
       "subLinks": [
         {
-          "route": "/about/",
+          "route": "/about/about-us",
           "name": "Basic information"
         },
         {

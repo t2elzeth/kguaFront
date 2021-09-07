@@ -42,6 +42,7 @@ import Loader from '@src/components/Loader'
 //   },
 // ]
 const AdministrationPage = (props) => {
+  console.log('props: ', props)
   const { t } = useTranslation('about')
 
   if (!props.data) {

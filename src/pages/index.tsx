@@ -1,10 +1,9 @@
 import Head from 'next/head'
 import Image from 'next/image'
+import { Slide, Fade } from '@material-ui/core'
 import { useTranslation } from 'next-i18next'
 import Carousel from 'react-material-ui-carousel'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
-
-import { Slide, Fade } from '@material-ui/core'
 
 const IndexPage: React.FC = () => {
   const { t } = useTranslation('index')
@@ -57,7 +56,7 @@ const IndexPage: React.FC = () => {
       </Head>
       <section className="section-1">
         <div className="section-1__wrapper">
-          <Slide in={true} direction="right" timeout={670}>
+          <Slide in direction="right" timeout={670}>
             <div className="section-1__text">
               <h4>{t('welcome')}</h4>
               <h1>{t('ksla')}</h1>
@@ -111,14 +110,16 @@ const IndexPage: React.FC = () => {
       </section>
       <section className="section-2">
         <div className="wrapper">
-          <Slide in={true} direction="right" timeout={670}>
+          <Slide in direction="right" timeout={670}>
             <div className="section-2__text">
               <h2>{t('about_us_1')}</h2>
               <p className="text-regular">{t('desc')}</p>
             </div>
           </Slide>
-          <Slide direction="left" in={true} timeout={670}>
-            <img alt="" width="636px" height="656px" src="/images/second-section.png" />
+          <Slide direction="left" in timeout={670}>
+            <div>
+              <Image width="636px" height="656px" src="/images/second-section.png" />
+            </div>
           </Slide>
         </div>
         <p className="section-2__bottom">
@@ -149,7 +150,7 @@ const IndexPage: React.FC = () => {
   )
 }
 
-function Item(props) {
+function Item(props: any) {
   return (
     <>
       {props.item?.route ? (
@@ -168,7 +169,7 @@ function Item(props) {
   )
 }
 
-function ItemPartner(props) {
+function ItemPartner(props: any) {
   return <img className="partnerImage" alt="" src={props.item?.img} />
 }
 

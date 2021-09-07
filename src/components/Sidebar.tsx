@@ -15,7 +15,7 @@ export const Sidebar = ({ links }) => {
         subItem.route === router.pathname ? true : false
       )
     }
-    if (item.route === router.pathname) return true
+    if (item.route === router.pathname || item.route === router.asPath) return true
   })
 
   const [state, setState] = useState(draft?.route)
@@ -27,6 +27,8 @@ export const Sidebar = ({ links }) => {
           setState(link.route)
         }
       } else {
+        setState(link.route)
+
         router.push(link.route)
       }
     },

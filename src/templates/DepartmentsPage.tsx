@@ -117,9 +117,9 @@ const Departments: React.FC<DepartmentsProps> = ({
               <CardHeadDepartment
                 full_name={currentDepartments?.head_teacher?.full_name}
                 image={currentDepartments?.head_teacher?.image}
-                corporate={currentDepartments?.head_teacher?.contacts.email?.corporate}
-                personal={currentDepartments?.head_teacher?.contacts.email?.personal}
-                phone={currentDepartments?.head_teacher?.contacts.phone}
+                corporate={currentDepartments?.head_teacher?.contacts?.email?.corporate}
+                personal={currentDepartments?.head_teacher?.contacts?.email?.personal}
+                phone={currentDepartments?.head_teacher?.contacts?.phone}
               />
             </div>
             <p>{currentDepartments?.description}</p>

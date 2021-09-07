@@ -35,7 +35,7 @@ export const HEADER_LINKS = [
     routes: [
       {
         title: 'about_us',
-        route: '/about',
+        route: '/about/about-us',
       },
       {
         title: 'structure',

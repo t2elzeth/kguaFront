@@ -1,10 +1,11 @@
-import { Footer, Header } from '@Components'
+import { Footer, HeaderTwo } from '@Components'
 import React from 'react'
 
 const MainLayout: React.FC = ({ children }: any) => {
   return (
     <div>
-      <Header />
+      {/* <Header /> */}
+      <HeaderTwo />
       {children}
       <Footer />
     </div>
