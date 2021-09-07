@@ -27,7 +27,7 @@ const useStyles = makeStyles((theme: Theme) =>
     },
     appBar: {
       background: '#ED1A3B',
-      [theme.breakpoints.down('md')]: {
+      [theme.breakpoints.down('lg')]: {
         marginLeft: 'auto',
       },
     },
@@ -71,7 +71,7 @@ export function HeaderTwo() {
   const { t } = useTranslation('common')
   const classes = useStyles()
   const router = useRouter()
-  const isMobile = useMediaQuery('(max-width:768px)')
+  const isMobile = useMediaQuery('(max-width:1280px)')
 
   const [anchorEl, setAnchorEl] = useState<null | HTMLElement>(null)
   const open = Boolean(anchorEl)

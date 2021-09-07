@@ -1,4 +1,5 @@
 import { useCallback, useState, useEffect } from 'react'
+import Image from 'next/image'
 import Head from 'next/head'
 import { useRouter } from 'next/router'
 
@@ -50,7 +51,9 @@ const AboutPage: React.FC<AboutPageProps> = ({
       <div className="main">
         <h2>{pageTitle}</h2>
         <Slide in={true} direction="down" timeout={700}>
-          <img alt="" className="mainImage" src={image} />
+          <div style={{ textAlign: 'center' }}>
+            <Image width="1500" height="660" alt="" src={image} />
+          </div>
         </Slide>
         <div className="body">
           <Sidebar links={secondLinks.length ? secondLinks : links} />

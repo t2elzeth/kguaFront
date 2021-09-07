@@ -63,7 +63,7 @@
   }
 }
 
-@media screen and (max-width: $tablet) {
+@media screen and (max-width: '1280px') {
   .burger-menu {
     display: flex;
     &__links {
