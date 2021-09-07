@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import Image from 'next/image'
 import classnames from 'classnames'
 import { Collapse as CollapseComponent } from 'react-collapse'
 import { Grid } from '@material-ui/core'
@@ -36,7 +37,18 @@ export const Collapse: React.FC<CollapseProps> = ({ items }) => {
           return (
             <div onClick={() => handleItemClick(index)} className="block" key={index}>
               <div className="titleLine">
-                <img alt="" src={item.image} className="collapseImage" />
+                {item.image ? (
+                  <Image
+                    loading="lazy"
+                    src={item.image}
+                    className="collapseImage"
+                    width={146}
+                    height={146}
+                  />
+                ) : (
+                  <img alt="" src="/images/arrow.png" />
+                )}
+                {/* <img alt="" src={item.image} /> */}
                 <p className="title">
                   {item?.full_name}
                   <span className="subtitle">{t(item?.position)}</span>
