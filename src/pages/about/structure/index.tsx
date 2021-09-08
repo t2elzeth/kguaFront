@@ -1,8 +1,12 @@
-import { WithoutSideBar } from '@src/templates'
-import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
-import Link from 'next/link'
 import { useState } from 'react'
 import { useTranslation } from 'react-i18next'
+import Link from 'next/link'
+import Image from 'next/image'
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
+
+import { Slide } from '@material-ui/core'
+
+import { WithoutSideBar } from '@src/templates'
 
 const IndexPage: React.FC = () => {
   const { t } = useTranslation('about')
@@ -14,7 +18,16 @@ const IndexPage: React.FC = () => {
 
   return (
     <WithoutSideBar pageName={t('structure.title')}>
-      <img src="/images/about/structure/structure-page-hero.png" alt="structure-page-hero" />
+      <Slide in direction="down" timeout={750}>
+        <div style={{ textAlign: 'center' }}>
+          <Image
+            width={1400}
+            height={700}
+            src="/images/about/structure/structure-page-hero.png"
+            alt="structure-page-hero"
+          />
+        </div>
+      </Slide>
       <h2>{t('structure.title')}</h2>
       <p>
         Кыргызский государственный юридический университет (КГЮА) является государственным высшим
