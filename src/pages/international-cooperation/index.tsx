@@ -1,7 +1,6 @@
 import { useTranslation } from 'react-i18next'
 import { useState } from 'react'
 import Link from 'next/link'
-import Image from 'next/image'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 
 import { WithoutSideBar } from '@src/templates'

@@ -6,7 +6,7 @@ import { Slide } from '@material-ui/core'
 export type TrainingUnitsProps = {
   pageName?: string
   pageTitle?: string
-  image?: string
+  image: string
   links: any
 }
 
