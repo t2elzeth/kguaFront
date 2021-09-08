@@ -1,6 +1,5 @@
 import { Sidebar, MobileMenu, CardHeadDepartment, CardTeacher } from '@Components'
 import Head from 'next/head'
-import { useTranslation } from 'react-i18next'
 
 export type DepartmentsProps = {
   pageName?: string
@@ -89,15 +88,13 @@ export type DepartmentsProps = {
 //   ],
 // }
 
-const Departments: React.FC<DepartmentsProps> = ({
+const StructuralUnit: React.FC<DepartmentsProps> = ({
   links,
   pageName,
   pageTitle,
   image,
   currentDepartments,
 }) => {
-  const common = useTranslation('common')
-
   const serializedLinks = links?.map((item) => ({
     name: item.title,
     route: `/about/structure/departments/department/${item.id}`,
@@ -115,7 +112,7 @@ const Departments: React.FC<DepartmentsProps> = ({
         <div className="body">
           <Sidebar links={serializedLinks} />
           <div className="content">
-            <h3>{t('info_department')}</h3>
+            <h3>Информация о кафедре</h3>
             <div style={{ marginBottom: 50 }}>
               <CardHeadDepartment
                 full_name={currentDepartments?.head_teacher?.full_name}
@@ -128,12 +125,12 @@ const Departments: React.FC<DepartmentsProps> = ({
             <p>{currentDepartments?.description}</p>
             {currentDepartments?.pps_info && (
               <>
-                <h3>{t('info_teachers')}</h3>
+                <h3>Информация о ППС</h3>
                 <p>{currentDepartments?.pps_info}</p>
               </>
             )}
 
-            <h3>{t('composition_teachers')}</h3>
+            <h3>Состав ППС кафедры</h3>
             {currentDepartments?.teachers?.map((teacher) => (
               <CardTeacher
                 key={teacher.name}
@@ -144,7 +141,7 @@ const Departments: React.FC<DepartmentsProps> = ({
             ))}
             {currentDepartments?.task_of_department && (
               <>
-                <h3 style={{ marginTop: 10 }}>{t('task_department')}</h3>
+                <h3 style={{ marginTop: 10 }}>Задачи кафедры</h3>
                 <ul>
                   {currentDepartments?.task_of_department?.map((task) => (
                     <li key={task}>{task}</li>
@@ -154,7 +151,7 @@ const Departments: React.FC<DepartmentsProps> = ({
             )}
             {currentDepartments?.courses_and_preparation && (
               <>
-                <h3 style={{ marginTop: 10 }}>{t('course_and_preparation')}</h3>
+                <h3 style={{ marginTop: 10 }}>Задачи кафедры</h3>
                 <ul>
                   {currentDepartments?.courses_and_preparation.map((task) => (
                     <li key={task}>{task}</li>
@@ -162,9 +159,9 @@ const Departments: React.FC<DepartmentsProps> = ({
                 </ul>
               </>
             )}
-            <h3>{t('activities_department')}</h3>
+            <h3>Деятельность кафедры</h3>
             <p>{currentDepartments?.activities}</p>
-            <h3>{t('awards')}</h3>
+            <h3>Награды</h3>
             {currentDepartments?.rewards?.map((item) => (
               <>
                 <p>{item.year}</p>
@@ -179,4 +176,4 @@ const Departments: React.FC<DepartmentsProps> = ({
   )
 }
 
-export default Departments
+export default StructuralUnit

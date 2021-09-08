@@ -37,7 +37,12 @@
   "personal_email": "Персональный Email",
   "head_department": "Заведующий кафедрой",
   "contact_details": "Контактные данные",
-
+  "info_department": "Информация о кафедре",
+  "info_teachers": "Информация о ППС",
+  "composition_teachers": "Состав ППС кафедры",
+  "task_department": "Задачи кафедры",
+  "course_and_preparation": "Курсы и подготовка",
+  "activities_department": "Деятельность кафедры",
   "departments": {
     "dafil": "Кафедра Административного, финансового и информационного права",
     "dcfl": "Кафедра Гражданского и семейного права",

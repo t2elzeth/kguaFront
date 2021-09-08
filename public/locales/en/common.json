@@ -37,6 +37,13 @@
   "head_department": "Head of the Department",
   "contact_details": "Contact details",
 
+  "info_department": "Information about the department",
+  "info_teachers": "Information about the teaching staff",
+  "composition_teachers": "the composition of the teachers of the department",
+  "task_department": "Tasks of the department",
+  "course_and_preparation": "Courses and preparation",
+  "activities_department": "Department activities",
+
   "faculties_and_institutes": "Faculties and Institutes",
   "departments": {
     "dafil": "Department of Administrative, Financial and Information Law",

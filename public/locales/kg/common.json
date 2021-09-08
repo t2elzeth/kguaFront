@@ -37,6 +37,12 @@
   "personal_email": "Жеке Email",
   "head_department": "Кафедра башчысы",
   "contact_details": "Байланыш маалыматтары",
+  "info_department": "Кафедра жөнүндө маалымат",
+  "info_teachers": "Кафедранын профессордук-окутуучулук курамы жөнүндө маалымат",
+  "composition_teachers": "Кафедранын профессордук-окутуучулук курамынын курамы",
+  "task_department": "Кафедранын милдеттери",
+  "course_and_preparation": "Курстар жана даярдоо",
+  "activities_department": "Кафедранын ишмердүүлүгү",
 
   "departments": {
     "dafil": "Административдик жана финансы укугу кафедрасы",
