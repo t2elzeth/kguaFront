@@ -96,7 +96,7 @@ const Departments: React.FC<DepartmentsProps> = ({
   image,
   currentDepartments,
 }) => {
-  const common = useTranslation('common')
+  const { t } = useTranslation('common')
 
   const serializedLinks = links?.map((item) => ({
     name: item.title,

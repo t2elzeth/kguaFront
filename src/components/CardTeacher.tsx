@@ -18,7 +18,11 @@ export const CardTeacher: React.FC<TeacherType> = (teacher) => {
       alignItems="center"
     >
       <Grid item xs={12} md={2} style={{ display: 'flex', justifyContent: 'center' }}>
-        <Avatar style={{ width: '77px', height: '77px' }} alt="Omurova" src={teacher.image} />
+        <Avatar
+          style={{ width: '77px', height: '77px', margin: '0 !important', padding: '0 !important' }}
+          alt="Omurova"
+          src={teacher.image}
+        />
       </Grid>
       <Grid item xs={12} md={10}>
         <h5 className="CardTeacherName">{teacher.full_name}</h5>

@@ -73,17 +73,16 @@ export function HeaderTwo() {
   const router = useRouter()
   const isMobile = useMediaQuery('(max-width:1280px)')
 
-  const [anchorEl, setAnchorEl] = useState<null | HTMLElement>(null)
-  const open = Boolean(anchorEl)
+  const [anchorElMenu, setAnchorElMenu] = useState({})
   const [anchorElLang, setAnchorElLang] = useState<null | HTMLElement>(null)
   const openLang = Boolean(anchorElLang)
 
-  const handleClick = (event: React.MouseEvent<HTMLElement>) => {
-    setAnchorEl(event.currentTarget)
+  const handleClick = (index) => (event: React.MouseEvent<HTMLElement>) => {
+    setAnchorElMenu({ [index]: event.currentTarget })
   }
 
-  const handleClose = () => {
-    setAnchorEl(null)
+  const handleClose = (index) => () => {
+    setAnchorElMenu({ [index]: null })
   }
 
   const handleCloseLang = () => {
@@ -139,7 +138,7 @@ export function HeaderTwo() {
                   {link?.routes?.length ? (
                     <>
                       <ListItem
-                        onMouseOver={handleClick}
+                        onMouseOver={handleClick(index)}
                         style={{ display: 'flex', width: 'auto' }}
                         key={index}
                         button
@@ -150,16 +149,16 @@ export function HeaderTwo() {
                           primaryTypographyProps={{ className: classes.text }}
                           primary={t(`header.${link.title}`)}
                         />
-                        {open ? <ExpandLess /> : <ExpandMore />}
+                        {anchorElMenu[index] ? <ExpandLess /> : <ExpandMore />}
                       </ListItem>
                       <Menu
                         id="fade-menu"
-                        anchorEl={anchorEl}
+                        anchorEl={anchorElMenu[index]}
                         keepMounted
-                        open={open}
-                        onClose={handleClose}
+                        open={!!anchorElMenu[index]}
+                        onClose={handleClose(index)}
                         className={classes.menu}
-                        MenuListProps={{ onMouseLeave: handleClose }}
+                        MenuListProps={{ onMouseLeave: handleClose(index) }}
                         classes={{ paper: classes.menuPaper }}
                       >
                         {link.routes.map((item: any, index: number) => (

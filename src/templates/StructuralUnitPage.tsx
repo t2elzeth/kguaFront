@@ -1,4 +1,4 @@
-import { Sidebar, MobileMenu, CardHeadDepartment, CardTeacher } from '@Components'
+import { Sidebar, MobileMenu } from '@Components'
 import Head from 'next/head'
 
 export type DepartmentsProps = {
@@ -88,13 +88,7 @@ export type DepartmentsProps = {
 //   ],
 // }
 
-const StructuralUnit: React.FC<DepartmentsProps> = ({
-  links,
-  pageName,
-  pageTitle,
-  image,
-  currentDepartments,
-}) => {
+const StructuralUnit: React.FC<DepartmentsProps> = ({ links, pageName, pageTitle, image }) => {
   const serializedLinks = links?.map((item) => ({
     name: item.title,
     route: `/about/structure/departments/department/${item.id}`,
@@ -112,62 +106,7 @@ const StructuralUnit: React.FC<DepartmentsProps> = ({
         <div className="body">
           <Sidebar links={serializedLinks} />
           <div className="content">
-            <h3>Информация о кафедре</h3>
-            <div style={{ marginBottom: 50 }}>
-              <CardHeadDepartment
-                full_name={currentDepartments?.head_teacher?.full_name}
-                image={currentDepartments?.head_teacher?.image}
-                corporate={currentDepartments?.head_teacher?.contacts?.email?.corporate}
-                personal={currentDepartments?.head_teacher?.contacts?.email?.personal}
-                phone={currentDepartments?.head_teacher?.contacts?.phone}
-              />
-            </div>
-            <p>{currentDepartments?.description}</p>
-            {currentDepartments?.pps_info && (
-              <>
-                <h3>Информация о ППС</h3>
-                <p>{currentDepartments?.pps_info}</p>
-              </>
-            )}
-
-            <h3>Состав ППС кафедры</h3>
-            {currentDepartments?.teachers?.map((teacher) => (
-              <CardTeacher
-                key={teacher.name}
-                image={teacher.image}
-                full_name={teacher.full_name}
-                position={teacher.position}
-              />
-            ))}
-            {currentDepartments?.task_of_department && (
-              <>
-                <h3 style={{ marginTop: 10 }}>Задачи кафедры</h3>
-                <ul>
-                  {currentDepartments?.task_of_department?.map((task) => (
-                    <li key={task}>{task}</li>
-                  ))}
-                </ul>
-              </>
-            )}
-            {currentDepartments?.courses_and_preparation && (
-              <>
-                <h3 style={{ marginTop: 10 }}>Задачи кафедры</h3>
-                <ul>
-                  {currentDepartments?.courses_and_preparation.map((task) => (
-                    <li key={task}>{task}</li>
-                  ))}
-                </ul>
-              </>
-            )}
-            <h3>Деятельность кафедры</h3>
-            <p>{currentDepartments?.activities}</p>
-            <h3>Награды</h3>
-            {currentDepartments?.rewards?.map((item) => (
-              <>
-                <p>{item.year}</p>
-                <p>{item.description}</p>
-              </>
-            ))}
+            <h3>TITLE</h3>
           </div>
         </div>
       </div>
