@@ -1,5 +1,7 @@
 import { Sidebar, MobileMenu } from '@Components'
+import Image from 'next/image'
 import Head from 'next/head'
+import { Slide } from '@material-ui/core'
 
 export type TrainingUnitsProps = {
   pageName?: string
@@ -23,7 +25,12 @@ const TrainingUnits: React.FC<TrainingUnitsProps> = ({
       <MobileMenu links={links} />
       <div className="main">
         <h2>{pageTitle}</h2>
-        <img className="mainImage" src={image} alt="" />
+        <Slide in timeout={700}>
+          <div>
+            <Image alt="" width="1500" height="660" src={image} className="mainImage" />
+          </div>
+        </Slide>
+        {/* <img className="mainImage" src={image} alt="" /> */}
         <div className="body">
           <Sidebar links={links} />
           <div className="content"> {children}</div>

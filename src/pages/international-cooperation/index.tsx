@@ -1,8 +1,11 @@
-import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
-import Link from 'next/link'
-import { useState } from 'react'
 import { useTranslation } from 'react-i18next'
-import { WithoutSideBar } from '../../templates'
+import { useState } from 'react'
+import Link from 'next/link'
+import Image from 'next/image'
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
+
+import { WithoutSideBar } from '@src/templates'
+import { Slide } from '@material-ui/core'
 
 const InternationalCooperation = () => {
   const { t } = useTranslation('international-cooperation')
@@ -14,11 +17,16 @@ const InternationalCooperation = () => {
     <WithoutSideBar pageName={t('title')}>
       <div className="students-page">
         <div className="slider">
-          <img src="/images/financial.png" alt="" />
-          <div>
-            <h4>{t('title')}</h4>
-            <p>{t('description')}</p>
-          </div>
+          <Slide in direction="right" timeout={750}>
+            <img src="/images/financial.png" alt="" />
+          </Slide>
+
+          <Slide in direction="left" timeout={750}>
+            <div>
+              <h4>{t('title')}</h4>
+              <p>{t('description')}</p>
+            </div>
+          </Slide>
         </div>
         <h2>{t('title')}</h2>
         <p>В настоящее время в составе КГЮА действуют следующие институты:</p>

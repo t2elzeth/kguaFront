@@ -3,6 +3,7 @@ import Link from 'next/link'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 import { useTranslation } from 'react-i18next'
 import { useState } from 'react'
+import { Slide } from '@material-ui/core'
 
 const Employees = () => {
   const { t } = useTranslation('employees')
@@ -14,11 +15,15 @@ const Employees = () => {
     <WithoutSideBar pageName={t('title')}>
       <div className="students-page">
         <div className="slider">
-          <img alt="employees" src="/images/science-title-1.png" />
-          <div>
-            <h4>{t('title')}</h4>
-            <p>{t('description')}</p>
-          </div>
+          <Slide in direction="right" timeout={750}>
+            <img alt="employees" src="/images/science-title-1.png" />
+          </Slide>
+          <Slide in direction="left" timeout={750}>
+            <div>
+              <h4>{t('title')}</h4>
+              <p>{t('description')}</p>
+            </div>
+          </Slide>
         </div>
         <h2>{t('title')}</h2>
         <p>В настоящее время в составе КГЮА действуют следующие институты:</p>

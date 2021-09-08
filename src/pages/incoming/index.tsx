@@ -4,6 +4,7 @@ import Link from 'next/link'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 
 import { WithoutSideBar } from '@src/templates'
+import { Slide } from '@material-ui/core'
 
 const IndexPage = () => {
   const { t } = useTranslation('incoming')
@@ -15,11 +16,15 @@ const IndexPage = () => {
     <WithoutSideBar pageName="Поступающим">
       <div className="students-page">
         <div className="slider">
-          <img alt="incoming" src="/images/incoming-title-1.png" />
-          <div>
-            <h4>{t('title')}</h4>
-            <p>{t('description')}</p>
-          </div>
+          <Slide in direction="right" timeout={750}>
+            <img alt="incoming" src="/images/incoming-title-1.png" />
+          </Slide>
+          <Slide in direction="left" timeout={750}>
+            <div>
+              <h4>{t('title')}</h4>
+              <p>{t('description')}</p>
+            </div>
+          </Slide>
         </div>
         <h2>{t('title')}</h2>
         <p>В настоящее время в составе КГЮА действуют следующие институты:</p>

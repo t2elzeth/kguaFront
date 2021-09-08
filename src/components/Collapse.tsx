@@ -33,7 +33,6 @@ export const Collapse: React.FC<CollapseProps> = ({ items }) => {
     <div className="collapse">
       <div className={classnames('blocks')}>
         {items.map((item: any, index: any) => {
-          console.log('item: ', item)
           return (
             <div onClick={() => handleItemClick(index)} className="block" key={index}>
               <div className="titleLine">
