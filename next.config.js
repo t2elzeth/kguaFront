@@ -8,4 +8,5 @@ module.exports = {
   images: {
     domains: ['213.139.209.59'],
   },
+  future: { webpack5: true },
 }
