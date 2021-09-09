@@ -59,7 +59,7 @@ export const HEADER_LINKS = [
       },
       {
         title: 'virtual_tour',
-        route: '/about/virtual-tour-of-ksla',
+        route: '/about/virtual-tour',
       },
       {
         title: 'contacts',
