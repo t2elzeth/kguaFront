@@ -2,6 +2,7 @@ import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 import Link from 'next/link'
 import { useTranslation } from 'react-i18next'
 import { AboutPage } from '@src/templates'
+import { Grid } from '@material-ui/core'
 
 const StructuralUnits = () => {
   const { t } = useTranslation('about')
@@ -13,16 +14,18 @@ const StructuralUnits = () => {
       pageName={t('structure.structural_units.title')}
       image="/images/symbolism.png"
     >
-      <div style={{ display: 'flex', flexDirection: 'row', flexWrap: 'wrap' }}>
+      <Grid container justifyContent="space-between">
         {Array.from(list).map((item: any) => (
-          <Link key={item.route} href={item.route}>
-            <div className="structural-unit">
-              <img src={item.img} alt="" />
-              <p>{item.name}</p>
-            </div>
-          </Link>
+          <Grid key={item.route} item xs={12} md={6}>
+            <Link href={item.route}>
+              <div className="structural-unit">
+                <img src={item.img} alt="" />
+                <p>{item.name}</p>
+              </div>
+            </Link>
+          </Grid>
         ))}
-      </div>
+      </Grid>
     </AboutPage>
   )
 }
