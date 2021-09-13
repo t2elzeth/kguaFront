@@ -43,7 +43,7 @@ const useStyles = makeStyles((theme: Theme) =>
     },
     toolBar: {
       margin: '0 auto',
-      [theme.breakpoints.down('md')]: {
+      [theme.breakpoints.down('lg')]: {
         margin: 0,
         justifyContent: 'space-between',
       },
@@ -56,7 +56,7 @@ const useStyles = makeStyles((theme: Theme) =>
       color: 'white',
     },
     text: {
-      fontSize: '16px',
+      fontSize: '14px',
       whiteSpace: 'nowrap',
       width: '100%',
     },
