@@ -1,18 +1,39 @@
+import { useState, useEffect, useCallback } from 'react'
 import Head from 'next/head'
 import Image from 'next/image'
-import { Slide, Fade } from '@material-ui/core'
+import { useRouter } from 'next/router'
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 import { useTranslation } from 'next-i18next'
 import Carousel from 'react-material-ui-carousel'
-import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
+
+import { Slide, Fade } from '@material-ui/core'
+import { News } from '@src/components'
+import fetchData from '@src/services/fetchData'
 
 const IndexPage: React.FC = () => {
   const { t } = useTranslation('index')
   const common = useTranslation('common')
+  const router = useRouter()
 
   const international = useTranslation('international-cooperation')
 
   const faculties = common.t('faculties', { returnObjects: true })
   const partners = international.t('partners', { returnObjects: true })
+
+  const [news, setNews] = useState([])
+
+  const fetch = useCallback(async () => {
+    try {
+      const res = await fetchData('news', { lang: router.locale })
+      setNews(res)
+    } catch (error) {
+      console.log(error)
+    }
+  }, [router])
+
+  useEffect(() => {
+    fetch()
+  }, [fetch])
 
   const newFaculties = Array.from(faculties)
     .map((item, i, arr) => {
@@ -140,7 +161,7 @@ const IndexPage: React.FC = () => {
           </div>
         </div>
       </section>
-      {/* <News /> */}
+      <News news={news} />
       <section className="section-5">
         <Carousel className="w-100" autoPlay={false}>
           {newPartners}
